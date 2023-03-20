@@ -1,0 +1,67 @@
+
+/*清空样式*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    /*background-image: linear-gradient(to right, #d8c6c4, #a6c1ee);*/
+    clear: both;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+
+}
+
+.login-wrapper {
+    background-color: #fff;
+    width: 258px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 0 50px;
+    position: relative;
+    left: 35%;
+    /*top: 50%;*/
+    margin-top: 100px;
+    /*transform: translate(-50%, -50%);*/
+    border: 1px solid black;
+}
+
+.header {
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+}
+
+.input-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(128, 125, 125);
+    font-size: 15px;
+    outline: none;
+}
+
+#button {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 30px;
+    /*background-image: linear-gradient(to right, #a6c1ee, #d8c6c4);*/
+    background-color: #0000FF;
+    color: #fff;
+}
+
+#issue{
+    width: 258px;
+    height: 300px;
+}
+

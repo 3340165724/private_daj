@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/login.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.slim.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.slim.min.js"></script>
+
+
+
+
+</head>
+<body>
+<div class="container">
+    <div class="login-wrapper">
+        <form>
+            <div class="header">用户登录</div>
+            <input type="text" name="username" placeholder="用户名" class="input-item" id="username">
+            <br>
+            <input type="password" name="password" placeholder="密码" class="input-item" id="password">
+            <span id="prompt"></span>
+            <br>
+            <input type="button" value="提交" id="button">
+        </form>
+        <div class="msg">
+            没用账号?
+            <a href="enroll">注册</a>
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/doLogin.js"></script>
+</body>
+</html>

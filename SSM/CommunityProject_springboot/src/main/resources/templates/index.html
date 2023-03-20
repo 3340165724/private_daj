@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.slim.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.slim.min.js"></script>
+
+
+</head>
+<body>
+<!-- 服务器找首页就是找index -->
+<!-- 从上到下从左到右 -->
+<!-- css：浮动 /display；盒子模型；文字样式-->
+
+
+<!-- 头部 两个样式 header头部样式 wrapper 版心 -->
+<div class="header wrapper">
+    <h1>
+        <a href="">
+            <img src="../static/img/tb.png" alt="">
+        </a>
+    </h1>
+
+    <!-- 导航 -->
+    <div class="nav">
+        <ul>
+            <li><a href="index">首页</a></li>
+            <li><a href="">新闻</a></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- 搜索 -->
+    <div class="search">
+        <input type="text" placeholder="输入关键字" id="search_">
+        <button><img src="../static/img/Search.png" alt="" id="search_button"></button>
+    </div>
+    <!-- 用户 -->
+    <div class="user">
+        <span> <a href="publication">发表</a></span>
+        <span> <a href="/" id="out">退出</a></span>
+    </div>
+</div>
+
+
+<!-- 列表 -->
+<div class="banner">
+    <div class="wrapper">
+        <div class="left">
+            <ul>
+                <li>
+                    <button id="dsj" name="大数据" value="大数据">大数据</button>
+                </li>
+                <li>
+                    <button id="spark" name="spark" value="Spark">Spark</button>
+                </li>
+                <li>
+                    <button id="hadoop" name="hadoop" value="Hadoop">Hadoop</button>
+                </li>
+                <li>
+                    <button id="linux" name="linux" value="Linux">Linux</button>
+                </li>
+                <li>
+                    <button id="flink" name="flink" value="Flink">Flink</button>
+                </li>
+                <li>
+                    <button id="flume" name="flume" value="Flume">Flume</button>
+                </li>
+                <li>
+                    <button id="kafka" name="kafka" value="Kafka">Kafka</button>
+                </li>
+                <li>
+                    <button id="hive" name="hive" value="Hive">Hive</button>
+                </li>
+                <li>
+                    <button id="python" name="python" value="Python">Python</button>
+                </li>
+                <li>
+                    <button id="MySql" name="MySql" value="MySql">MySql</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <table id="table">
+                <thead>
+                <tr>
+                    <!--<th>id</th>-->
+                    <th>issue</th>
+                    <th class="td">interpretation</th>
+                    <th class="td">knowledge</th>
+                    <th class="td">comments</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+<!--            <div id="page">-->
+<!--                <nav aria-label="Page navigation example">-->
+<!--                    <ul class="pagination" id="p_1">-->
+<!--                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--                        <li class="page-item active"><a class="page-link" href="#">2</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">4</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">5</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">6</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>-->
+<!--                    </ul>-->
+<!--                </nav>-->
+<!--            </div>-->
+        </div>
+    </div>
+</div>
+
+
+<script src="../static/js/search.js"></script>
+<script src="../static/js/page.js"></script>
+<script src="../static/js/sparkList.js"></script>
+<script src="../static/js/dsjList.js"></script>
+<script src="../static/js/flinkList.js"></script>
+<script src="../static/js/flumeList.js"></script>
+<script src="../static/js/hadoopList.js"></script>
+<script src="../static/js/hiveList.js"></script>
+<script src="../static/js/kafkaList.js"></script>
+<script src="../static/js/linuxList.js"></script>
+<script src="../static/js/mysqlList.js"></script>
+<script src="../static/js/pythonList.js"></script>
+<!--<script src="../static/js/doListIndex.js"></script>-->
+
+
+<!-- 精品推荐 -->
+<div class="goods wrapper">
+    <h2>精品推荐</h2>
+    <ul>
+        <li>
+            <a href="">Spark</a>
+            <a href="">Python</a>
+            <a href="">hive</a>
+            <a href="">MySql</a>
+        </li>
+    </ul>
+    <a href="" class="xingqu"> 修改兴趣</a>
+
+</div>
+
+<!-- 精品推荐 -->
+<div class="goodsbox wrapper">
+
+    <div class="title">
+        <h2>主流推荐 </h2>
+        <a href="">查看</a>
+    </div>
+
+    <div class="conut clearfix">
+        <ul>
+            <li>
+                <a href="https://spark.apache.org/docs/3.1.2/sql-getting-started.html">
+                    <img src="../static/img/spark.png" alt="">
+                    <h3>SparkSql</h3>
+                    <p><span>热度</span> 1.2w</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://spark.apache.org/docs/3.1.2/streaming-programming-guide.html">
+                    <img src="../static/img/SparkStreaming.png" alt="">
+                    <h3>SparkStreaming</h3>
+                    <p><span>热度</span> 1.4w</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://spark.apache.org/docs/3.1.2/rdd-programming-guide.html#initializing-spark">
+                    <img src="../static/img/SparkCore.png" alt="">
+                    <h3>SparkCore</h3>
+                    <p><span>热度</span> 1.4w</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../static/img/Hadoop.jpg" alt="">
+                    <h3>Hadoop</h3>
+                    <p><span>热度</span> 1.4w</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../static/img/LINUX.webp" alt="">
+                    <h3>Linux</h3>
+                    <p><span>热度</span> 1.4w</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://docs.python.org/3/">
+                    <img src="../static/img/Python.jpg" alt="">
+                    <h3>Python</h3>
+                    <p><span>热度</span> 1.4w</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../static/img/SQL.jpg" alt="">
+                    <h3>MySql</h3>
+                    <p><span>热度</span> 1.4w</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../static/img/Flume.png" alt="">
+                    <h3>Flume</h3>
+                    <p><span>热度</span> 1.4w</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../static/img/Flink.jpg" alt="">
+                    <h3>Flink</h3>
+                    <p><span>热度</span> 1.4w</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../static/img/hive.jpg" alt="">
+                    <h3>hive</h3>
+                    <p><span>热度</span> 1.4w</p>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+
+</div>
+
+<!-- 版权 -->
+<div class="footer">
+    <div class="wrapper">
+
+        <div class="l">
+            <span>欢迎加入大数据学习</span>
+            <p>
+                联系我们：18164731206
+            </p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

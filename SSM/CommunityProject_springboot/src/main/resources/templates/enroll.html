@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/login.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.slim.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.slim.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="login-wrapper">
+        <form>
+            <div class="header">新用户注册</div>
+            <input type="text" name="username" placeholder="用户名" class="input-item" id="username">
+            <br>
+            <input type="password" name="password" placeholder="密码" class="input-item" id="password">
+            <br>
+            <input type="password" name="repassword" placeholder="确认密码" class="input-item" id="repassword">
+            <span></span>
+            <br>
+            <input type="button" value="注册" id="button">
+        </form>
+        <div class="msg">
+            已有账号?
+            <a href="/">登录</a>
+        </div>
+    </div>
+</div>
+
+<script>
+$("#button").click(function (){
+    axios.post(
+        '/doEnroll',
+        {
+            "username": $("#username").val(),
+            "password": $("#password").val(),
+            "repassword": $("#repassword").val()
+        },
+        {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(
+        function (response) {
+            if (response.data) {
+                window.location.href = "/";
+            } else {
+               alert("注册失败,该用户名已存在")
+                window.location.href = "enroll";
+            }
+        }
+    )
+});
+
+</script>
+
+</body>
+</html>

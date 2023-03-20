@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页 axios</title>
+<!--    <style>-->
+<!--        table, #table {-->
+<!--            align: center;-->
+<!--            cellspacing: 0px;-->
+<!--        }-->
+
+<!--        #table td {-->
+<!--            width: 50px;-->
+<!--            height: 100px;-->
+<!--        }-->
+<!--    </style>-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.slim.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.slim.min.js"></script>
+
+</head>
+<body>
+<h1>13236326323260</h1>
+<div>
+    <h1>列表</h1>
+    <fieldset>
+        <legend>搜素</legend>
+        <formm action="ListServlet" method="post">
+            <input type="text" name="keyword" id="keyword">
+            <input type="button" value="查询" id="button">
+        </formm>
+    </fieldset>
+</div>
+
+<div>
+    <table id="table">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>announce</th>
+            <th>like</th>
+            <th>comments</th>
+            <th>uid</th>
+            <th>feedback</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // const axios = require('axios');
+        axios.get('/list_axios/jsonList',
+            {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                let list = response.data;
+                console.log(list)
+                let tableBody = document.querySelector('#table #tbody');
+
+                list.forEach(item => {
+                    let row = tableBody.insertRow();
+                    row.insertCell().innerText = item.id;
+                    row.insertCell().innerText = item.announce;
+                    row.insertCell().innerText = item.like;
+                    row.insertCell().innerText = item.comments;
+                    row.insertCell().innerText = item.uid;
+                    row.insertCell().innerText = item.feedback;
+                });
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    });
+</script>
+</body>
+</html>

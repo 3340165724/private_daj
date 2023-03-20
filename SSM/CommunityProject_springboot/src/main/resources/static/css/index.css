@@ -1,0 +1,354 @@
+/* index.css是用来美化首页的 */
+*{
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing:border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix::before,.clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+
+body {
+    background-color: #f3f5f7;
+}
+
+/* 版心 */
+.wrapper{
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+
+/* 头部 */
+.header{
+    height: 42px;
+    margin: 30px auto;
+}
+
+h1{
+    float: left;
+}
+
+.header h1 a img{
+    margin-top: -15px;
+    height: 70px;
+    width: 120px;
+}
+
+
+
+/* 导航 */
+.nav{
+    float: left;
+
+    margin-left: 70px;
+    height: 42px;
+
+}
+
+.nav li{
+    float: left;
+    margin-right: 26px;
+}
+
+.nav li a{
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    line-height: 42px;
+
+}
+
+.nav li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+
+
+/* 搜索 */
+.search{
+    float: left;
+    margin-left: 59px;
+    width: 398px;
+    height: 40px;
+    border: 1px solid  #00a4ff;
+}
+
+.search input{
+    float: left;
+    padding-left: 20px;
+    width: 340px;
+    height: 38px;
+    border: none;
+}
+
+
+/*控制placeholder的样式 */
+.search input::placeholder{
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button{
+    float: left;
+    width: 50px;
+    height: 40px;
+    border: 0;
+    /*background-image: url(../images/btn.png);*/
+}
+
+.user{
+    float: left;
+    margin-left:230px;
+    height: 42px;
+    line-height: 42px;
+}
+.user img{
+    /* 调节图片垂直对齐方式，middel */
+    vertical-align: middle;
+    /*margin-left: -305px;*/
+}
+
+.user span{
+    float: left;
+    margin-left: 100px;
+}
+
+
+
+/* 列表 */
+.banner{
+    height: 540px;
+    /*background-color: #E6E6FA ;*/
+    background-image: linear-gradient(to right, #B0E0E6, #87CEFA);
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.banner .wrapper .left ul li{
+    margin: -30px 0px;
+    padding-left: 30px;
+    size: 30px;
+}
+
+.banner .wrapper{
+    height: 540px;
+    /*background-image: url(../images/303.jpg);*/
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+.banner .left{
+    float: left;
+    padding: 0 20px;
+    width: 230px;
+    height: 540px;
+    background-color: rgb(0,0,0, 0.3);
+    /*行高属于文字属性 行高可以继承给子及  */
+    line-height: 84px;
+    margin-left: -5.5%;
+}
+
+
+
+.banner .left button{
+    font-size: 14px;
+    color: #f9f4f4;
+    border: none;
+    background: none;
+    padding: 0; /* 可选 */
+    margin: 0; /* 可选 */
+}
+.banner .left button:hover{
+    color: #0075c9;
+}
+
+
+.banner .right{
+    float: right;
+    margin-top: 0px;
+    margin-right: -60px;
+    width:90%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.4; /*透明度*/
+    /*border: 2px solid red;*/
+}
+
+
+
+#table  tr  td{
+    width: 150px;
+    height: 50px;
+    /*border: 1px solid red*/
+
+}
+
+#table .td{
+    width: 300px;
+    margin: 0 auto;
+}
+
+#page{
+    position:absolute;
+    float: left;
+    margin: 480px 300px;
+    border: 1px solid black;
+    width: 500px;
+}
+
+.page-item{
+    float: left;
+    padding: 2px 30px;
+
+}
+
+
+/* 精品推荐 */
+.goods{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 18px;
+    height: 60px;
+    background-color: #fff;
+    /* 背景色 */
+    box-shadow: 0px 2px 3px 0px
+    rgba(0, 0, 0, 0.3);
+    line-height: 60px;
+    font-weight: 400;
+}
+
+.goods h2{
+    float: left;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.goods ul{
+    float: left;
+    margin-left: 30px;
+}
+.goods ul li{
+    float: left;
+}
+.goods ul li a{
+    border-left: 1px solid #848484;
+    padding: 0px 30px;
+    font-size: 16px;
+    color: #000;
+}
+
+
+.goods .xingqu{
+    float:right;
+    font-size: 14px;
+    color:#00a4ff;
+}
+
+
+.goodsbox{
+    margin-top: 35px;
+}
+
+.goodsbox .title{
+    height: 40px;
+}
+
+.goodsbox .title h2{
+    color: #000;
+    float: left;
+}
+
+.goodsbox .title a{
+    float: right;
+    color: #797979;
+}
+
+
+.goodsbox .conut ul li{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 260px;
+    height: 270px;
+    background-color: #fefefe;
+}
+
+.goodsbox .conut li img{
+    width: 260px;
+    height: 200px;
+
+}
+
+
+.goodsbox .conut ul li:nth-child(5n){
+    margin-right: 0px;
+}
+
+
+
+.goodsbox .conut li h3{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #000;
+}
+
+.goodsbox .conut li p{
+    padding: 0px 20px;
+    font-size: 12px;
+    color: #848484;
+}
+.goodsbox .conut li span{
+    color: orange;
+}
+
+
+
+/* 版权 */
+.footer{
+    margin-top: 20px;
+    height: 200px;
+    background-color: #ffffff;
+
+}
+
+.footer .wrapper .r{
+    float: left;
+}
+.footer .wrapper .r img{
+    width: 180px;
+    height: 100px;
+}
+
+.footer .wrapper  p{
+    font-size: 12px;
+    color:#666;
+}
+
+
+.footer .wrapper .l{
+    margin-top: 80px;
+    float: right;
+}
+
+.footer .wrapper .l{
+    color: #1848029a;
+}
