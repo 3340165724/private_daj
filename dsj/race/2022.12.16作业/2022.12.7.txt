@@ -1,0 +1,87 @@
+-- 1、统计各个优先级别（字段ORDERPRIORITY）下有效（状态为O的订单）的订单总额，总个数，平均金额，按总额降序排列输出。
+SELECT  o.ORDERPRIORITY,SUM(o.TOTALPRICE) ,COUNT(*), AVG(o.TOTALPRICE)
+FROM orders  AS o
+WHERE o.ORDERSTATUS='o'
+GROUP BY o.ORDERPRIORITY
+ORDER BY SUM(o.TOTALPRICE) DESC
+
+
+-- 2、统计下单总金额最多的前三名客户（客户id、客户名、订单总额、订单个数），按订单总额降序显示
+SELECT c.CUSTKEY,c.NAME,SUM(o.TOTALPRICE),COUNT(*)
+FROM customer AS c 
+INNER JOIN orders AS o ON c.CUSTKEY=o.CUSTKEY
+GROUP BY c.ACCTBAL,c.NAME
+ORDER BY SUM(o.TOTALPRICE) DESC
+LIMIT 3
+
+
+-- 3、统计各个国家下的订单总额，按降序排序显示（国家id、国家名、订单总额）
+SELECT na.NATIONKEY , na.NAME , SUM(o.TOTALPRICE)
+FROM orders AS o 
+INNER JOIN customer AS cu ON cu.CUSTKEY=o.CUSTKEY
+INNER JOIN nation AS na  ON cu.NATIONKEY=na.NATIONKEY
+GROUP BY na.NATIONKEY
+ORDER BY  SUM(o.TOTALPRICE) DESC
+
+
+-- 4、统计各个地区下的国家个数，按个数降序显示（地区id、地区名称、个数）
+SELECT r.REGIONKEY , r.NAME , COUNT(n.NATIONKEY)
+FROM region AS r
+INNER JOIN nation AS n ON r.REGIONKEY=n.REGIONKEY
+GROUP BY r.NAME
+
+
+-- 5、统计各个地区在各个年份订单的总数、总金额，按地区下订单总数降序显示（地区id、地区名、年份、订单个数、 订单总额）
+ SELECT r.REGIONKEY , r.NAME , YEAR(o.ORDERDATE) , COUNT(*) , SUM(o.TOTALPRICE)
+ FROM  region AS r
+ INNER JOIN nation AS n ON r.REGIONKEY=n.REGIONKEY
+ INNER JOIN customer AS c ON n.NATIONKEY=c.NATIONKEY
+ INNER JOIN orders AS o ON c.CUSTKEY=o.CUSTKEY
+ GROUP BY r.REGIONKEY, r.NAME, r.NAME, YEAR(o.ORDERDATE)
+ HAVING COUNT(*) >=100
+ ORDER BY r.REGIONKEY, r.NAME , COUNT(o.ORDERKEY)  DESC
+ 
+
+-- 6、统计各个国家在每年各个月份下单的总数和总金额
+SELECT n.NAME , YEAR(o.ORDERDATE) , MONTH(o.ORDERDATE) , COUNT(o.ORDERKEY) , SUM(o.TOTALPRICE)
+FROM nation AS n 
+INNER JOIN customer AS c ON n.NATIONKEY=c.NATIONKEY
+INNER JOIN orders AS o ON c.CUSTKEY=o.CUSTKEY
+GROUP BY n.NAME,YEAR(o.ORDERDATE),MONTH(o.ORDERDATE)
+
+
+-- 7、统计连续两个月下订单的客户和连续两个月下订单的总个数、总金额，按个数降序显示（客户id、客户名、年、月、总个数、总金额）
+
+-- 统计下订单的客户下订单的总个数、总金额
+SELECT c.CUSTKEY, c.NAME ,YEAR(o.ORDERDATE),MONTH(o.ORDERDATE), COUNT(o.ORDERKEY) , SUM(o.TOTALPRICE)
+FROM customer AS c 
+INNER JOIN orders AS o ON c.CUSTKEY=o.CUSTKEY
+GROUP BY c.CUSTKEY , c.NAME, YEAR(o.ORDERDATE),MONTH(o.ORDERDATE)
+
+-- 思路
+-- SELECT * FROM 
+-- (查询各个客户c1各个年y1、月m1下单个数c1、总金额s1) t1
+-- INNER JOIN
+-- (查询各个客户c2各个年y2、月m2下单个数c2、总金额s2) t2
+--  ON t1.CUSTKEY=t2.CUSTKEY AND ((y1=y2 AND m1=m2-1) or (y1=y2-1 AND t1.m1=12 AND t2.m2=1))
+
+SELECT t1.CUSTKEY,t1.NAME,
+				CONCAT(CONCAT(t1.y1,if(t1.m1<10,CONCAT('0',t1.m1),t1.m1)),'_',CONCAT(t2.y2,if(t2.m2<10,CONCAT('0',t2.m2),t2.m2))),
+				t1.c1+t2.c2,ROUND((t1.s1+t2.s2),2)
+FROM (
+			SELECT c.CUSTKEY, c.NAME ,YEAR(o.ORDERDATE) AS y1 ,MONTH(o.ORDERDATE) AS m1, COUNT(o.ORDERKEY) AS c1 , SUM(o.TOTALPRICE) AS s1
+			FROM customer AS c 
+			INNER JOIN orders AS o ON c.CUSTKEY=o.CUSTKEY
+			GROUP BY c.CUSTKEY , c.NAME, YEAR(o.ORDERDATE),MONTH(o.ORDERDATE)
+			) AS t1
+INNER JOIN (
+			SELECT c.CUSTKEY, c.NAME ,YEAR(o.ORDERDATE) AS y2 ,MONTH(o.ORDERDATE) AS m2, COUNT(o.ORDERKEY) AS c2 , SUM(o.TOTALPRICE) AS s2
+			FROM customer AS c 
+			INNER JOIN orders AS o ON c.CUSTKEY=o.CUSTKEY
+		 GROUP BY c.CUSTKEY , c.NAME, YEAR(o.ORDERDATE),MONTH(o.ORDERDATE)
+		 ) AS t2 ON t1.CUSTKEY=t2.CUSTKEY AND ((y1=y2 AND m1=m2-1) or (y1=y2-1 AND t1.m1=12 AND t2.m2=1))
+
+
+
+
+

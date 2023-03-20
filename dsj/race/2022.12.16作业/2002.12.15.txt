@@ -1,0 +1,42 @@
+-- 1）统计各个地区下学生人数
+SELECT s.address , COUNT(s.address)
+FROM tb_student AS s
+GROUP BY s.address
+
+-- 2）统计各个地区下学生人数top5，按降序排列
+SELECT s.address , COUNT(s.address) AS c
+FROM tb_student AS s
+GROUP BY s.address
+ORDER BY c DESC
+LIMIT 5;
+
+-- 3）统计各个班级下的人数，按人数降序排列
+SELECT c.cname , COUNT(c.cname)
+FROM tb_student AS s 
+INNER JOIN tb_class AS c ON s.scid=c.cid
+GROUP BY c.cname
+ORDER BY COUNT(c.cname) DESC
+
+-- 4）统计各个学校下的人数Top3，按人数降序排列
+SELECT c.school , COUNT(c.school)
+FROM tb_class AS c
+INNER JOIN tb_student AS s ON c.cid=s.scid
+GROUP BY c.school
+ORDER BY COUNT(c.school) DESC
+
+
+-- 5）统计各个地区下学生人数，并且进行排名（额外增加一列排名列）row_number()排名函数，一般需要配合over()开窗限制范围
+ 
+-- 统计各个地区下学生人数
+SELECT s.address , COUNT(s.address) AS rs
+FROM tb_student AS s
+GROUP BY s.address
+
+SELECT * , ROW_NUMBER() over(ORDER BY rs DESC) AS seq
+FROM (
+			SELECT s.address , COUNT(s.address) AS rs
+			FROM tb_student AS s
+			WHERE address != ''
+			GROUP BY s.address
+			) AS t1
+
