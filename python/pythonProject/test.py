@@ -10,6 +10,7 @@ if num1 < num2:
 else:
     print(num2)
 
+
 value = min(num1, num1)
 print("最小值：", value)
 
