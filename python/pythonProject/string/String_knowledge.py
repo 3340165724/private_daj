@@ -31,6 +31,7 @@ print("删除字符串开头和结尾的空白字符:", my_string.strip())      
 print("用新字符串替换旧字符串:", my_string.replace('world', 'Python'))  # 输出 '   Hello, Python!   '
 print("将字符串拆分为一个字符串列表:", my_string.split(','))       # 输出 ['   Hello', ' world!   ']
 print("返回子字符串在字符串中出现的次数:", my_string.count("o"))
+print("所有单词都以大写开头，其余小写：", my_string.title())
 print("返回子字符串在字符串中第一次出现的位置，如果没有找到则返回 -1:", my_string.find("o"))
 print()
 
