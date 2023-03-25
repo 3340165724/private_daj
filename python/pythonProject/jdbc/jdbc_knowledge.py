@@ -1,4 +1,7 @@
-import pymysql as pymysql
+# 引入pymysql模块。注意小写
+import pymysql
+
+
 # 创建数据库连接(注意：密码参数passwd不要写成password)
 conn = pymysql.connect(
     host='127.0.0.1',
@@ -20,7 +23,10 @@ cursor.execute(query)
 for row in cursor:
     print(row)
 
+
 # 提交数据库连接，若不提交将无法保存新建或者修改的数据
+# 提交到数据库执行，不加commit，则无法提交到数据库
+# 只有对数据库进行了增删改时需要提交数据库，查询不需要
 conn.commit()
 
 # 关闭游标，释放资源

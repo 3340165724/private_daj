@@ -6,6 +6,7 @@ print("从头开始全部输出：", my_string[0:])    # 输出 'Hello, world!'
 print("从下标为7的字符开始输出：", my_string[7:])   # 输出 'world!'
 print("实现字符串切片:" + my_string[0:5])   # 输出 "Hello"
 print("输出最后一个字符:" + my_string[-1])
+print("#从下标0到倒数第2个：", my_string[0:-2])   # Hello, worl
 print()
 
 
