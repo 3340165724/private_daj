@@ -56,3 +56,15 @@ len(my_list)
 要判断的元素 in 列表对象
 3 in my_list
 ```
+
+### 求和
+```
+sum( 列表对象 )
+sum(my_list)
+```
+
+### 排序
+```
+my_list.sort(reverse=True)
+print(my_list)
+```
