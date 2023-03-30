@@ -1,3 +1,4 @@
+import json
 import re
 
 # 读取数据
@@ -33,37 +34,40 @@ for word in words:
         word_count[word] = 1
 print("word_count:", word_count)
 
-
-# 打印结果
-max_count = 0
-max_word = ""
-# 定义空列表
-my_list = []
-# word_count字典的items()方法来遍历所有的键值对
-for word, count in word_count.items():
-    # 频率出现最多1
-    if count > max_count:
-        max_count = count
-        max_word = word
-print("频率出现最多%s,出现了%d" % (max_word, max_count))
-
-print("--------------------------------------------------------------------------")
-# 频率出现最多2
-for item_json in word_count:
-    print("%s=>%s" % (item_json, word_count[item_json]), end="\n")
-    # 添加元素
-    my_list.append(word_count[item_json])
-    # 找出最大值
-    if max_count < word_count[item_json]:
-        max_count = word_count[item_json]
-        max_word = item_json
-# 降序排序
-my_list.sort(reverse=True)
-print("降序排序", my_list)
-print(my_list[:3])
-print("频率出现最多%s,出现了%d" % (max_word, max_count))
-print("输出列表", my_list)
+# # 找到最大值
+# # 打印结果
+# max_count = 0
+# max_word = ""
+# # 定义空列表
+# my_list = []
+# # word_count字典的items()方法来遍历所有的键值对
+# for word, count in word_count.items():
+#     # 频率出现最多1
+#     if count > max_count:
+#         max_count = count
+#         max_word = word
+# print("频率出现最多%s,出现了%d" % (max_word, max_count))
+#
+# # 频率出现最多2
+# for item_json in word_count:
+#     print("%s=>%s" % (item_json, word_count[item_json]), end="\n")
+#     # 添加元素
+#     my_list.append(word_count[item_json])
+#     # 找出最大值
+#     if max_count < word_count[item_json]:
+#         max_count = word_count[item_json]
+#         max_word = item_json
+# # 降序排序
+# my_list.sort(reverse=True)
+# print("降序排序", my_list)
+# print(my_list[:3])
+# print("频率出现最多%s,出现了%d" % (max_word, max_count))
+# print("输出列表", my_list)
 
 # json格式
-
-
+max_word = max(word_count.items(), key=lambda x: x[1])
+print(max_word)
+# 字典排序
+data = sorted(word_count.items(), key=lambda x: x[1], reverse=True)
+# 指定输出的行数
+print(data[:3])
