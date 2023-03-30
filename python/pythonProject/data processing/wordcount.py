@@ -44,7 +44,7 @@ for word, count in word_count.items():
     if count > max_count:
         max_count = count
         max_word = word
-print(max_word, max_count)
+print("频率出现最多%s,出现了%d" % (max_word, max_count))
 
 # 频率出现最多2
 for item_json in word_count:
@@ -52,7 +52,7 @@ for item_json in word_count:
     if max_count < word_count[item_json]:
         max_count = word_count[item_json]
         max_word = item_json
-print(max_word, max_count)
+print("频率出现最多%s,出现了%d" % (max_word, max_count))
     # print("item:", item_json)
     # print(word_count[item_json])
 
