@@ -2,11 +2,11 @@ import json
 import re
 
 # 读取数据
-file = open("../Resource/address.csv", encoding="UTF-8").read()
+file = open("../../Resource/address.csv", encoding="UTF-8").read()
 
-# 创建空列表，用于存储处理后的单个数据
+# 创建空字符串，用于存储处理后的单个数据
 datas = ""
-# 读取到单个数据
+# 读取到一行中的单个数据，并存到字符串中
 for line in file:
     # print(line)
     for item in line:
@@ -27,6 +27,7 @@ print("words", words)
 # 使用Python字典来存储每个单词的出现次数
 word_count = {}
 
+# 计数
 for word in words:
     if word in word_count:
         word_count[word] += 1
@@ -47,7 +48,7 @@ print("word_count:", word_count)
 #         max_count = count
 #         max_word = word
 # print("频率出现最多%s,出现了%d" % (max_word, max_count))
-#
+
 # # 频率出现最多2
 # for item_json in word_count:
 #     print("%s=>%s" % (item_json, word_count[item_json]), end="\n")
@@ -65,9 +66,10 @@ print("word_count:", word_count)
 # print("输出列表", my_list)
 
 # json格式
+# 更具json数据中的value值，找到出现频率最高的单词
 max_word = max(word_count.items(), key=lambda x: x[1])
 print(max_word)
-# 字典排序
+# 字典降序排序
 data = sorted(word_count.items(), key=lambda x: x[1], reverse=True)
 # 指定输出的行数
-print(data[:3])
+print("出现频率前三为：", data[:3])
