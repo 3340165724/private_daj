@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d62d5e21-05ba-439f-9acb-3a0f65d6b420" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_scala.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environment/environment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Image/Decrease.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Image/increase .png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SparkProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SparkProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment/environment.md" beforeDir="false" afterPath="$PROJECT_DIR$/environment/environment.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +45,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../liu-coding/dev/Liu Course Spark Architecture" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Scala/scala-2.12.17/lib/scala-2.12.17" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="map_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -91,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680330904576</updated>
-      <workItem from="1680330906028" duration="4044000" />
+      <workItem from="1680330906028" duration="10492000" />
     </task>
     <servers />
   </component>
