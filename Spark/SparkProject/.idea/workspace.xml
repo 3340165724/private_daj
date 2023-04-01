@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d62d5e21-05ba-439f-9acb-3a0f65d6b420" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationsIntroduce/TransformationsIntroduce.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationsIntroduce/Intr.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +105,7 @@
       <updated>1680330904576</updated>
       <workItem from="1680330906028" duration="10618000" />
       <workItem from="1680366201320" duration="1700000" />
-      <workItem from="1680367944481" duration="4760000" />
+      <workItem from="1680367944481" duration="5087000" />
     </task>
     <servers />
   </component>
