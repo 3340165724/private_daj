@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d62d5e21-05ba-439f-9acb-3a0f65d6b420" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationIntroduce/introduce.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_scala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment/environment.md" beforeDir="false" afterPath="$PROJECT_DIR$/environment/environment.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +43,6 @@
   <component name="ProjectId" id="2NoWQxbCasaeD8f7dmt2YhtpfW7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -110,7 +104,7 @@
       <updated>1680330904576</updated>
       <workItem from="1680330906028" duration="10618000" />
       <workItem from="1680366201320" duration="1700000" />
-      <workItem from="1680367944481" duration="4038000" />
+      <workItem from="1680367944481" duration="4760000" />
     </task>
     <servers />
   </component>
