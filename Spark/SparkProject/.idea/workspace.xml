@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64833f89-af0d-46d2-a607-5f6bc0afeee3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationsIntroduce/Intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationsIntroduce/Intro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_scala.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680423907205</updated>
       <workItem from="1680423911390" duration="480000" />
-      <workItem from="1680424413474" duration="4935000" />
+      <workItem from="1680424413474" duration="7913000" />
     </task>
     <task id="LOCAL-00001" summary="_">
       <created>1680427538077</created>
