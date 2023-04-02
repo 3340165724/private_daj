@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64833f89-af0d-46d2-a607-5f6bc0afeee3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationsIntroduce/Intr.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationsIntroduce/Intro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment/environment.md" beforeDir="false" afterPath="$PROJECT_DIR$/Environment/environment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationsIntroduce/Intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationsIntroduce/Intro.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +73,23 @@
       <option name="presentableId" value="Default" />
       <updated>1680423907205</updated>
       <workItem from="1680423911390" duration="480000" />
-      <workItem from="1680424413474" duration="2940000" />
+      <workItem from="1680424413474" duration="4935000" />
     </task>
+    <task id="LOCAL-00001" summary="_">
+      <created>1680427538077</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680427538078</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="_" />
+    <option name="LAST_COMMIT_MESSAGE" value="_" />
   </component>
 </project>
