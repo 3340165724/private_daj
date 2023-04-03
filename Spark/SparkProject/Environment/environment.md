@@ -14,7 +14,8 @@
 > 3、引入scala 框架
 >>![ImportFramework](../../../Image/ImportFramework.png "ImportFramework ")
 >
-> 4、就可创建Scala文件
+> 4、创建Scala源目录
+>> ![SourceDirectory](../../../Image/SourceDirectory.png "SourceDirectory ")
 > 
 
 

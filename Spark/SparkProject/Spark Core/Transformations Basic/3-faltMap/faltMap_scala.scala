@@ -1,0 +1,3 @@
+object faltMap_scala {
+
+}

@@ -6,3 +6,7 @@
 > 
 > > 此时就要重新配置环境
 ![PCImport](../../../Image/PCImport.png "PCImport")
+> 
+
+### 安装第三方库
+![LibraryInstall](../../../Image/LibraryInstall.png "LibraryInstall")

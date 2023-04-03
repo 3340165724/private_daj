@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64833f89-af0d-46d2-a607-5f6bc0afeee3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/2-map/map_scala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/3-faltMap/faltMap.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/3-faltMap/faltMap_python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/3-faltMap/faltMap_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationsIntroduce/Intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationsIntroduce/Intro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Environment/environment.md" beforeDir="false" afterPath="$PROJECT_DIR$/Environment/environment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/TransformationsIntroduce/Intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/1-TransformationsIntroduce/Intro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/2-map/map.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/Transformations Basic/2-map/map_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/Transformations Basic/map/map_scala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pythonProject/environment/environment.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pythonProject/environment/environment.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package" />
         <option value="Python Script" />
       </list>
     </option>
@@ -30,6 +40,14 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../apache/maven/apache-maven-3.8.6" />
+        <option name="userSettingsFile" value="D:\apache\maven\apache-maven-3.8.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -45,14 +63,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../liu-coding/dev/Liu Course Spark Architecture" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.map_python">
     <configuration name="map_scala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="map_scala" />
       <module name="SparkProject" />
@@ -60,8 +79,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="map_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SparkProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/Transformations Basic/2-map" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/Transformations Basic/2-map/map_python.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.map_python" />
         <item itemvalue="Application.map_scala" />
       </list>
     </recent_temporary>
@@ -75,7 +117,9 @@
       <option name="presentableId" value="Default" />
       <updated>1680423907205</updated>
       <workItem from="1680423911390" duration="480000" />
-      <workItem from="1680424413474" duration="7913000" />
+      <workItem from="1680424413474" duration="13887000" />
+      <workItem from="1680450687992" duration="18000" />
+      <workItem from="1680490828949" duration="5416000" />
     </task>
     <task id="LOCAL-00001" summary="_">
       <created>1680427538077</created>
@@ -93,5 +137,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="_" />
     <option name="LAST_COMMIT_MESSAGE" value="_" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SparkProject$map_python.coverage" NAME="map_python Coverage Results" MODIFIED="1680502710116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/Transformations Basic/2-map" />
   </component>
 </project>
