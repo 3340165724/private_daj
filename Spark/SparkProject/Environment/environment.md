@@ -30,6 +30,9 @@
 > 4、创建Scala源目录
 >> ![SourceDirectory](../../../Image/SourceDirectory.png "SourceDirectory ")
 > 
+> ---
+>
+> 5、创建Scala文件
 > 
 
 
