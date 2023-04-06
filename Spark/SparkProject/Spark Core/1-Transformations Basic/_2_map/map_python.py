@@ -8,11 +8,12 @@ spark = SparkSession \
 
 sc = spark.sparkContext
 
-rdd = sc.parallelize([1, 2, 3, 4, 5])
-#  使用map将每个元素乘以2
-new_rdd = rdd.map(lambda x: x * 2)
-#  输出新的RDD
-print(new_rdd.collect())
+numbers = [1, 2, 3, 4, 5]
+doubled_numbers = map(lambda x: x * 2, numbers)
+print(list(doubled_numbers))
+
+
+
 
 sc.stop
 spark.stop

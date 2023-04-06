@@ -7,15 +7,22 @@ object map_scala {
   def main(args: Array[String]): Unit = {
     val spark: SparkSession = SparkSession
       .builder()
-      .master("local[1]")
-      .appName("main-spark-job")
+      .master("local[*]")
+      .appName("spark-map_scala")
       .getOrCreate()
     val sc: SparkContext = spark.sparkContext
 
     val sample_1 = 1 to 10
-
     sc.parallelize(sample_1)
       .map(_ * -1)
+      .foreach(println)
+
+    val sample_2 = Seq(1, 3, 5, 8)
+    sc.parallelize(sample_2)
+      .map(_ * 3)
+      .foreach(println)
+
+    sample_2.map(_ * 2)
       .foreach(println)
 
     sc.stop
