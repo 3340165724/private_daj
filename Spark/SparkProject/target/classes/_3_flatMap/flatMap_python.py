@@ -1,16 +1,24 @@
-from pyspark.sql import SparkSession
+# from pyspark.sql import SparkSession
+#
+# spark = SparkSession \
+#     .builder \
+#     .master("local[1]") \
+#     .appName("spark-map_scala") \
+#     .getOrCreate()
+# sc = spark.sparkContext
+import findspark
+findspark.init()
 
-spark = SparkSession \
-    .builder \
-    .master("local[1]") \
-    .appName("spark-map_scala") \
-    .getOrCreate()
-sc = spark.sparkContext
+from pyspark import SparkConf, SparkContext
 
-rdd = sc.parallelize([2, 3, 4, 5])
+conf = SparkConf().setAppName("spark").setMaster("local[1]")
+sc = SparkContext(conf=conf)
 
-sorted(rdd.flatMap(lambda x: range(1, x)).collect())
+data = [1, 2, 3, 4, 5]
+distData = sc.parallelize(data).map(lambda x: (x, "a" * x)).foreach(print)
+
+# sorted(rdd.flatMap(lambda x: range(1, x)).collect())
 print("dczxc")
-
+print("s" * 2)
 
 sc.stop()

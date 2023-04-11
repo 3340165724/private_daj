@@ -5,61 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7174a525-9fc8-4ad2-b149-dd25f828a876" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Resource/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/static/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject/web/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/SparkProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/SparkProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_2_map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_2_map/map.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_3_flatMap/flatMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_3_flatMap/flatMap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_3_flatMap/flatMap_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_3_flatMap/flatMap_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_3_flatMap/flatMap_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_3_flatMap/flatMap_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_2_map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_2_map/map.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_2_map/map_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_2_map/map_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_2_map/map_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_2_map/map_scala$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_3_flatMap/flatMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_3_flatMap/flatMap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_3_flatMap/flatMap_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_3_flatMap/flatMap_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_3_flatMap/flatMap_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_3_flatMap/flatMap_scala$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/flaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flaskProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pythonProject" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -171,6 +117,7 @@
       <workItem from="1681139332663" duration="900000" />
       <workItem from="1681172540384" duration="488000" />
       <workItem from="1681173042834" duration="169000" />
+      <workItem from="1681173604063" duration="713000" />
     </task>
     <servers />
   </component>
