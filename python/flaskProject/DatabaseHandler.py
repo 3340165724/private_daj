@@ -11,10 +11,10 @@ def getConnection():
     )
     # 创建游标
     cursor = conn.cursor()
-    return (conn, cursor)
+    return conn, cursor
 
 # 增、删、改
-def modify(sql, params):
+def modify(sql, params=None):
     dbConn = getConnection()
     conn = dbConn[0]
     cursor = dbConn[1]
@@ -43,10 +43,16 @@ def query(sql, params=None):
         cursor.execute(sql, params)
         # 获取查询结果
         result = cursor.fetchall()
-        for row in result:
-            print(row)
+        return result
     except Exception as e:
         print(e)
     finally:
         cursor.close()
         conn.close()
+
+
+print(getConnection())
+
+print(modify('''
+insert into user values(null,'dsfvddff','dgvdf',0)
+'''))

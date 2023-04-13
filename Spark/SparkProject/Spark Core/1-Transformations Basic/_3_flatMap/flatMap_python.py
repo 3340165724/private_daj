@@ -1,12 +1,10 @@
 import os
 import findspark
-from pyspark.sql import SparkSession
-from pyspark import SparkConf, SparkContext
 
-# 解决Python worker failed to connect back问题的两种方式
+# 解决Python worker failed to connect back或者培py4j问题
 findspark.init()
-# os.environ['PYSPARK_PYTHON'] = "D:\Python\Python37\python.exe"
 
+from pyspark.sql import SparkSession
 
 # 创建一个SparkContext对象,它告诉Spark如何访问集群 的两种方式
 spark = SparkSession \
@@ -21,8 +19,12 @@ sc = spark.sparkContext
 
 
 # 处理数据
-rdd = sc.parallelize([2, 3, 4])
-rdd.flatMap(lambda x: range(1, x)).foreach(print)
+rdd1 = sc.parallelize([2, 3, 4])
+rdd1.flatMap(lambda x: range(1, x)).foreach(print)
+
+# 创建rdd
+rdd = sc.textFile("../../../Resource/data.txt")
+rdd.flatMap(lambda x: x.split(' ')).foreach(print)
 
 # sorted(rdd.flatMap(lambda x: range(1, x)).collect())
 print("dczxc")
