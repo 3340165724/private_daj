@@ -53,6 +53,7 @@ def query(sql, params=None):
 
 print(getConnection())
 
-print(modify('''
-insert into user values(null,'dsfvddff','dgvdf',0)
-'''))
+# print(modify('''
+# insert into user values(null,'dsfvddff','dgvdf',0)
+# '''))
+

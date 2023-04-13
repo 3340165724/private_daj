@@ -5,22 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_scala.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_scala.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_1_action/action.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Image/SparkDownload.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../Image/SparkDownload.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap/flatMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap/flatMap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap/flatMap_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap/flatMap_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_scala.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_2_map/map.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_map/map_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_2_map/map_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_map/map_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_2_map/map_scala$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_3_flatMap/flatMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_3_flatMap/flatMap.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/_3_flatMap/flatMap_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_3_flatMap/flatMap_python.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/flaskProject/DatabaseHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/DatabaseHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/flaskProject/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/flaskProject/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,10 +91,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -105,7 +102,7 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.map_python (1)">
+  <component name="RunManager" selected="Application.map_vs_flatMap_scala">
     <configuration name="flatMap_scala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_3_flatMap.flatMap_scala" />
       <module name="SparkProject" />
@@ -125,6 +122,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="_2_map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="map_vs_flatMap_scala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_4_map_vs_flatMap.map_vs_flatMap_scala" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_4_map_vs_flatMap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,42 +186,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="subprocess" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SparkProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../Python/Python36/Lib" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../Python/Python36/Lib/subprocess.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.flatMap_scala" />
       <item itemvalue="Application.map_scala" />
       <item itemvalue="Python.flatMap_python" />
       <item itemvalue="Python.map_python (1)" />
-      <item itemvalue="Python.subprocess" />
+      <item itemvalue="Application.map_vs_flatMap_scala" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.map_vs_flatMap_scala" />
         <item itemvalue="Python.map_python (1)" />
         <item itemvalue="Python.flatMap_python" />
         <item itemvalue="Application.flatMap_scala" />
         <item itemvalue="Application.map_scala" />
-        <item itemvalue="Python.subprocess" />
       </list>
     </recent_temporary>
   </component>
@@ -274,6 +262,8 @@
       <workItem from="1681263652792" duration="5798000" />
       <workItem from="1681282812658" duration="8294000" />
       <workItem from="1681345071473" duration="1795000" />
+      <workItem from="1681346899921" duration="2190000" />
+      <workItem from="1681366433113" duration="19246000" />
     </task>
     <servers />
   </component>
