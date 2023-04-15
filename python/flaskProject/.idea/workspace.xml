@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7174a525-9fc8-4ad2-b149-dd25f828a876" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_python.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +109,7 @@
       <workItem from="1681356838914" duration="404000" />
       <workItem from="1681364161202" duration="2093000" />
       <workItem from="1681383839219" duration="672000" />
+      <workItem from="1681479716224" duration="2000" />
     </task>
     <servers />
   </component>
