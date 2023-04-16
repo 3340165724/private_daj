@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Image/reduceByKey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct_python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct_scala.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_5_filter/filter.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_filter/filter.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_5_filter/filter_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_filter/filter_scala$.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +266,7 @@
       <workItem from="1681346899921" duration="2190000" />
       <workItem from="1681366433113" duration="19509000" />
       <workItem from="1681447712276" duration="19915000" />
-      <workItem from="1681523473879" duration="12625000" />
+      <workItem from="1681523473879" duration="14795000" />
     </task>
     <servers />
   </component>

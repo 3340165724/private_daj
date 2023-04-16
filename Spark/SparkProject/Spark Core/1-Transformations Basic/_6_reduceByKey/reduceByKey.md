@@ -1,4 +1,4 @@
-# reduceByKey  按相同的key分组，value相加
+# reduceByKey  分组做运算
 
 ##官网
 | Scala | 翻译  | python | 翻译  |
@@ -14,5 +14,31 @@
 
 ## 聚合逻辑
 ![reduceByKey](../../../../../Image/reduceByKey.png "reduceByKey")
+
+<br/>
+
+---
+
+<br>
+
+# func的等价写法
+- Scala
+   -  一般写法：reduceByKey((o, o_) => o + o_)
+   -  占位符写法：reduceByKey(_ + _)
+
+- python 
+   - reduceByKey(lambda x,y: x+y)
+
+<br>
+
+---
+
+<br>
+
+## 总结
+- 自动按照key分组，完成组内数据的聚合
+- reduceByKey中接收的函数只负责聚合，不会分组，分组是自动按照key来分
+- 传入2个参数（类型要一致），返回一个返回值，类型和传入要求一致
+
 
 
