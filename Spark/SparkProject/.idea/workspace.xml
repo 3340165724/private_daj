@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_5_filter/filter.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_5_filter/filter_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_5_filter/filter_scala.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey_scala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Image/reduceByKey.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_map_vs_flatMap/map_vs_flatMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_4_map_vs_flatMap/map_vs_flatMap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_map_vs_flatMap/map_vs_flatMap_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_4_map_vs_flatMap/map_vs_flatMap_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_map_vs_flatMap/map_vs_flatMap_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_4_map_vs_flatMap/map_vs_flatMap_scala$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_5_filter/filter.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_filter/filter.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_5_filter/filter_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_filter/filter_scala$.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +96,7 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.filter_scala">
+  <component name="RunManager" selected="Python.reduceByKey_python">
     <configuration name="filter_scala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_5_filter.filter_scala" />
       <module name="SparkProject" />
@@ -116,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="map_vs_flatMap_scala" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_4_map_vs_flatMap.map_vs_flatMap_scala" />
+    <configuration name="reduceByKey_scala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_6_reduceByKey.reduceByKey_scala" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_4_map_vs_flatMap.*" />
+          <option name="PATTERN" value="_6_reduceByKey.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,28 +137,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_5_filter/filter_python.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="map_python (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SparkProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map_python.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,20 +167,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="reduceByKey_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SparkProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey_python.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.map_vs_flatMap_scala" />
       <item itemvalue="Application.filter_scala" />
-      <item itemvalue="Python.map_python (1)" />
       <item itemvalue="Python.map_vs_flatMap_python" />
       <item itemvalue="Python.filter_python" />
+      <item itemvalue="Application.reduceByKey_scala" />
+      <item itemvalue="Python.reduceByKey_python" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.reduceByKey_python" />
+        <item itemvalue="Application.reduceByKey_scala" />
         <item itemvalue="Application.filter_scala" />
         <item itemvalue="Python.filter_python" />
         <item itemvalue="Python.map_vs_flatMap_python" />
-        <item itemvalue="Application.map_vs_flatMap_scala" />
-        <item itemvalue="Python.map_python (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +268,7 @@
       <workItem from="1681346899921" duration="2190000" />
       <workItem from="1681366433113" duration="19509000" />
       <workItem from="1681447712276" duration="19915000" />
-      <workItem from="1681523473879" duration="3037000" />
+      <workItem from="1681523473879" duration="12625000" />
     </task>
     <servers />
   </component>
@@ -307,6 +301,7 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SparkProject$reduceByKey_python.coverage" NAME="reduceByKey_python Coverage Results" MODIFIED="1681565678287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey" />
     <SUITE FILE_PATH="coverage/SparkProject$map_python.coverage" NAME="map_python Coverage Results" MODIFIED="1680519440379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/Transformations Basic/_2_map" />
     <SUITE FILE_PATH="coverage/SparkProject$subprocess.coverage" NAME="subprocess Coverage Results" MODIFIED="1681130892907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../../Python/Python36/Lib" />
     <SUITE FILE_PATH="coverage/SparkProject$flatMap_python.coverage" NAME="flatMap_python Coverage Results" MODIFIED="1681264662555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap" />
