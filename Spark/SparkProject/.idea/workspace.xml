@@ -5,11 +5,285 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/java/com/dsj/application/CommunityProjectSpringbootApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/java/com/dsj/application/controller/CommunityController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/java/com/dsj/application/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/java/com/dsj/application/mapper/CommunityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/java/com/dsj/application/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/java/com/dsj/application/model/Community.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/java/com/dsj/application/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/java/com/dsj/application/model/UserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/css/publication.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/Flink.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/Flume.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/Hadoop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/LINUX.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/Python.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/SQL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/Search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/SparkCore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/SparkStreaming.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/hive.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/spark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/img/tb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/doListIndex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/doLogin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/dsjList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/flinkList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/flumeList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/hadoopList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/hiveList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/kafkaList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/linuxList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/mysqlList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/pythonList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/static/js/sparkList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/templates/enroll.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/main/resources/templates/publication.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot/src/test/java/com/dsj/application/CommunityProjectSpringbootApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/src/main/java/com/dsj/application/CommunityProjectSpringbootApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/src/main/java/com/dsj/application/config/MpConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/src/main/java/com/dsj/application/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/src/main/java/com/dsj/application/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/src/main/java/com/dsj/application/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/src/main/resources/templates/enroll.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot01/src/test/java/com/dsj/application/CommunityProjectSpringbootApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/src/main/java/com/dsj/application/CommunityProjectSpringboot02Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/src/main/java/com/dsj/application/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/src/main/java/com/dsj/application/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/src/main/java/com/dsj/application/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot02/src/test/java/com/dsj/application/CommunityProjectSpringboot02ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/java/com/dsj/application/CommunityProjectSpringboot110Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/java/com/dsj/application/controller/ListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/java/com/dsj/application/controller/ListController_axios.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/java/com/dsj/application/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/java/com/dsj/application/controller/UserController_axios.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/java/com/dsj/application/mapper/UserInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/java/com/dsj/application/mapper/UserInfoMapper_axios.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/java/com/dsj/application/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/java/com/dsj/application/mapper/UserMapper_axios.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/java/com/dsj/application/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/java/com/dsj/application/model/UserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/resources/templates/enroll.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/resources/templates/enroll_axios.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/resources/templates/index_axios.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/main/resources/templates/login_axios.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/CommunityProject_springboot110/src/test/java/com/dsj/application/CommunityProjectSpringboot110ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test01/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test01/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test01/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test01/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test01/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test01/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test01/src/main/java/com/ynnz/controller/MyApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test01/target/classes/com/ynnz/controller/HelloApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test01/target/classes/com/ynnz/controller/HelloControll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test01/target/classes/com/ynnz/controller/MyApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test02/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test02/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test02/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test02/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test02/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test02/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test02/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test02/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test02/src/main/java/com/ynnz/application/SpringBootTest02Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test02/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/SpringBoot_test02/src/test/java/com/example/springboot_test02/SpringBootTest02ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/src/main/java/com/ynnz/spring/HelloWord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/src/test/java/com/ynnz/test/SpringTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/target/classes/com/ynnz/spring/HelloWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test01/target/test-classes/com/ynnz/test/SpringTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/src/main/java/com/ynnz/dao/StudentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/src/main/java/com/ynnz/pojo/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/src/test/java/com/ynnz/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/target/classes/com/ynnz/dao/StudentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/target/classes/com/ynnz/pojo/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test02/target/test-classes/com/ynnz/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test03/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test03/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test03/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test03/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test03/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test03/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/Spring_test03/src/main/java/bn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/java/com/ynnz/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/java/com/ynnz/mapper/EmployeeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/java/com/ynnz/pojo/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/java/com/ynnz/servlet/EmployeeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/java/com/ynnz/servlet/EmployeeServletImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/resources/com/ynnz/mapper/EmployeeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/resources/spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/resources/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/WEB-INF/templates/employee_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/WEB-INF/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/css/img/a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/css/img/body.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/css/img/body1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/css/img/sea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/css/img/zebratable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/css/img/表.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/css/index_like.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/css/index_work.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/js/axios.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/js/jquery-1.8.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/src/main/webapp/static/js/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/classes/com/ynnz/controller/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/classes/com/ynnz/mapper/EmployeeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/classes/com/ynnz/mapper/EmployeeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/classes/com/ynnz/pojo/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/classes/com/ynnz/servlet/EmployeeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/classes/com/ynnz/servlet/EmployeeServletImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/classes/spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/classes/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/classes/com/ynnz/controller/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/classes/com/ynnz/mapper/EmployeeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/classes/com/ynnz/mapper/EmployeeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/classes/com/ynnz/pojo/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/classes/com/ynnz/servlet/EmployeeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/classes/com/ynnz/servlet/EmployeeServletImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/classes/spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/classes/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/druid-1.0.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.5.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-5.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-aspects-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-test-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-3.0.12.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-spring5-3.0.12.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/templates/employee_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/css/img/a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/css/img/body.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/css/img/body1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/css/img/sea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/css/img/zebratable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/css/img/表.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/css/index_like.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/css/index_work.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/js/axios.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/js/jquery-1.8.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SSM/ssm_test01/target/ssm_test01-1.0-SNAPSHOT/static/js/vue.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey/reduceByKey.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resource/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resource/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_6_reduceByKey/reduceByKey.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_6_reduceByKey/reduceByKey.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_6_reduceByKey/reduceByKey_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_6_reduceByKey/reduceByKey_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_6_reduceByKey/reduceByKey_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_6_reduceByKey/reduceByKey_scala$.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +292,9 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,7 +354,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../liu-coding/dev/Liu Course Spark Architecture" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../bigdata-competition/PROJECT/liu-web-project-archetype-framework" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -86,7 +363,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="cn.yiiguxing.plugin.translate" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -94,7 +371,20 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.reduceByKey_python">
+  <component name="RunManager" selected="Python.distinct_python">
+    <configuration name="distinct_scala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_7_distinct.distinct_scala" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_7_distinct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="filter_scala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_5_filter.filter_scala" />
       <module name="SparkProject" />
@@ -121,7 +411,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="filter_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="distinct_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SparkProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,34 +419,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_5_filter" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_5_filter/filter_python.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="map_vs_flatMap_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SparkProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_python.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct_python.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,18 +457,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.filter_scala" />
-      <item itemvalue="Python.map_vs_flatMap_python" />
-      <item itemvalue="Python.filter_python" />
       <item itemvalue="Application.reduceByKey_scala" />
+      <item itemvalue="Application.distinct_scala" />
       <item itemvalue="Python.reduceByKey_python" />
+      <item itemvalue="Python.distinct_python" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.distinct_python" />
+        <item itemvalue="Application.distinct_scala" />
         <item itemvalue="Python.reduceByKey_python" />
         <item itemvalue="Application.reduceByKey_scala" />
         <item itemvalue="Application.filter_scala" />
-        <item itemvalue="Python.filter_python" />
-        <item itemvalue="Python.map_vs_flatMap_python" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +534,8 @@
       <workItem from="1681346899921" duration="2190000" />
       <workItem from="1681366433113" duration="19509000" />
       <workItem from="1681447712276" duration="19915000" />
-      <workItem from="1681523473879" duration="14795000" />
+      <workItem from="1681523473879" duration="22324000" />
+      <workItem from="1681629129704" duration="5340000" />
     </task>
     <servers />
   </component>
@@ -305,6 +574,7 @@
     <SUITE FILE_PATH="coverage/SparkProject$flatMap_python.coverage" NAME="flatMap_python Coverage Results" MODIFIED="1681264662555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap" />
     <SUITE FILE_PATH="coverage/SparkProject$map_vs_flatMap_python.coverage" NAME="map_vs_flatMap_python Coverage Results" MODIFIED="1681479918626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap" />
     <SUITE FILE_PATH="coverage/SparkProject$map_python__1_.coverage" NAME="map_python (1) Coverage Results" MODIFIED="1681287043799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map" />
+    <SUITE FILE_PATH="coverage/SparkProject$distinct_python.coverage" NAME="distinct_python Coverage Results" MODIFIED="1681615808762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct" />
     <SUITE FILE_PATH="coverage/SparkProject$filter_python.coverage" NAME="filter_python Coverage Results" MODIFIED="1681483206751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_5_filter" />
   </component>
 </project>
