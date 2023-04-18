@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7d77c20-d186-4e11-adaa-4bd53ba730a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_3_reduce/reduce.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_3_reduce/reduce_python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_3_reduce/reduce_scala.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_2_foreach/foreach.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_2_foreach/foreach.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_2_foreach/foreach.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_2_foreach/foreach.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flaskProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flaskProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flaskProject/DatabaseHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/../flaskProject/DatabaseHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flaskProject/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../flaskProject/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flaskProject/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../flaskProject/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flaskProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -152,6 +153,7 @@
       <workItem from="1681363332418" duration="687000" />
       <workItem from="1681365414417" duration="610000" />
       <workItem from="1681383820827" duration="37000" />
+      <workItem from="1681817805805" duration="180000" />
     </task>
     <servers />
   </component>

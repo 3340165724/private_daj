@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/controller/InfoStudentStateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/dao/IGeneralDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/dao/IInfoStudentStateDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/dao/impl/InfoStudentStateDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/pojo/Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/pojo/InfoStudentState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach/foreach.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach/foreach_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach/foreach_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/ServletInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/SpringBootJdbcTemplateApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/SpringBootJdbcTemplateApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/test/java/com/example/SpringBootJdbcTemplateApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/test/java/com/example/SpringBootJdbcTemplateApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce/reduce.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce/reduce_python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce/reduce_scala.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_1_action/action.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_1_action/action.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_1_action/action.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_1_action/action.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach/foreach.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach/foreach.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_foreach/foreach.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_2_foreach/foreach.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,20 +99,7 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.foreach_python">
-    <configuration name="flatMap_scala" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_3_flatMap.flatMap_scala" />
-      <module name="SparkProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_3_flatMap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Python.reduce_python">
     <configuration name="foreach_scala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_2_foreach.foreach_scala" />
       <module name="SparkProject" />
@@ -151,27 +126,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="distinct_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="reduce_scala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_3_reduce.reduce_scala" />
       <module name="SparkProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct/distinct_python.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_3_reduce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="foreach_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SparkProject" />
@@ -195,20 +161,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="reduce_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SparkProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce/reduce_python.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.flatMap_scala" />
       <item itemvalue="Application.foreach_scala" />
       <item itemvalue="Application.map_scala" />
-      <item itemvalue="Python.distinct_python" />
       <item itemvalue="Python.foreach_python" />
+      <item itemvalue="Application.reduce_scala" />
+      <item itemvalue="Python.reduce_python" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.reduce_python" />
+        <item itemvalue="Application.reduce_scala" />
         <item itemvalue="Python.foreach_python" />
         <item itemvalue="Application.foreach_scala" />
         <item itemvalue="Application.map_scala" />
-        <item itemvalue="Application.flatMap_scala" />
-        <item itemvalue="Python.distinct_python" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +271,7 @@
       <workItem from="1681736637606" duration="33000" />
       <workItem from="1681736681582" duration="559000" />
       <workItem from="1681737974247" duration="4569000" />
-      <workItem from="1681783612977" duration="1599000" />
+      <workItem from="1681783612977" duration="9887000" />
     </task>
     <servers />
   </component>
@@ -330,6 +318,8 @@
     <SUITE FILE_PATH="coverage/SparkProject$map_python.coverage" NAME="map_python Coverage Results" MODIFIED="1680519440379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/Transformations Basic/_2_map" />
     <SUITE FILE_PATH="coverage/SparkProject$subprocess.coverage" NAME="subprocess Coverage Results" MODIFIED="1681130892907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../../Python/Python36/Lib" />
     <SUITE FILE_PATH="coverage/SparkProject$flatMap_python.coverage" NAME="flatMap_python Coverage Results" MODIFIED="1681264662555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap" />
+    <SUITE FILE_PATH="coverage/SparkProject$reduce_python.coverage" NAME="reduce_python Coverage Results" MODIFIED="1681818104031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce" />
+    <SUITE FILE_PATH="coverage/SparkProject$foreach_python.coverage" NAME="foreach_python Coverage Results" MODIFIED="1681800899223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach" />
     <SUITE FILE_PATH="coverage/SparkProject$map_vs_flatMap_python.coverage" NAME="map_vs_flatMap_python Coverage Results" MODIFIED="1681479918626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap" />
     <SUITE FILE_PATH="coverage/SparkProject$map_python__1_.coverage" NAME="map_python (1) Coverage Results" MODIFIED="1681287043799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map" />
     <SUITE FILE_PATH="coverage/SparkProject$distinct_python.coverage" NAME="distinct_python Coverage Results" MODIFIED="1681615808762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct" />
