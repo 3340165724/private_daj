@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7174a525-9fc8-4ad2-b149-dd25f828a876" name="Changes" comment="">
+    <list default="true" id="bd2f8b1e-1c8f-44af-bdd9-b130b8150d52" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/java/com/dsj/dao/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/java/com/dsj/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/java/com/dsj/util/MybatisFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/test/java/StudentTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/com/dsj/dao/StudentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/com/dsj/pojo/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/com/dsj/util/MybatisFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/test-classes/StudentTest01.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/flaskProject1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DabataseHandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../student_project/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../student_project/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../student_project/.idea/misc.xml" afterDir="false" />
@@ -20,7 +43,7 @@
       <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_scala.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_4_map_vs_flatMap/map_vs_flatMap_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_4_map_vs_flatMap/map_vs_flatMap_scala$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flaskProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flaskProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,24 +60,13 @@
       </list>
     </option>
   </component>
-  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
-    <envs>
-      <env key="FLASK_APP" value="app" />
-    </envs>
-    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
-    <option name="myEnvs">
-      <map>
-        <entry key="FLASK_APP" value="app" />
-      </map>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2ODyiaEFfpC5UBy6qdxmPWbUkzs" />
+  <component name="ProjectId" id="2OfRfvACpgJExF23cFrKJkGerD2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -65,68 +77,33 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\pro_redskirt\private_daj\python\flaskProject" />
-    </key>
   </component>
   <component name="RunManager">
-    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
-      <option name="flaskDebug" value="true" />
-      <module name="flaskProject" />
+    <configuration name="flaskProject1" type="Python.FlaskServer">
+      <module name="flaskProject1" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Flask server.Flask (app.py)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7174a525-9fc8-4ad2-b149-dd25f828a876" name="Changes" comment="" />
-      <created>1681109574742</created>
+      <changelist id="bd2f8b1e-1c8f-44af-bdd9-b130b8150d52" name="Changes" comment="" />
+      <created>1681949757225</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1681109574742</updated>
-      <workItem from="1681109576037" duration="119000" />
-      <workItem from="1681110789321" duration="6476000" />
-      <workItem from="1681129748129" duration="1619000" />
-      <workItem from="1681135283528" duration="914000" />
-      <workItem from="1681139332663" duration="900000" />
-      <workItem from="1681172540384" duration="488000" />
-      <workItem from="1681173042834" duration="169000" />
-      <workItem from="1681173604063" duration="713000" />
-      <workItem from="1681232141085" duration="600000" />
-      <workItem from="1681259324658" duration="6660000" />
-      <workItem from="1681300078150" duration="1796000" />
-      <workItem from="1681345101078" duration="6965000" />
-      <workItem from="1681356838914" duration="404000" />
-      <workItem from="1681364161202" duration="2093000" />
-      <workItem from="1681383839219" duration="672000" />
-      <workItem from="1681479716224" duration="2000" />
-      <workItem from="1681732944969" duration="10000" />
-      <workItem from="1681817697273" duration="107000" />
-      <workItem from="1681864772948" duration="1694000" />
+      <updated>1681949757225</updated>
+      <workItem from="1681949765966" duration="231000" />
     </task>
     <servers />
   </component>
@@ -143,11 +120,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/flaskProject$DatabaseHandler.coverage" NAME="DatabaseHandler Coverage Results" MODIFIED="1681356066558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flaskProject$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1681364778398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/flaskProject$Flask__app_py___1_.coverage" NAME="Flask (app.py) (1) Coverage Results" MODIFIED="1681364437813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/flaskProject$auth.coverage" NAME="auth Coverage Results" MODIFIED="1681355926857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

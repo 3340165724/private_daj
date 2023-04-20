@@ -1,0 +1,3 @@
+DatabaseHandler 共45分
+
+DatabaseHandler 中一个方法15分

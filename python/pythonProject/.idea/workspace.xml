@@ -5,13 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7d77c20-d186-4e11-adaa-4bd53ba730a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_3_reduce/reduce.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_3_reduce/reduce_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_3_reduce/reduce_scala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/java/com/dsj/dao/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/java/com/dsj/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/java/com/dsj/util/MybatisFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/test/java/StudentTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/com/dsj/dao/StudentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/com/dsj/pojo/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/com/dsj/util/MybatisFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/test-classes/StudentTest01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskProject1/.idea/flaskProject1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskProject1/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskProject1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskProject1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskProject1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskProject1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskProject1/DabataseHandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskProject1/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskProject1/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../student_project/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../student_project/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../student_project/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../student_project/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../student_project/.idea/student_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../student_project/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../student_project/DatabaseHandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../student_project/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../student_project/file.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../student_project/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../student_project/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_2_foreach/foreach.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/2-Actions Basic/_2_foreach/foreach.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_2_foreach/foreach.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_2_foreach/foreach.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_4_map_vs_flatMap/map_vs_flatMap_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/target/classes/_4_map_vs_flatMap/map_vs_flatMap_scala$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flaskProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flaskProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +70,37 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../student_project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.String_knowledge">
+    <configuration name="String_knowledge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/string" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/string/String_knowledge.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,6 +191,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.String_knowledge" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.list_knowledge" />
         <item itemvalue="Python.auth" />
@@ -154,6 +215,10 @@
       <workItem from="1681365414417" duration="610000" />
       <workItem from="1681383820827" duration="37000" />
       <workItem from="1681817805805" duration="180000" />
+      <workItem from="1681863822098" duration="2306000" />
+      <workItem from="1681874027270" duration="1841000" />
+      <workItem from="1681901799825" duration="2000" />
+      <workItem from="1681949706952" duration="296000" />
     </task>
     <servers />
   </component>
@@ -185,6 +250,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$app.coverage" NAME="app Coverage Results" MODIFIED="1681363339476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
     <SUITE FILE_PATH="coverage/pythonProject$list_knowledge.coverage" NAME="list_knowledge Coverage Results" MODIFIED="1681126205528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/list" />
+    <SUITE FILE_PATH="coverage/pythonProject$String_knowledge.coverage" NAME="String_knowledge Coverage Results" MODIFIED="1681875272983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string" />
     <SUITE FILE_PATH="coverage/pythonProject$auth.coverage" NAME="auth Coverage Results" MODIFIED="1681126195912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
   </component>
 </project>

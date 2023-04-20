@@ -17,6 +17,7 @@ object map_vs_flatMap_scala {
     val line3 = "so func should return a Seq rather than a single item"
 
     val rdd = sc.parallelize(Seq(line1, line2, line3))
+    println(Seq(line1, line2, line3))
     println("-------------------1---------------")
     // 输出，摊平后的结果，内部元素
     rdd.flatMap(_.split(" ")).foreach(println)

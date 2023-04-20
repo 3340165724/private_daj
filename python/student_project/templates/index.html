@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>欢迎<a style="color:red">{{ username }}</a>登录</h1>
+<h2>
+    <table>
+        <tr>
+            <th>学生id</th>
+            <th>学号</th>
+            <th>学生姓名</th>
+            <th>班级</th>
+            <th>性别</th>
+        </tr>
+        {% for o in list %}
+        <tr>
+            <td>{{ o[0] }}</td>
+            <td>{{ o[1] }}</td>
+            <td>{{ o[2] }}</td>
+            <td>{{ o[3] }}</td>
+            <td>{{ o[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</h2>
+
+</body>
+</html>
