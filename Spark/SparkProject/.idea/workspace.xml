@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/Quiz.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce/Quiz.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/test/java/StudentTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/test/java/StudentTest01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_2_map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_2_map/map.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_sum/sum_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_4_sum/sum_scala$.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +249,7 @@
       <workItem from="1681737974247" duration="4569000" />
       <workItem from="1681783612977" duration="19285000" />
       <workItem from="1681867115475" duration="956000" />
-      <workItem from="1681952834063" duration="13429000" />
+      <workItem from="1681952834063" duration="13508000" />
     </task>
     <servers />
   </component>
