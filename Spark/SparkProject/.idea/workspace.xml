@@ -5,41 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/java/com/dsj/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/java/com/dsj/pojo/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/java/com/dsj/util/MybatisFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/test/java/StudentTest01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/com/dsj/dao/StudentDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/com/dsj/pojo/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/com/dsj/util/MybatisFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/target/test-classes/StudentTest01.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/student_project/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/student_project/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/student_project/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/student_project/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/student_project/.idea/student_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/student_project/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/student_project/DatabaseHandler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/student_project/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/student_project/file.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/student_project/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/student_project/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/Quiz.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce/Quiz.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/test/java/StudentTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/src/test/java/StudentTest01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap/map_vs_flatMap_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_map_vs_flatMap/map_vs_flatMap_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_4_map_vs_flatMap/map_vs_flatMap_scala$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_2_map/map.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_sum/sum_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_4_sum/sum_scala$.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +86,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java/SpringBoot/CommunityProject_springboot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../bigdata-competition/PROJECT/web-archetype-framework" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -128,6 +104,32 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.sum_scala">
+    <configuration name="Quiz (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_3_reduce.Quiz" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_3_reduce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Quiz" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_2_map.Quiz" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_2_map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="map_vs_flatMap_scala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_4_map_vs_flatMap.map_vs_flatMap_scala" />
       <module name="SparkProject" />
@@ -167,64 +169,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="foreach_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SparkProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach/foreach_python.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="reduce_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SparkProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce/reduce_python.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.reduce_scala" />
       <item itemvalue="Application.sum_scala" />
       <item itemvalue="Application.map_vs_flatMap_scala" />
-      <item itemvalue="Python.foreach_python" />
-      <item itemvalue="Python.reduce_python" />
+      <item itemvalue="Application.Quiz" />
+      <item itemvalue="Application.Quiz (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.sum_scala" />
+        <item itemvalue="Application.Quiz (1)" />
+        <item itemvalue="Application.Quiz" />
         <item itemvalue="Application.map_vs_flatMap_scala" />
         <item itemvalue="Application.reduce_scala" />
-        <item itemvalue="Python.reduce_python" />
-        <item itemvalue="Python.foreach_python" />
       </list>
     </recent_temporary>
   </component>
@@ -301,6 +259,7 @@
       <workItem from="1681737974247" duration="4569000" />
       <workItem from="1681783612977" duration="19285000" />
       <workItem from="1681867115475" duration="956000" />
+      <workItem from="1681952834063" duration="13429000" />
     </task>
     <servers />
   </component>

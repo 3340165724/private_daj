@@ -33,3 +33,6 @@
 | sc.parallelize(List(1,2,3,5,6,8))<br>.map(_ * -1)<br> .foreach(println) | rdd1 = sc.parallelize([1, 2, 5, 8, 9])<br>.map(lambda x: x * 10)<br>.foreach(print) |
 
 
+### 数据类型转换
+- 将字符串集合转化为整形集合
+- data.map(_.toInt)
