@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_sum/sum_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_4_sum/sum_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_sum/sum_scala$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_sum/sum_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject1/.idea/flaskProject1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject1/DabataseHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject1/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject1/templates/login.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -283,7 +267,7 @@
       <workItem from="1682215711398" duration="1210000" />
       <workItem from="1682413557191" duration="8525000" />
       <workItem from="1682556966490" duration="74000" />
-      <workItem from="1682557144788" duration="369000" />
+      <workItem from="1682557144788" duration="837000" />
     </task>
     <servers />
   </component>

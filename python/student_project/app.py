@@ -20,15 +20,14 @@ def index():
     #
     username = request.form.get('username')
     password = request.form.get('password')
-    list = query("select * from tb_student")
-    print(list)
+
 
     user_list = query("select * from tb_student")
     print("bdfbsndxjcvn", user_list)
 
     for i in user_list:
         if username.__eq__(i[1]) and password.__eq__("123456"):
-            return render_template("index.html", username=i[2], list=list)
+            return render_template("index.html", username=i[2], list=user_list)
         else:
             return render_template("login.html")
         # print("i==",i[1])
