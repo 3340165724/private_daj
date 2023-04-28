@@ -5,9 +5,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis_archetype/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis_archetype/.idea/mybatis_archetype.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis_archetype/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect_python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/.jsdtscope" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/dao/DbConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/dao/Tools.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/AddFond.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/SC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/servlet/AddFondServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/servlet/DeleteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/servlet/ListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/servlet/MainServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/test/test01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/test/test02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/dao/DbConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/dao/Tools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/AddFond.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/SC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/servlet/AddFondServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/servlet/DeleteServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/servlet/ListServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/servlet/MainServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/test/test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/test/test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/NewFile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/NewFile.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/WEB-INF/lib/javax.servlet-api-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/WEB-INF/lib/jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/WEB-INF/lib/standard.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/addFood.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/firstPage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/img/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/listFond.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/secondPage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/thirdPage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/MyBatis/mybatis_archetype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis_archetype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Markdown/2023阶段一遇到的问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Markdown/2023阶段一遇到的问题.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_5_count/count.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_count/count.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_5_count/count_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_count/count_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_5_count/count_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_count/count_scala$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_5_count/count_scala.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_count/count_scala.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pythonProject/string/String_knowledge.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pythonProject/string/String_knowledge.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +147,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../liu-coding/dev/Liu Course Spark Architecture" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -87,7 +156,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -95,26 +164,13 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sum_python">
-    <configuration name="Quiz (1)" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_3_reduce.Quiz" />
+  <component name="RunManager" selected="Python.count_python">
+    <configuration name="count_scala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_5_count.count_scala" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_3_reduce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Quiz" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_2_map.Quiz" />
-      <module name="SparkProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_2_map.*" />
+          <option name="PATTERN" value="_5_count.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,6 +204,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="count_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SparkProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_python.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="sum_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SparkProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,18 +249,18 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.sum_scala" />
       <item itemvalue="Application.map_vs_flatMap_scala" />
-      <item itemvalue="Application.Quiz" />
-      <item itemvalue="Application.Quiz (1)" />
+      <item itemvalue="Application.sum_scala" />
       <item itemvalue="Python.sum_python" />
+      <item itemvalue="Application.count_scala" />
+      <item itemvalue="Python.count_python" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sum_python" />
+        <item itemvalue="Python.count_python" />
+        <item itemvalue="Application.count_scala" />
         <item itemvalue="Application.sum_scala" />
-        <item itemvalue="Application.Quiz (1)" />
-        <item itemvalue="Application.Quiz" />
+        <item itemvalue="Python.sum_python" />
         <item itemvalue="Application.map_vs_flatMap_scala" />
       </list>
     </recent_temporary>
@@ -268,6 +346,7 @@
       <workItem from="1682413557191" duration="8525000" />
       <workItem from="1682556966490" duration="74000" />
       <workItem from="1682557144788" duration="837000" />
+      <workItem from="1682598222138" duration="15220000" />
     </task>
     <servers />
   </component>
@@ -317,6 +396,7 @@
     <SUITE FILE_PATH="coverage/SparkProject$reduce_python.coverage" NAME="reduce_python Coverage Results" MODIFIED="1681825596250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce" />
     <SUITE FILE_PATH="coverage/SparkProject$sum_python.coverage" NAME="sum_python Coverage Results" MODIFIED="1682468348604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum" />
     <SUITE FILE_PATH="coverage/SparkProject$foreach_python.coverage" NAME="foreach_python Coverage Results" MODIFIED="1681800899223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach" />
+    <SUITE FILE_PATH="coverage/SparkProject$count_python.coverage" NAME="count_python Coverage Results" MODIFIED="1682694176039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count" />
     <SUITE FILE_PATH="coverage/SparkProject$map_vs_flatMap_python.coverage" NAME="map_vs_flatMap_python Coverage Results" MODIFIED="1681479918626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_4_map_vs_flatMap" />
     <SUITE FILE_PATH="coverage/SparkProject$map_python__1_.coverage" NAME="map_python (1) Coverage Results" MODIFIED="1681287043799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map" />
     <SUITE FILE_PATH="coverage/SparkProject$distinct_python.coverage" NAME="distinct_python Coverage Results" MODIFIED="1681615808762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_7_distinct" />

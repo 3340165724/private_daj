@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7d77c20-d186-4e11-adaa-4bd53ba730a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatisProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spark/SparkProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flaskProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flaskProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../student_project/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../student_project/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string/String_knowledge.py" beforeDir="false" afterPath="$PROJECT_DIR$/string/String_knowledge.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flaskProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../student_project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -182,7 +180,8 @@
       <workItem from="1681949706952" duration="296000" />
       <workItem from="1682425647624" duration="1230000" />
       <workItem from="1682555149078" duration="947000" />
-      <workItem from="1682561889961" duration="381000" />
+      <workItem from="1682561889961" duration="1603000" />
+      <workItem from="1682564144358" duration="1184000" />
     </task>
     <servers />
   </component>

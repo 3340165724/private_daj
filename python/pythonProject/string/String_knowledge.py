@@ -9,7 +9,6 @@ print("输出最后一个字符:" + my_string[-1])
 print("#从下标0到倒数第2个：", my_string[0:-2])   # Hello, worl
 print()
 
-
 print("----------------------------转换-----------------------------------")
 # 转换
 '''
@@ -22,7 +21,7 @@ Python中常见的字符串方法包括
     string.replace(old, new)：将字符串中的所有 old 替换为 new。
     string.count(substring)：返回子字符串在字符串中出现的次数。
     string.find(substring)：返回子字符串在字符串中第一次出现的位置，如果没有找到则返回 -1。
-    string.startswith(prefix)：检查字符串是否以指定的前缀开头。
+    string.startswith(prefix)：检查字符串35835835835835835835835835835835是否以指定的前缀开头。
     string.endswith(suffix)：检查字符串是否以指定的后缀结尾。
     string.join(iterable)：将可迭代对象中的元素连接成一个字符串，每个元素之间用字符串分隔符连接。
 '''
