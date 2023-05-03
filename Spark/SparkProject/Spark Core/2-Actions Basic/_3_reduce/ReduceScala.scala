@@ -4,7 +4,7 @@ import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
 
-object reduce_scala {
+object ReduceScala {
   def main(args: Array[String]): Unit = {
     val spark: SparkSession = SparkSession
       .builder()

@@ -3,7 +3,7 @@ package _6_collect
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.SparkSession
 
-object collect_scala {
+object CollectScala {
   def main(args: Array[String]): Unit = {
     val spark: SparkSession = SparkSession
       .builder()

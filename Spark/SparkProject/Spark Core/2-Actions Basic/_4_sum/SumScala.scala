@@ -3,7 +3,7 @@ package _4_sum
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.SparkSession
 
-object sum_scala {
+object SumScala {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession
       .builder()

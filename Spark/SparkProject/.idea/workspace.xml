@@ -5,15 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_10_isEmpty/isEmpty_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_10_isEmpty/isEmpty_scala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first/FirstScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_9_max_min/MaxMinScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_9_max_min/max_min.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/3-Exercise/Student_Case/Student.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_10_isEmpty/isEmpty.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_10_isEmpty/isEmpty.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_7_take/take.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_7_take/take.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_7_take/take_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_7_take/take_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_10_isEmpty/isEmpty.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_10_isEmpty/isEmpty.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_7_take/take.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_7_take/take.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_7_take/take_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_7_take/take_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap/flatMap_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap/flatMap_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_10_isEmpty/isEmpty_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_10_isEmpty/isEmptyScala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach/foreach_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach/ForeachScala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce/reduce_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_3_reduce/ReduceScala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/SumScala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/CountScala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/CollectScala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_7_take/take_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_7_take/TakeScala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first/first.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first/first.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first/first_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first/first_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first/first_scala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_10_isEmpty/isEmpty_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_10_isEmpty/isEmpty_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_foreach/foreach_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_foreach/foreach_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_3_flatMap/flatMap_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_3_flatMap/flatMap_scala$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_3_reduce/reduce_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_3_reduce/reduce_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_sum/sum_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_sum/sum_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_5_count/count_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_5_count/count_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_6_collect/collect_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_6_collect/collect_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_7_take/take_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_7_take/take_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_8_first/first.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_8_first/first.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_8_first/first_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_8_first/first_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_8_first/first_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_8_first/first_scala.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,20 +127,7 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.take_python">
-    <configuration name="count_scala" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_5_count.count_scala" />
-      <module name="SparkProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_5_count.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Python.max_min">
     <configuration name="isEmpty_scala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_10_isEmpty.isEmpty_scala" />
       <module name="SparkProject" />
@@ -128,7 +141,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="count_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="first_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SparkProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -136,12 +149,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_python.py" />
+      <option name="SCRIPT_NAME" value="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\2-Actions Basic\_10_isEmpty\_8_first\first_python.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,6 +185,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="max_min" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SparkProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_9_max_min" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_9_max_min/max_min.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="take_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SparkProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -185,7 +220,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/2-Actions Basic/_7_take/take_python.py" />
+      <option name="SCRIPT_NAME" value="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\2-Actions Basic\_7_take\take_python.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,19 +230,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.count_scala" />
-      <item itemvalue="Python.count_python" />
       <item itemvalue="Application.isEmpty_scala" />
       <item itemvalue="Python.isEmpty_python" />
+      <item itemvalue="Python.first_python" />
+      <item itemvalue="Python.max_min" />
       <item itemvalue="Python.take_python" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.max_min" />
+        <item itemvalue="Python.first_python" />
         <item itemvalue="Python.take_python" />
         <item itemvalue="Python.isEmpty_python" />
         <item itemvalue="Application.isEmpty_scala" />
-        <item itemvalue="Python.count_python" />
-        <item itemvalue="Application.count_scala" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +328,7 @@
       <workItem from="1682556966490" duration="74000" />
       <workItem from="1682557144788" duration="837000" />
       <workItem from="1682598222138" duration="15995000" />
-      <workItem from="1682863410119" duration="19229000" />
+      <workItem from="1682863410119" duration="23189000" />
     </task>
     <servers />
   </component>
@@ -340,8 +375,10 @@
     <SUITE FILE_PATH="coverage/SparkProject$subprocess.coverage" NAME="subprocess Coverage Results" MODIFIED="1681130892907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../../Python/Python36/Lib" />
     <SUITE FILE_PATH="coverage/SparkProject$sum_python.coverage" NAME="sum_python Coverage Results" MODIFIED="1682468348604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum" />
     <SUITE FILE_PATH="coverage/SparkProject$isEmpty_python.coverage" NAME="isEmpty_python Coverage Results" MODIFIED="1683119838517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_10_isEmpty" />
+    <SUITE FILE_PATH="coverage/SparkProject$first_python.coverage" NAME="first_python Coverage Results" MODIFIED="1683125164270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first" />
     <SUITE FILE_PATH="coverage/SparkProject$foreach_python.coverage" NAME="foreach_python Coverage Results" MODIFIED="1681800899223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach" />
     <SUITE FILE_PATH="coverage/SparkProject$map_python__1_.coverage" NAME="map_python (1) Coverage Results" MODIFIED="1681287043799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map" />
+    <SUITE FILE_PATH="coverage/SparkProject$max_min.coverage" NAME="max_min Coverage Results" MODIFIED="1683125545681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_9_max_min" />
     <SUITE FILE_PATH="coverage/SparkProject$filter_python.coverage" NAME="filter_python Coverage Results" MODIFIED="1681483206751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_5_filter" />
     <SUITE FILE_PATH="coverage/SparkProject$reduceByKey_python.coverage" NAME="reduceByKey_python Coverage Results" MODIFIED="1681565678287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_6_reduceByKey" />
     <SUITE FILE_PATH="coverage/SparkProject$flatMap_python.coverage" NAME="flatMap_python Coverage Results" MODIFIED="1681264662555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap" />

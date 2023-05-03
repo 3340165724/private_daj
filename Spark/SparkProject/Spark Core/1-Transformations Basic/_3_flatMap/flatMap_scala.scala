@@ -10,7 +10,7 @@ object flatMap_scala {
     val spark: SparkSession = SparkSession
       .builder()
       .master("local[1]")
-      .appName("main-spark-job")
+      .appName("spark-flatMap_scala")
       .getOrCreate()
     val sc: SparkContext = spark.sparkContext
 

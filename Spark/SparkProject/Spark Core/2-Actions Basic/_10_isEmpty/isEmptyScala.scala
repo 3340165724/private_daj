@@ -3,7 +3,7 @@ package _10_isEmpty
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.SparkSession
 
-object isEmpty_scala {
+object isEmptyScala {
   def main(args: Array[String]): Unit = {
     val spark: SparkSession = SparkSession
       .builder()

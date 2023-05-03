@@ -3,7 +3,7 @@ package _5_count
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.SparkSession
 
-object count_scala {
+object CountScala {
   def main(args: Array[String]): Unit = {
     val spark: SparkSession = SparkSession
       .builder()

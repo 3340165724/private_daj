@@ -3,7 +3,7 @@ package _2_foreach
 import org.apache.spark.sql.SparkSession
 
 
-object foreach_scala {
+object ForeachScala {
   def main(args: Array[String]): Unit = {
     val spark: SparkSession = SparkSession
       .builder().master("local[1]")
