@@ -1,4 +1,4 @@
-isEmpty 判断是不是空的
+# isEmpty 判断是不是空的
 
 
 ---
@@ -6,7 +6,6 @@ isEmpty 判断是不是空的
 <br>
 
 ### 官网
-
 <table>
     <tr>
         <th>Scala</th>
@@ -55,4 +54,9 @@ isEmpty 判断是不是空的
         </td>
     </tr>
 </table>
+
+### 总结
+- 只要集合中有元素，值为null也会返回false
+- 不能对null值进行序列化
+
 
