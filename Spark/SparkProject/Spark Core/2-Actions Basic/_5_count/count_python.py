@@ -3,8 +3,6 @@ import findspark
 findspark.init()
 
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import count
-from pyspark.sql.types import IntegerType, StructType, StructField
 
 spark = SparkSession \
     .builder \
@@ -13,16 +11,13 @@ spark = SparkSession \
     .getOrCreate()
 sc = spark.sparkContext
 
-# 创建一个包含整数值的RDD
-rdd = sc.parallelize([1, 2, 3, 4, 5])
+# 创建 RDD
+data = [1, 2, 3, 4, 5]
+rdd = sc.parallelize(data)
 
-# 将RDD转换为DataFrame
-schema = StructType([StructField("value", IntegerType(), True)])
-df = spark.createDataFrame(rdd.map(lambda x: (x, )), schema)
-
-# 使用count函数聚合并返回结果
-count_result = df.agg(count("*")).collect()[0][0]
-print("RDD中元素数量:", count_result)
+# 使用 count() 方法计算 RDD 中元素的数量
+count = rdd.count()
+print("RDD中元素的数量为:", count)
 
 sc.stop()
 spark.stop()

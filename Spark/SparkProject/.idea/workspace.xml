@@ -5,78 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis_archetype/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis_archetype/.idea/mybatis_archetype.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis_archetype/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/.jsdtscope" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.wst.common.component" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/dao/DbConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/dao/Tools.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/AddFond.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/SC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/servlet/AddFondServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/servlet/DeleteServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/servlet/ListServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/servlet/MainServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/test/test01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/build/classes/test/test02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/dao/DbConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/dao/Tools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/AddFond.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/Course.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/SC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/Teacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/servlet/AddFondServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/servlet/DeleteServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/servlet/ListServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/servlet/MainServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/test/test01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/java/test/test02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/NewFile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/NewFile.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/WEB-INF/lib/javax.servlet-api-3.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/WEB-INF/lib/jstl.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.28.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/WEB-INF/lib/standard.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/addFood.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/firstPage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/img/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/listFond.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/secondPage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JavaWeb/JavaWeb_test01/src/main/webapp/thirdPage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/MyBatis/mybatis_archetype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis_archetype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Markdown/2023阶段一遇到的问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Markdown/2023阶段一遇到的问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_10_isEmpty/isEmpty.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_7_take/take.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_7_take/take_python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_7_take/take_scala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first/first.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first/first_python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first/first_scala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_9_max_min/max_min.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum/sum_scala.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_5_count/count_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/2-Actions Basic/_6_collect/collect_scala.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/_5_count/count.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_count/count.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/_5_count/count_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_count/count_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_5_count/count_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_count/count_scala$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_5_count/count_scala.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_count/count_scala.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/flaskProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pythonProject/string/String_knowledge.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pythonProject/string/String_knowledge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_6_collect/collect.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_6_collect/collect.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_6_collect/collect_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_6_collect/collect_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_6_collect/collect_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_6_collect/collect_scala$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_6_collect/collect_scala.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_6_collect/collect_scala.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +95,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../liu-coding/dev/Liu Course Spark Architecture" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -251,8 +199,8 @@
     <list>
       <item itemvalue="Application.map_vs_flatMap_scala" />
       <item itemvalue="Application.sum_scala" />
-      <item itemvalue="Python.sum_python" />
       <item itemvalue="Application.count_scala" />
+      <item itemvalue="Python.sum_python" />
       <item itemvalue="Python.count_python" />
     </list>
     <recent_temporary>
@@ -346,7 +294,8 @@
       <workItem from="1682413557191" duration="8525000" />
       <workItem from="1682556966490" duration="74000" />
       <workItem from="1682557144788" duration="837000" />
-      <workItem from="1682598222138" duration="15220000" />
+      <workItem from="1682598222138" duration="15995000" />
+      <workItem from="1682863410119" duration="10615000" />
     </task>
     <servers />
   </component>
