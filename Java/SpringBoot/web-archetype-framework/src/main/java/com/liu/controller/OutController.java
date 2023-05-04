@@ -1,9 +1,7 @@
 package com.liu.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.liu.pojo.AcademyRelease;
-import com.liu.pojo.Distribute;
 import com.liu.pojo.InfoStudentState;
 import com.liu.pojo.LateReturn;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,9 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
 @RequestMapping("/out")
@@ -41,27 +38,14 @@ public class OutController extends GeneralController {
     String left_top(@PathVariable String date) throws JsonProcessingException {
         List<InfoStudentState> list = infoStudentStateDao.queryList(date);
         Object[] objects = list.stream().map(o -> {
-            Object[] object = new Object[6];
-            object[0] = o.getId();
-            object[1] = o.getClassName();
-            object[2] = o.getClassTeacher();
-            object[3] = o.getCount();
-            object[4] = o.getCountQj();
-            object[5] = o.getCountXj();
+            Object[] object = new Object[4];
+            object[0] = o.getClassName();
+            object[1] = o.getCount();
+            object[2] = o.getCountQj();
+            object[3] = o.getCountXj();
             return object;
         }).toArray();
-//        Object[] objects = new Object[list.size()];
-//        for (int i = 0; i < list.size(); i++) {
-//            Object[] o_AcademyRelease = new Object[7];
-//            o_AcademyRelease[0] = i + 1;
-//            o_AcademyRelease[1] = list.get(i).getClassName();
-//            o_AcademyRelease[2] = list.get(i).getClassTeacher();
-//            o_AcademyRelease[3] = list.get(i).getCount();
-//            o_AcademyRelease[4] = list.get(i).getCountQj();
-//            o_AcademyRelease[5] = list.get(i).getCountXj();
-//            o_AcademyRelease[6] = list.get(i).getDate();
-//            objects[i] = o_AcademyRelease;
-//        }
+
         return jsonMapper.writeValueAsString(objects);
     }
 
@@ -91,11 +75,10 @@ public class OutController extends GeneralController {
 
         Object[] objects = new Object[list.size()];
         for (int i = 0; i < list.size(); i++) {
-            Object[] o_AcademyRelease = new Object[4];
-            o_AcademyRelease[0] = i + 1;
-            o_AcademyRelease[1] = list.get(i).getDate();
-            o_AcademyRelease[2] = list.get(i).getStudent_name();
-            o_AcademyRelease[3] = list.get(i).getClass_name();
+            Object[] o_AcademyRelease = new Object[3];
+            o_AcademyRelease[0] = list.get(i).getDate();
+            o_AcademyRelease[1] = list.get(i).getStudent_name();
+            o_AcademyRelease[2] = list.get(i).getClass_name();
             objects[i] = o_AcademyRelease;
         }
         return jsonMapper.writeValueAsString(objects);
@@ -125,26 +108,17 @@ public class OutController extends GeneralController {
     String right_top() throws JsonProcessingException {
         List<AcademyRelease> list = academyReleaseDao.queryAcademyRelease();
 
-//        AtomicInteger i = new AtomicInteger(1);
-//        Object[] objects = list.stream().map(o -> {
-//            Object[] object = new Object[4];
-//            object[0] = i;
-//            i.getAndIncrement();
-//            object[1] = o.getDate();
-//            object[2] = o.getTopic();
-//            object[3] = o.getUnit();
-//            return object;
-//        }).toArray();
+        AtomicInteger i = new AtomicInteger(1);
+        Object[] objects = list.stream().map(o -> {
+            Object[] object = new Object[4];
+            object[0] = i;
+            i.getAndIncrement();
+            object[1] = o.getDate();
+            object[2] = o.getTopic();
+            object[3] = o.getUnit();
+            return object;
+        }).toArray();
 
-        Object[] objects = new Object[list.size()];
-        for (int i = 0; i < list.size(); i++ /* AcademyRelease o: list */) {
-            Object[] o_AcademyRelease = new Object[4];
-            o_AcademyRelease[0] = i + 1;
-            o_AcademyRelease[1] = list.get(i).getDate();
-            o_AcademyRelease[2] = list.get(i).getTopic();
-            o_AcademyRelease[3] = list.get(i).getUnit();
-            objects[i] = o_AcademyRelease;
-        }
         return jsonMapper.writeValueAsString(objects);
     }
 
@@ -240,7 +214,9 @@ public class OutController extends GeneralController {
         return "[" + infoStudentStateDao.countXJStudent() + "]";
     }
 
-    // 当日请假
+    /**
+     * 当日请假
+     */
     @RequestMapping("/4-center-4/{date}")
     public @ResponseBody
     String center_4(@PathVariable String date) {
@@ -248,7 +224,9 @@ public class OutController extends GeneralController {
         return "[" + infoStudentStateDao.countQJDay(date) + "]";
     }
 
-    // 当日销假
+    /**
+     * 当日销假
+     */
     @RequestMapping("/4-center-5/{date}")
     public @ResponseBody
     String center_5(@PathVariable String date) {
@@ -292,6 +270,25 @@ public class OutController extends GeneralController {
     String bottom_left_chart_returndate_1(@PathVariable String date) {
 
         return "[" + outschoolDao.queryReturnDate(date) + "]";
+    }
+
+    /**
+     * 一周离校
+     */
+    @RequestMapping("/5-bottom-left-chart-7/{date}")
+    public @ResponseBody
+    List<Integer> bottom_left_chart_1_7(@PathVariable String date) {
+        return outschoolDao.queryOutDate7(date);
+    }
+
+    /**
+     * 一周返校
+     */
+    @RequestMapping("/5-bottom-left-chart-returndate-7/{date}")
+    public @ResponseBody
+    List<Integer> bottom_left_chart_returndate_1_7(@PathVariable String date) {
+
+        return outschoolDao.queryReturnDate7(date);
     }
 
     /**

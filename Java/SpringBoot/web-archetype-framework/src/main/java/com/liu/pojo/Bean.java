@@ -1,14 +1,9 @@
 package com.liu.pojo;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import java.sql.Timestamp;
 
 public abstract class Bean {
 
-    //	@Id
-    //	@GeneratedValue(strategy = GenerationType.AUTO)
-    @JsonIgnore
     protected Integer id;
     protected String status;
     protected Timestamp timestamp;
@@ -19,5 +14,21 @@ public abstract class Bean {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Timestamp getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Timestamp timestamp) {
+        this.timestamp = timestamp;
     }
 }

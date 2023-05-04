@@ -32,7 +32,7 @@ public class InfoStudentStateDaoImpl implements IInfoStudentStateDao {
                         " from " + INFO_STUDENT_STATE +
                         " where date(date)='" + date + "'";
 
-        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<InfoStudentState>(InfoStudentState.class));
+        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(InfoStudentState.class));
     }
 
 

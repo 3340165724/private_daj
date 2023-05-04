@@ -25,8 +25,7 @@ public class LateReturnDaoImpl implements ILateReturnDao {
                 " from  \n" + LATE_RETURN +
                 " order by date desc \n" +
                 " limit 7;\n";
-        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<LateReturn>(LateReturn.class));
-
+        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(LateReturn.class));
     }
 
     @Override

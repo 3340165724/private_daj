@@ -34,4 +34,7 @@ public class GeneralController {
     @Autowired
     protected INewsDao newsDao;
 
+    @Autowired
+    protected IMapDao mapDao;
+
 }

@@ -7,7 +7,6 @@ import com.liu.dao.IOutschoolDao;
 import com.liu.pojo.AcademyRelease;
 import com.liu.pojo.InfoStudentState;
 import com.liu.pojo.LateReturn;
-import com.liu.pojo.Outschool;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,6 +54,12 @@ class WebArchetypeFrameworkApplicationTests {
 
             System.out.println(o.getCountQj() + o.getId() + " " + o.getDate());
         });
+    }
+
+    @Test
+    void test_2() {
+
+        outschoolDao.queryOutDate7("2022-06-06").forEach(System.out::println);
     }
 
     @Test

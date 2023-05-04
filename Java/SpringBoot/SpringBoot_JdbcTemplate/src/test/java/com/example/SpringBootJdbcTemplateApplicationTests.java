@@ -1,8 +1,6 @@
 package com.example;
 
 
-import com.example.dao.IInfoStudentStateDao;
-import com.example.pojo.InfoStudentState;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,16 +25,16 @@ import java.util.List;
 @SpringBootTest(classes = { SpringBootJdbcTemplateApplicationTests.class })
 class SpringBootJdbcTemplateApplicationTests {
 
-    @Autowired
-    private IInfoStudentStateDao infoStudentStateDao;
+//    @Autowired
+//    private IInfoStudentStateDao infoStudentStateDao;
 
 //    @Test
 //    void contextLoads() {
 //    }
 
-    @Test
-    void queryList(){
-        List<InfoStudentState> list = infoStudentStateDao.queryList("2023-04-14");
-        list.forEach(System.out::println);
-    }
+//    @Test
+//    void queryList(){
+//        List<InfoStudentState> list = infoStudentStateDao.queryList("2023-04-14");
+//        list.forEach(System.out::println);
+//    }
 }

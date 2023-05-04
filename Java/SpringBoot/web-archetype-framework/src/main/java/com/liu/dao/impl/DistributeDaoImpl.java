@@ -18,8 +18,10 @@ public class DistributeDaoImpl implements IDistributeDao {
 
     @Override
     public List<Distribute> queryDistribute() {
-        String sql = "select city, students from distribute";
-        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<Distribute>(Distribute.class));
+
+        return jdbcTemplate.query(
+                "select city, students from distribute",
+                new BeanPropertyRowMapper<Distribute>(Distribute.class));
     }
 
     @Override

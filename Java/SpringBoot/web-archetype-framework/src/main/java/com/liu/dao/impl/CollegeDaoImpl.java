@@ -2,7 +2,6 @@ package com.liu.dao.impl;
 
 import com.liu.dao.ICollegeDao;
 import com.liu.pojo.College;
-import com.liu.pojo.Distribute;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -19,18 +18,22 @@ public class CollegeDaoImpl implements ICollegeDao {
     private JdbcTemplate jdbcTemplate;
 
 
-    //学院信息
+    /**
+     * 学院信息查询
+     */
     @Override
     public List<College> queryCollege() {
         String sql = "select college, students from college";
-        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<College>(College.class));
+        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(College.class));
     }
 
-    // 返校信息
+    /**
+     * 返校信息查询
+     */
     @Override
     public List<College> queryReturnCollege() {
         String sql = "select college, returnschool from college";
-        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<College>(College.class));
+        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(College.class));
     }
 
     // 学生总数
