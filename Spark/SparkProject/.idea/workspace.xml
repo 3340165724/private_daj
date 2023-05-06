@@ -5,7 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/mybatis-case1-employee.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/dao/EmployeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/mapper/EmployeeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/pojo/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/print/EmployeePrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/utils/DBUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/src/test/java/com/ynnz/jdbc/test/EmployeeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/dao/EmployeeDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/mapper/EmployeeMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/pojo/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/print/EmployeePrint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/utils/DBUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/utils/SqlSessionUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/target/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/MyBatis/mybatis-case1-employee/target/test-classes/com/ynnz/jdbc/test/EmployeeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/controller/EntranceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/controller/GeneralController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/dao/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/3-Exercise/Student_Case/student.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/SpringBootJdbcTemplateApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/SpringBootJdbcTemplateApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/dao/IGeneralDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/dao/IGeneralDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/pojo/Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/pojo/Bean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/index_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/index_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/login_axios.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/login_axios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/login_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/test/java/com/example/SpringBootJdbcTemplateApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/test/java/com/example/SpringBootJdbcTemplateApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Markdown/hive.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Markdown/hive.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/3-Exercise/Student_Case/Student.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/3-Exercise/Student_Case/Student.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Student_Case/Student$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Student_Case/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pythonProject/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +124,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../liu-coding/dev/Liu Course Spark Architecture" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -93,13 +141,13 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.max_min">
-    <configuration name="isEmpty_scala" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_10_isEmpty.isEmpty_scala" />
+  <component name="RunManager" selected="Application.Student">
+    <configuration name="Student" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Student_Case.Student" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_10_isEmpty.*" />
+          <option name="PATTERN" value="Student_Case.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,7 +244,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.isEmpty_scala" />
+      <item itemvalue="Application.Student" />
       <item itemvalue="Python.isEmpty_python" />
       <item itemvalue="Python.first_python" />
       <item itemvalue="Python.max_min" />
@@ -204,11 +252,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Student" />
         <item itemvalue="Python.max_min" />
         <item itemvalue="Python.first_python" />
         <item itemvalue="Python.take_python" />
         <item itemvalue="Python.isEmpty_python" />
-        <item itemvalue="Application.isEmpty_scala" />
       </list>
     </recent_temporary>
   </component>
@@ -296,6 +344,10 @@
       <workItem from="1682598222138" duration="15995000" />
       <workItem from="1682863410119" duration="23189000" />
       <workItem from="1683159346731" duration="629000" />
+      <workItem from="1683173230439" duration="2238000" />
+      <workItem from="1683193639959" duration="755000" />
+      <workItem from="1683342467387" duration="1093000" />
+      <workItem from="1683350703239" duration="17446000" />
     </task>
     <servers />
   </component>

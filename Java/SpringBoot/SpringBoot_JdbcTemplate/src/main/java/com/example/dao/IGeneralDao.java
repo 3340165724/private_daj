@@ -3,10 +3,16 @@ package com.example.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * 通用 Dao 封装公共属性常量
+ */
+
 public interface IGeneralDao<T> {
-    // 常量
+
     public static final String PRIMARY_KEY = "id";
-    public static final String INFO_STUDENT_STATE = "info_student_state";
+    public static final String USER = "user";
+    public static final String STUDENT = "student";
 
     public T mapResult(final ResultSet rs) throws SQLException;
+
 }

@@ -1,40 +1,46 @@
 package com.example;
 
-
+import com.example.dao.IUserDao;
+import com.example.pojo.User;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
-
-// 使用注解方式注册配置文件
-@Configuration
-// 开启组件扫描，注意包路径
-@ComponentScan(basePackages = "com.example")
-// 指定基础资源配置文件
-@PropertySource(value = { "classpath:application.properties" })
-// 指定本类为 JUnit 单元测试类
-@RunWith(SpringRunner.class)
-// 指定本类为 Spring 单元测试类，集合 Spring 测试组件
-@SpringBootTest(classes = { SpringBootJdbcTemplateApplicationTests.class })
+@SpringBootTest
 class SpringBootJdbcTemplateApplicationTests {
+	@Autowired
+	protected IUserDao userDao;
 
-//    @Autowired
-//    private IInfoStudentStateDao infoStudentStateDao;
+	@Test
+	void queryUser() {
+		List<User> list =  userDao.queryUser();
+		System.out.println(list);
+		System.out.println(list.stream().map(o -> o.getUsername().toString()).toString());
 
-//    @Test
-//    void contextLoads() {
-//    }
+		for(int i = 0 ; i < list.size(); i++){
+			if("root".equals(list.get(i).getUsername())){
+				System.out.println(list.get(i).getUsername());
+			}
+		}
+	}
 
-//    @Test
-//    void queryList(){
-//        List<InfoStudentState> list = infoStudentStateDao.queryList("2023-04-14");
-//        list.forEach(System.out::println);
-//    }
+
+	@Test
+	void queryByUsername() {
+		User user_ = userDao.queryByUsername("root");
+		System.out.println(user_);
+		if( "root".equals(user_.getUsername())){
+			if( "123456".equals(user_.getPassword())){
+//				session.setAttribute("username",username);
+				System.out.println("55555555555555555");
+
+			}
+		}else {
+			System.out.println("7777777777777777");
+		}
+	}
+
 }
