@@ -63,14 +63,14 @@ object Student {
 
 
     /*
-    // TODO case1
+    // TODO case2_1
     val rdd_name_age_ = rdd_student.map(x =>
       (x._2, ((time - sdf.parse(x._3).getTime) / 1000 / 60 / 60 / 24 / 365))
     ).foreach(println)
     */
 
 
-    // TODO case2
+    // TODO case2_2
     val rdd_student_ = rdd_student.map {
       x =>
         // String对象转化为ate格式,并将日期以毫秒为单位显示
@@ -82,7 +82,7 @@ object Student {
     val rdd_name_age = rdd_student_.map(o => (o._2, o._5)).foreach(println)
 
 
-    // TODO case2
+    // TODO case2_3
     /*
         val rdd_student_ = rdd_student
           .map { o =>
@@ -106,7 +106,48 @@ object Student {
     *  CASE3 : 找出男、女生年龄最大和最小的的人，按"(Tom, $age)"格式输出。
     *
     * */
+
+    // 过滤出需要的数据，并按指定格式显示
     val rdd_name_age_F = rdd_student_.filter(_._4.equals("F")).map(o => (o._2, o._5))
+    // 从map中得到value值，再从值中找出最大最小值
+    val age_max_F = rdd_name_age_F.values.max()
+    val age_min_F = rdd_name_age_F.values.min()
+    // 再次过滤
+    val rdd_age_max_F = rdd_name_age_F.filter(_._2 == age_max_F).foreach(println)
+    val rdd_age_min_F = rdd_name_age_F.filter(_._2 == age_min_F).foreach(println)
+
+
+
+    /*
+   *
+   * TODO
+   *  CASE4 : 计算男、女生平均年龄$age_average。
+   *
+   * */
+
+    val count_F = rdd_name_age_F.count()
+    // TODO case4_1
+    val sum_age_F = rdd_name_age_F.map(_._2).sum()
+
+    // TODO case4_2
+    val sum_age_F_ = rdd_name_age_F.map(_._2).reduce(_ + _)
+    val age_average_F = sum_age_F / count_F
+    println(s"age_average_F: $age_average_F")
+
+
+    /*
+  *
+  * TODO
+  *  CASE5 : 分别计算男、女生年龄总和，按
+  *   “age_sum_M=$age_sum_M
+  *   age_sum_F=$age_sum_F”格式输出
+  *
+  * */
+    println("5555555555555555555555555555555555")
+    val age_sum_F = rdd_student_.filter(_._4.equals("F")).map(_._5).reduce(_ + _)
+    val age_sum_M = rdd_student_.filter(_._4.equals("M")).map(_._5).reduce(_ + _)
+    println(s"F= $age_sum_F , M= $age_sum_M")
+
 
     sc.stop()
     spark.stop()
