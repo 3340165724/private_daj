@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_1_Intro/Intro.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_2_keys_values/keys_values.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap/flatMap_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_3_flatMap/flatMap_scala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_2_map/map.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_2_map/map.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_2_map/map_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_2_map/map_scala$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_3_flatMap/flatMap_scala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_3_flatMap/flatMap_scala$.class" afterDir="false" />
-    </list>
+    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -291,7 +281,7 @@
       <workItem from="1683342467387" duration="1093000" />
       <workItem from="1683350703239" duration="28906000" />
       <workItem from="1683441158940" duration="792000" />
-      <workItem from="1683444531404" duration="16457000" />
+      <workItem from="1683444531404" duration="16815000" />
     </task>
     <servers />
   </component>
