@@ -25,6 +25,8 @@ object flatMap_scala {
       goodbye
       world
     */
+
+
     sc.stop
     spark.stop
   }

@@ -25,6 +25,13 @@ object map_scala {
     sample_2.map(_ * 2)
       .foreach(println)
 
+
+    val list1 = ("1","zhangsan","F","20")
+    val list2 = ("2","lisi","F","20")
+
+    sc.parallelize(Seq(list1,list2)).map(x => (x._2,x._3)).foreach(println)
+
+
     sc.stop
     spark.stop
   }
