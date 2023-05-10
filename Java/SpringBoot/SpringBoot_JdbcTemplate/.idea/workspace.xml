@@ -5,51 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="260625eb-95ef-44ff-af20-d8a12908b38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/mybatis-case1-employee.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/dao/EmployeeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/mapper/EmployeeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/pojo/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/print/EmployeePrint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/utils/DBUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/src/main/java/com/ynnz/mybatis/utils/SqlSessionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/src/test/java/com/ynnz/jdbc/test/EmployeeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/dao/EmployeeDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/mapper/EmployeeMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/pojo/Employee.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/print/EmployeePrint.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/utils/DBUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/target/classes/com/ynnz/mybatis/utils/SqlSessionUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/target/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/target/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyBatis/mybatis-case1-employee/target/test-classes/com/ynnz/jdbc/test/EmployeeTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/EntranceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/GeneralController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/ListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/IStudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/impl/StudentDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_3_map_vs_RDD/map_rdd.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_4_sample/SampleScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_4_sample/sample.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_4_sample/samplePython.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_JdbcTemplate.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SpringBootJdbcTemplateApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringBootJdbcTemplateApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/EntranceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/EntranceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/GeneralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/GeneralController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/IGeneralDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/IGeneralDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pojo/Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Bean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/IUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/impl/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login_axios.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login_axios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootJdbcTemplateApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootJdbcTemplateApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Markdown/hive.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Markdown/hive.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Markdown/专升本/英语.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Markdown/专升本/英语.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Spark/SparkProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../python/pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../python/pythonProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_2_keys_values/keys_values.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_2_keys_values/keys_values.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Spark/SparkProject/target/classes/_2_keys_values/keys_values.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/target/classes/_2_keys_values/keys_values.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -88,7 +64,6 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -97,7 +72,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2PMw4GgEYmgCmW9nFXQypTC6tT0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -111,7 +88,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../bigdata-competition/PROJECT/liu-web-project-archetype-framework" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web-archetype-framework" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -124,22 +101,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringBootJdbcTemplateApplication">
-    <configuration name="SpringBootJdbcTemplateApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot_JdbcTemplate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example" />
-      <option name="MAIN_CLASS_NAME" value="com.example.SpringBootJdbcTemplateApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpringBootJdbcTemplateApplicationTests.queryByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBoot_JdbcTemplate" />
       <extension name="coverage">
@@ -156,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBootJdbcTemplateApplicationTests.queryUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringBootJdbcTemplateApplicationTests.queryStudentAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBoot_JdbcTemplate" />
       <extension name="coverage">
         <pattern>
@@ -166,7 +127,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example" />
       <option name="MAIN_CLASS_NAME" value="com.example.SpringBootJdbcTemplateApplicationTests" />
-      <option name="METHOD_NAME" value="queryUser" />
+      <option name="METHOD_NAME" value="queryStudentAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,9 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringBootJdbcTemplateApplicationTests.queryUser" />
+        <item itemvalue="JUnit.SpringBootJdbcTemplateApplicationTests.queryStudentAll" />
         <item itemvalue="JUnit.SpringBootJdbcTemplateApplicationTests.queryByUsername" />
-        <item itemvalue="JUnit.SpringBootJdbcTemplateApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -201,6 +161,11 @@
       <workItem from="1683280067525" duration="9492000" />
       <workItem from="1683298161666" duration="17710000" />
       <workItem from="1683342455310" duration="1859000" />
+      <workItem from="1683616643847" duration="392000" />
+      <workItem from="1683617049432" duration="75000" />
+      <workItem from="1683618414933" duration="4868000" />
+      <workItem from="1683627711210" duration="13846000" />
+      <workItem from="1683679584323" duration="1881000" />
     </task>
     <servers />
   </component>

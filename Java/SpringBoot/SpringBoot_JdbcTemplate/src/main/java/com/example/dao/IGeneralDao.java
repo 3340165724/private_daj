@@ -4,7 +4,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
+ *
  * 通用 Dao 封装公共属性常量
+ *
  */
 
 public interface IGeneralDao<T> {

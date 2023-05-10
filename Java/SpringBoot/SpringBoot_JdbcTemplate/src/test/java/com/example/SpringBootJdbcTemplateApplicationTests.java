@@ -1,6 +1,8 @@
 package com.example;
 
+import com.example.dao.IStudentDao;
 import com.example.dao.IUserDao;
+import com.example.pojo.Student;
 import com.example.pojo.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,12 +15,13 @@ import java.util.List;
 class SpringBootJdbcTemplateApplicationTests {
 	@Autowired
 	protected IUserDao userDao;
+	@Autowired
+	protected IStudentDao studentDao;
 
 	@Test
 	void queryUser() {
 		List<User> list =  userDao.queryUser();
 		System.out.println(list);
-		System.out.println(list.stream().map(o -> o.getUsername().toString()).toString());
 
 		for(int i = 0 ; i < list.size(); i++){
 			if("root".equals(list.get(i).getUsername())){
@@ -42,5 +45,18 @@ class SpringBootJdbcTemplateApplicationTests {
 			System.out.println("7777777777777777");
 		}
 	}
+
+
+
+
+	// TODO
+	@Test
+	public void  queryStudentAll(){
+		List<Student> queryStudentAll = studentDao.queryStudentAll();
+		queryStudentAll.forEach(System.out::println);
+	}
+
+
+
 
 }
