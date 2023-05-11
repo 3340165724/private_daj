@@ -5,11 +5,6 @@
 <br>
 
 ### 官网
-
-| Scala | 翻译  |Python|翻译|
-|-------|-----|----|----|
-|Sample a fraction fraction of the data, with or without replacement, using a given random number generator seed.||||
-
 <table>
     <tr>
         <th>Scala</th>
@@ -38,11 +33,36 @@
                 </ul>
             </ul>
         </td>
-        <td></td>
-        <td></td>
+        <td>
+            <ul>
+                <li>Return a sampled subset of this RDD.</li>
+                <li>Parameters:</li>
+                <ul>
+                    <li>withReplacement:bool -> can elements be sampled multiple times (replaced when sampled out)</li>
+                    <li>fraction:float -> expected size of the sample as a fraction of this RDD’s size without replacement: probability that each element is chosen; fraction must be [0, 1] with replacement: expected number of times each element is chosen; fraction must be >= 0</li>
+                    <li>seed:int, optional -> seed for the random number generator</li>
+                </ul>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>返回该RDD的抽样子集</li>
+                <li>参数:</li>
+                <ul>
+                    <li>withReplacement:bool -> 元素可以被多次采样吗(被采样时替换)</li>
+                    <li>fraction:float -> 作为该RDD大小的一部分的样本的预期大小，而不需要替换:每个元素被选择的概率;分数必须为[0,1]，带替换:每个元素被选择的预期次数;分数必须>= 0</li>
+                    <li>seed:int, optional -> 随机数生成器的种子</li>
+                </ul>
+            </ul>
+        </td>
     </tr>
 </table>
 
+<br>
 
+---
+ 
+### 有种子和无种子的区别
+- 有种子是只要针对数据源一样，都是指定相同的参数，那么每次抽样到的数据都是一样的 没有种子是针对同一个数据源，每次抽样都是随机抽样
 
 
