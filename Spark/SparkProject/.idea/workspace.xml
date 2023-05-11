@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/MapPartitionsScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/mapPartitions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/mapPartitionsPython.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Markdown/专升本/英语.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Markdown/专升本/英语.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_4_sample/SampleScala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_4_sample/SampleScala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_4_sample/sample.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_4_sample/sample.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_4_sample/samplePython.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_4_sample/samplePython.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_sample/SampleScala$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_4_sample/SampleScala$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_sample/SampleScala.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_4_sample/SampleScala.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_sample/sample.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_4_sample/sample.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_4_sample/samplePython.py" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_4_sample/samplePython.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +282,9 @@
       <workItem from="1683616207381" duration="910000" />
       <workItem from="1683618414933" duration="781000" />
       <workItem from="1683681612451" duration="4573000" />
-      <workItem from="1683764312136" duration="5938000" />
+      <workItem from="1683764312136" duration="8108000" />
+      <workItem from="1683788495564" duration="410000" />
+      <workItem from="1683797579088" duration="7030000" />
     </task>
     <servers />
   </component>
