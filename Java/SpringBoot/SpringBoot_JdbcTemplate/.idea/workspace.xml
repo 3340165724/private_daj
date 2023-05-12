@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="260625eb-95ef-44ff-af20-d8a12908b38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/ListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/IStudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/impl/StudentDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_3_map_vs_RDD/map_rdd.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_4_sample/SampleScala.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_4_sample/sample.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_4_sample/samplePython.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot_JdbcTemplate.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/EntranceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/EntranceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/GeneralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/GeneralController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/IGeneralDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/IGeneralDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/IUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SpringBootJdbcTemplateApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/SpringBootJdbcTemplateApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Markdown/专升本/英语.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Markdown/专升本/英语.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Spark/SparkProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_2_keys_values/keys_values.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_2_keys_values/keys_values.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Spark/SparkProject/target/classes/_2_keys_values/keys_values.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/target/classes/_2_keys_values/keys_values.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web-archetype-framework" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -166,6 +146,7 @@
       <workItem from="1683618414933" duration="4868000" />
       <workItem from="1683627711210" duration="13846000" />
       <workItem from="1683679584323" duration="1881000" />
+      <workItem from="1683868943041" duration="237000" />
     </task>
     <servers />
   </component>
