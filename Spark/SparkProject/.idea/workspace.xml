@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_6_partitions/PartitionsScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_6_partitions/partitions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_6_partitions/partitionsPython.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/MapPartitionsScala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/MapPartitionsScala.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/mapPartitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/mapPartitions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/mapPartitionsPython.py" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/mapPartitionsPython.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_5_mapPartitions/mapPartitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_mapPartitions/mapPartitions.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../liu-coding/dev/Liu Course Spark Architecture" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -97,7 +98,7 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mapPartitionsPython">
+  <component name="RunManager" selected="Application.PartitionsScala">
     <configuration name="MapPartitionsScala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_5_mapPartitions.MapPartitionsScala" />
       <module name="SparkProject" />
@@ -111,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SampleScala" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_4_sample.SampleScala" />
+    <configuration name="PartitionsScala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_6_partitions.PartitionsScala" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_4_sample.*" />
+          <option name="PATTERN" value="_6_partitions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="map_vs_flatMap_scala" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_4_map_vs_flatMap.map_vs_flatMap_scala" />
+    <configuration name="SampleScala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_4_sample.SampleScala" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_4_map_vs_flatMap.*" />
+          <option name="PATTERN" value="_4_sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,19 +183,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.map_vs_flatMap_scala" />
       <item itemvalue="Application.SampleScala" />
-      <item itemvalue="Python.samplePython" />
       <item itemvalue="Application.MapPartitionsScala" />
+      <item itemvalue="Python.samplePython" />
       <item itemvalue="Python.mapPartitionsPython" />
+      <item itemvalue="Application.PartitionsScala" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PartitionsScala" />
         <item itemvalue="Python.mapPartitionsPython" />
         <item itemvalue="Application.MapPartitionsScala" />
         <item itemvalue="Python.samplePython" />
         <item itemvalue="Application.SampleScala" />
-        <item itemvalue="Application.map_vs_flatMap_scala" />
       </list>
     </recent_temporary>
   </component>
@@ -295,6 +296,8 @@
       <workItem from="1683788495564" duration="410000" />
       <workItem from="1683797579088" duration="7089000" />
       <workItem from="1683869201810" duration="13843000" />
+      <workItem from="1683904002532" duration="1012000" />
+      <workItem from="1683939429264" duration="17991000" />
     </task>
     <servers />
   </component>
