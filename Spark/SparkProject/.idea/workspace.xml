@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_6_partitions/PartitionsScala.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_6_partitions/partitions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_6_partitions/partitionsPython.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/mapPartitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/mapPartitions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_5_mapPartitions/mapPartitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_5_mapPartitions/mapPartitions.md" afterDir="false" />
-    </list>
+    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,9 +178,9 @@
     <list>
       <item itemvalue="Application.SampleScala" />
       <item itemvalue="Application.MapPartitionsScala" />
+      <item itemvalue="Application.PartitionsScala" />
       <item itemvalue="Python.samplePython" />
       <item itemvalue="Python.mapPartitionsPython" />
-      <item itemvalue="Application.PartitionsScala" />
     </list>
     <recent_temporary>
       <list>
@@ -298,6 +291,7 @@
       <workItem from="1683869201810" duration="13843000" />
       <workItem from="1683904002532" duration="1012000" />
       <workItem from="1683939429264" duration="17991000" />
+      <workItem from="1684035515717" duration="594000" />
     </task>
     <servers />
   </component>
