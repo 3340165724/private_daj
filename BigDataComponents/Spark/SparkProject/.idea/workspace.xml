@@ -92,7 +92,7 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IteratorForScala">
+  <component name="RunManager" selected="Application.map_scala">
     <configuration name="IteratorForScala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_7_Iterator_for.IteratorForScala" />
       <module name="SparkProject" />
@@ -167,8 +167,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IteratorForScala" />
         <item itemvalue="Application.map_scala" />
+        <item itemvalue="Application.IteratorForScala" />
         <item itemvalue="Application.IteratorMapScala" />
         <item itemvalue="Application.IteratorForYield" />
         <item itemvalue="Application.PartitionsScala" />
