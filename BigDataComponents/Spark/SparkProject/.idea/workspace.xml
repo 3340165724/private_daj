@@ -92,7 +92,7 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IteratorMapScala">
+  <component name="RunManager" selected="Application.IteratorForScala">
     <configuration name="IteratorForScala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_7_Iterator_for.IteratorForScala" />
       <module name="SparkProject" />
@@ -145,42 +145,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mapPartitionsPython" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="map_scala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_2_map.map_scala" />
       <module name="SparkProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/mapPartitionsPython.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_2_map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Application.PartitionsScala" />
       <item itemvalue="Application.IteratorForScala" />
       <item itemvalue="Application.IteratorForYield" />
       <item itemvalue="Application.IteratorMapScala" />
-      <item itemvalue="Python.mapPartitionsPython" />
+      <item itemvalue="Application.map_scala" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IteratorForScala" />
+        <item itemvalue="Application.map_scala" />
         <item itemvalue="Application.IteratorMapScala" />
         <item itemvalue="Application.IteratorForYield" />
-        <item itemvalue="Application.IteratorForScala" />
         <item itemvalue="Application.PartitionsScala" />
-        <item itemvalue="Python.mapPartitionsPython" />
       </list>
     </recent_temporary>
   </component>
@@ -302,6 +293,7 @@
       <workItem from="1684369174377" duration="8630000" />
       <workItem from="1684405012066" duration="945000" />
       <workItem from="1684412592572" duration="2535000" />
+      <workItem from="1684425350738" duration="235000" />
     </task>
     <servers />
   </component>
