@@ -38,30 +38,38 @@ public class EntranceController extends GeneralController {
      * 两种方式 全表查询和带参查询
      *
      * - @ResponseBody : 将 Java 对象转换为不同的响应体格式 (不需要返回一个视图，而是直接返回一些数据)
-     * - @RequestBody : 绑定并自动解析页面 JSON 数据（如果请求体中是 JSON格式的数据，将 JSON 数据解析为对应的 Java 对象来处理）
+     * - @RequestBody : 绑定并自动解析页面 JSON 数据（如果请求体中是 JSON格式的数据，将 JSON 数据解析为对应的 Java 对象来处理）,
+     *                  form提交会出错（Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported），
+     *                  解决：注解@RequestBody 去掉，因为此注解表示j接收的参数格式为json
      * - @PathVariable : 从URL路径中提取参数
      *
      * */
-    @RequestMapping(value = "/1-doLogin-form")
-    public ModelAndView doLogin_form_1(@RequestBody User user) throws JsonProcessingException {
+    @RequestMapping(value = "/1-doLogin-form", method = RequestMethod.POST)
+    public @ResponseBody
+    ModelAndView doLogin_form_1(User user) throws JsonProcessingException {
         // 查询
         List<User> list = userDao.queryUser();
         // 得到输入框中的值
         String username = user.getUsername();
         String password = user.getPassword();
 
+
         for (int i = 0; i < list.size(); i++) {
             if (username.equals(list.get(i).getUsername())) {
                 if (password.equals(list.get(i).getPassword())) {
                     System.out.println(list.get(i).getUsername());
                     System.out.println(list.get(i).getPassword());
-                    session.setAttribute("username", username);
-                    return new ModelAndView("index_form");
+                    // 带数据放回页面
+                    modelAndView.setViewName("index_form");
+                    modelAndView.addObject("username", username);
+                    return modelAndView;
                 } else {
-                    return new ModelAndView("login_form");
+                    modelAndView.setViewName("login_form");
+                    return modelAndView;
                 }
             } else {
-                return new ModelAndView("login_form");
+                modelAndView.setViewName("login_form");
+                return modelAndView;
             }
         }
         return null;
@@ -76,13 +84,17 @@ public class EntranceController extends GeneralController {
         System.out.println(user.getUsername());
         if (null != user_) {
             if (user_.getPassword().equals(user.getPassword())) {
-                session.setAttribute("username", user.getUsername());
-                return new ModelAndView("index_form");
+                // 带数据放回页面
+                modelAndView.setViewName("index_form");
+                modelAndView.addObject("username", user.getUsername());
+                return modelAndView;
             } else {
-                return new ModelAndView("login_form");
+                modelAndView.setViewName("login_form");
+                return modelAndView;
             }
         } else {
-            return new ModelAndView("login_form");
+            modelAndView.setViewName("login_form");
+            return modelAndView;
         }
     }
 
@@ -95,7 +107,8 @@ public class EntranceController extends GeneralController {
      *
      * */
     @RequestMapping(value = "/1-doLogin-axios")
-    public @ResponseBody String doLogin_axios_1(@RequestBody User user) throws JsonProcessingException {
+    public @ResponseBody
+    String doLogin_axios_1(@RequestBody User user) throws JsonProcessingException {
         // 查询
         List<User> list = userDao.queryUser();
         // 得到输入框中的值

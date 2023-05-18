@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="" />
+    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_for/IteratorForScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_for/Quiz.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_for_yield/IteratorForYield.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_map/IteratorMapScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_while/IteraorWhile.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/controller/EntranceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/controller/EntranceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/controller/GeneralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/controller/GeneralController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/index_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/index_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/login_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Markdown/专升本/英语.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Markdown/专升本/英语.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_6_partitions/partitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_6_partitions/partitions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_6_partitions/partitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_6_partitions/partitions.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +89,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../liu-coding/dev/Liu Course Spark Architecture" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -83,21 +98,48 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="cn.yiiguxing.plugin.translate" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\4-Transformations Advance" />
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_2_map" />
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PartitionsScala">
-    <configuration name="MapPartitionsScala" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_5_mapPartitions.MapPartitionsScala" />
+  <component name="RunManager" selected="Application.IteratorMapScala">
+    <configuration name="IteratorForScala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_7_Iterator_for.IteratorForScala" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_5_mapPartitions.*" />
+          <option name="PATTERN" value="_7_Iterator_for.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IteratorForYield" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_7_Iterator_for_yield.IteratorForYield" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_7_Iterator_for_yield.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IteratorMapScala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_7_Iterator_map.IteratorMapScala" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_7_Iterator_map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,19 +153,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="_6_partitions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SampleScala" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_4_sample.SampleScala" />
-      <module name="SparkProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_4_sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,46 +182,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="samplePython" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SparkProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_4_sample" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_4_sample/samplePython.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Application.SampleScala" />
-      <item itemvalue="Application.MapPartitionsScala" />
       <item itemvalue="Application.PartitionsScala" />
-      <item itemvalue="Python.samplePython" />
       <item itemvalue="Python.mapPartitionsPython" />
+      <item itemvalue="Application.IteratorForScala" />
+      <item itemvalue="Application.IteratorForYield" />
+      <item itemvalue="Application.IteratorMapScala" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IteratorMapScala" />
+        <item itemvalue="Application.IteratorForYield" />
+        <item itemvalue="Application.IteratorForScala" />
         <item itemvalue="Application.PartitionsScala" />
         <item itemvalue="Python.mapPartitionsPython" />
-        <item itemvalue="Application.MapPartitionsScala" />
-        <item itemvalue="Python.samplePython" />
-        <item itemvalue="Application.SampleScala" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="SSH_CONFIG" />
+    <option name="myConnectionId" value="root@192.168.66.130:22 password" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="" />
@@ -291,7 +303,18 @@
       <workItem from="1683869201810" duration="13843000" />
       <workItem from="1683904002532" duration="1012000" />
       <workItem from="1683939429264" duration="17991000" />
-      <workItem from="1684035515717" duration="594000" />
+      <workItem from="1684035515717" duration="10071000" />
+      <workItem from="1684077146234" duration="101000" />
+      <workItem from="1684077277020" duration="14000" />
+      <workItem from="1684128571237" duration="7268000" />
+      <workItem from="1684217969631" duration="1191000" />
+      <workItem from="1684236813381" duration="4487000" />
+      <workItem from="1684325787201" duration="88000" />
+      <workItem from="1684325897217" duration="142000" />
+      <workItem from="1684326066718" duration="5187000" />
+      <workItem from="1684336236226" duration="410000" />
+      <workItem from="1684336665275" duration="684000" />
+      <workItem from="1684369174377" duration="4629000" />
     </task>
     <servers />
   </component>

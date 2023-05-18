@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="260625eb-95ef-44ff-af20-d8a12908b38e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_7_Iterator_for/IteratorForScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_7_Iterator_for/Quiz.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/EntranceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/EntranceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controller/GeneralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/GeneralController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Spark/SparkProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_6_partitions/partitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/Spark Core/4-Transformations Advance/_6_partitions/partitions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Spark/SparkProject/target/classes/_6_partitions/partitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Spark/SparkProject/target/classes/_6_partitions/partitions.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +156,9 @@
       <workItem from="1683627711210" duration="13846000" />
       <workItem from="1683679584323" duration="1881000" />
       <workItem from="1683868943041" duration="237000" />
+      <workItem from="1684157432934" duration="12844000" />
+      <workItem from="1684217892669" duration="21000" />
+      <workItem from="1684218156348" duration="1059000" />
     </task>
     <servers />
   </component>
