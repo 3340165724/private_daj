@@ -13,7 +13,7 @@
 
 
 ## 聚合逻辑
-![reduceByKey](../../../../../Image/reduceByKey.png "reduceByKey")
+![reduceByKey](../../../../../../Image/reduceByKey.png "reduceByKey")
 
 <br/>
 

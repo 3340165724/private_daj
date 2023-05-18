@@ -4,7 +4,7 @@
 <br>
 
 ## 设置缩放字体快捷键
-![increase](../../../Image/increase.png "increase ")
+![increase](../../../../Image/increase.png "increase ")
 
 ---
 
@@ -14,7 +14,7 @@
 ## 配置 Scala 环境
 > 1、下载安装Scala
 >> Scala官网下载
->>>![ScalaDownload](../../../Image/ScalaDownload.png "ScalaDownload ")
+>>>![ScalaDownload](../../../../Image/ScalaDownload.png "ScalaDownload ")
 >
 > ---
 >
@@ -23,22 +23,22 @@
 > ---
 > 
 > 3、idea中安装Scala插件
->>![Plugins](../../../Image/Plugins.png "Plugins ")
+>>![Plugins](../../../../Image/Plugins.png "Plugins ")
 > 
 > ---
 > 
 > 4、引入scala 框架
->>![ImportFramework](../../../Image/ImportFramework.png "ImportFramework ")
+>>![ImportFramework](../../../../Image/ImportFramework.png "ImportFramework ")
 >
 >  ---
 >
 > 5、创建Scala源目录
->> ![SourceDirectory](../../../Image/SourceDirectory.png "SourceDirectory ")
+>> ![SourceDirectory](../../../../Image/SourceDirectory.png "SourceDirectory ")
 > 
 > ---
 > 
 > 6、添加ScalaSDK，否则会报找不到或无法加载主类
->>![ScalaSDK](../../../Image/ScalaSDK.png "ScalaSDK ")
+>>![ScalaSDK](../../../../Image/ScalaSDK.png "ScalaSDK ")
 > 
 > ---
 >
