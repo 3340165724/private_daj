@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_for/IteratorForScala.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_for/Quiz.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_for_yield/IteratorForYield.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_map/IteratorMapScala.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_while/IteraorWhile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/controller/EntranceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/controller/EntranceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/controller/GeneralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/controller/GeneralController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/index_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/index_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/login_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/resources/templates/login_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Markdown/专升本/英语.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Markdown/专升本/英语.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_8_map_vs_mapPartitions/DistinguishScala.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_8_map_vs_mapPartitions/distinguish.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_6_partitions/partitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_6_partitions/partitions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_6_partitions/partitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_6_partitions/partitions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_while/IteraorWhile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_7_Iterator_while/IteraorWhile.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_7_Iterator_while/IteraorWhile$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_7_Iterator_while/IteraorWhile$.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +305,7 @@
       <workItem from="1684326066718" duration="5187000" />
       <workItem from="1684336236226" duration="410000" />
       <workItem from="1684336665275" duration="684000" />
-      <workItem from="1684369174377" duration="4629000" />
+      <workItem from="1684369174377" duration="8619000" />
     </task>
     <servers />
   </component>
