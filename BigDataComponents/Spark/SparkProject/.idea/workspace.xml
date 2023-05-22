@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="" />
+    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Markdown/2023大数据环境搭建.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Markdown/2023大数据环境搭建.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Markdown/专升本/英语.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Markdown/专升本/英语.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Java/SpringBoot/CommunityProject_springboot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-2.3.2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -88,12 +91,65 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pro_redskirt\private_daj\BigDataComponents\Spark\SparkProject\Spark Core\4-Transformations Advance\_8_map_vs_mapPartitions" />
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\4-Transformations Advance" />
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_2_map" />
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.map_scala">
+  <component name="RunManager" selected="Application.DistinguishScala">
+    <configuration name="CollectScala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_6_collect.CollectScala" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_6_collect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DistinguishScala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_8_map_vs_mapPartitions.DistinguishScala" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_8_map_vs_mapPartitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapPartitionsWithIndexScala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_9_mapPartitionsWithIndex.MapPartitionsWithIndexScala" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_9_mapPartitionsWithIndex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuizFor" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_9_mapPartitionsWithIndex.QuizFor" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_9_mapPartitionsWithIndex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="map_scala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_2_map.map_scala" />
       <module name="SparkProject" />
@@ -173,28 +229,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="map_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SparkProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map/map_python.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="Python.FlaskServer">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -263,8 +297,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DistinguishScala" />
+        <item itemvalue="Application.QuizFor" />
+        <item itemvalue="Application.MapPartitionsWithIndexScala" />
+        <item itemvalue="Application.CollectScala" />
         <item itemvalue="Application.map_scala" />
-        <item itemvalue="Python.map_python" />
       </list>
     </recent_temporary>
   </component>
@@ -392,6 +429,10 @@
       <workItem from="1684470698597" duration="1104000" />
       <workItem from="1684471985418" duration="3658000" />
       <workItem from="1684507732696" duration="431000" />
+      <workItem from="1684601049425" duration="81000" />
+      <workItem from="1684632223701" duration="18196000" />
+      <workItem from="1684733579449" duration="483000" />
+      <workItem from="1684742749570" duration="1397000" />
     </task>
     <servers />
   </component>
