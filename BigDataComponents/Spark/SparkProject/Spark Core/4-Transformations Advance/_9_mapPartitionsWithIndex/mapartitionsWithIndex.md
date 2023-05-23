@@ -10,7 +10,7 @@
 
 ### 分析
 - mapPartitionsWithIndex(func)与mapPartitions(func)的内部处理逻辑是一致的，mapPartitionsWithIndex的函数参数中多了一个分区索引，可以应对某些需要知道当前数据位于哪个批次的情况，partition是分组，索引就是组号。 所以，它的实现方式也是一样的，需要遍历内层的迭代器。
-
+- 可以跟踪正在处理的分区
 
 
  

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7d77c20-d186-4e11-adaa-4bd53ba730a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/src/main/java/com/example/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/Spark Core/4-Transformations Advance/_9_mapPartitionsWithIndex/mapPartitionsWithIndexPython.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/Spark Core/4-Transformations Advance/_9_mapPartitionsWithIndex/mapPartitionsWithIndexPython.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_9_mapPartitionsWithIndex/mapPartitionsWithIndexPython.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_9_mapPartitionsWithIndex/mapPartitionsWithIndexPython.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../student_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -182,6 +184,7 @@
       <workItem from="1682561889961" duration="1603000" />
       <workItem from="1682564144358" duration="1184000" />
       <workItem from="1683183419970" duration="9000" />
+      <workItem from="1684804778917" duration="1476000" />
     </task>
     <servers />
   </component>

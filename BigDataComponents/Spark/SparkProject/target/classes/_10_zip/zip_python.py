@@ -7,7 +7,7 @@ from pyspark.sql import SparkSession
 spark = SparkSession \
     .builder \
     .master("local[1]") \
-    .appName("spark-foreach_python") \
+    .appName("spark-zip") \
     .getOrCreate()
 sc = spark.sparkContext
 
@@ -22,6 +22,7 @@ def fun(index, element):
     for x in element:
         list.append(x)
         yield "[value=%s, partition_id=%d]" % (x, index)
+
 
 rdd.mapPartitionsWithIndex(fun).foreach(print)
 

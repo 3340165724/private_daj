@@ -16,13 +16,29 @@ object MapPartitionsWithIndexScala {
 
     /*
     * TODO
+    *  case1
     *   按 [value=$value, partition_id=$partition_id] 格式
     * */
-    rdd.mapPartitionsWithIndex{
-      (index,element)=>
+    rdd.mapPartitionsWithIndex {
+      (index, element) =>
         element.map(x => s"[value=$x, partition_id=$index]")
     }.foreach(println)
 
+
+    /*
+    * TODO
+    *  case2
+    *   的带第二个分区的数据，按上面的格式输出
+    * */
+    rdd.mapPartitionsWithIndex(
+      (index, iter) => {
+        if (index == 1) {
+          iter
+        }else{
+          Nil.iterator
+        }
+      }
+    ).foreach(println)
     sc.stop()
     spark.stop()
   }
