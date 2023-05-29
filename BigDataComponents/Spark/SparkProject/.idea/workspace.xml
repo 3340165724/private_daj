@@ -95,7 +95,20 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.subtractPython">
+  <component name="RunManager" selected="Python.cartesianPython">
+    <configuration name="CartesianScala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_17_cartesian.CartesianScala" />
+      <module name="SparkProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_17_cartesian.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IntersectionScala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_15_intersection.IntersectionScala" />
       <module name="SparkProject" />
@@ -115,19 +128,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="_16_subtract.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="cvb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_15_intersection.cvb" />
-      <module name="SparkProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_15_intersection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -201,7 +201,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="intersectionPython" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="cartesianPython" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SparkProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -209,12 +209,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_15_intersection" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_17_cartesian" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_15_intersection/intersectionPython.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_17_cartesian/cartesianPython.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,11 +313,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cartesianPython" />
+        <item itemvalue="Application.CartesianScala" />
         <item itemvalue="Python.subtractPython" />
         <item itemvalue="Application.SubtractScala" />
         <item itemvalue="Application.IntersectionScala" />
-        <item itemvalue="Python.intersectionPython" />
-        <item itemvalue="Application.cvb" />
       </list>
     </recent_temporary>
   </component>
@@ -462,7 +462,7 @@
       <workItem from="1685243820086" duration="13704000" />
       <workItem from="1685286269680" duration="3172000" />
       <workItem from="1685327790267" duration="215000" />
-      <workItem from="1685328436190" duration="10223000" />
+      <workItem from="1685328436190" duration="14998000" />
     </task>
     <servers />
   </component>
@@ -507,6 +507,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SparkProject$subtractPython.coverage" NAME="subtractPython Coverage Results" MODIFIED="1685356488950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_16_subtract" />
     <SUITE FILE_PATH="coverage/SparkProject$subprocess.coverage" NAME="subprocess Coverage Results" MODIFIED="1681130892907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../../Python/Python36/Lib" />
+    <SUITE FILE_PATH="coverage/SparkProject$cartesianPython.coverage" NAME="cartesianPython Coverage Results" MODIFIED="1685371721181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_17_cartesian" />
     <SUITE FILE_PATH="coverage/SparkProject$first_python.coverage" NAME="first_python Coverage Results" MODIFIED="1683125164270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_8_first" />
     <SUITE FILE_PATH="coverage/SparkProject$foreach_python.coverage" NAME="foreach_python Coverage Results" MODIFIED="1681800899223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_2_foreach" />
     <SUITE FILE_PATH="coverage/SparkProject$zipWithIndex.coverage" NAME="zipWithIndex Coverage Results" MODIFIED="1684974821102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_11_zipWithIndex" />
