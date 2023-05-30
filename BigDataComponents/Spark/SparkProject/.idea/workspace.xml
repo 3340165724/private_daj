@@ -95,7 +95,7 @@
       <recent name="D:\pro_redskirt\private_daj\Spark\SparkProject\Spark Core\Transformations Basic\_1_TransformationsIntroduce" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.cartesianPython">
+  <component name="RunManager" selected="Python.mapPartitionsPython">
     <configuration name="CartesianScala" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="_17_cartesian.CartesianScala" />
       <module name="SparkProject" />
@@ -109,25 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntersectionScala" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_15_intersection.IntersectionScala" />
+    <configuration name="MapPartitionsScala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_5_mapPartitions.MapPartitionsScala" />
       <module name="SparkProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_15_intersection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SubtractScala" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_16_subtract.SubtractScala" />
-      <module name="SparkProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_16_subtract.*" />
+          <option name="PATTERN" value="_5_mapPartitions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -215,6 +202,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_17_cartesian/cartesianPython.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mapPartitionsPython" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SparkProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions/mapPartitionsPython.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,11 +322,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mapPartitionsPython" />
+        <item itemvalue="Application.MapPartitionsScala" />
         <item itemvalue="Python.cartesianPython" />
         <item itemvalue="Application.CartesianScala" />
         <item itemvalue="Python.subtractPython" />
-        <item itemvalue="Application.SubtractScala" />
-        <item itemvalue="Application.IntersectionScala" />
       </list>
     </recent_temporary>
   </component>
@@ -462,7 +471,8 @@
       <workItem from="1685243820086" duration="13704000" />
       <workItem from="1685286269680" duration="3172000" />
       <workItem from="1685327790267" duration="215000" />
-      <workItem from="1685328436190" duration="14998000" />
+      <workItem from="1685328436190" duration="15594000" />
+      <workItem from="1685410235646" duration="2536000" />
     </task>
     <servers />
   </component>
@@ -522,7 +532,7 @@
     <SUITE FILE_PATH="coverage/SparkProject$map_python.coverage" NAME="map_python Coverage Results" MODIFIED="1684470777631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_2_map" />
     <SUITE FILE_PATH="coverage/SparkProject$sum_python.coverage" NAME="sum_python Coverage Results" MODIFIED="1682468348604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_4_sum" />
     <SUITE FILE_PATH="coverage/SparkProject$isEmpty_python.coverage" NAME="isEmpty_python Coverage Results" MODIFIED="1683119838517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_10_isEmpty" />
-    <SUITE FILE_PATH="coverage/SparkProject$mapPartitionsPython.coverage" NAME="mapPartitionsPython Coverage Results" MODIFIED="1683879664402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions" />
+    <SUITE FILE_PATH="coverage/SparkProject$mapPartitionsPython.coverage" NAME="mapPartitionsPython Coverage Results" MODIFIED="1685411894316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_5_mapPartitions" />
     <SUITE FILE_PATH="coverage/SparkProject$max_min.coverage" NAME="max_min Coverage Results" MODIFIED="1683125545681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/2-Actions Basic/_9_max_min" />
     <SUITE FILE_PATH="coverage/SparkProject$zip_python.coverage" NAME="zip_python Coverage Results" MODIFIED="1684834835980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/4-Transformations Advance/_10_zip" />
     <SUITE FILE_PATH="coverage/SparkProject$filter_python.coverage" NAME="filter_python Coverage Results" MODIFIED="1681483206751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Spark Core/1-Transformations Basic/_5_filter" />
