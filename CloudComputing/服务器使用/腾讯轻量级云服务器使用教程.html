@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<style type="text/css">html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+/* 全局属性 */
+#write {
+  max-width: 860px;
+  font-size: 16px;
+  color: black;
+  padding: 0 10px;
+  line-height: 1.6;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+}
+
+/*段落*/
+#write p {
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  line-height: 26px;
+  color: black;
+}
+
+
+/*标题*/
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: black;
+}
+#write h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+#write h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid rgb(239, 112, 96);
+}
+#write h2 span {
+ display: inline-block;
+ font-weight: bold;
+ background: rgb(239, 112, 96);
+ color: #ffffff;
+ padding: 3px 10px 1px;
+ border-top-right-radius: 3px;
+ border-top-left-radius: 3px;
+ margin-right: 3px;
+}
+#write h2:after {
+ display: inline-block;
+ content: "";
+ vertical-align: bottom;
+ border-bottom: 36px solid #efebe9;
+ border-right: 20px solid transparent;
+}
+#write h3 {
+  font-size: 1.5rem;
+}
+#write h4 {
+  font-size: 1.3rem;
+}
+#write h5 {
+  font-size: 1.2rem;
+}
+#write h6 {
+  font-size: 1rem;
+}
+
+/*列表*/
+#write ul,
+#write ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  color: black;
+}
+#write ul {
+  list-style-type: disc;
+}
+#write ul ul {
+  list-style-type: square;
+}
+#write ol {
+  list-style-type: decimal;
+}
+#write li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  text-align: left;
+  color: rgb(1,1,1); /* 只要是纯黑色微信编辑器就会把color这个属性吞掉。。。*/
+  font-weight: 500;
+}
+
+/*引用*/
+#write blockquote {
+  display: block;
+  font-size: 0.9em;
+  overflow: auto;
+  overflow-scrolling: touch;
+  border-left: 3px solid rgb(239, 112, 96);
+  color: #6a737d;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: #fff9f9;
+}
+#write blockquote p {
+  margin: 0px;
+  color: black;
+  line-height: 26px;
+}
+
+/*链接*/
+#write a {
+  text-decoration: none;
+  word-wrap: break-word;
+  font-weight: bold;
+  border-bottom: 1px solid #1e6bb8;
+  color: rgb(239, 112, 96);
+  border-bottom: 1px solid rgb(239, 112, 96);
+}
+
+/*行内代码*/
+#write p code,
+#write li code {
+  font-size: 14px;
+  word-wrap: break-word;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+  color:  rgb(239, 112, 96);;
+  background-color: rgba(27,31,35,.05);
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  word-break: break-all;
+}
+
+/*图片*/
+#write img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+#write span img {
+  display: inline-block;
+  border-right: 0px;
+  border-left: 0px;
+}
+
+/*表格*/
+#write table {
+  display: table;
+  text-align: left;
+}
+#write tbody {
+  border: 0;
+}
+#write table tr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  background-color: white;
+}
+#write table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+#write table tr th,
+#write table tr td {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: left;
+}
+#write table tr th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* 行内代码 */
+#write span code, #write li code {
+ color: rgb(239, 112, 96);
+}
+
+/* 脚注上标 */
+#write .md-footnote {
+ font-weight: bold;
+ color: rgb(239, 112, 96);
+}
+#write .md-footnote > .md-text:before {
+ content: '['
+}
+#write .md-footnote > .md-text:after {
+ content: ']'
+}
+
+/* 脚注 */
+#write .md-def-name {
+  padding-right: 1.8ch;
+}
+#write .md-def-name:before {
+  content: '[';
+  color: #000;
+}
+#write .md-def-name:after {
+  color: #000;
+}
+
+/* 代码块主题 */
+/*.md-fences:before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: #282c34;
+  margin-bottom: -7px;
+  border-radius: 5px;
+  background-position: 10px 10px;
+}
+.cm-s-inner.CodeMirror {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #292d3e;
+  color: #a6accd;
+  font-family: Consolas;
+  border-radius: 4px;
+}
+.CodeMirror-lines {
+  padding-left: 4px;
+}
+.cm-s-inner .cm-keyword {
+  color: #c792ea !important;
+}
+.cm-s-inner .cm-operator {
+  color: #89ddff !important;
+}
+.cm-s-inner .cm-variable-2 {
+  color: #eeffff !important;
+}
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type {
+  color: #f07178 !important;
+}
+.cm-s-inner .cm-builtin {
+  color: #ffcb6b !important;
+}
+.cm-s-inner .cm-atom {
+  color: #f78c6c !important;
+}
+.cm-s-inner .cm-number {
+  color: #ff5370 !important;
+}
+.cm-s-inner .cm-def {
+  color: #82aaff !important;
+}
+.cm-s-inner .cm-string {
+  color: #c3e88d !important;
+}
+.cm-s-inner .cm-string-2 {
+  color: #f07178 !important;
+}
+.cm-s-inner .cm-comment {
+  color: #676e95 !important;
+}
+.cm-s-inner .cm-variable {
+  color: #f07178 !important;
+}
+.cm-s-inner .cm-tag {
+  color: #ff5370 !important;
+}
+.cm-s-inner .cm-meta {
+  color: #ffcb6b !important;
+}
+.cm-s-inner .cm-attribute {
+  color: #c792ea !important;
+}
+.cm-s-inner .cm-property {
+  color: #c792ea !important;
+}
+.cm-s-inner .cm-qualifier {
+  color: #decb6b !important;
+}
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type {
+  color: #decb6b !important;
+}
+.cm-s-inner .cm-error {
+  color: rgba(255, 255, 255, 1) !important;
+  background-color: #ff5370 !important;
+}
+.cm-s-inner .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid rgb(239, 112, 96);
+  z-index: 3;
+}
+
+.cm-s-inner div.CodeMirror-selected {
+  background: rgba(167, 178, 189, 0.2) !important;
+}
+
+.cm-s-inner.CodeMirror-focused div.CodeMirror-selected {
+  background: rgba(167, 178, 189, 0.2) !important;
+}
+
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext {
+  background-color: rgba(167, 178, 189, 0.0) !important;
+}
+
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line > span::-moz-selection,
+.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
+  background-color: rgba(167, 178, 189, 0.2);
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line > span::selection,
+.cm-s-inner .CodeMirror-line > span > span::selection {
+  background-color: rgba(167, 178, 189, 0.2);
+}
+*/
+
+/* code fences */
+.md-fences {
+  font-family: "Fira Code", Consolas, "Lucida Console", "Courier", monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #282c34;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 2.5rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.md-fences[contenteditable="false"]:active, .md-fences[contenteditable="false"]:focus {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.md-fences .code-tooltip {
+  background-color: #282c34;
+  border-radius: 4px;
+}
+
+.md-fences span {
+  color: #abb2bf;
+}
+
+.md-fences .code-tooltip .ty-input {
+  color: #fff;
+  font-weight: 500;
+}
+
+.ty-show .autoComplt-list li.active {
+  background-color: #bac6e9;
+}
+
+/* code container */
+.cm-s-inner {
+  background-color: #282c34;
+}
+
+.cm-s-inner .CodeMirror-gutters {
+  background-color: #282c34;
+  border: none;
+}
+
+.cm-s-inner .CodeMirror-guttermarker,
+.cm-s-inner .CodeMirror-guttermarker-subtle,
+.cm-s-inner .CodeMirror-linenumber {
+  color: #737984;
+}
+
+.cm-s-inner .CodeMirror-cursor {
+  border-left: 1px solid #528bff !important;
+}
+
+.cm-s-inner div.CodeMirror-selected {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.cm-s-inner.CodeMirror-focused div.CodeMirror-selected {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line > span::-moz-selection,
+.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
+  background-color: #bac6e9;
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line > span::selection,
+.cm-s-inner .CodeMirror-line > span > span::selection {
+  background-color: #bac6e9;
+}
+
+.cm-s-inner .CodeMirror-activeline-background {
+  background: rgba(0, 0, 0, 0);
+}
+
+.cm-s-inner .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext {
+  background-color: #404859 !important;
+}
+
+/* code fences color */
+.cm-s-inner .cm-keyword {
+  color: #c678dd !important;
+}
+
+.cm-s-inner .cm-operator {
+  color: #56b6c2 !important;
+}
+
+.cm-s-inner .cm-variable {
+  color: #d19a66 !important;
+}
+
+.cm-s-inner .cm-variable-2 {
+  color: #e06c75 !important;
+}
+
+.cm-s-inner .cm-variable-3 {
+  color: #e06c75 !important;
+}
+
+.cm-s-inner .cm-builtin {
+  color: #e8bf6a !important;
+}
+
+.cm-s-inner .cm-atom {
+  color: #d19a66 !important;
+}
+
+.cm-s-inner .cm-number {
+  color: #d19a66 !important;
+}
+
+.cm-s-inner .cm-def {
+  color: #e06c75 !important;
+}
+
+.cm-s-inner .cm-string {
+  color: #98c379 !important;
+}
+
+.cm-s-inner .cm-string-2 {
+  color: #80cbc4 !important;
+}
+
+.cm-s-inner .cm-comment {
+  color: #629755 !important;
+}
+
+.cm-s-inner .cm-tag {
+  color: #e06c75 !important;
+}
+
+.cm-s-inner .cm-meta {
+  color: #e06c75 !important;
+}
+
+.cm-s-inner .cm-attribute {
+  color: #d19a66 !important;
+}
+
+.cm-s-inner .cm-property {
+  color: #61afef !important;
+}
+
+.cm-s-inner .cm-qualifier {
+  color: #decb6b !important;
+}
+
+.cm-s-inner .cm-error {
+  color: #fff !important;
+  background-color: #ec5f67 !important;
+}
+
+.cm-s-inner .cm-tag.cm-bracket {
+  color: #abb2bf !important;
+}
+
+
+</style><title>腾讯轻量级云服务器使用教程</title>
+<style type="text/css">#_copy{align-items:center;background:#4494d5;border-radius:3px;color:#fff;cursor:pointer;display:flex;font-size:13px;height:30px;justify-content:center;position:absolute;width:60px;z-index:1000}#select-tooltip,#sfModal,.modal-backdrop,div[id^=reader-helper]{display:none!important}.modal-open{overflow:auto!important}._sf_adjust_body{padding-right:0!important}.enable_copy_btns_div{position:fixed;width:154px;left:10px;top:45%;background:#e7f1ff;border:2px solid #4595d5;font-weight:600;border-radius:2px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;z-index:5000}.enable_copy_btns_logo{width:100%;background:#4595d5;text-align:center;font-size:12px;color:#e7f1ff;line-height:30px;height:30px}.enable_copy_btns_btn{display:block;width:128px;height:28px;background:#7f5711;border-radius:4px;color:#fff;font-size:12px;border:0;outline:0;margin:8px auto;font-weight:700;cursor:pointer;opacity:.9}.enable_copy_btns_btn:hover{opacity:.8}.enable_copy_btns_btn:active{opacity:1}</style></head>
+<body class="typora-export os-windows" inmaintabuse="1"><div class="typora-export-content">
+<div id="write" class=""><h1 id="腾讯云轻量级服务器使用教程"><span>腾讯云轻量级服务器使用教程</span></h1><div class="md-toc" mdtype="toc"><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B">腾讯云轻量级服务器使用教程</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n3"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#%E4%B8%80%E8%85%BE%E8%AE%AF%E4%BA%91%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C">一、腾讯云账号注册</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n11"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#%E4%BA%8C%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B4%AD%E4%B9%B0">二、腾讯云轻量级服务器购买</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n14"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#%E4%B8%89%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8">三、腾讯云轻量级服务器使用</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n15"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#1%E8%BF%9B%E5%85%A5%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A7%E5%88%B6%E5%8F%B0">1、进入云服务器控制台</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n19"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#2%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81">2、重置密码</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n22"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#3%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95">3、远程登录</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n23"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#31-%E6%96%B9%E5%BC%8F%E4%B8%80%E6%B5%8F%E8%A7%88%E5%99%A8%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95">3.1 方式一：浏览器远程登录</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n26"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#32-%E6%96%B9%E5%BC%8F%E4%BA%8Cwindows%E6%A1%8C%E9%9D%A2%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5">3.2 方式二：Windows桌面远程连接</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n31"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#%E5%9B%9B%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8windows-server-2016%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE">四、腾讯云轻量级服务器使用Windows Server 2016部署项目</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n32"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#1%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%87%86%E5%A4%87%E7%8E%AF%E5%A2%83%E8%B5%84%E6%96%99">1、远程连接服务器，准备环境资料</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n53"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#2%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83">2、安装、配置环境</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n58"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#3%E9%83%A8%E7%BD%B2%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E9%A1%B9%E7%9B%AE%E6%96%B9%E5%BC%8F%E4%B8%80%EF%BC%89">3、部署数据库及项目（方式一）</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n61"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#31-%E9%83%A8%E7%BD%B2%E6%95%B0%E6%8D%AE%E5%BA%93">3.1 部署数据库</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n65"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#32-%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE">3.2 部署项目</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n71"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#321-%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE">3.2.1 导入项目</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n75"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#322-%E8%BF%90%E8%A1%8C%E9%A1%B9%E7%9B%AE">3.2.2 运行项目</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n77"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#323-%E8%AE%BF%E9%97%AE%E9%A1%B9%E7%9B%AE">3.2.3 访问项目</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n86"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#4%E9%83%A8%E7%BD%B2%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E9%A1%B9%E7%9B%AE%E6%96%B9%E5%BC%8F%E4%BA%8C%EF%BC%89">4、部署数据库及项目（方式二）</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n92"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#41-%E9%83%A8%E7%BD%B2%E6%95%B0%E6%8D%AE%E5%BA%93">4.1 部署数据库</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n114"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#42-%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE">4.2 部署项目</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n115"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#421-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">4.2.1 准备工作</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n122"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#422-%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE">4.2.2 上传项目</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n127"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#423-%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1">4.2.3 启动服务</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n132"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#424-%E8%AE%BF%E9%97%AE%E9%A1%B9%E7%9B%AE">4.2.4 访问项目</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n140"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#%E4%BA%94%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8-centos-76--%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE">五、腾讯云轻量级服务器使用 CentOS 7.6 + 宝塔面板部署项目</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n141"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#1-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F">1、 重装系统</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n144"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#2%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF">2、安装宝塔面板</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n145"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#21-%E7%99%BB%E5%BD%95-cent-os-%E7%B3%BB%E7%BB%9F">2.1 登录 Cent OS 系统</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n154"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#22-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF">2.2 安装宝塔面板</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n169"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#3%E7%99%BB%E5%BD%95%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF">3、登录宝塔面板</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n170"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#31-%E8%AE%BE%E7%BD%AE%E5%AE%89%E5%85%A8%E7%BB%84%E6%94%BE%E8%A1%8C%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E7%99%BB%E5%BD%95%E7%AB%AF%E5%8F%A3%E5%8F%B7">3.1 设置安全组放行宝塔面板登录端口号</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n174"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#32-%E7%99%BB%E5%BD%95%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF">3.2 登录宝塔面板</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n179"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#4%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83">4、安装环境</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n180"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#41-%E5%AE%89%E8%A3%85-apache">4.1 安装 Apache</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n183"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#42-%E5%AE%89%E8%A3%85-jdk-%E5%92%8C-tomcat">4.2 安装 JDK 和 Tomcat</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n196"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#43-%E5%AE%89%E8%A3%85mysql">4.3 安装MySQL</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n198"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#5%E9%83%A8%E7%BD%B2%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E9%A1%B9%E7%9B%AE%E6%96%B9%E5%BC%8F%E4%B8%80%EF%BC%89">5、部署数据库及项目（方式一）</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n199"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#51-%E9%83%A8%E7%BD%B2%E6%95%B0%E6%8D%AE%E5%BA%93">5.1 部署数据库</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n213"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#52-%E9%83%A8%E7%BD%B2java%E9%A1%B9%E7%9B%AE">5.2 部署JAVA项目</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n219"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#53%E8%AE%BF%E9%97%AE%E9%A1%B9%E7%9B%AE">5.3访问项目</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n233"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#6%E9%83%A8%E7%BD%B2%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E9%A1%B9%E7%9B%AE%E6%96%B9%E5%BC%8F%E4%BA%8C%EF%BC%89">6、部署数据库及项目（方式二）</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n234"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#61-%E9%83%A8%E7%BD%B2%E6%95%B0%E6%8D%AE%E5%BA%93">6.1 部署数据库</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n248"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#62-%E9%83%A8%E7%BD%B2java%E9%A1%B9%E7%9B%AE">6.2 部署JAVA项目</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n260"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#621-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">6.2.1 准备工作</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n267"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#622-%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE">6.2.2 上传项目</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n274"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#623-%E8%AE%BF%E9%97%AE%E9%A1%B9%E7%9B%AE">6.2.3 访问项目</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n281"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#%E5%85%AD%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E7%BA%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8-centos-76-%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE">六、腾讯云轻量级服务器使用 CentOS 7.6 部署项目</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n282"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#1-%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F-2">1、 重装系统</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n285"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#2%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83">2、安装环境</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n286"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#21-%E5%AE%89%E8%A3%85mysql">2.1 安装MySQL</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n287"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87">安装前准备</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n298"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#211-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8C%85">2.1.1 下载安装包</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n307"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#212-%E5%B0%86%E5%AE%89%E8%A3%85%E5%8C%85%E4%B8%8A%E4%BC%A0%E8%87%B3%E6%9C%8D%E5%8A%A1%E5%99%A8">2.1.2 将安装包上传至服务器</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n314"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#213-%E5%AE%89%E8%A3%85mysql%E6%9C%8D%E5%8A%A1">2.1.3 安装MySQL服务</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n336"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#214-%E6%9F%A5%E7%9C%8Bmysql%E6%9C%8D%E5%8A%A1%E7%8A%B6%E6%80%81--%E5%90%AF%E5%8A%A8mysql%E6%9C%8D%E5%8A%A1--%E8%AE%BE%E7%BD%AEmysql%E6%9C%8D%E5%8A%A1%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8">2.1.4 查看MySQL服务状态 &amp; 启动MySQL服务 &amp; 设置MySQL服务开机自启动</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n351"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#215-%E7%99%BB%E5%BD%95mysql">2.1.5 登录MySQL</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n378"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#216-%E8%AE%BE%E7%BD%AEroot%E7%94%A8%E6%88%B7%E5%85%81%E8%AE%B8%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5mysql%E6%95%B0%E6%8D%AE%E5%BA%93">2.1.6 设置root用户允许远程连接MySQL数据库</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n388"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#22-%E5%AE%89%E8%A3%85jdk">2.2 安装JDK</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n389"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87-2">安装前准备</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n399"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#231-%E4%B8%8B%E8%BD%BDjdk">2.3.1 下载jdk</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n403"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#232-%E5%AE%89%E8%A3%85jdk">2.3.2 安装jdk</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n408"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#233-%E9%85%8D%E7%BD%AEjdk">2.3.3 配置jdk</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n423"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#23-%E5%AE%89%E8%A3%85tomcat">2.3 安装Tomcat</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n424"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#231-%E4%B8%8B%E8%BD%BDtomcat">2.3.1 下载Tomcat</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n428"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#232-%E5%AE%89%E8%A3%85tomcat">2.3.2 安装Tomcat</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n433"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#233-%E5%90%AF%E5%8A%A8tomcat%E6%9C%8D%E5%8A%A1">2.3.3 启动Tomcat服务</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n435"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#234-%E8%AE%BE%E7%BD%AE%E7%AB%AF%E5%8F%A3%E5%8F%B78080%EF%BC%89%E9%80%9A%E8%BF%87%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%98%B2%E7%81%AB%E5%A2%99">2.3.4 设置端口号（8080）通过云服务器防火墙</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n437"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#235-%E6%B5%8B%E8%AF%95tomcat%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F">2.3.5 测试Tomcat是否安装成功</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n441"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#3%E9%83%A8%E7%BD%B2%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E9%A1%B9%E7%9B%AE">3、部署数据库及项目</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n442"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#31-%E9%83%A8%E7%BD%B2%E6%95%B0%E6%8D%AE%E5%BA%93-2">3.1 部署数据库</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n445"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#32-%E9%83%A8%E7%BD%B2java%E9%A1%B9%E7%9B%AE">3.2 部署JAVA项目</a></span><span role="listitem" class="md-toc-item md-toc-h6" data-ref="n446"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#321-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">3.2.1 准备工作</a></span><span role="listitem" class="md-toc-item md-toc-h6" data-ref="n453"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#322-%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE%E5%B9%B6%E8%A7%A3%E5%8E%8B">3.2.2 上传项目并解压</a></span><span role="listitem" class="md-toc-item md-toc-h6" data-ref="n459"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/Cloud/tencent-cloud.html#323-%E8%AE%BF%E9%97%AE%E9%A1%B9%E7%9B%AE-2">3.2.3 访问项目</a></span></p></div><h2 id="一腾讯云账号注册"><span>一、腾讯云账号注册</span></h2><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508013936207.png" referrerpolicy="no-referrer" alt="image-20230508013936207"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508014007459.png" referrerpolicy="no-referrer" alt="image-20230508014007459"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508014442431.png" referrerpolicy="no-referrer" alt="image-20230508014442431"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508014545843.png" referrerpolicy="no-referrer" alt="image-20230508014545843"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508014654606.png" referrerpolicy="no-referrer" alt="image-20230508014654606"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508014802538.png" referrerpolicy="no-referrer" alt="image-20230508014802538"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508014846749.png" referrerpolicy="no-referrer" alt="image-20230508014846749"></p><h2 id="二腾讯云轻量级服务器购买"><span>二、腾讯云轻量级服务器购买</span></h2><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508014938668.png" referrerpolicy="no-referrer" alt="image-20230508014938668"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508015027843.png" referrerpolicy="no-referrer" alt="image-20230508015027843"></p><h2 id="三腾讯云轻量级服务器使用"><span>三、腾讯云轻量级服务器使用</span></h2><h3 id="1进入云服务器控制台"><span>1、进入云服务器控制台</span></h3><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504082553536.png" referrerpolicy="no-referrer" alt="image-20230504082553536"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504082658598.png" referrerpolicy="no-referrer" alt="image-20230504082658598"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504082755815.png" referrerpolicy="no-referrer" alt="image-20230504082755815"></p><h3 id="2重置密码"><span>2、重置密码</span></h3><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504082903568.png" referrerpolicy="no-referrer" alt="image-20230504082903568"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504083018766.png" referrerpolicy="no-referrer" alt="image-20230504083018766"></p><h3 id="3远程登录"><span>3、远程登录</span></h3><h4 id="31-方式一浏览器远程登录"><span>3.1 方式一：浏览器远程登录</span></h4><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504083247568.png" referrerpolicy="no-referrer" alt="image-20230504083247568"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504083350398.png" referrerpolicy="no-referrer" alt="image-20230504083350398"></p><h4 id="32-方式二windows桌面远程连接"><span>3.2 方式二：Windows桌面远程连接</span></h4><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427145437168.png" referrerpolicy="no-referrer" alt="image-20230427145437168"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427145542760.png" referrerpolicy="no-referrer" alt="image-20230427145542760"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504083119512.png" referrerpolicy="no-referrer" alt="image-20230504083119512"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427145840230.png" referrerpolicy="no-referrer" alt="image-20230427145840230"></p><h2 id="四腾讯云轻量级服务器使用windows-server-2016部署项目"><span>四、腾讯云轻量级服务器使用Windows Server 2016部署项目</span></h2><h3 id="1远程连接服务器准备环境资料"><span>1、远程连接服务器，准备环境资料</span></h3><p><span>下载对应工具放入云服务器：（和使用自己的电脑一致）</span></p><ul><li><p><span>方式1：从本机使用 </span><code>Ctrl + C</code><span> 和 </span><code>Ctrl + V</code><span> 复制到云服务器</span></p></li><li><p><span>方式2：在云服务器浏览器中访问官网下载</span></p></li></ul><blockquote><p><span>部署 </span><code>JavaWeb</code><span> 项目需要准备的环境：</span></p><ul><li><p><span>jdk 1.8</span></p></li><li><p><span>Tomcat 8.5</span></p></li><li><p><span>MySQL 5.7</span></p></li><li><p><span>Navicat（</span><code>非必须</code><span>）</span></p></li><li><p><span>Eclipse（</span><code>非必须</code><span>）</span></p></li></ul></blockquote><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427211447732.png" referrerpolicy="no-referrer" alt="image-20230427211447732"></p><h3 id="2安装配置环境"><span>2、安装、配置环境</span></h3><blockquote><p><span>特别说明：按照规范配置</span><code>JDK</code><span> 的环境变量和 </span><code>MySQL</code><span> 环境变量</span></p></blockquote><p><span>参考教程：</span><a href="http://ygxjs.cn/note-system-2021/html/JavaWeb/Java%E6%96%B9%E5%90%91%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83%E4%B8%8B%E8%BD%BD&amp;%E5%AE%89%E8%A3%85&amp;%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html"><span>Java方向编程环境下载&amp;安装&amp;配置教程</span></a></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427211901279.png" referrerpolicy="no-referrer" alt="image-20230427211901279"></p><h3 id="3部署数据库及项目方式一）"><span>3、部署数据库及项目（方式一）</span></h3><blockquote><p><span>在云服务器上安装 </span><code>Navicat</code><span> 部署数据库，安装 </span><code>Eclipse</code><span> 部署项目</span></p></blockquote><h4 id="31-部署数据库"><span>3.1 部署数据库</span></h4><blockquote><p><span>使用 </span><code>Navicat</code><span> 创建数据库，执行准备好的数据库脚本创建表并导入数据</span></p></blockquote><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427212359921.png" referrerpolicy="no-referrer" alt="image-20230427212359921"></p><h4 id="32-部署项目"><span>3.2 部署项目</span></h4><blockquote><p><span>将准备好的项目导入 </span><code>Eclipse</code><span> ，并将部署到 </span><code>Tomcat</code><span> 服务器上，启动 </span><code>Tomcat</code><span> 服务器</span></p><ul><li><p><span>简单来说，就是导入项目并运行</span></p></li></ul></blockquote><h5 id="321-导入项目"><span>3.2.1 导入项目</span></h5><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427213219953.png" referrerpolicy="no-referrer" alt="image-20230427213219953"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427213256991.png" referrerpolicy="no-referrer" alt="image-20230427213256991"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427213500111.png" referrerpolicy="no-referrer" alt="image-20230427213500111"></p><h5 id="322-运行项目"><span>3.2.2 运行项目</span></h5><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427213617481.png" referrerpolicy="no-referrer" alt="image-20230427213617481"></p><h5 id="323-访问项目"><span>3.2.3 访问项目</span></h5><p><span>在服务器上使用如下地址就可以访问项目：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="xml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="xml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">http://localhost:8080/项目名/请求名</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><p><span>如果需要在其他设备访问，就需要将本地地址 </span><code>localhost</code><span> 换为 </span><code>服务器公网IP</code><span>：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="xml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="xml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">http://服务器公网ip:8080/项目名/请求名</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><p><span>最后还需要在服务器</span><code>安全组</code><span>中添加Web服务的 </span><code>8080</code><span> 端口通过：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504083618312.png" referrerpolicy="no-referrer" alt="image-20230504083618312"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504083729154.png" referrerpolicy="no-referrer" alt="image-20230504083729154"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504083828105.png" referrerpolicy="no-referrer" alt="image-20230504083828105"></p><h3 id="4部署数据库及项目方式二）"><span>4、部署数据库及项目（方式二）</span></h3><blockquote><p><span>在</span><code>本地远程访问</code><span>云服务器数据库并完成部署，将项目直接部署到 </span><code>Tomcat</code><span> 上</span></p><ul><li><p><span>与方式一的区别：不需要安装 Navicat 和 Eclipse</span></p></li></ul></blockquote><h4 id="41-部署数据库"><span>4.1 部署数据库</span></h4><blockquote><p><span>在本地使用</span><code>公网IP</code><span>连接云服务器数据库，并创建数据库，执行准备好的数据库脚本创建表、导入数据</span></p></blockquote><p><span>连接云服务器数据库之前需要做如下准备工作：</span></p><ul><li><p><span>在服务器安全组放开MySQL服务端口号 </span><code>3306</code></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504083945667.png" referrerpolicy="no-referrer" alt="image-20230504083945667"></p></li><li><p><span>授权所有用户可以访问云服务器的MySQL服务的root用户【在云服务器上操作】</span></p><ul><li><p><span>授权</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="mysql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="mysql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">GRANT</span> <span class="cm-keyword">ALL</span> <span class="cm-keyword">PRIVILEGES</span> <span class="cm-keyword">ON</span> <span class="cm-operator">*</span>.<span class="cm-operator">*</span> <span class="cm-keyword">TO</span> <span class="cm-string">'root'</span><span class="cm-variable-2">@'%'IDENTIFIED BY '数据库密码'</span> <span class="cm-keyword">WITH</span> <span class="cm-keyword">GRANT</span> <span class="cm-keyword">OPTION</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre></li><li><p><span>刷新权限</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="mysql"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="mysql"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">FLUSH</span> <span class="cm-keyword">PRIVILEGES</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre></li></ul></li></ul><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427230059726.png" referrerpolicy="no-referrer" alt="image-20230427230059726"></p><ul><li><p><span>本地连接数据库</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427230604396.png" referrerpolicy="no-referrer" alt="image-20230427230604396"></p></li></ul><h4 id="42-部署项目"><span>4.2 部署项目</span></h4><h5 id="421-准备工作"><span>4.2.1 准备工作</span></h5><ul><li><p><span>将本地项目导出为 </span><code>war</code><span> 包，备用</span></p></li></ul><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427232932085.png" referrerpolicy="no-referrer" alt="image-20230427232932085"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427233028411.png" referrerpolicy="no-referrer" alt="image-20230427233028411"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427233205974.png" referrerpolicy="no-referrer" alt="image-20230427233205974"></p><h5 id="422-上传项目"><span>4.2.2 上传项目</span></h5><ul><li><p><span>将 war 包复制到云服务器的 Tomcat 安装路径的 </span><code>webapps</code><span> 中并解压，解压之后即可将 war 包删除</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427235426721.png" referrerpolicy="no-referrer" alt="image-20230427235426721"></p></li></ul><h5 id="423-启动服务"><span>4.2.3 启动服务</span></h5><ul><li><p><span>在云服务器的 Tomcat 安装路径的 </span><code>bin</code><span> 中启动 MySQL 服务（注意：DOS命令窗口不能关闭）</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230428000012998.png" referrerpolicy="no-referrer" alt="image-20230428000012998"></p></li></ul><h5 id="424-访问项目"><span>4.2.4 访问项目</span></h5><p><span>在服务器上使用如下地址就可以访问项目：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="xml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="xml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">http://localhost:8080/项目名/请求名</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><p><span>如果需要在其他设备访问，就需要将本地地址 </span><code>localhost</code><span> 换为 </span><code>服务器公网IP</code><span>：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="xml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="xml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">http://服务器公网ip:8080/项目名/请求名</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><p><span>最后还需要在服务器</span><code>安全组</code><span>中添加Web服务的 </span><code>8080</code><span> 端口通过：（端口号不要重复添加）</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504083729154.png" referrerpolicy="no-referrer" alt="image-20230504083729154"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504083828105.png" referrerpolicy="no-referrer" alt="image-20230504083828105"></p><h2 id="五腾讯云轻量级服务器使用-centos-76--宝塔面板部署项目"><span>五、腾讯云轻量级服务器使用 CentOS 7.6 + 宝塔面板部署项目</span></h2><h3 id="1-重装系统"><span>1、 重装系统</span></h3><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504084615210.png" referrerpolicy="no-referrer" alt="image-20230504084615210"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504090156193.png" referrerpolicy="no-referrer" alt="image-20230504090156193"></p><h3 id="2安装宝塔面板"><span>2、安装宝塔面板</span></h3><h4 id="21-登录-cent-os-系统"><span>2.1 登录 Cent OS 系统</span></h4><blockquote><p><span>登录方式：</span></p><ul><li><p><span>云服务器直接远程登录</span></p></li><li><p><span>第三方工具登录（Xshell、FinalShell等）</span></p></li></ul></blockquote><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430225424448.png" referrerpolicy="no-referrer" alt="image-20230430225424448"></p><h4 id="22-安装宝塔面板"><span>2.2 安装宝塔面板</span></h4><p><span>宝塔官网：</span><a href="https://www.bt.cn/new/index.html"><span>https://www.bt.cn/new/index.html</span></a></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430225646326.png" referrerpolicy="no-referrer" alt="image-20230430225646326"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430225727720.png" referrerpolicy="no-referrer" alt="image-20230430225727720"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430225748190.png" referrerpolicy="no-referrer" alt="image-20230430225748190"></p><ul><li><p><span>Cent OS安装脚本：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 7.89844px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">yum install <span class="cm-attribute">-y</span> <span class="cm-builtin">wget</span> &amp;&amp; <span class="cm-builtin">wget</span> <span class="cm-attribute">-O</span> install.sh https://download.bt.cn/install/install_6.0.sh &amp;&amp; <span class="cm-builtin">sh</span> install.sh ed8484bec</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 40px;"></div><div class="CodeMirror-gutters" style="display: none; height: 40px;"></div></div></div></pre></li></ul><p><span>将如上命令复制到 FinalShell 控制台执行即可：（出现验证，填写 </span><code>y</code><span> 即可）</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430230101002.png" referrerpolicy="no-referrer" alt="image-20230430230101002"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430230424626.png" referrerpolicy="no-referrer" alt="image-20230430230424626"></p><p><span>安装结束之后得到宝塔面板登录信息：（保存登录信息）</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430230623707.png" referrerpolicy="no-referrer" alt="image-20230430230623707"></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="xml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="xml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">外网面板地址: https://公网ip:24614/2a5add76</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">内网面板地址: https://私有ip:24614/2a5add76</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">username: xxxxxxxx</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">password: xxxxxxxx</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 81px;"></div><div class="CodeMirror-gutters" style="display: none; height: 81px;"></div></div></div></pre><h3 id="3登录宝塔面板"><span>3、登录宝塔面板</span></h3><h4 id="31-设置安全组放行宝塔面板登录端口号"><span>3.1 设置安全组放行宝塔面板登录端口号</span></h4><blockquote><p><span>此文档演示地址为：https://公网ip:12344/2a5add76，端口号为：</span><code>24614</code></p></blockquote><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504092823991.png" referrerpolicy="no-referrer" alt="image-20230504092823991"></p><h4 id="32-登录宝塔面板"><span>3.2 登录宝塔面板</span></h4><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430231348946.png" referrerpolicy="no-referrer" alt="image-20230430231348946"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430231503732.png" referrerpolicy="no-referrer" alt="image-20230430231503732"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430231706536.png" referrerpolicy="no-referrer" alt="image-20230430231706536"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430231826538.png" referrerpolicy="no-referrer" alt="image-20230430231826538"></p><h3 id="4安装环境"><span>4、安装环境</span></h3><h4 id="41-安装-apache"><span>4.1 安装 Apache</span></h4><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430232022036.png" referrerpolicy="no-referrer" alt="image-20230430232022036"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430232106596.png" referrerpolicy="no-referrer" alt="image-20230430232106596"></p><h4 id="42-安装-jdk-和-tomcat"><span>4.2 安装 JDK 和 Tomcat</span></h4><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430233211072.png" referrerpolicy="no-referrer" alt="image-20230430233211072"></p><blockquote><ul><li><p><span>Tomcat 的安装目录和端口如下：</span></p><ul><li><p><span>Tomcat7 安装目录在</span><code>/usr/local/bttomcat/tomcat7</code><span>   端口号</span><code>8231</code></p></li><li><p><span>Tomcat8 安装目录 </span><code>/usr/local/bttomcat/tomcat8</code><span>    端口号</span><code>8232</code></p></li><li><p><span>Tomcat9  安装目录</span><code>/usr/local/bttomcat/tomcat9</code><span>  端口号</span><code>8233</code></p></li></ul></li></ul></blockquote><h4 id="43-安装mysql"><span>4.3 安装MySQL</span></h4><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230430233833257.png" referrerpolicy="no-referrer" alt="image-20230430233833257"></p><h3 id="5部署数据库及项目方式一）"><span>5、部署数据库及项目（方式一）</span></h3><h4 id="51-部署数据库"><span>5.1 部署数据库</span></h4><p><span>设置安全组放行 </span><code>3306</code><span>端口：</span></p><ul><li><p><span>腾讯云服务器：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504093826582.png" referrerpolicy="no-referrer" alt="image-20230504093826582"></p></li><li><p><span>宝塔面板：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501000251545.png" referrerpolicy="no-referrer" alt="image-20230501000251545"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501000321749.png" referrerpolicy="no-referrer" alt="image-20230501000321749"></p></li></ul><p><span>宝塔面板创建数据库：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501002933601.png" referrerpolicy="no-referrer" alt="image-20230501002933601"></p><p><span>使用 Navicat 远程连接数据库并导入数据表：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501003053066.png" referrerpolicy="no-referrer" alt="image-20230501003053066"></p><h4 id="52-部署java项目"><span>5.2 部署JAVA项目</span></h4><p><span>添加 JAVA 项目：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501003713205.png" referrerpolicy="no-referrer" alt="image-20230501003713205"></p><p><span>在项目路径下导入项目（</span><code>war</code><span>包）并解压：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501004234352.png" referrerpolicy="no-referrer" alt="image-20230501004234352"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501004319579.png" referrerpolicy="no-referrer" alt="image-20230501004319579"></p><h4 id="53访问项目"><span>5.3访问项目</span></h4><blockquote><p><span>网站访问端口号为：8232</span></p></blockquote><ul><li><p><span>腾讯云服务器放行</span><code>8232</code><span>端口：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504094739363.png" referrerpolicy="no-referrer" alt="image-20230504094739363"></p></li><li><p><span>宝塔面板放行</span><code>8232</code><span>端口：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501004938112.png" referrerpolicy="no-referrer" alt="image-20230501004938112"></p></li><li><p><span>访问项目使用如下地址：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="xml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="xml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">http://公网ip:8232</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre></li></ul><h3 id="6部署数据库及项目方式二）"><span>6、部署数据库及项目（方式二）</span></h3><h4 id="61-部署数据库"><span>6.1 部署数据库</span></h4><p><span>设置安全组放行 </span><code>3306</code><span>端口：</span></p><ul><li><p><span>腾讯云服务器：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504093826582.png" referrerpolicy="no-referrer" alt="image-20230504093826582"></p></li><li><p><span>宝塔面板：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501000251545.png" referrerpolicy="no-referrer" alt="image-20230501000251545"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501000321749.png" referrerpolicy="no-referrer" alt="image-20230501000321749"></p></li></ul><p><span>宝塔面板创建数据库：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501002933601.png" referrerpolicy="no-referrer" alt="image-20230501002933601"></p><p><span>使用 Navicat 远程连接数据库并导入数据表：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230501003053066.png" width="50%"></p><h4 id="62-部署java项目"><span>6.2 部署JAVA项目</span></h4><p><span>将项目上传到 Tomcat 安装目录的 </span><code>webapps</code><span> 中即可</span></p><blockquote><p><span>Tomcat 的安装目录和端口如下：</span></p><ul><li><p><span>Tomcat7 安装目录在</span><code>/usr/local/bttomcat/tomcat7</code><span>   端口号</span><code>8231</code></p></li><li><p><span>Tomcat8 安装目录 </span><code>/usr/local/bttomcat/tomcat8</code><span>    端口号</span><code>8232</code></p></li><li><p><span>Tomcat9  安装目录</span><code>/usr/local/bttomcat/tomcat9</code><span>  端口号</span><code>8233</code></p></li></ul></blockquote><p><span>【本演示以 Tomcat 8 为例】</span></p><h5 id="621-准备工作"><span>6.2.1 准备工作</span></h5><ul><li><p><span>将本地项目导出为 </span><code>war</code><span> 包，备用</span></p></li></ul><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427232932085.png" referrerpolicy="no-referrer" alt="image-20230427232932085"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427233028411.png" referrerpolicy="no-referrer" alt="image-20230427233028411"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427233205974.png" referrerpolicy="no-referrer" alt="image-20230427233205974"></p><h5 id="622-上传项目"><span>6.2.2 上传项目</span></h5><ul><li><p><span>在云服务器的 Tomcat 安装路径的 </span><code>webapps</code><span> 中创建文件夹，文件夹一般以</span><code>项目名</code><span>命名，并将 war 包复制到云文件夹中并解压，解压之后即可将 war 包删除</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230505090000022.png" referrerpolicy="no-referrer" alt="image-20230505090000022"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230505090109818.png" referrerpolicy="no-referrer" alt="image-20230505090109818"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230505090143839.png" referrerpolicy="no-referrer" alt="image-20230505090143839"></p></li></ul><h5 id="623-访问项目"><span>6.2.3 访问项目</span></h5><ul><li><p><span>在服务器和宝塔面板的</span><code>安全组</code><span>中添加Tomcat 8服务的 </span><code>8232</code><span> 端口通过：（端口号不要重复添加）</span></p></li><li><p><span>使用如下地址即可访问项目：</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="xml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="xml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">http://服务器公网ip:8080/项目名/请求名</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre></li></ul><h2 id="六腾讯云轻量级服务器使用-centos-76-部署项目"><span>六、腾讯云轻量级服务器使用 CentOS 7.6 部署项目</span></h2><h3 id="1-重装系统-2"><span>1、 重装系统</span></h3><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504084615210.png" referrerpolicy="no-referrer" alt="image-20230504084615210"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230504090156193.png" referrerpolicy="no-referrer" alt="image-20230504090156193"></p><h3 id="2安装环境"><span>2、安装环境</span></h3><h4 id="21-安装mysql"><span>2.1 安装MySQL</span></h4><h5 id="安装前准备"><span>安装前准备</span></h5><p><span>安装MySQL服务之前，需要检查服务器上是否已经安装了MySQL服务。</span></p><ul><li><p><span>查看是否安装了MySQL服务（依赖文件）</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rpm -qa | grep mysql</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><ul><li><p><span>卸载已经安装的MySQL依赖文件</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rpm -e --nodeps mysql依赖文件名</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024010357208.png" referrerpolicy="no-referrer" alt="image-20221024010357208"></p><h5 id="211-下载安装包"><span>2.1.1 下载安装包</span></h5><p><span>下载地址：</span><a href="https://www.mysql.com/"><span>https://www.mysql.com/</span></a></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024002144670.png" referrerpolicy="no-referrer" alt="image-20221024002144670"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024002217257.png" referrerpolicy="no-referrer" alt="image-20221024002217257"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024002240732.png" referrerpolicy="no-referrer" alt="image-20221024002240732"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024002314260.png" referrerpolicy="no-referrer" alt="image-20221024002314260"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024002422382.png" referrerpolicy="no-referrer" alt="image-20221024002422382"></p><p><span>下载后资源如下：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024002502794.png" referrerpolicy="no-referrer" alt="image-20221024002502794"></p><h5 id="212-将安装包上传至服务器"><span>2.1.2 将安装包上传至服务器</span></h5><blockquote><p><span>使用rz将安装包上传至/usr/mysql中</span></p></blockquote><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># mkdir /usr/mysql</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># cd /usr/mysql</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rz</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 60px;"></div><div class="CodeMirror-gutters" style="display: none; height: 60px;"></div></div></div></pre><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024002807368.png" referrerpolicy="no-referrer" alt="image-20221024002807368"></p><blockquote><p><span>提示：如果出现找不到 sz 和 rz 命令，可以执行命令</span><code>yum install lrzsz</code><span>进行下载</span></p></blockquote><h5 id="213-安装mysql服务"><span>2.1.3 安装MySQL服务</span></h5><blockquote><p><span>rpm -ivh 安装包名称</span></p></blockquote><p><span>注意点：安装顺序进行安装，前后有依赖关系。</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rpm -ivh mysql-community-common-5.7.38-1.el7.x86_64.rpm</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rpm -ivh mysql-community-libs-5.7.38-1.el7.x86_64.rpm</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rpm -ivh mysql-community-client-5.7.38-1.el7.x86_64.rpm</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rpm -ivh mysql-community-server-5.7.38-1.el7.x86_64.rpm</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 81px;"></div><div class="CodeMirror-gutters" style="display: none; height: 81px;"></div></div></div></pre><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024011943086.png" referrerpolicy="no-referrer" alt="image-20221024011943086"></p><ul><li><p><span>可能问题说明及解决：</span></p><ul><li><p><strong><span>问题1</span></strong><span>：安装顺序不正确</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024011229036.png" referrerpolicy="no-referrer" alt="image-20221024011229036"></p></li><li><p><span>问题1解决方案：安装如下顺序进行安装</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024011521382.png" referrerpolicy="no-referrer" alt="image-20221024011521382"></p></li><li><p><strong><span>问题2</span></strong><span>：安装mysql-community-common时用冲突问题</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024032112777.png" referrerpolicy="no-referrer" alt="image-20221024032112777"></p></li><li><p><span>问题2解决方案：卸载冲突的依赖文件</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024032238266.png" referrerpolicy="no-referrer" alt="image-20221024032238266"></p></li></ul></li></ul><h5 id="214-查看mysql服务状态--启动mysql服务--设置mysql服务开机自启动"><span>2.1.4 查看MySQL服务状态 &amp; 启动MySQL服务 &amp; 设置MySQL服务开机自启动</span></h5><blockquote><p><span>mysql服务为：mysqld</span></p></blockquote><ul><li><p><span>查看MySQL服务状态 </span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># service mysqld status</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><ul><li><p><span>启动MySQL服务</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># service mysqld start</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><ul><li><p><span>设置服务开机自启动</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># systemctl enable mysqld</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><h5 id="215-登录mysql"><span>2.1.5 登录MySQL</span></h5><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># mysql -u root -p</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024005215660.png" referrerpolicy="no-referrer" alt="image-20221024005215660"></p><ul><li><p><span>可能问题说明及解决：</span></p><ul><li><p><strong><span>问题1</span></strong><span>：登录时无密码或密码不正确</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024012814836.png" referrerpolicy="no-referrer" alt="image-20221024012814836"></p></li><li><p><span>问题1解决方案：</span></p><blockquote><p><span>第一步：修改配置文件/etc/my.cnf，在[mysqld]下面添加：skip-grant-tables，并重启MySQL服务</span></p></blockquote><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># vim /etc/my.cnf</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024014316434.png" referrerpolicy="no-referrer" alt="image-20221024014316434"></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># service mysqld restart</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><blockquote><p><span>第二步：使用无密码模式登录MySQL服务，并设置新密码</span></p></blockquote><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># mysql -u root -p</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024014521644.png" referrerpolicy="no-referrer" alt="image-20221024014521644"></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql&gt;flush privileges;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql&gt;set password <span class="cm-keyword">for</span> <span class="cm-string">'root'</span>@<span class="cm-string">'localhost'</span><span class="cm-operator">=</span>password(<span class="cm-string">'新密码'</span>);</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 40px;"></div><div class="CodeMirror-gutters" style="display: none; height: 40px;"></div></div></div></pre><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024014854269.png" referrerpolicy="no-referrer" alt="image-20221024014854269"></p><blockquote><p><span>第三步：使用设置的新密码登录MySQL服务</span></p></blockquote><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024015039460.png" referrerpolicy="no-referrer" alt="image-20221024015039460"></p></li></ul></li></ul><h5 id="216-设置root用户允许远程连接mysql数据库"><span>2.1.6 设置root用户允许远程连接MySQL数据库</span></h5><p><span>MySQL服务安装之后使用第三方工具远程连接易于操作数据库，但初始情况下无法远程连接：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508012057451.png" referrerpolicy="no-referrer" alt="image-20230508012057451"></p><p><span>解决方案：</span></p><blockquote><p><span>第一步：设置root用户允许远程连接MySQL数据库</span></p></blockquote><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql&gt;grant all privileges on *.* to <span class="cm-string">'root'</span>@<span class="cm-string">'%'</span> identified by <span class="cm-string">'MySQL服务密码'</span> with grant option;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">mysql&gt;flush privileges;</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 40px;"></div><div class="CodeMirror-gutters" style="display: none; height: 40px;"></div></div></div></pre><blockquote><p><span>第二步：设置端口号（3306）通过云服务器防火墙</span></p></blockquote><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508010502334.png" referrerpolicy="no-referrer" alt="image-20230508010502334"></p><h4 id="22-安装jdk"><span>2.2 安装JDK</span></h4><h5 id="安装前准备-2"><span>安装前准备</span></h5><p><span>安装jdk服务之前，需要检查服务器上是否已经安装了jdk服务。</span></p><ul><li><p><span>查看是否安装了MySQL服务（依赖文件）</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rpm -qa | grep jdk</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><ul><li><p><span>卸载已经安装的MySQL依赖文件</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rpm -e --nodeps jdk依赖文件名</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><h5 id="231-下载jdk"><span>2.3.1 下载jdk</span></h5><p><span>jdk1.8下载地址：</span><a href="https://www.oracle.com/java/technologies/downloads/#java8"><span>https://www.oracle.com/java/technologies/downloads/#java8</span></a></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024021431683.png" referrerpolicy="no-referrer" alt="image-20221024021431683"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024022337188.png" referrerpolicy="no-referrer" alt="image-20221024022337188"></p><h5 id="232-安装jdk"><span>2.3.2 安装jdk</span></h5><blockquote><p><span>将jdk压缩包上传到 /usr/java 中，并进行解压</span></p></blockquote><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># mkdir /usr/java</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># cd /usr/java</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rz</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># tar -zxvf jdk-8u351-linux-x64.tar.gz</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 81px;"></div><div class="CodeMirror-gutters" style="display: none; height: 81px;"></div></div></div></pre><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024022848241.png" referrerpolicy="no-referrer" alt="image-20221024022848241"></p><h5 id="233-配置jdk"><span>2.3.3 配置jdk</span></h5><blockquote><p><span>修改配置文件/etc/profile</span></p></blockquote><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># vim /etc/profile</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># jdk配置</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">export</span> <span class="cm-def">JAVA_HOME</span><span class="cm-operator">=</span>/usr/java/jdk1.8.0_351</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">export</span> <span class="cm-def">PATH</span><span class="cm-operator">=</span><span class="cm-def">$JAVA_HOME</span>/bin:<span class="cm-def">$PATH</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 60px;"></div><div class="CodeMirror-gutters" style="display: none; height: 60px;"></div></div></div></pre><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024023249707.png" referrerpolicy="no-referrer" alt="image-20221024023249707"></p><blockquote><p><span>刷新配置文件</span></p></blockquote><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># source /etc/profile</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre><ul><li><p><span>测试安装是否成功</span></p></li></ul><blockquote><p><span>java -version</span></p></blockquote><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024023952890.png" referrerpolicy="no-referrer" alt="image-20221024023952890"></p><h4 id="23-安装tomcat"><span>2.3 安装Tomcat</span></h4><h5 id="231-下载tomcat"><span>2.3.1 下载Tomcat</span></h5><p><span>tomcat 8.5下载：</span><a href="https://tomcat.apache.org/"><span>https://tomcat.apache.org/</span></a></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024024303185.png" referrerpolicy="no-referrer" alt="image-20221024024303185"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024024325712.png" referrerpolicy="no-referrer" alt="image-20221024024325712"></p><h5 id="232-安装tomcat"><span>2.3.2 安装Tomcat</span></h5><blockquote><p><span>将jdk压缩包上传到 /usr/tomcat 中，并进行解压</span></p></blockquote><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># mkdir /usr/tomcat</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># cd /usr/tomcat</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rz</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># tar -zxvf apache-tomcat-8.5.83.tar.gz</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 81px;"></div><div class="CodeMirror-gutters" style="display: none; height: 81px;"></div></div></div></pre><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024024728774.png" referrerpolicy="no-referrer" alt="image-20221024024728774"></p><h5 id="233-启动tomcat服务"><span>2.3.3 启动Tomcat服务</span></h5><p><img src="./腾讯轻量级云服务器使用教程_files/image-20221024025055555.png" referrerpolicy="no-referrer" alt="image-20221024025055555"></p><h5 id="234-设置端口号8080）通过云服务器防火墙"><span>2.3.4 设置端口号（8080）通过云服务器防火墙</span></h5><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508011412954.png" referrerpolicy="no-referrer" alt="image-20230508011412954"></p><h5 id="235-测试tomcat是否安装成功"><span>2.3.5 测试Tomcat是否安装成功</span></h5><blockquote><p><span>输入网站访问地址：http://公网ip地址:8080，出现如下界面说明安装成功</span></p></blockquote><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508011524363.png" referrerpolicy="no-referrer" alt="image-20230508011524363"></p><h4 id="3部署数据库及项目"><span>3、部署数据库及项目</span></h4><h5 id="31-部署数据库-2"><span>3.1 部署数据库</span></h5><p><span>使用 Navicat 远程连接数据库并导入数据表：</span></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230508012349646.png" referrerpolicy="no-referrer" alt="image-20230508012349646"></p><h5 id="32-部署java项目"><span>3.2 部署JAVA项目</span></h5><h6 id="321-准备工作"><span>3.2.1 准备工作</span></h6><ul><li><p><span>将本地项目导出为 </span><code>war</code><span> 包，备用</span></p></li></ul><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427232932085.png" referrerpolicy="no-referrer" alt="image-20230427232932085"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427233028411.png" referrerpolicy="no-referrer" alt="image-20230427233028411"></p><p><img src="./腾讯轻量级云服务器使用教程_files/image-20230427233205974.png" referrerpolicy="no-referrer" alt="image-20230427233205974"></p><h6 id="322-上传项目并解压"><span>3.2.2 上传项目并解压</span></h6><blockquote><p><span>将项目上传到 Tomcat 安装目录的 </span><code>webapps</code><span> 中并解压即可</span></p></blockquote><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="shell"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="shell"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># cd usr/tomcat/apache-tomcat-8.5.88/webapps/</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># rz</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># unzip goods-system.war -d goods-system</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 60px;"></div><div class="CodeMirror-gutters" style="display: none; height: 60px;"></div></div></div></pre><blockquote><p><code>unzip goods-system.war -d goods-system</code><span>中 </span><code>goods-system</code><span>为项目名</span></p></blockquote><h6 id="323-访问项目-2"><span>3.2.3 访问项目</span></h6><ul><li><p><span>使用如下地址即可访问项目：</span></p><pre class="md-fences md-end-block ty-contain-cm" spellcheck="false" lang="xml"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="xml"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.07487px; left: 3.99304px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">http://服务器公网ip:8080/项目名/请求名</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="display: none; height: 20px;"></div></div></div></pre></li></ul></div></div>
+
+<script src="chrome-extension://nhiheekdcnmfbapkmpbhmplfddenhjic/sm.bundle.js" data-pname="supercopy-v3" data-asset-path="https://spc3.s3.ap-east-1.amazonaws.com"></script></body></html>

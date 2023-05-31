@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<style type="text/css">html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+/* 全局属性 */
+#write {
+  max-width: 860px;
+  font-size: 16px;
+  color: black;
+  padding: 0 10px;
+  line-height: 1.6;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+}
+
+/*段落*/
+#write p {
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  line-height: 26px;
+  color: black;
+}
+
+
+/*标题*/
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: black;
+}
+#write h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+#write h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid rgb(239, 112, 96);
+}
+#write h2 span {
+ display: inline-block;
+ font-weight: bold;
+ background: rgb(239, 112, 96);
+ color: #ffffff;
+ padding: 3px 10px 1px;
+ border-top-right-radius: 3px;
+ border-top-left-radius: 3px;
+ margin-right: 3px;
+}
+#write h2:after {
+ display: inline-block;
+ content: "";
+ vertical-align: bottom;
+ border-bottom: 36px solid #efebe9;
+ border-right: 20px solid transparent;
+}
+#write h3 {
+  font-size: 1.5rem;
+}
+#write h4 {
+  font-size: 1.3rem;
+}
+#write h5 {
+  font-size: 1.2rem;
+}
+#write h6 {
+  font-size: 1rem;
+}
+
+/*列表*/
+#write ul,
+#write ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  color: black;
+}
+#write ul {
+  list-style-type: disc;
+}
+#write ul ul {
+  list-style-type: square;
+}
+#write ol {
+  list-style-type: decimal;
+}
+#write li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  text-align: left;
+  color: rgb(1,1,1); /* 只要是纯黑色微信编辑器就会把color这个属性吞掉。。。*/
+  font-weight: 500;
+}
+
+/*引用*/
+#write blockquote {
+  display: block;
+  font-size: 0.9em;
+  overflow: auto;
+  overflow-scrolling: touch;
+  border-left: 3px solid rgb(239, 112, 96);
+  color: #6a737d;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: #fff9f9;
+}
+#write blockquote p {
+  margin: 0px;
+  color: black;
+  line-height: 26px;
+}
+
+/*链接*/
+#write a {
+  text-decoration: none;
+  word-wrap: break-word;
+  font-weight: bold;
+  border-bottom: 1px solid #1e6bb8;
+  color: rgb(239, 112, 96);
+  border-bottom: 1px solid rgb(239, 112, 96);
+}
+
+/*行内代码*/
+#write p code,
+#write li code {
+  font-size: 14px;
+  word-wrap: break-word;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+  color:  rgb(239, 112, 96);;
+  background-color: rgba(27,31,35,.05);
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  word-break: break-all;
+}
+
+/*图片*/
+#write img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+#write span img {
+  display: inline-block;
+  border-right: 0px;
+  border-left: 0px;
+}
+
+/*表格*/
+#write table {
+  display: table;
+  text-align: left;
+}
+#write tbody {
+  border: 0;
+}
+#write table tr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  background-color: white;
+}
+#write table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+#write table tr th,
+#write table tr td {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: left;
+}
+#write table tr th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* 行内代码 */
+#write span code, #write li code {
+ color: rgb(239, 112, 96);
+}
+
+/* 脚注上标 */
+#write .md-footnote {
+ font-weight: bold;
+ color: rgb(239, 112, 96);
+}
+#write .md-footnote > .md-text:before {
+ content: '['
+}
+#write .md-footnote > .md-text:after {
+ content: ']'
+}
+
+/* 脚注 */
+#write .md-def-name {
+  padding-right: 1.8ch;
+}
+#write .md-def-name:before {
+  content: '[';
+  color: #000;
+}
+#write .md-def-name:after {
+  color: #000;
+}
+
+/* 代码块主题 */
+/*.md-fences:before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: #282c34;
+  margin-bottom: -7px;
+  border-radius: 5px;
+  background-position: 10px 10px;
+}
+.cm-s-inner.CodeMirror {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #292d3e;
+  color: #a6accd;
+  font-family: Consolas;
+  border-radius: 4px;
+}
+.CodeMirror-lines {
+  padding-left: 4px;
+}
+.cm-s-inner .cm-keyword {
+  color: #c792ea !important;
+}
+.cm-s-inner .cm-operator {
+  color: #89ddff !important;
+}
+.cm-s-inner .cm-variable-2 {
+  color: #eeffff !important;
+}
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type {
+  color: #f07178 !important;
+}
+.cm-s-inner .cm-builtin {
+  color: #ffcb6b !important;
+}
+.cm-s-inner .cm-atom {
+  color: #f78c6c !important;
+}
+.cm-s-inner .cm-number {
+  color: #ff5370 !important;
+}
+.cm-s-inner .cm-def {
+  color: #82aaff !important;
+}
+.cm-s-inner .cm-string {
+  color: #c3e88d !important;
+}
+.cm-s-inner .cm-string-2 {
+  color: #f07178 !important;
+}
+.cm-s-inner .cm-comment {
+  color: #676e95 !important;
+}
+.cm-s-inner .cm-variable {
+  color: #f07178 !important;
+}
+.cm-s-inner .cm-tag {
+  color: #ff5370 !important;
+}
+.cm-s-inner .cm-meta {
+  color: #ffcb6b !important;
+}
+.cm-s-inner .cm-attribute {
+  color: #c792ea !important;
+}
+.cm-s-inner .cm-property {
+  color: #c792ea !important;
+}
+.cm-s-inner .cm-qualifier {
+  color: #decb6b !important;
+}
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type {
+  color: #decb6b !important;
+}
+.cm-s-inner .cm-error {
+  color: rgba(255, 255, 255, 1) !important;
+  background-color: #ff5370 !important;
+}
+.cm-s-inner .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid rgb(239, 112, 96);
+  z-index: 3;
+}
+
+.cm-s-inner div.CodeMirror-selected {
+  background: rgba(167, 178, 189, 0.2) !important;
+}
+
+.cm-s-inner.CodeMirror-focused div.CodeMirror-selected {
+  background: rgba(167, 178, 189, 0.2) !important;
+}
+
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext {
+  background-color: rgba(167, 178, 189, 0.0) !important;
+}
+
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line > span::-moz-selection,
+.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
+  background-color: rgba(167, 178, 189, 0.2);
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line > span::selection,
+.cm-s-inner .CodeMirror-line > span > span::selection {
+  background-color: rgba(167, 178, 189, 0.2);
+}
+*/
+
+/* code fences */
+.md-fences {
+  font-family: "Fira Code", Consolas, "Lucida Console", "Courier", monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #282c34;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 2.5rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.md-fences[contenteditable="false"]:active, .md-fences[contenteditable="false"]:focus {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.md-fences .code-tooltip {
+  background-color: #282c34;
+  border-radius: 4px;
+}
+
+.md-fences span {
+  color: #abb2bf;
+}
+
+.md-fences .code-tooltip .ty-input {
+  color: #fff;
+  font-weight: 500;
+}
+
+.ty-show .autoComplt-list li.active {
+  background-color: #bac6e9;
+}
+
+/* code container */
+.cm-s-inner {
+  background-color: #282c34;
+}
+
+.cm-s-inner .CodeMirror-gutters {
+  background-color: #282c34;
+  border: none;
+}
+
+.cm-s-inner .CodeMirror-guttermarker,
+.cm-s-inner .CodeMirror-guttermarker-subtle,
+.cm-s-inner .CodeMirror-linenumber {
+  color: #737984;
+}
+
+.cm-s-inner .CodeMirror-cursor {
+  border-left: 1px solid #528bff !important;
+}
+
+.cm-s-inner div.CodeMirror-selected {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.cm-s-inner.CodeMirror-focused div.CodeMirror-selected {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line > span::-moz-selection,
+.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
+  background-color: #bac6e9;
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line > span::selection,
+.cm-s-inner .CodeMirror-line > span > span::selection {
+  background-color: #bac6e9;
+}
+
+.cm-s-inner .CodeMirror-activeline-background {
+  background: rgba(0, 0, 0, 0);
+}
+
+.cm-s-inner .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext {
+  background-color: #404859 !important;
+}
+
+/* code fences color */
+.cm-s-inner .cm-keyword {
+  color: #c678dd !important;
+}
+
+.cm-s-inner .cm-operator {
+  color: #56b6c2 !important;
+}
+
+.cm-s-inner .cm-variable {
+  color: #d19a66 !important;
+}
+
+.cm-s-inner .cm-variable-2 {
+  color: #e06c75 !important;
+}
+
+.cm-s-inner .cm-variable-3 {
+  color: #e06c75 !important;
+}
+
+.cm-s-inner .cm-builtin {
+  color: #e8bf6a !important;
+}
+
+.cm-s-inner .cm-atom {
+  color: #d19a66 !important;
+}
+
+.cm-s-inner .cm-number {
+  color: #d19a66 !important;
+}
+
+.cm-s-inner .cm-def {
+  color: #e06c75 !important;
+}
+
+.cm-s-inner .cm-string {
+  color: #98c379 !important;
+}
+
+.cm-s-inner .cm-string-2 {
+  color: #80cbc4 !important;
+}
+
+.cm-s-inner .cm-comment {
+  color: #629755 !important;
+}
+
+.cm-s-inner .cm-tag {
+  color: #e06c75 !important;
+}
+
+.cm-s-inner .cm-meta {
+  color: #e06c75 !important;
+}
+
+.cm-s-inner .cm-attribute {
+  color: #d19a66 !important;
+}
+
+.cm-s-inner .cm-property {
+  color: #61afef !important;
+}
+
+.cm-s-inner .cm-qualifier {
+  color: #decb6b !important;
+}
+
+.cm-s-inner .cm-error {
+  color: #fff !important;
+  background-color: #ec5f67 !important;
+}
+
+.cm-s-inner .cm-tag.cm-bracket {
+  color: #abb2bf !important;
+}
+
+
+</style><title>IDEA使用教程-2023.1.1版本</title>
+<style type="text/css">#_copy{align-items:center;background:#4494d5;border-radius:3px;color:#fff;cursor:pointer;display:flex;font-size:13px;height:30px;justify-content:center;position:absolute;width:60px;z-index:1000}#select-tooltip,#sfModal,.modal-backdrop,div[id^=reader-helper]{display:none!important}.modal-open{overflow:auto!important}._sf_adjust_body{padding-right:0!important}.enable_copy_btns_div{position:fixed;width:154px;left:10px;top:45%;background:#e7f1ff;border:2px solid #4595d5;font-weight:600;border-radius:2px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;z-index:5000}.enable_copy_btns_logo{width:100%;background:#4595d5;text-align:center;font-size:12px;color:#e7f1ff;line-height:30px;height:30px}.enable_copy_btns_btn{display:block;width:128px;height:28px;background:#7f5711;border-radius:4px;color:#fff;font-size:12px;border:0;outline:0;margin:8px auto;font-weight:700;cursor:pointer;opacity:.9}.enable_copy_btns_btn:hover{opacity:.8}.enable_copy_btns_btn:active{opacity:1}</style></head>
+<body class="typora-export os-windows" inmaintabuse="1"><div class="typora-export-content">
+<div id="write" class=""><h1 id="idea使用教程-202311版本"><span>IDEA使用教程-2023.1.1版本</span></h1><div class="md-toc" mdtype="toc"><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#idea%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B-202311%E7%89%88%E6%9C%AC">IDEA使用教程-2023.1.1版本</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n2"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#%E4%B8%80idea%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85">一、IDEA下载、安装</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n3"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#1idea%E4%B8%8B%E8%BD%BD">1、IDEA下载</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n5"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#2idea%E5%AE%89%E8%A3%85">2、IDEA安装</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n29"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#3idea%E6%BF%80%E6%B4%BB">3、IDEA激活</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n43"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#%E4%BA%8Cidea%E9%A1%B9%E7%9B%AE%E7%A9%BA%E9%97%B4%E5%8F%8A%E6%A8%A1%E5%9D%97">二、IDEA项目空间及模块</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n45"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#1idea%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84">1、IDEA项目结构</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n55"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#2idea%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%8F%8A%E6%A8%A1%E5%9D%97">2、IDEA创建项目及模块</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n59"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#21-idea%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%8F%8A%E9%85%8D%E7%BD%AE">2.1 IDEA创建项目及配置</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n71"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#221-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE">2.2.1 创建项目</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n67"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#222-%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE">2.2.2 项目配置</a></span><span role="listitem" class="md-toc-item md-toc-h6" data-ref="n76"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#2221-%E8%AE%BE%E7%BD%AEjdk">2.2.2.1 设置JDK</a></span><span role="listitem" class="md-toc-item md-toc-h6" data-ref="n85"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#2222-%E7%BB%99%E9%A1%B9%E7%9B%AE%E7%BB%91%E5%AE%9Ajdk">2.2.2.2 给项目绑定JDK</a></span><span role="listitem" class="md-toc-item md-toc-h6" data-ref="n93"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#2223-%E7%A7%BB%E9%99%A4%E9%BB%98%E8%AE%A4module">2.2.2.3 移除默认Module</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n70"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#22-ide%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%9D%97">2.2 IDE创建模块</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n106"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#221-%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9A%E6%A8%A1%E5%9D%97">2.2.1 创建普通模块</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n115"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#222-%E5%88%9B%E5%BB%BAmaven%E6%A8%A1%E5%9D%97">2.2.2 创建Maven模块</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n112"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#223-%E5%88%9B%E5%BB%BAweb%E6%A8%A1%E5%9D%97">2.2.3 创建Web模块</a></span><span role="listitem" class="md-toc-item md-toc-h6" data-ref="n132"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#2231-%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%9D%97">2.2.3.1 创建模块</a></span><span role="listitem" class="md-toc-item md-toc-h6" data-ref="n126"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#2232-%E9%85%8D%E7%BD%AEtomcat%E5%B9%B6%E6%8C%82%E8%BD%BD%E6%A8%A1%E5%9D%97">2.2.3.2 配置Tomcat并挂载模块</a></span><span role="listitem" class="md-toc-item md-toc-h6" data-ref="n141"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#2233-%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE">2.2.3.3 启动项目</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n146"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#23-idea%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97">2.3 IDEA删除模块</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n192"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#231-%E4%BB%8E%E5%B7%A5%E4%BD%9C%E7%A9%BA%E9%97%B4%E7%A7%BB%E9%99%A4%E6%A8%A1%E5%9D%97">2.3.1 从工作空间移除模块</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n194"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#232-%E5%BD%BB%E5%BA%95%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97">2.3.2 彻底删除模块</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n191"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#%E4%B8%89idea%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE">三、IDEA常用设置</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n148"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#1%E7%AA%97%E5%8F%A3%E8%8F%9C%E5%8D%95%E8%AE%BE%E7%BD%AE">1、窗口菜单设置</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n25"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#2%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE">2、主题设置</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n162"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#3%E4%BB%A3%E7%A0%81%E6%8F%90%E7%A4%BA%E5%BF%BD%E7%95%A5%E5%A4%A7%E5%B0%8F%E5%86%99%E9%87%8D%E8%A6%81">3、代码提示忽略大小写【重要】</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n167"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#4%E9%85%8D%E7%BD%AEmaven%E9%87%8D%E8%A6%81">4、配置Maven【重要】</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n170"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#5%E8%AE%BE%E7%BD%AE%E9%A1%B9%E7%9B%AE%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F%E9%87%8D%E8%A6%81">5、设置项目编码格式【重要】</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n173"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#6%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%8C%85%E5%8F%8A%E5%A4%9A%E4%BD%99%E5%8C%85%E4%BC%98%E5%8C%96%E9%87%8D%E8%A6%81">6、自动导包及多余包优化【重要】</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n180"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#7%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E5%AD%97%E5%8F%B7%E5%AD%97%E9%97%B4%E8%B7%9D">7、设置字体、字号、字间距</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n183"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#8-%E8%AE%BE%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%B1%BB%E4%B8%8D%E9%9A%90%E8%97%8F%E5%A4%9A%E8%A1%8C%E6%98%BE%E7%A4%BA">8、 设置多个类不隐藏，多行显示</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n188"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#9%E8%AE%BE%E7%BD%AEmaven%E4%BE%9D%E8%B5%96%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98">9、设置Maven依赖自动加载问题</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n205"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#%E5%9B%9Bidea%E5%BF%AB%E6%8D%B7%E9%94%AE">四、IDEA快捷键</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n214"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#1idea%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE">1、IDEA常用快捷键</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n218"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#11-%E5%BF%AB%E9%80%9F%E5%A4%8D%E5%88%B6%E4%BB%A3%E7%A0%81">1.1 快速复制代码</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n220"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#12-%E5%BF%AB%E9%80%9F%E5%88%A0%E9%99%A4%E4%BB%A3%E7%A0%81">1.2 快速删除代码</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n225"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#13-%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90%E7%B1%BB%E5%9E%8B">1.3 快速生成类型</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n229"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#14-%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A">1.4 代码注释</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n240"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#15-%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90">1.5 代码自动生成</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n246"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#2idea%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90">2、IDEA常用代码快速生成</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n249"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#21-%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90-main-%E6%96%B9%E6%B3%95">2.1 快速生成 main 方法</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n251"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#22-%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90%E8%BE%93%E5%87%BA%E8%AF%AD%E5%8F%A5">2.2 快速生成输出语句</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n254"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#%E4%BA%94idea%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6">五、IDEA常用插件</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n258"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#1%E5%BD%A9%E8%99%B9%E6%8B%AC%E5%8F%B7">1、彩虹括号</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n261"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#2ai%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E6%8F%90%E7%A4%BA">2、AI代码自动提示</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n264"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#3%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4java%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83">3、阿里巴巴Java编码规范</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n267"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#4%E6%B1%89%E5%8C%96%E5%8C%85">4、汉化包</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n270"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#5%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87">5、设置背景图片</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n274"><a class="md-toc-inner" href="http://ygxjs.cn/note-system-2021/html/SoftWare/idea2023.1.1.html#6%E6%96%87%E5%AD%97%E8%BE%93%E5%85%A5%E7%82%AB%E9%85%B7%E6%95%88%E6%9E%9C">6、文字输入炫酷效果</a></span></p></div><h2 id="一idea下载安装"><span>一、IDEA下载、安装</span></h2><h3 id="1idea下载"><span>1、IDEA下载</span></h3><blockquote><p><span>下载地址：</span><a href="https://www.jetbrains.com/idea/"><span>https://www.jetbrains.com/idea/</span></a></p></blockquote><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515184329084.png" referrerpolicy="no-referrer" alt="image-20230515184329084"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515184537402.png" referrerpolicy="no-referrer" alt="image-20230515184537402"></p><h3 id="2idea安装"><span>2、IDEA安装</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515184752248.png" referrerpolicy="no-referrer" alt="image-20230515184752248"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515184955314.png" referrerpolicy="no-referrer" alt="image-20230515184955314"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515190623613.png" referrerpolicy="no-referrer" alt="image-20230515190623613"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515190649234.png" referrerpolicy="no-referrer" alt="image-20230515190649234"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515190839230.png" referrerpolicy="no-referrer" alt="image-20230515190839230"></p><h3 id="3idea激活"><span>3、IDEA激活</span></h3><blockquote><p><span>获取激活码：</span><a href="https://vrg123.com/"><span>https://vrg123.com/</span></a></p><p><span>密钥：5522</span></p></blockquote><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515191400035.png" referrerpolicy="no-referrer" alt="image-20230515191400035"></p><h2 id="二idea项目空间及模块"><span>二、IDEA项目空间及模块</span></h2><h3 id="1idea项目结构"><span>1、IDEA项目结构</span></h3><p><span>IDEA 和 Eclipse 项目结构有些区别：</span></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515193042107.png" width="60%"></p><p><span>故IDEA项目结构如下：</span></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515193452866.png" referrerpolicy="no-referrer" alt="image-20230515193452866"></p><h3 id="2idea创建项目及模块"><span>2、IDEA创建项目及模块</span></h3><h4 id="21-idea创建项目及配置"><span>2.1 IDEA创建项目及配置</span></h4><h5 id="221-创建项目"><span>2.2.1 创建项目</span></h5><blockquote><p><span>如下案例：在D盘创建工作空间</span><code>idea-project</code></p></blockquote><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515193747826.png" referrerpolicy="no-referrer" alt="image-20230515193747826"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515194242342.png" referrerpolicy="no-referrer" alt="image-20230515194242342"></p><h5 id="222-项目配置"><span>2.2.2 项目配置</span></h5><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515194715679.png" referrerpolicy="no-referrer" alt="image-20230515194715679"></p><h6 id="2221-设置jdk"><span>2.2.2.1 设置JDK</span></h6><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515195042645.png" referrerpolicy="no-referrer" alt="image-20230515195042645"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515195145655.png" referrerpolicy="no-referrer" alt="image-20230515195145655"></p><h6 id="2222-给项目绑定jdk"><span>2.2.2.2 给项目绑定JDK</span></h6><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515195406124.png" referrerpolicy="no-referrer" alt="image-20230515195406124"></p><h6 id="2223-移除默认module"><span>2.2.2.3 移除默认Module</span></h6><blockquote><p><span>IDEA创建Project后会默认将其作为一个Module，但IDEA中Project一般就只是用来存储Module，不进行代码开发，故建议将默认生成的Module移除，避免项目结构混乱。</span></p></blockquote><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515195927703.png" referrerpolicy="no-referrer" alt="image-20230515195927703"></p><h4 id="22-ide创建模块"><span>2.2 IDE创建模块</span></h4><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515194715679.png" referrerpolicy="no-referrer" alt="image-20230515194715679"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515201104650.png" referrerpolicy="no-referrer" alt="image-20230515201104650"></p><h5 id="221-创建普通模块"><span>2.2.1 创建普通模块</span></h5><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515201622518.png" referrerpolicy="no-referrer" alt="image-20230515201622518"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515205147730.png" referrerpolicy="no-referrer" alt="image-20230515205147730"></p><h5 id="222-创建maven模块"><span>2.2.2 创建Maven模块</span></h5><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515202007399.png" referrerpolicy="no-referrer" alt="image-20230515202007399"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515202043199.png" referrerpolicy="no-referrer" alt="image-20230515202043199"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515202152512.png" referrerpolicy="no-referrer" alt="image-20230515202152512"></p><h5 id="223-创建web模块"><span>2.2.3 创建Web模块</span></h5><blockquote><p><span>在新版本的IDEA中，不能直接创建Web项目，只能在普通模块或者Maven模块的基础上添加框架支持</span></p></blockquote><h6 id="2231-创建模块"><span>2.2.3.1 创建模块</span></h6><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515211452183.png" referrerpolicy="no-referrer" alt="image-20230515211452183"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515211608411.png" referrerpolicy="no-referrer" alt="image-20230515211608411"></p><h6 id="2232-配置tomcat并挂载模块"><span>2.2.3.2 配置Tomcat并挂载模块</span></h6><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515212235015.png" referrerpolicy="no-referrer" alt="image-20230515212235015"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515212342817.png" referrerpolicy="no-referrer" alt="image-20230515212342817"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515212756115.png" referrerpolicy="no-referrer" alt="image-20230515212756115"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515212848900.png" referrerpolicy="no-referrer" alt="image-20230515212848900"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515212955362.png" referrerpolicy="no-referrer" alt="image-20230515212955362"></p><h6 id="2233-启动项目"><span>2.2.3.3 启动项目</span></h6><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515213051985.png" referrerpolicy="no-referrer" alt="image-20230515213051985"></p><h4 id="23-idea删除模块"><span>2.3 IDEA删除模块</span></h4><h5 id="231-从工作空间移除模块"><span>2.3.1 从工作空间移除模块</span></h5><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515224602880.png" referrerpolicy="no-referrer" alt="image-20230515224602880"></p><h5 id="232-彻底删除模块"><span>2.3.2 彻底删除模块</span></h5><blockquote><p><span>IDEA中如果需要彻底删除模块，需要进入工作空间，找到模块，手动删除</span></p><ul><li><p><span>注意：除模块之外，工作空间的其他文件及文件夹均不能删除</span></p></li></ul></blockquote><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515224749680.png" referrerpolicy="no-referrer" alt="image-20230515224749680"></p><h2 id="三idea常用设置"><span>三、IDEA常用设置</span></h2><blockquote><p><span>IDEA设置菜单位置：</span></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515213147391.png" referrerpolicy="no-referrer" alt="image-20230515213147391"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515213616168.png" referrerpolicy="no-referrer" alt="image-20230515213616168"></p></blockquote><h3 id="1窗口菜单设置"><span>1、窗口菜单设置</span></h3><blockquote><p><span>主要设置各菜单模块的显示与隐藏，此设置一般使用默认</span></p></blockquote><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515214535952.png" referrerpolicy="no-referrer" alt="image-20230515214535952"></p><blockquote><p><span>如果不小心将主菜单（Main Menu）关闭，恢复的方法如下：</span></p><p><span>连按两下shift键，跳出搜索框，在搜索框中输入</span><code>menu</code><span>，打开主菜单即可</span></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515214851841.png" referrerpolicy="no-referrer" alt="image-20230515214851841"></p></blockquote><h3 id="2主题设置"><span>2、主题设置</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515215137792.png" referrerpolicy="no-referrer" alt="image-20230515215137792"></p><h3 id="3代码提示忽略大小写重要"><span>3、代码提示忽略大小写【重要】</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515215509189.png" referrerpolicy="no-referrer" alt="image-20230515215509189"></p><h3 id="4配置maven重要"><span>4、配置Maven【重要】</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515215820419.png" referrerpolicy="no-referrer" alt="image-20230515215820419"></p><h3 id="5设置项目编码格式重要"><span>5、设置项目编码格式【重要】</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515220051196.png" referrerpolicy="no-referrer" alt="image-20230515220051196"></p><h3 id="6自动导包及多余包优化重要"><span>6、自动导包及多余包优化【重要】</span></h3><blockquote><p><span>手动导包快捷键：Alt + Enter</span></p></blockquote><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515220353619.png" referrerpolicy="no-referrer" alt="image-20230515220353619"></p><h3 id="7设置字体字号字间距"><span>7、设置字体、字号、字间距</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515220554432.png" referrerpolicy="no-referrer" alt="image-20230515220554432"></p><h3 id="8-设置多个类不隐藏多行显示"><span>8、 设置多个类不隐藏，多行显示</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515220938891.png" referrerpolicy="no-referrer" alt="image-20230515220938891"></p><p><img src="./IDEA使用教程-2023.1.1版本_files/i6j23x4oRL5fmht.png" referrerpolicy="no-referrer" alt="image-20211211001213923"></p><h3 id="9设置maven依赖自动加载问题"><span>9、设置Maven依赖自动加载问题</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515221913890.png" referrerpolicy="no-referrer" alt="image-20230515221913890"></p><h2 id="四idea快捷键"><span>四、IDEA快捷键</span></h2><blockquote><p><span>IDEA有自己的一套快捷键，和Eclipse有一定的区别，如果想使用Eclipse的快捷键习惯，可以做如下配置：</span></p><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515225754552.png" referrerpolicy="no-referrer" alt="image-20230515225754552"></p></blockquote><h3 id="1idea常用快捷键"><span>1、IDEA常用快捷键</span></h3><h4 id="11-快速复制代码"><span>1.1 快速复制代码</span></h4><p><code>Ctrl + D</code></p><h4 id="12-快速删除代码"><span>1.2 快速删除代码</span></h4><p><code>Ctrl + X</code></p><h4 id="13-快速生成类型"><span>1.3 快速生成类型</span></h4><p><code>Ctrl + Alt + V</code></p><h4 id="14-代码注释"><span>1.4 代码注释</span></h4><ul><li><p><span>单行注释：</span><code>Ctrl + /</code></p></li><li><p><span>多行注释：</span><code>Ctrl + Shift + /</code></p></li></ul><h4 id="15-代码自动生成"><span>1.5 代码自动生成</span></h4><p><code>Alt + Enter</code></p><h3 id="2idea常用代码快速生成"><span>2、IDEA常用代码快速生成</span></h3><h4 id="21-快速生成-main-方法"><span>2.1 快速生成 main 方法</span></h4><p><code>main</code></p><h4 id="22-快速生成输出语句"><span>2.2 快速生成输出语句</span></h4><p><code>sout</code></p><h2 id="五idea常用插件"><span>五、IDEA常用插件</span></h2><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515231042184.png" referrerpolicy="no-referrer" alt="image-20230515231042184"></p><h3 id="1彩虹括号"><span>1、彩虹括号</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515231135323.png" referrerpolicy="no-referrer" alt="image-20230515231135323"></p><h3 id="2ai代码自动提示"><span>2、AI代码自动提示</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515231816365.png" referrerpolicy="no-referrer" alt="image-20230515231816365"></p><h3 id="3阿里巴巴java编码规范"><span>3、阿里巴巴Java编码规范</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515231416679.png" referrerpolicy="no-referrer" alt="image-20230515231416679"></p><h3 id="4汉化包"><span>4、汉化包</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515231511378.png" referrerpolicy="no-referrer" alt="image-20230515231511378"></p><h3 id="5设置背景图片"><span>5、设置背景图片</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515231704312.png" referrerpolicy="no-referrer" alt="image-20230515231704312"></p><h3 id="6文字输入炫酷效果"><span>6、文字输入炫酷效果</span></h3><p><img src="./IDEA使用教程-2023.1.1版本_files/image-20230515231755413.png" referrerpolicy="no-referrer" alt="image-20230515231755413"></p></div></div>
+
+<script src="chrome-extension://nhiheekdcnmfbapkmpbhmplfddenhjic/sm.bundle.js" data-pname="supercopy-v3" data-asset-path="https://spc3.s3.ap-east-1.amazonaws.com"></script></body></html>

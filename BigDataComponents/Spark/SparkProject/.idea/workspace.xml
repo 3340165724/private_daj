@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="" />
+    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/SpringBoot/SpringBoot_JdbcTemplate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Markdown/专升本/英语.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Markdown/专升本/英语.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -474,6 +477,8 @@
       <workItem from="1685328436190" duration="15594000" />
       <workItem from="1685410235646" duration="2536000" />
       <workItem from="1685499690080" duration="3910000" />
+      <workItem from="1685534686043" duration="753000" />
+      <workItem from="1685536711354" duration="75000" />
     </task>
     <servers />
   </component>
