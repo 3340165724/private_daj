@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../Markdown/专升本/英语.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Markdown/专升本/英语.md" afterDir="false" />
-    </list>
+    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -479,6 +477,7 @@
       <workItem from="1685578857512" duration="8263000" />
       <workItem from="1685684999580" duration="8769000" />
       <workItem from="1685713395437" duration="1456000" />
+      <workItem from="1685761064108" duration="1821000" />
     </task>
     <servers />
   </component>
