@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="" />
+    <list default="true" id="fa693b27-6945-4dec-9f1d-8dd1521ac254" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Markdown/2023阶段一遇到的问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Markdown/2023阶段一遇到的问题.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -477,7 +479,11 @@
       <workItem from="1685578857512" duration="8263000" />
       <workItem from="1685684999580" duration="8769000" />
       <workItem from="1685713395437" duration="1456000" />
-      <workItem from="1685761064108" duration="1821000" />
+      <workItem from="1685761064108" duration="2415000" />
+      <workItem from="1685806058100" duration="610000" />
+      <workItem from="1685848126398" duration="2289000" />
+      <workItem from="1685931324622" duration="618000" />
+      <workItem from="1685973904256" duration="477000" />
     </task>
     <servers />
   </component>
