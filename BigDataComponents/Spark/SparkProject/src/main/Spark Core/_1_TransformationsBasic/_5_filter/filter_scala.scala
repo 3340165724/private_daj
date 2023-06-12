@@ -19,6 +19,15 @@ object filter_scala {
     //   -21
     //   -5
 
+    /*
+    * TODO
+    *   CASE2
+    *     筛选出基数
+    * */
+
+    val data_2 = 1 to 100
+    val ints = sc.parallelize(data_2).map(_ * -1).filter(x => x % 2 == -1).foreach(println)
+
     sc.stop
     spark.stop
   }

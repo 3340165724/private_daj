@@ -75,7 +75,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SparkProject" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -329,7 +329,7 @@
       <workItem from="1686555246792" duration="25000" />
       <workItem from="1686555587467" duration="16000" />
       <workItem from="1686555651348" duration="210000" />
-      <workItem from="1686556061611" duration="259000" />
+      <workItem from="1686556061611" duration="612000" />
     </task>
     <servers />
   </component>
