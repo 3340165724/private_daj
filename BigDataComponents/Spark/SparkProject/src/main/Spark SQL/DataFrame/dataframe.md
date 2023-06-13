@@ -42,10 +42,7 @@
 ### SQL 语法
 - 创建临时表
   - 对 DataFrame 创建一个**临时表**
-    - spark.newSession().sql()会失效
-    ```
-    df.createOrReplaceTempView("临时表名")
-    ```
+    - createOrReplaceTempView： spark.newSession().sql()会失效
   - 通过 SQL 语句实现查询全表
     ```
     spark.sql("SELECT * FROM 临时表名")
@@ -60,10 +57,16 @@
     ```
   - 注意：普通临时表是 Session 范围内的，如果想应用范围内有效，可以使用全局临时表。使
       用全局临时表时需要全路径访问，如：global_temp.临时表名
+
+<br>
+
 - 结果展示
   ```
   sqlDF.show
   ```
+
+<br>
+<br>
 
 ### DSL 语法
 - 使用 DSL 语法风格不必去创建临时视图了

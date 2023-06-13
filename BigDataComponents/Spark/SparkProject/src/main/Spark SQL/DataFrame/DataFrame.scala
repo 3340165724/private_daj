@@ -24,16 +24,17 @@ object DataFrame {
     /*
     * TODO DataFrame 用 SQL方式处理数据
     *  必须要创建临时表
-    *   createTempView：
-    *   createOrReplaceTempView：
-    *   createGlobalTempView：
-    *   createOrReplaceGlobalTempView：
     * */
 
     // 创建临时表
     df.createOrReplaceTempView("user")
     // 访问视图
     spark.sql("select * from user")
+
+    // 全局临时视图的查询
+    // spark.sql("SELECT * FROM global_temp.user")
+
+
 
     // 关闭环境
     spark.stop()
