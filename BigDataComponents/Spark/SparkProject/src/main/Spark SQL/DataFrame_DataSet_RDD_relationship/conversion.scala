@@ -39,7 +39,7 @@ object conversion {
     * TODO
     *  CASE3  DataFrame ===> DataSet
     * */
-    case class User(id: Int, name: String, age: Int)
+
     val ds = df.as[User]
 
     /*
@@ -68,4 +68,6 @@ object conversion {
     // 关闭
     spark.stop()
   }
+
+  case class User(id: Int, name: String, age: Int)
 }

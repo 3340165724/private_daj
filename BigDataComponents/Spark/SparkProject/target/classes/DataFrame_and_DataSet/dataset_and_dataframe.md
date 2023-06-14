@@ -1,4 +1,4 @@
-# DataFrame  类似于传统数据库中的二维表格
+# DataFrame  类似数据库中的二维表格
 
 --------
 
@@ -26,20 +26,9 @@
 
 --------
 
-### 从 Spark 数据源进行创建
-- 查看 Spark 支持创建文件的数据源格式（**查看数据格式**）
-  ```
-  spark.read.  +    Tab
-  ```
-- 读取 json 文件创建 DataFrame
-  ```
-  spark.read.json("json文件路径")
-  ```
-- 注意：如果从内存中获取数据，spark 可以知道数据类型具体是什么。如果是数字，默认作为 Int 处理；但是从文件中读取的数字，不能确定是什么类型，所以用 bigint 接收，可以和Long 类型转换，但是和 Int 不能进行转换
-  
-
 
 ### SQL 语法
+- 创建df
 - 创建临时表
   - 对 DataFrame 创建一个**临时表**
     - createOrReplaceTempView： spark.newSession().sql()会失效
@@ -68,7 +57,7 @@
 <br>
 <br>
 
-### DSL 语法
+### DSL 语法（了解）
 - 使用 DSL 语法风格不必去创建临时视图了
 
 <br>
@@ -89,18 +78,31 @@
   df.select($"username",$"age" + 1).show
   df.select('username, 'age + 1).show()
   ```
-
-- 查看"age"大于"30"的数据
-  ```aidl
-  df.filter($"age">30).show
-  ```
   
 - 按照"age"分组，查看数据条数
   ```aidl
   df.groupBy("age").count.show
   ```
+  
 
-### RDD 转换为 DataFrame
-- 在 IDEA 中开发程序时，如果需要 RDD 与 DF 或者 DS 之间互相操作，那么需要引入**import spark.implicits._**
 
-### DataFrame 转换为 RDD
+<br>
+<br>
+<br>
+<br>
+
+----------
+
+
+# DataSet 分布式数据集
+
+-------
+
+<br>
+
+###  DataSet解释
+- DataSet 是具有强类型的数据集合，需要提供对应的类型信息
+- DataFrame 是 DataSet 的特列，DataFrame=DataSet[Row] ，所以可以通过 as 方法将DataFrame 转换为 DataSet
+  - Row 是一个类型
+- SparkSession是SQLContext 和 HiveContext的组合
+

@@ -1,4 +1,4 @@
-# Hive on Spark  &nbsp;&nbsp;&nbsp; hive底层引擎换为spark
+# Hive on Spark  了解
 
 ----
 
