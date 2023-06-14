@@ -26,8 +26,7 @@
 
 --------
 
-
-### SQL 语法
+### 从 Spark 数据源进行创建
 - 查看 Spark 支持创建文件的数据源格式（**查看数据格式**）
   ```
   spark.read.  +    Tab
@@ -36,15 +35,14 @@
   ```
   spark.read.json("json文件路径")
   ```
-  - 注意：如果从内存中获取数据，spark 可以知道数据类型具体是什么。如果是数字，默认作为 Int 处理；但是从文件中读取的数字，不能确定是什么类型，所以用 bigint 接收，可以和Long 类型转换，但是和 Int 不能进行转换
+- 注意：如果从内存中获取数据，spark 可以知道数据类型具体是什么。如果是数字，默认作为 Int 处理；但是从文件中读取的数字，不能确定是什么类型，所以用 bigint 接收，可以和Long 类型转换，但是和 Int 不能进行转换
+  
 
 
+### SQL 语法
 - 创建临时表
   - 对 DataFrame 创建一个**临时表**
-    - spark.newSession().sql()会失效
-    ```
-    df.createOrReplaceTempView("临时表名")
-    ```
+    - createOrReplaceTempView： spark.newSession().sql()会失效
   - 通过 SQL 语句实现查询全表
     ```
     spark.sql("SELECT * FROM 临时表名")
@@ -59,10 +57,16 @@
     ```
   - 注意：普通临时表是 Session 范围内的，如果想应用范围内有效，可以使用全局临时表。使
       用全局临时表时需要全路径访问，如：global_temp.临时表名
+
+<br>
+
 - 结果展示
   ```
   sqlDF.show
   ```
+
+<br>
+<br>
 
 ### DSL 语法
 - 使用 DSL 语法风格不必去创建临时视图了

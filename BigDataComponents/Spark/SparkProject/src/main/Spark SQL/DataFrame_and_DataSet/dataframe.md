@@ -1,4 +1,4 @@
-# DataFrame  类似于传统数据库中的二维表格
+# DataFrame  类似数据库中的二维表格
 
 --------
 
@@ -68,7 +68,7 @@
 <br>
 <br>
 
-### DSL 语法
+### DSL 语法（了解）
 - 使用 DSL 语法风格不必去创建临时视图了
 
 <br>
@@ -89,18 +89,32 @@
   df.select($"username",$"age" + 1).show
   df.select('username, 'age + 1).show()
   ```
-
-- 查看"age"大于"30"的数据
-  ```aidl
-  df.filter($"age">30).show
-  ```
   
 - 按照"age"分组，查看数据条数
   ```aidl
   df.groupBy("age").count.show
   ```
+  
 
-### RDD 转换为 DataFrame
-- 在 IDEA 中开发程序时，如果需要 RDD 与 DF 或者 DS 之间互相操作，那么需要引入**import spark.implicits._**
 
-### DataFrame 转换为 RDD
+<br>
+<br>
+<br>
+<br>
+
+----------
+
+
+# DataSet 分布式数据集
+  
+
+-------
+
+<br>
+
+###  DataSet解释
+- DataSet 是具有强类型的数据集合，需要提供对应的类型信息
+- DataFrame 是 DataSet 的特列，DataFrame=DataSet[Row] ，所以可以通过 as 方法将DataFrame 转换为 DataSet
+  - Row 是一个类型
+- SparkSession是SQLContext 和 HiveContext的组合
+

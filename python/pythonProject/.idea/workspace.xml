@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7d77c20-d186-4e11-adaa-4bd53ba730a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/Spark Core/4-Transformations Advance/_10_zip/zip_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/Spark Core/4-Transformations Advance/_10_zip/zip_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_10_zip/zip_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_10_zip/zip_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Markdown/2023大数据环境搭建.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Markdown/2023大数据环境搭建.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/RDD_vs_DataFrame_vs_DataSet/conversion.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/RDD_vs_DataFrame_vs_DataSet/conversion.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataFrame/DataFrame.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataFrame/DataFrame.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataFrame/dataframe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataFrame/dataframe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataSet/DataSet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataSet/DataSet.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/spark_sql/Hive on Spark.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/_1_hive/Hive on Spark.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/DataFrame/DataFrame$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/DataFrame/DataFrame$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/DataFrame/dataframe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/DataFrame/dataframe.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +191,7 @@
       <workItem from="1684804778917" duration="1476000" />
       <workItem from="1684888255476" duration="9000" />
       <workItem from="1684918435739" duration="307000" />
+      <workItem from="1686709278217" duration="330000" />
     </task>
     <servers />
   </component>
