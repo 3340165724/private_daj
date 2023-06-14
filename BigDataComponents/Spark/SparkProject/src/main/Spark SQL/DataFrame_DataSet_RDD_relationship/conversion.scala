@@ -1,4 +1,4 @@
-package RDD_vs_DataFrame_vs_DataSet
+package DataFrame_DataSet_RDD_relationship
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession

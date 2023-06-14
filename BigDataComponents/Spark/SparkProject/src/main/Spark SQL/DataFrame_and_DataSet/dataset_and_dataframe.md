@@ -26,20 +26,9 @@
 
 --------
 
-### 从 Spark 数据源进行创建
-- 查看 Spark 支持创建文件的数据源格式（**查看数据格式**）
-  ```
-  spark.read.  +    Tab
-  ```
-- 读取 json 文件创建 DataFrame
-  ```
-  spark.read.json("json文件路径")
-  ```
-- 注意：如果从内存中获取数据，spark 可以知道数据类型具体是什么。如果是数字，默认作为 Int 处理；但是从文件中读取的数字，不能确定是什么类型，所以用 bigint 接收，可以和Long 类型转换，但是和 Int 不能进行转换
-  
-
 
 ### SQL 语法
+- 创建df
 - 创建临时表
   - 对 DataFrame 创建一个**临时表**
     - createOrReplaceTempView： spark.newSession().sql()会失效
@@ -106,7 +95,6 @@
 
 
 # DataSet 分布式数据集
-  
 
 -------
 
