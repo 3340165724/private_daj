@@ -47,3 +47,12 @@ parquet   schema   table   text   textFile
 - 拷贝hive配置文件到 spark/conf/目录
 - 拷贝MySQL驱动到 spark/jars目录
 - 如果访问不到 hdfs 拷贝core-site.xml 和 hdfs-site.xml到 spark/conf/目录
+
+
+
+### 错误
+- 问题
+  - Caused by: java.lang.IllegalArgumentException: Unable to instantiate SparkSession with Hive support because Hive classes are not found. 	
+- 解决
+  - pom.xml文件检查是否指定版本
+  - 找到spark-hive依赖去除<scope>provided</scope>

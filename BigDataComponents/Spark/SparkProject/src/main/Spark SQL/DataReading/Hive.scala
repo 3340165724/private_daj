@@ -8,7 +8,7 @@ object Hive {
 
     val spark = SparkSession.builder() //创建SparkSession
       .master("local[1]")
-      .config("spark.sql.warehouse.dir","hdfs://localhost:9000/user/hive/warehouse")
+      .config("spark.sql.warehouse.dir","hdfs://192.168.66.130:9000/user/hive/warehouse")
       .enableHiveSupport()
       .getOrCreate()
 
