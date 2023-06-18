@@ -31,3 +31,19 @@ parquet   schema   table   text   textFile
     - "append"：追加
     - "overwrite"：覆盖
     - "ignore"：忽略
+
+<br>
+<br>
+<br>
+<br>
+
+# hive
+
+------
+
+<br>
+
+### 连接外部已经部署好的 hive 
+- 拷贝hive配置文件到 spark/conf/目录
+- 拷贝MySQL驱动到 spark/jars目录
+- 如果访问不到 hdfs 拷贝core-site.xml 和 hdfs-site.xml到 spark/conf/目录

@@ -1,0 +1,70 @@
+<component name="libraryTable">
+  <library name="scala-sdk-2.12.17" type="Scala">
+    <properties>
+      <compiler-classpath>
+        <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/scala-compiler.jar" />
+        <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/scala-library.jar" />
+        <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/scala-reflect.jar" />
+      </compiler-classpath>
+    </properties>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/scala-library.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/scala-parser-combinators_2.12-1.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/scala-reflect.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/scala-swing_2.12-2.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/scala-xml_2.12-2.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="https://www.scala-lang.org/api/2.12.17/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/kvstore/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/kvstore/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/network-common/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/network-common/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/network-shuffle/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/network-shuffle/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/network-yarn/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/sketch/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/tags/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/tags/src/main/scala" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/tags/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/unsafe/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/common/unsafe/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/core/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/core/src/main/scala" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/core/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/examples/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/external/avro/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/external/avro/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/external/kafka-0-10-sql/src/main/scala" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/external/kafka-0-10/src/main/scala" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/external/kafka-0-10/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/external/kinesis-asl/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/external/kinesis-asl/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/external/spark-ganglia-lgpl/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/graphx/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/graphx/src/main/scala" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/launcher/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/launcher/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/mllib/src/main/scala" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/mllib/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/resource-managers/mesos/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/resource-managers/yarn/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/sql/catalyst/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/sql/catalyst/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/sql/core/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/sql/core/src/main/scala" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/sql/core/src/test/gen-java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/sql/core/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/sql/hive-thriftserver/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/sql/hive/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/sql/hive/src/main/scala" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/sql/hive/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/streaming/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/streaming/src/main/scala" />
+      <root url="file://$PROJECT_DIR$/../../../../../Scala/scala-2.12.17/lib/spark-3.1.1/streaming/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
