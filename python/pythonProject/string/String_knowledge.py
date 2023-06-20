@@ -52,7 +52,7 @@ print("----------------------------格式化字符串---------------------------
 name = "Alice"
 age = 25
 print("方式一：" + "My name is {} and I'm {} years old.".format(name, age)) # 输出 "My name is Alice and I'm 25 years old."
-print("方式二：" + "My name is {name} and I'm {age} years old.")
+print(f"方式二：" + "My name is {name} and I'm {age} years old.")
 print("方式三：" + "My name is %s and I'm %d years old." % (name, age))
 # %s表示字符串占位符，%d表示整数占位符。可以在%操作符后面使用括号来传递变量值
 print()
