@@ -1,0 +1,102 @@
+Id,Address Line1,City,State,Zipcode
+1,9182 Clear Water Rd,Fayetteville,AR,72704
+2,9724 E Landon Ln,Kennewick,WA,99338
+3,9509 Clay Creek Ln,Fort Worth,TX,76177
+4,98016 S Garnsey St,Santa Ana,CA,92707
+5,9920 State Highway 89,Ringling,OK,73456
+
+Download
+Libraries
+Documentation
+Examples
+Community
+Developers
+Apache Software Foundation
+Unified engine for large-scale data analytics
+What is Apache Spark™?
+Apache Spark™ is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters.
+Simple
+Fast
+Scalable
+Unified
+Key features
+Batch/streaming data
+Batch/streaming data
+Unify the processing of your data in batches and real-time streaming, using your preferred language: Python, SQL, Scala, Java or R
+SQL analytics
+SQL analytics
+Execute fast, distributed ANSI SQL queries for dashboarding and ad-hoc reporting Runs faster than most data warehouses
+Data science at scale
+Data science at scale
+Perform Exploratory Data Analysis (EDA) on petabyte-scale data without having to resort to downsampling
+Machine Learning
+Machine learning
+Train machine learning algorithms on a laptop and use the same code to scale to fault-tolerant clusters of thousands of machines
+Python
+SQL
+Scala
+Java
+R
+Run now
+Installing with 'pip'
+$ pip install pyspark
+
+$ pyspark
+
+QuickStart
+Machine Learning
+Analytics & Data Science
+df = spark.read.json("logs.json")
+df.where("age > 21").select("name.first").show()
+The most widely-used engine for scalable computing
+Thousands of companies, including 80% of the Fortune 500, use Apache Spark
+Over 2,000 contributors to the open source project from industry and academia
+Ecosystem
+Apache Spark™ integrates with your favorite frameworks, helping to scale them to thousands of machines.
+Data science and Machine learning
+
+
+
+SQL analytics and BI
+
+
+
+
+
+
+Storage and Infrastructure
+
+
+
+
+
+
+
+
+
+
+Spark SQL engine: under the hood
+Apache Spark™ is built on an advanced distributed SQL engine for large-scale data
+Adaptive Query Execution
+Spark SQL adapts the execution plan at runtime, such as automatically setting the number of reducers and join algorithms.
+
+Support for ANSI SQL
+Use the same SQL you’re already comfortable with.
+
+Structured and unstructured data
+Spark SQL works on structured tables and unstructured data such as JSON or images.
+
+TPC-DS 1TB No-Stats With vs. Without Adaptive Query Execution
+
+Accelerates TPC-DS queries up to 8x
+Join the community
+Spark has a thriving open source community, with contributors from around the globe building features, documentation and assisting other users.
+Mailing list Mailing list
+Source code Source code
+News and events News and events
+How to contribute How to contribute
+Issue tracking Issue tracking
+Committers Committers
+Apache Spark, Spark, Apache, the Apache feather logo, and the Apache Spark project logo are either registered trademarks or trademarks of The Apache Software Foundation in the United States and other countries. See guidance on use of Apache Spark trademarks. All other marks mentioned may be trademarks or registered trademarks of their respective owners. Copyright © 2018 The Apache Software Foundation, Licensed under the Apache License, Version 2.0.
+
+
