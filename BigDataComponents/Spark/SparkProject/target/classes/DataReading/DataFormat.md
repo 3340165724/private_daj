@@ -49,6 +49,12 @@ parquet   schema   table   text   textFile
 - 如果访问不到 hdfs 拷贝core-site.xml 和 hdfs-site.xml到 spark/conf/目录
 
 
+### 函数
+[内置函数](https://spark.apache.org/docs/latest/sql-ref-functions-builtin.html#array-functionshan "spark内置函数")。
+
+### 语法
+[SQL语法](https://spark.apache.org/docs/latest/sql-ref-syntax.html "SQL语法")。
+
 
 ### 错误
 - 问题

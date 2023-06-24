@@ -35,19 +35,20 @@ object MySql {
     val props: Properties = new Properties()
     props.setProperty("user", "root")
     props.setProperty("password", "123456")
-    spark.read.jdbc("jdbc:mysql://localhost:3306/db_student", "user", props)
-
+    props.setProperty("driver", "com.mysql.jdbc.Driver")
+    val frame = spark.read.jdbc("jdbc:mysql://localhost:3306/db_student", "user", props)	//直接传入表名
+    frame.show()
 
 
     // 保存数据
-    df.write.format("jdbc")
-      .option("driver", "com.mysql.cj.jdbc.Driver")
-      .option("url", "jdbc:mysql://localhost:3306/db_student")
-      .option("user", "root")
-      .option("password", "123456")
-      .option("dbtable", "student1")
-      .mode(SaveMode.Append)
-      .save()
+//    df.write.format("jdbc")
+//      .option("driver", "com.mysql.cj.jdbc.Driver")
+//      .option("url", "jdbc:mysql://localhost:3306/db_student")
+//      .option("user", "root")
+//      .option("password", "123456")
+//      .option("dbtable", "student1")
+//      .mode(SaveMode.Append)
+//      .save()
 
 
     spark.stop()

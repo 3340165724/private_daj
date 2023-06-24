@@ -6,9 +6,8 @@ object CSV_and_JSON {
   def main(args: Array[String]): Unit = {
     // 创建 Spark SQL 的运行环境
     val spark = SparkSession.builder() //创建SparkSession
-      .master("local[*]")
+      .master("local")
       .appName("spark-example")
-      .config("spark.some.config.option", "some-value")
       .getOrCreate()
 
     // 引入是用于将DataFrame隐式转换成RDD，使def能够使用RDD中的方法
@@ -28,7 +27,7 @@ object CSV_and_JSON {
     * */
     val df_csv = spark.read.format("csv") // CSV格式
       .option("sep", ";") // 数据分割符
-      .option("inferSchema", "true") //
+      .option("inferSchema", "true") // 多行
       .option("header", "true") // 有表头
       .load("src/main/resources/people.csv")     // 路径
 

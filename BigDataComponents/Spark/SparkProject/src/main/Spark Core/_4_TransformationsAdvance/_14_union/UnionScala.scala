@@ -24,19 +24,18 @@ object UnionScala {
      *  两个RDD[Int] union
      * */
     val data_1 = 1 to 5
-    val data_2 = 6 to 10
+    val data_2 = 3 to 10
 
     val rdd_1: RDD[Int] = sc.parallelize(data_1)
     val rdd_2: RDD[Int] = sc.parallelize(data_2)
 
     println(rdd_1.union(rdd_2).collect.mkString(", "))
     // TODO Result
-    //  1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    //  1, 2, 3, 4, 5, 3, 4, 5, 6, 7, 8, 9, 10
 
     println(rdd_2.union(rdd_1).collect.mkString(", "))
     // TODO Result
-    //  6, 7, 8, 9, 10, 1, 2, 3, 4, 5
-
+    //  3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5
 
 
      /*
