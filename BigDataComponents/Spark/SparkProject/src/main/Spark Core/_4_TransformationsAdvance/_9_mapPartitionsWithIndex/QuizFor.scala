@@ -16,11 +16,11 @@ object QuizFor {
 
     val rdd = sc.parallelize(10 to 20,3)
     rdd.mapPartitionsWithIndex{
-      (index, element)=>
+      (partition, element)=>
         // 创建可变列表
         val list = new ListBuffer[String]()
         for(o <- element){
-          list.+=(s"[value=$o, partition_id=$index]")
+          list.+=(s"[value=$o, partition_id=$partition]")
         }
         list.toIterator
     }.foreach(println)

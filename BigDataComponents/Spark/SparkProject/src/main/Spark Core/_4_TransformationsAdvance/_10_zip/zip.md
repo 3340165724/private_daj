@@ -34,10 +34,22 @@
 - zip 拉链，是Spark RDD的一种特有操作，功能是将两个RDD的元素按照索引值一一映射，形成新的(K, V)Tuple类型的RDD
 - 例如：
 
-rdd_1	rdd_2	rdd_1.zip(rdd_2)	rdd_2.zip(rdd_1)
-1	A	(1,A)	(A,1)
-2	B	(2,B)	(B,2)
-3	C	(3,C)	(C,3)
+
+| rdd_name | rdd_index | rdd_index.zip(rdd_name) |
+|----------|-----------|-------------------------|
+| Tom      | 1         | (4,Lily)                |
+| Jerry    | 2         | (7,Taylor)              |
+| Marry    | 3         | (1,Tom)                 |
+| Lily     | 4         | (8,Nathan)              |
+| Matthew  | 5         | (5,Matthew)             |
+| Nicholas | 6         | (9,Dave)                |
+| Taylor   | 7         | (2,Jerry)               |
+| Nathan   | 8         | (6,Nicholas)            |
+| Dave     | 9         | (10,Judy)               |
+| Judy     | 10        | (11,Max)                |
+| Max      | 11        | (12,Tez)                |
+| Tez      | 12        | (13,Vivian)             |
+| Vivian   | 13        | (3,Marry)
 
 ### 使用原则
 - 两个RDD的元素类型可以一致或不一致；
