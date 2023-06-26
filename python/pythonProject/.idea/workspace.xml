@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7d77c20-d186-4e11-adaa-4bd53ba730a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/3-DataFrame/dataframe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/3-DataFrame/dataframe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/4-Index/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/4-Index/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/1-overview/overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/1-overview/overview.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/2-Series/series.md" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/2-Series/series.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonBasic/Data/address.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonBasic/Data/address.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/resources/student.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataReading/CSV_and_JSON.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataReading/CSV_and_JSON.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/DataReading/CSV_and_JSON$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/DataReading/CSV_and_JSON$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizFor$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizFor$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,6 +198,7 @@
       <workItem from="1687316868457" duration="1977000" />
       <workItem from="1687341972122" duration="50000" />
       <workItem from="1687344721208" duration="4000" />
+      <workItem from="1687762046702" duration="1360000" />
     </task>
     <servers />
   </component>

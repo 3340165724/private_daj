@@ -18,7 +18,7 @@ object CSV_and_JSON {
     *  JSON 数据格式
     * */
     //  val df_json = spark.read.format("json").load("src/main/resources/user.json")
-    val df_json = spark.read.json("src/main/resources/user.json")
+    val df_json = spark.read.json("src/main/resources/student.json")
     df_json.show()
 
     /*
