@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7174a525-9fc8-4ad2-b149-dd25f828a876" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../pythonBasic/8-module/1-NumPy/1-overview/overview.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/1-overview/overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/1-overview/overview.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/3-DataFrame/dataframe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonBasic/8-module/2-Pandas/3-DataFrame/dataframe.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/string/String_knowledge.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/string/String_knowledge.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +119,7 @@
       <workItem from="1682561889961" duration="87000" />
       <workItem from="1682563263872" duration="687000" />
       <workItem from="1682586948857" duration="138000" />
+      <workItem from="1688437020201" duration="1860000" />
     </task>
     <servers />
   </component>
