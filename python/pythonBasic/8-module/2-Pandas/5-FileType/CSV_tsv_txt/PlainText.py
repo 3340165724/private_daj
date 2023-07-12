@@ -44,3 +44,6 @@ print("根据指定的列对数据进行分组:\n", df.groupby("year"))
 # todo 数据处理和转换
 print("删除指定的列:\n", df.drop(columns="country"))
 print("重命名列名:\n",df.rename(columns={'year': 'year_'}))
+
+print("--------------")
+print(df.loc[2])
