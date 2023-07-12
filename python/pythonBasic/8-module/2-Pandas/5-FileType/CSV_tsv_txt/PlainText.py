@@ -25,4 +25,8 @@ print("计算某一列DataFrame中每列的描述性统计信息：\n", df["life
 print("计算DataFrame中每列的描述性统计信息：\n", df.describe())
 
 # 数据排序
+print("根据指定的列对DataFrame进行排序，默认按升序排列：\n",df.sort_values(by="year"))
+print("根据指定的列对DataFrame进行排序，默认按升序排列：\n",df.sort_values(by="year",ascending=False))
 
+
+# todo 缺失值处理
