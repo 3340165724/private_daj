@@ -20,10 +20,10 @@ print(df1)
 
 
 # todo 默认情况 read_csv 函数读取逗号分隔的文件，sep='\t' 显示指明使用制表符分隔
-df = pandas.read_csv(r'../data/gapminder.tsv', sep='\t')
+df = pandas.read_csv(r'../../../data/gapminder.tsv', sep='\t')
 
 # todo 按照指定格式导出数据
-# df.to_csv(r"D:\pro_redskirt\private_daj\python\pythonBasic\8-module\2-Pandas\5-FileType\CSV_tsv_txt\a.csv",sep=",",index=False,header=True)
+# df.to_csv(r"a.csv",sep=",",index=False,header=True)
 # print(df)
 
 # todo 数据预览

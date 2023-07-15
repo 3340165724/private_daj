@@ -13,4 +13,6 @@
 
 ### 方法
 [DataFrame ](../../3-DataFrame/dataframe.md "DataFrame")常用方法
+[方法测试 ](../../3-DataFrame/dataframe.py "DataFrame")
+
 
