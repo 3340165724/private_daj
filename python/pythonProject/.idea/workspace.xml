@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7d77c20-d186-4e11-adaa-4bd53ba730a0" name="Changes" comment="" />
+    <list default="true" id="b7d77c20-d186-4e11-adaa-4bd53ba730a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../pythonBasic/8-module/1-NumPy/1-overview/overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonBasic/8-module/1-NumPy/1-overview/overview.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/crawler_knowledge.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/crawler_knowledge.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +37,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.String_knowledge">
+  <component name="RunManager" selected="Python.crawler_knowledge">
     <configuration name="String_knowledge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,6 +104,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="crawler_knowledge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/crawler" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawler/crawler_knowledge.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="list_knowledge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,6 +172,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.crawler_knowledge" />
         <item itemvalue="Python.String_knowledge" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.list_knowledge" />
@@ -194,6 +221,7 @@
       <workItem from="1687344721208" duration="4000" />
       <workItem from="1687762046702" duration="3085000" />
       <workItem from="1689007200428" duration="35000" />
+      <workItem from="1690788661853" duration="1154000" />
     </task>
     <servers />
   </component>
@@ -227,5 +255,6 @@
     <SUITE FILE_PATH="coverage/pythonProject$list_knowledge.coverage" NAME="list_knowledge Coverage Results" MODIFIED="1681126205528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/list" />
     <SUITE FILE_PATH="coverage/pythonProject$String_knowledge.coverage" NAME="String_knowledge Coverage Results" MODIFIED="1687267517064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string" />
     <SUITE FILE_PATH="coverage/pythonProject$auth.coverage" NAME="auth Coverage Results" MODIFIED="1681126195912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
+    <SUITE FILE_PATH="coverage/pythonProject$crawler_knowledge.coverage" NAME="crawler_knowledge Coverage Results" MODIFIED="1690789616547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
   </component>
 </project>
