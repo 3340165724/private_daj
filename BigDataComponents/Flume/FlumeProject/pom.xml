@@ -13,14 +13,14 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.flume/flume-ng-core -->
+        <!--  https://mvnrepository.com/artifact/org.apache.flume/flume-ng-core  -->
         <dependency>
             <groupId>org.apache.flume</groupId>
             <artifactId>flume-ng-core</artifactId>
             <version>1.9.0</version>
         </dependency>
-
     </dependencies>
 
 </project>
