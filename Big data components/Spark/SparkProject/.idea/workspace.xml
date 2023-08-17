@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="247926c5-b3f2-4672-a821-be7d710ad8c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/2022_shtd_student/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/2022_shtd_student/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/2022_shtd_student/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/2022_shtd_student/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/2022_shtd_student/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/2022_shtd_student/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/2022_shtd_student/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/2022_shtd_student/src/main/Scala/com/dsj/_1_student/IncrementalExtraction.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/homework/2022.12.16作业/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/homework/2022.12.16作业/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/homework/2022.12.16作业/2002.12.15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/homework/2022.12.16作业/2022.12.7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/homework/2022.12.16作业/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/homework/2022.12.16作业/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/homework/2022.12.16作业/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/homework/2022.12.16作业/创建表.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/homework/2022.12.16作业/添加数据.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/homework/连续两个月下单.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/homework/连续两个月下单的答案.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/.idea/artifacts/project_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/.idea/libraries/scala_sdk_2_12_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/.idea/scala_compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/out/artifacts/project_jar/project.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/src/main/resources/people.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/src/main/resources/user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/src/main/scala/com/dsj/_1_HiveTableAndQueryMySQL.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/src/main/scala/com/dsj/_2_FullyExtractStaticPartitions.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/src/main/scala/com/dsj/_3_DynamicPartitioning.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/src/main/scala/com/dsj/_4_IncrementalExtraction.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/src/main/scala/com/dsj/_5_DataCleansing.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/com/dsj/_1_HiveTableAndQueryMySQL$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/com/dsj/_1_HiveTableAndQueryMySQL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/com/dsj/_2_FullyExtractStaticPartitions$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/com/dsj/_2_FullyExtractStaticPartitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/com/dsj/_3_DynamicPartitioning$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/com/dsj/_3_DynamicPartitioning$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/com/dsj/_3_DynamicPartitioning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/com/dsj/_4_IncrementalExtraction$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/com/dsj/_4_IncrementalExtraction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/com/dsj/_5_DataCleansing$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/com/dsj/_5_DataCleansing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/people.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/project/target/classes/user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Big Data Competition/大数据模拟测试.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Flume/FlumeProject/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Flume/FlumeProject/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Flume/FlumeProject/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Flume/FlumeProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Flume/FlumeProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Flume/FlumeProject/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Flume/FlumeProject/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/scala_sdk_2_12_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SparkProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Code issues/CodeIssues.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Environment/environment.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_1_TransformationsIntroduce/Intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_2_map/Quiz.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_2_map/map.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_scala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_3_flatMap/flatMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_3_flatMap/flatMap_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_3_flatMap/flatMap_scala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap_scala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_5_filter/filter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_5_filter/filter_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_5_filter/filter_scala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_6_reduceByKey/reduceByKey.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_6_reduceByKey/reduceByKey_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_6_reduceByKey/reduceByKey_scala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_7_distinct/distinct.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_7_distinct/distinct_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_7_distinct/distinct_scala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_10_isEmpty/isEmpty.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_10_isEmpty/isEmptyScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_10_isEmpty/isEmpty_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_1_action/action.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_2_foreach/ForeachScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_2_foreach/foreach.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_2_foreach/foreach_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_3_reduce/Quiz.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_3_reduce/ReduceScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_3_reduce/reduce.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_3_reduce/reduce_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_4_sum/SumScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_4_sum/sum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_4_sum/sum_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_5_count/CountScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_5_count/count.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_5_count/count_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_6_collect/CollectScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_6_collect/collect.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_6_collect/collect_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_7_take/TakeScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_7_take/take.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_7_take/take_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_8_first/FirstScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_8_first/first.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_8_first/first_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_9_max_min/MaxMinScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_9_max_min/max_min.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_2_ActionsBasic/_9_max_min/max_min.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_3_Exercise/Student_Case/Student.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_3_Exercise/Student_Case/student.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_10_zip/ZipScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_10_zip/zip.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_10_zip/zip_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_11_zipWithIndex/ZipWithIndexScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_11_zipWithIndex/zipWithIndex.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_11_zipWithIndex/zipWithIndex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_12_zipWithUniqueId/ZipWithUniqueldScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_12_zipWithUniqueId/zipWithUniqueld.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_12_zipWithUniqueId/zipWithUniqueld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_13_zipPartitions/ZipPartitionsScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_13_zipPartitions/zipPartitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_13_zipPartitions/zipPartitions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_14_union/UnionScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_14_union/union.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_14_union/unionPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_15_intersection/IntersectionScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_15_intersection/intersection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_15_intersection/intersectionPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_16_subtract/Subtract.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_16_subtract/subtract.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_16_subtract/subtract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_17_cartesian/Cartesian.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_17_cartesian/cartesian.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_17_cartesian/cartesian.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_18_join/Join.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_18_join/join.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_18_join/join.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_19_cogroup/Cogroup.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_19_cogroup/cogroup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_19_cogroup/cogroup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_1_Intro/Intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_20_keyBy/KeyBy.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_20_keyBy/keyBy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_20_keyBy/keyBy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_2_keys_values/keys_values.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_3_map_vs_RDD/map_rdd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_4_sample/SampleScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_4_sample/sample.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_4_sample/samplePython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_5_mapPartitions/MapPartitionsScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_5_mapPartitions/mapPartitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_5_mapPartitions/mapPartitionsPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_6_partitions/PartitionsScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_6_partitions/partitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_6_partitions/partitionsPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_7_Iterator_for/IteratorForScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_7_Iterator_for_yield/IteratorForYield.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_7_Iterator_map/IteratorMapScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_7_Iterator_while/IteraorWhile.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_8_map_vs_mapPartitions/DistinguishScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_8_map_vs_mapPartitions/map_mapPartitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/MapPartitionsWithIndexScala.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizFor.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizForYield.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizMap.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizWhile.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/mapPartitionsWithIndexPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/mapartitionsWithIndex.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/DataFrame_DataSet_RDD_relationship/conversion.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/DataFrame_DataSet_RDD_relationship/conversion.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/DataFrame_and_DataSet/DataFrame.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/DataFrame_and_DataSet/DataSet.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/DataFrame_and_DataSet/dataset_and_dataframe.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/DataReading/CSV_and_JSON.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/DataReading/DataFormat.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/DataReading/Hive.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/DataReading/MySql.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/UDF_and_UDAF/UDAF.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/UDF_and_UDAF/UDF.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/UDF_and_UDAF/UDF_and_UDAF.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Spark SQL/_1_hive/Hive on Spark.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/people.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/student.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CodeIssues.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_DataSet_RDD_relationship/conversion$$typecreator17$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_DataSet_RDD_relationship/conversion$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_DataSet_RDD_relationship/conversion$$typecreator9$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_DataSet_RDD_relationship/conversion$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_DataSet_RDD_relationship/conversion$User$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_DataSet_RDD_relationship/conversion$User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_DataSet_RDD_relationship/conversion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_DataSet_RDD_relationship/conversion.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_and_DataSet/DataFrame$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_and_DataSet/DataFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_and_DataSet/DataSet$$typecreator4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_and_DataSet/DataSet$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_and_DataSet/DataSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataFrame_and_DataSet/dataset_and_dataframe.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataReading/CSV_and_JSON$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataReading/CSV_and_JSON.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataReading/DataFormat.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataReading/Hive$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataReading/Hive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataReading/MySql$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataReading/MySql.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UDF_and_UDAF/UDAF$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UDF_and_UDAF/UDAF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UDF_and_UDAF/UDF$$typecreator1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UDF_and_UDAF/UDF$$typecreator2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UDF_and_UDAF/UDF$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UDF_and_UDAF/UDF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UDF_and_UDAF/UDF_and_UDAF.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_1_TransformationsIntroduce/Intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_2_map/Quiz$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_2_map/Quiz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_2_map/map.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_2_map/map_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_2_map/map_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_2_map/map_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_3_flatMap/flatMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_3_flatMap/flatMap_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_3_flatMap/flatMap_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_3_flatMap/flatMap_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_5_filter/filter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_5_filter/filter_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_5_filter/filter_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_5_filter/filter_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_6_reduceByKey/reduceByKey.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_6_reduceByKey/reduceByKey_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_6_reduceByKey/reduceByKey_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_6_reduceByKey/reduceByKey_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_7_distinct/distinct.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_7_distinct/distinct_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_7_distinct/distinct_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_TransformationsBasic/_7_distinct/distinct_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_1_hive/Hive on Spark.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_10_isEmpty/isEmpty.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_10_isEmpty/isEmptyScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_10_isEmpty/isEmptyScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_10_isEmpty/isEmpty_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_1_action/action.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_2_foreach/ForeachScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_2_foreach/ForeachScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_2_foreach/foreach.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_2_foreach/foreach_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_3_reduce/Quiz$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_3_reduce/Quiz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_3_reduce/ReduceScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_3_reduce/ReduceScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_3_reduce/reduce.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_3_reduce/reduce_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_4_sum/SumScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_4_sum/SumScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_4_sum/sum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_4_sum/sum_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_5_count/CountScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_5_count/CountScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_5_count/count.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_5_count/count_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_6_collect/CollectScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_6_collect/CollectScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_6_collect/collect.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_6_collect/collect_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_7_take/TakeScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_7_take/TakeScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_7_take/take.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_7_take/take_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_8_first/FirstScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_8_first/FirstScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_8_first/first.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_8_first/first_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_9_max_min/MaxMinScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_9_max_min/MaxMinScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_9_max_min/max_min.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_2_ActionsBasic/_9_max_min/max_min.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_3_Exercise/Student_Case/Student$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_3_Exercise/Student_Case/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_3_Exercise/Student_Case/student.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_10_zip/ZipScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_10_zip/ZipScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_10_zip/zip.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_10_zip/zip_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_11_zipWithIndex/ZipWithIndexScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_11_zipWithIndex/ZipWithIndexScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_11_zipWithIndex/zipWithIndex.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_11_zipWithIndex/zipWithIndex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_12_zipWithUniqueId/ZipWithUniqueldScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_12_zipWithUniqueId/ZipWithUniqueldScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_12_zipWithUniqueId/zipWithUniqueld.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_12_zipWithUniqueId/zipWithUniqueld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_13_zipPartitions/ZipPartitionsScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_13_zipPartitions/ZipPartitionsScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_13_zipPartitions/zipPartitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_13_zipPartitions/zipPartitions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_14_union/UnionScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_14_union/UnionScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_14_union/union.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_14_union/unionPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_15_intersection/IntersectionScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_15_intersection/IntersectionScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_15_intersection/intersection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_15_intersection/intersectionPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_16_subtract/Subtract$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_16_subtract/Subtract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_16_subtract/subtract.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_16_subtract/subtract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_17_cartesian/Cartesian$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_17_cartesian/Cartesian.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_17_cartesian/cartesian.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_17_cartesian/cartesian.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_18_join/Join$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_18_join/Join.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_18_join/join.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_18_join/join.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_19_cogroup/Cogroup$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_19_cogroup/Cogroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_19_cogroup/cogroup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_19_cogroup/cogroup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_1_Intro/Intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_20_keyBy/KeyBy$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_20_keyBy/KeyBy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_20_keyBy/keyBy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_20_keyBy/keyBy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_2_keys_values/keys_values.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_3_map_vs_RDD/map_rdd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_4_sample/SampleScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_4_sample/SampleScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_4_sample/sample.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_4_sample/samplePython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_5_mapPartitions/MapPartitionsScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_5_mapPartitions/MapPartitionsScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_5_mapPartitions/mapPartitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_5_mapPartitions/mapPartitionsPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_6_partitions/PartitionsScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_6_partitions/PartitionsScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_6_partitions/partitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_6_partitions/partitionsPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_7_Iterator_for/IteratorForScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_7_Iterator_for/IteratorForScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_7_Iterator_for_yield/IteratorForYield$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_7_Iterator_for_yield/IteratorForYield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_7_Iterator_map/IteratorMapScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_7_Iterator_map/IteratorMapScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_7_Iterator_while/IteraorWhile$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_7_Iterator_while/IteraorWhile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_8_map_vs_mapPartitions/DistinguishScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_8_map_vs_mapPartitions/DistinguishScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_8_map_vs_mapPartitions/map_mapPartitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/MapPartitionsWithIndexScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/MapPartitionsWithIndexScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizFor$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizFor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizForYield$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizForYield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizMap$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizWhile$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizWhile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/mapPartitionsWithIndexPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/mapartitionsWithIndex.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/people.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/student.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/user.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../apache/maven/apache-maven-3.8.6" />
+        <option name="userSettingsFile" value="D:\apache\maven\apache-maven-3.8.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2SQlevaYinzS2OxHOCK1mZAAhEi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RunManager" selected="Python.map_python">
+    <configuration name="map_scala" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_1_TransformationsBasic._2_map.map_scala" />
+      <module name="SparkProject" />
+      <shortenClasspath name="NONE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_1_TransformationsBasic._2_map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="map_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SparkProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_2_map" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_python.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.map_scala" />
+      <item itemvalue="Python.map_python" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.map_python" />
+        <item itemvalue="Application.map_scala" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="247926c5-b3f2-4672-a821-be7d710ad8c5" name="Changes" comment="" />
+      <created>1689086788961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689086788961</updated>
+      <workItem from="1689086795158" duration="12000" />
+      <workItem from="1690180887172" duration="1000" />
+      <workItem from="1691062031607" duration="74000" />
+      <workItem from="1691068432625" duration="755000" />
+      <workItem from="1691468117038" duration="2000" />
+      <workItem from="1691653726232" duration="1304000" />
+      <workItem from="1691993001988" duration="98000" />
+      <workItem from="1692186465947" duration="508000" />
+      <workItem from="1692263551224" duration="1042000" />
+      <workItem from="1692264689727" duration="6000" />
+      <workItem from="1692264714983" duration="628000" />
+      <workItem from="1692265363266" duration="220000" />
+      <workItem from="1692265600566" duration="117000" />
+      <workItem from="1692265913600" duration="395000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SparkProject$map_python.coverage" NAME="map_python Coverage Results" MODIFIED="1692265946148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_2_map" />
+    <SUITE FILE_PATH="coverage/SparkProject$flatMap_python.coverage" NAME="flatMap_python Coverage Results" MODIFIED="1692264131477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/Spark Core/_1_TransformationsBasic/_3_flatMap" />
+  </component>
+</project>
