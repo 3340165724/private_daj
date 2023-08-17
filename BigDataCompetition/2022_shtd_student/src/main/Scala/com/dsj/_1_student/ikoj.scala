@@ -1,10 +1,9 @@
-package _1_TransformationsBasic._2_map
+package com.dsj._1_student
 
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.SparkSession
 
-
-object map_scala {
+object ikoj {
   def main(args: Array[String]): Unit = {
     // 创建一个sparksession
     val spark: SparkSession = SparkSession.builder()

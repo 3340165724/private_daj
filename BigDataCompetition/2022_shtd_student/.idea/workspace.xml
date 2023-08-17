@@ -5,149 +5,167 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Big data components/Spark/SparkProject/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/SparkProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/libraries/scala_sdk_2_12_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/SparkProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Code issues/CodeIssues.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Environment/environment.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_1_TransformationsIntroduce/Intro.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/Quiz.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/map.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_scala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_3_flatMap/flatMap.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_3_flatMap/flatMap_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_3_flatMap/flatMap_scala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap_scala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_5_filter/filter.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_5_filter/filter_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_5_filter/filter_scala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_6_reduceByKey/reduceByKey.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_6_reduceByKey/reduceByKey_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_6_reduceByKey/reduceByKey_scala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_7_distinct/distinct.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_7_distinct/distinct_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_7_distinct/distinct_scala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_10_isEmpty/isEmpty.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_10_isEmpty/isEmptyScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_10_isEmpty/isEmpty_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_1_action/action.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_2_foreach/ForeachScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_2_foreach/foreach.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_2_foreach/foreach_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_3_reduce/Quiz.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_3_reduce/ReduceScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_3_reduce/reduce.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_3_reduce/reduce_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_4_sum/SumScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_4_sum/sum.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_4_sum/sum_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_5_count/CountScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_5_count/count.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_5_count/count_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_6_collect/CollectScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_6_collect/collect.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_6_collect/collect_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_7_take/TakeScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_7_take/take.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_7_take/take_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_8_first/FirstScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_8_first/first.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_8_first/first_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_9_max_min/MaxMinScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_9_max_min/max_min.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_2_ActionsBasic/_9_max_min/max_min.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_3_Exercise/Student_Case/Student.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_3_Exercise/Student_Case/student.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_10_zip/ZipScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_10_zip/zip.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_10_zip/zip_python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_11_zipWithIndex/ZipWithIndexScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_11_zipWithIndex/zipWithIndex.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_11_zipWithIndex/zipWithIndex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_12_zipWithUniqueId/ZipWithUniqueldScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_12_zipWithUniqueId/zipWithUniqueld.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_12_zipWithUniqueId/zipWithUniqueld.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_13_zipPartitions/ZipPartitionsScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_13_zipPartitions/zipPartitions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_13_zipPartitions/zipPartitions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_14_union/UnionScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_14_union/union.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_14_union/unionPython.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_15_intersection/IntersectionScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_15_intersection/intersection.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_15_intersection/intersectionPython.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_16_subtract/Subtract.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_16_subtract/subtract.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_16_subtract/subtract.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_17_cartesian/Cartesian.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_17_cartesian/cartesian.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_17_cartesian/cartesian.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_18_join/Join.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_18_join/join.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_18_join/join.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_19_cogroup/Cogroup.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_19_cogroup/cogroup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_19_cogroup/cogroup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_1_Intro/Intro.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_20_keyBy/KeyBy.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_20_keyBy/keyBy.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_20_keyBy/keyBy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_2_keys_values/keys_values.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_3_map_vs_RDD/map_rdd.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_4_sample/SampleScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_4_sample/sample.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_4_sample/samplePython.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_5_mapPartitions/MapPartitionsScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_5_mapPartitions/mapPartitions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_5_mapPartitions/mapPartitionsPython.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_6_partitions/PartitionsScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_6_partitions/partitions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_6_partitions/partitionsPython.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_7_Iterator_for/IteratorForScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_7_Iterator_for_yield/IteratorForYield.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_7_Iterator_map/IteratorMapScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_7_Iterator_while/IteraorWhile.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_8_map_vs_mapPartitions/DistinguishScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_8_map_vs_mapPartitions/map_mapPartitions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/MapPartitionsWithIndexScala.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizFor.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizForYield.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizMap.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizWhile.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/mapPartitionsWithIndexPython.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/mapartitionsWithIndex.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataFrame_DataSet_RDD_relationship/conversion.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataFrame_DataSet_RDD_relationship/conversion.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataFrame_and_DataSet/DataFrame.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataFrame_and_DataSet/DataSet.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataFrame_and_DataSet/dataset_and_dataframe.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataReading/CSV_and_JSON.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataReading/DataFormat.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataReading/Hive.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/DataReading/MySql.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/UDF_and_UDAF/UDAF.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/UDF_and_UDAF/UDF.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/UDF_and_UDAF/UDF_and_UDAF.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark SQL/_1_hive/Hive on Spark.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/resources/data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/resources/people.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/resources/student.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/resources/user.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/ikoj.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/SparkProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/SparkProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_scala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_1_TransformationsIntroduce/Intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_2_map/Quiz$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_2_map/Quiz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_2_map/map.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_2_map/map_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_2_map/map_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_2_map/map_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_3_flatMap/flatMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_3_flatMap/flatMap_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_3_flatMap/flatMap_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_3_flatMap/flatMap_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_4_map_vs_flatMap/map_vs_flatMap_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_5_filter/filter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_5_filter/filter_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_5_filter/filter_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_5_filter/filter_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_6_reduceByKey/reduceByKey.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_6_reduceByKey/reduceByKey_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_6_reduceByKey/reduceByKey_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_6_reduceByKey/reduceByKey_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_7_distinct/distinct.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_7_distinct/distinct_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_7_distinct/distinct_scala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_7_distinct/distinct_scala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_10_isEmpty/isEmpty.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_10_isEmpty/isEmptyScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_10_isEmpty/isEmptyScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_10_isEmpty/isEmpty_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_1_action/action.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_2_foreach/ForeachScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_2_foreach/ForeachScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_2_foreach/foreach.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_2_foreach/foreach_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_3_reduce/Quiz$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_3_reduce/Quiz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_3_reduce/ReduceScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_3_reduce/ReduceScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_3_reduce/reduce.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_3_reduce/reduce_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_4_sum/SumScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_4_sum/SumScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_4_sum/sum.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_4_sum/sum_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_5_count/CountScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_5_count/CountScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_5_count/count.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_5_count/count_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_6_collect/CollectScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_6_collect/CollectScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_6_collect/collect.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_6_collect/collect_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_7_take/TakeScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_7_take/TakeScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_7_take/take.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_7_take/take_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_8_first/FirstScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_8_first/FirstScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_8_first/first.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_8_first/first_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_9_max_min/MaxMinScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_9_max_min/MaxMinScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_9_max_min/max_min.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_2_ActionsBasic/_9_max_min/max_min.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_3_Exercise/Student_Case/Student$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_3_Exercise/Student_Case/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_3_Exercise/Student_Case/student.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_10_zip/ZipScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_10_zip/ZipScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_10_zip/zip.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_10_zip/zip_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_11_zipWithIndex/ZipWithIndexScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_11_zipWithIndex/ZipWithIndexScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_11_zipWithIndex/zipWithIndex.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_11_zipWithIndex/zipWithIndex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_12_zipWithUniqueId/ZipWithUniqueldScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_12_zipWithUniqueId/ZipWithUniqueldScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_12_zipWithUniqueId/zipWithUniqueld.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_12_zipWithUniqueId/zipWithUniqueld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_13_zipPartitions/ZipPartitionsScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_13_zipPartitions/ZipPartitionsScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_13_zipPartitions/zipPartitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/java/jk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_13_zipPartitions/zipPartitions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_14_union/UnionScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_14_union/UnionScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_14_union/union.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_14_union/unionPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_15_intersection/IntersectionScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_15_intersection/IntersectionScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_15_intersection/intersection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_15_intersection/intersectionPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_16_subtract/Subtract$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_16_subtract/Subtract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_16_subtract/subtract.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_16_subtract/subtract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_17_cartesian/Cartesian$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_17_cartesian/Cartesian.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_17_cartesian/cartesian.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_17_cartesian/cartesian.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_18_join/Join$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_18_join/Join.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_18_join/join.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_18_join/join.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_19_cogroup/Cogroup$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_19_cogroup/Cogroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_19_cogroup/cogroup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_19_cogroup/cogroup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_1_Intro/Intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_20_keyBy/KeyBy$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_20_keyBy/KeyBy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_20_keyBy/keyBy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_20_keyBy/keyBy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_2_keys_values/keys_values.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_3_map_vs_RDD/map_rdd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_4_sample/SampleScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_4_sample/SampleScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_4_sample/sample.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_4_sample/samplePython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_5_mapPartitions/MapPartitionsScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_5_mapPartitions/MapPartitionsScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_5_mapPartitions/mapPartitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_5_mapPartitions/mapPartitionsPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_6_partitions/PartitionsScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_6_partitions/PartitionsScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_6_partitions/partitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_6_partitions/partitionsPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_7_Iterator_for/IteratorForScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_7_Iterator_for/IteratorForScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_7_Iterator_for_yield/IteratorForYield$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_7_Iterator_for_yield/IteratorForYield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_7_Iterator_map/IteratorMapScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_7_Iterator_map/IteratorMapScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_7_Iterator_while/IteraorWhile$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_7_Iterator_while/IteraorWhile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_8_map_vs_mapPartitions/DistinguishScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_8_map_vs_mapPartitions/DistinguishScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_8_map_vs_mapPartitions/map_mapPartitions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/MapPartitionsWithIndexScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/MapPartitionsWithIndexScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizFor$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizFor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizForYield$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizForYield.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizMap$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizWhile$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/QuizWhile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/mapPartitionsWithIndexPython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_9_mapPartitionsWithIndex/mapartitionsWithIndex.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/people.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/student.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/user.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,13 +202,37 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Scala/scala-2.12.17/lib/scala-2.12.17" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\pro_redskirt\private_daj\BigDataCompetition\2022_shtd_student\src\main" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ikoj" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.dsj._1_student.ikoj" />
+      <module name="2022_shtd_student" />
+      <shortenClasspath name="MANIFEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsj._1_student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ikoj" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -203,6 +245,8 @@
       <workItem from="1692268146683" duration="177000" />
       <workItem from="1692268749280" duration="333000" />
       <workItem from="1692269104672" duration="112000" />
+      <workItem from="1692275418406" duration="117000" />
+      <workItem from="1692275546480" duration="305000" />
     </task>
     <servers />
   </component>
