@@ -48,6 +48,8 @@ object IncrementalExtraction {
     )
 
 
+    // timestamp：日期类类型（yyMMdd hhmmss）
+    // test_month int：分区列
     sql(
       """
         | create table  tb_score(id int, sid int, course string, score int, test_time timestamp)
