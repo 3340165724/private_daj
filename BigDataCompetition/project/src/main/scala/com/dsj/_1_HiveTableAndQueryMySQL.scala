@@ -11,7 +11,7 @@ object _1_HiveTableAndQueryMySQL {
       .getOrCreate()
 
     // todo 从MySQL中拿数据
-    val url = "jdbc:mysql://192.168.66.130:3306/shtd_student?useSSL=false&characterEncoding=UTF-8"
+    val url = "jdbc:mysql://172.20.37.230:3306/shtd_student?useSSL=false&characterEncoding=UTF-8"
     val prop = new Properties()
     prop.setProperty("user", "root")
     prop.setProperty("password", "123456")

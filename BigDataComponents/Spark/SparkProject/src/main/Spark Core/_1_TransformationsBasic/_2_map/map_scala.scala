@@ -14,7 +14,7 @@ object map_scala {
     val sc: SparkContext = spark.sparkContext
 
     val sample_1 = 1 to 10
-    sc.parallelize(List(1,2,3,5,6,8))
+    sc.parallelize(sample_1)
       .map(_ * -1)
       .foreach(println)
 

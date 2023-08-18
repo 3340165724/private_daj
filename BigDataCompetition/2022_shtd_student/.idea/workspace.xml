@@ -5,10 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/ikoj.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/create_tables.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_shtd_store/src/main/examination1/shtd_store.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProvincialQuestions/2022_shtd_store/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProvincialQuestions/2022_shtd_store/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProvincialQuestions/2022_shtd_store/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProvincialQuestions/2022_shtd_store/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProvincialQuestions/2022_shtd_store/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProvincialQuestions/2022_shtd_store/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProvincialQuestions/2022_shtd_store/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProvincialQuestions/2022_shtd_store/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/SparkProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/SparkProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/IncrementalExtraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/IncrementalExtraction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/ikoj.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/IncrementalExtraction$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/IncrementalExtraction$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/ikoj$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/ikoj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/src/main/scala/com/dsj/_1_HiveTableAndQueryMySQL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../project/src/main/scala/com/dsj/_1_HiveTableAndQueryMySQL.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_python.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_scala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/Spark Core/_1_TransformationsBasic/_2_map/map_scala.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_1_TransformationsBasic/_1_TransformationsIntroduce/Intro.md" beforeDir="false" />
@@ -94,7 +111,7 @@
       <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_12_zipWithUniqueId/zipWithUniqueld.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_13_zipPartitions/ZipPartitionsScala$.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_13_zipPartitions/ZipPartitionsScala.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_13_zipPartitions/zipPartitions.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/src/main/java/jk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_13_zipPartitions/zipPartitions.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_13_zipPartitions/zipPartitions.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_14_union/UnionScala$.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/target/classes/_4_TransformationsAdvance/_14_union/UnionScala.class" beforeDir="false" />
@@ -201,12 +218,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Scala/scala-2.12.17/lib/scala-2.12.17" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="cn.yiiguxing.plugin.translate" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -214,8 +232,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="ikoj" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.dsj._1_student.ikoj" />
+    <configuration name="IncrementalExtraction" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.dsj._1_student.IncrementalExtraction" />
       <module name="2022_shtd_student" />
       <shortenClasspath name="MANIFEST" />
       <extension name="coverage">
@@ -230,7 +248,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ikoj" />
+        <item itemvalue="Application.IncrementalExtraction" />
       </list>
     </recent_temporary>
   </component>
@@ -247,6 +265,11 @@
       <workItem from="1692269104672" duration="112000" />
       <workItem from="1692275418406" duration="117000" />
       <workItem from="1692275546480" duration="305000" />
+      <workItem from="1692276223902" duration="56000" />
+      <workItem from="1692277230549" duration="6812000" />
+      <workItem from="1692319450372" duration="2059000" />
+      <workItem from="1692351229913" duration="1903000" />
+      <workItem from="1692369992363" duration="797000" />
     </task>
     <servers />
   </component>
@@ -263,5 +286,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
