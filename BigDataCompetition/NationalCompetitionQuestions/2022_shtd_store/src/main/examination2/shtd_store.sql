@@ -18,7 +18,7 @@ select c.CUSTKEY, c.NAME, sum(o.TOTALPRICE), count(o.TOTALPRICE),
        year(o.ORDERDATE), month(o.ORDERDATE), day(o.ORDERDATE)
 from customer as c
          inner join orders o on c.CUSTKEY=o.CUSTKEY
-group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE), day(o.ORDERDATE)
+group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE), day(o.ORDERDATE);
 
 
 
@@ -45,7 +45,7 @@ from customer as c
 inner join orders as o on c.CUSTKEY=o.CUSTKEY
 inner join nation as n on c.NATIONKEY=n.NATIONKEY
 inner join region as r on n.REGIONKEY=r.REGIONKEY
-group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE)
+group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE);
 
 select t1.* , ()
 from (select c.CUSTKEY as ck, c.NAME as cn, n.NATIONKEY as nk, n.NAME as nn, r.REGIONKEY as rk, r.NAME as rn,
