@@ -17,9 +17,16 @@ use shtd_store;
 select c.CUSTKEY, c.NAME, sum(o.TOTALPRICE), count(o.TOTALPRICE),
        year(o.ORDERDATE), month(o.ORDERDATE), day(o.ORDERDATE)
 from customer as c
-         inner join orders o on c.CUSTKEY=o.CUSTKEY
+inner join orders o on c.CUSTKEY=o.CUSTKEY
 group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE), day(o.ORDERDATE);
-
+-- 存入dws层的customer_consumption_day_aggr表（表结构如下）中,然后hive cli中按照cust_key，totalconsumption, totalorder三列均逆序排序的方式，查询出前5条
+select *
+from (select c.CUSTKEY as ck, c.NAME as cn, sum(o.TOTALPRICE) as s1, count(o.TOTALPRICE) as c1,
+             year(o.ORDERDATE) as y1, month(o.ORDERDATE) as m1, day(o.ORDERDATE) as d1
+      from customer as c
+      inner join orders o on c.CUSTKEY=o.CUSTKEY
+      group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE), day(o.ORDERDATE)) as t1
+order by ck desc, s1 desc, c1 desc;
 
 
 # 2、根据dws层表customer_consumption_day_aggr表，
@@ -58,9 +65,6 @@ from (select c.CUSTKEY as ck, c.NAME as cn, n.NATIONKEY as nk, n.NAME as nn, r.R
       group by c.CUSTKEY, c.NAME,  n.NATIONKEY, n.NAME, r.REGIONKEY, r.NAME, year(o.ORDERDATE), month(o.ORDERDATE)) as t1
 
 
-
-
-
 # 3、请根据dws层表customer_consumption_day_aggr表，
 # 再联合dwd.dim_region,dwd.dim_nation计算出某年每个国家的平均消费额和所有国家平均消费额相比较结果（“高/低/相同”）,
 # 存入MySQL数据库shtd_store的nationavgcmp表（表结构如下）中，
@@ -71,3 +75,30 @@ from (select c.CUSTKEY as ck, c.NAME as cn, n.NATIONKEY as nk, n.NAME as nn, r.R
 #       nationavgconsumption	double	该国家内客单价	该国家已购买产品的人均消费额
 #       allnationavgconsumption	double	所有国家内客单价	所有国家已购买的产品的人均消费额
 #       comparison	string	比较结果	国家内人均和所有国家人均相比结果有：高/低/相同
+-- 某年每个国家的平均消费额
+select year(o.ORDERDATE), n.NATIONKEY,avg(o.TOTALPRICE)
+from nation as n
+inner  join customer as c on n.NATIONKEY=c.NATIONKEY
+inner join orders as o on c.CUSTKEY=o.CUSTKEY
+group by year(o.ORDERDATE), n.NATIONKEY;
+-- 某年所有国家平均消费额
+select n.NATIONKEY, n.NAME, avg(o.TOTALPRICE) as avg1
+from nation as n
+inner  join customer as c on n.NATIONKEY=c.NATIONKEY
+inner join orders as o on c.CUSTKEY=o.CUSTKEY
+group by year(o.ORDERDATE);
+-- 某年每个国家的平均消费额和所有国家平均消费额相比较结果（“高/低/相同”）
+select t1.NATIONKEY, t1.NAME, avg1, avg2,
+       case when avg1>avg2 then "高" when avg1<avg2 then "低" when avg1=avg2 then "相同" end
+from (select year(o.ORDERDATE) as y1, n.NATIONKEY, n.NAME, avg(o.TOTALPRICE) as avg1
+      from nation as n
+      inner  join customer as c on n.NATIONKEY=c.NATIONKEY
+      inner join orders as o on c.CUSTKEY=o.CUSTKEY
+      group by year(o.ORDERDATE), n.NATIONKEY, n.NAME) as t1
+inner join (select year(o.ORDERDATE) as y2, avg(o.TOTALPRICE) as avg2
+            from nation as n
+            inner  join customer as c on n.NATIONKEY=c.NATIONKEY
+            inner join orders as o on c.CUSTKEY=o.CUSTKEY
+            group by year(o.ORDERDATE)) as t2
+on t1.y1=t2.y2
+
