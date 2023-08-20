@@ -54,15 +54,33 @@ inner join nation as n on c.NATIONKEY=n.NATIONKEY
 inner join region as r on n.REGIONKEY=r.REGIONKEY
 group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE);
 
-select t1.* , ()
-from (select c.CUSTKEY as ck, c.NAME as cn, n.NATIONKEY as nk, n.NAME as nn, r.REGIONKEY as rk, r.NAME as rn,
+
+# 方式一：
+select c.CUSTKEY , c.NAME , n.NATIONKEY, n.NAME, r.REGIONKEY, r.NAME,
+       sum(o.TOTALPRICE) as s1, count(o.TOTALPRICE) as c1,
+       year(o.ORDERDATE) as y1, month(o.ORDERDATE) as m1,
+       ROW_NUMBER() OVER ( ORDER BY sum(o.TOTALPRICE) desc, count(o.TOTALPRICE) desc, month(o.ORDERDATE) desc) AS sequence
+from customer as c
+inner join orders as o on c.CUSTKEY=o.CUSTKEY
+inner join nation as n on c.NATIONKEY=n.NATIONKEY
+inner join region as r on n.REGIONKEY=r.REGIONKEY
+group by c.CUSTKEY, c.NAME, n.NATIONKEY, n.NAME, r.REGIONKEY, r.NAME, year(o.ORDERDATE), month(o.ORDERDATE)
+order by c.CUSTKEY, sum(o.TOTALPRICE), count(o.TOTALPRICE);
+
+
+# 方式二：
+select t1.* ,ROW_NUMBER() OVER ( ORDER BY s1 desc, c1 desc,m1 desc) as sequence
+from (select c.CUSTKEY as ck, c.`NAME` as cn , n.NATIONKEY as nk , n.`NAME` as nn , r.REGIONKEY  as rk, r.`NAME` as rn,
              sum(o.TOTALPRICE) as s1, count(o.TOTALPRICE) as c1,
              year(o.ORDERDATE) as y1, month(o.ORDERDATE) as m1
       from customer as c
       inner join orders as o on c.CUSTKEY=o.CUSTKEY
       inner join nation as n on c.NATIONKEY=n.NATIONKEY
       inner join region as r on n.REGIONKEY=r.REGIONKEY
-      group by c.CUSTKEY, c.NAME,  n.NATIONKEY, n.NAME, r.REGIONKEY, r.NAME, year(o.ORDERDATE), month(o.ORDERDATE)) as t1
+      group by c.CUSTKEY , c.`NAME` , n.NATIONKEY , n.`NAME` , r.REGIONKEY , r.`NAME`, year(o.ORDERDATE), month(o.ORDERDATE)) as t1
+
+
+
 
 
 # 3、请根据dws层表customer_consumption_day_aggr表，
