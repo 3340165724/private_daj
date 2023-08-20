@@ -81,8 +81,6 @@ from (select c.CUSTKEY as ck, c.`NAME` as cn , n.NATIONKEY as nk , n.`NAME` as n
 
 
 
-
-
 # 3、请根据dws层表customer_consumption_day_aggr表，
 # 再联合dwd.dim_region,dwd.dim_nation计算出某年每个国家的平均消费额和所有国家平均消费额相比较结果（“高/低/相同”）,
 # 存入MySQL数据库shtd_store的nationavgcmp表（表结构如下）中，
