@@ -93,17 +93,21 @@ from customer as c
          inner join orders as o on c.CUSTKEY=o.CUSTKEY
 group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE);
 -- 连续两个月下单并且下单金额保持增长的用户
-select  t1.CUSTKEY, t1.NAME,
-        concat(concat(t1.y1,if(t1.m1<10,concat("0",t1.m1),t1.m1)),"_",concat(t2.y2,if(t2.m2<10,concat("0",t2.m2),t2.m2))) as ti
-from (select c.CUSTKEY, c.NAME, year(o.ORDERDATE) as y1, month(o.ORDERDATE) as m1, sum(o.TOTALPRICE) as s1
+select t1.ck, t1.cn,
+       concat(concat(t1.y1,if(t1.m1<10,concat("0",t1.m1),t1.m1)),"_", concat(t2.y2,if(t2.m2<10,concat("0",t2.m2),t2.m2))),
+       s1+s2, c1+c2
+from (select year(o.ORDERDATE) as y1,  month(o.ORDERDATE) as m1,c.CUSTKEY as ck, c.NAME as cn,
+             sum(o.TOTALPRICE) as s1, count(*) as c1
       from customer as c
-      inner join orders as o on c.CUSTKEY=o.CUSTKEY
-      group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE)) as t1
-inner join (select c.CUSTKEY, c.NAME, year(o.ORDERDATE) as y2, month(o.ORDERDATE) as m2, sum(o.TOTALPRICE) as s2
-            from customer as c
-            inner join orders as o on c.CUSTKEY=o.CUSTKEY
-            group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE)) as t2
-on t1.CUSTKEY=t2.CUSTKEY and ((t1.y1=t2.y2 and t1.m1=t2.m2-1 ) or (t1.y1=t2.y2-1 and t1.m1=12 and t2.m2=01))
+               inner join orders as o on c.CUSTKEY=o.CUSTKEY
+      group by year(o.ORDERDATE), month(o.ORDERDATE), c.CUSTKEY, c.NAME) as t1
+         inner join (select year(o.ORDERDATE) as y2,  month(o.ORDERDATE) as m2, c.CUSTKEY, c.NAME,
+                            sum(o.TOTALPRICE) as s2, count(*) as c2
+                     from customer as c
+                              inner join orders as o on c.CUSTKEY=o.CUSTKEY
+                     group by year(o.ORDERDATE), month(o.ORDERDATE), c.CUSTKEY, c.NAME) as t2
+                    on t1.ck=t2.CUSTKEY and ((t1.y1=t2.y2 and t1.m1=t2.m2-1) or (t1.y1=t2.y2-1 and t1.m1=12 and t2.m2=01))
 where s1<s2 and y1>= 1997;
+
 
 
