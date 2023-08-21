@@ -10,11 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/2022_shtd_student_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/FullExtraction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/IncrementalExtraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/IncrementalExtraction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/IncrementalExtraction$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/IncrementalExtraction$.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +101,7 @@
       <workItem from="1692369992363" duration="797000" />
       <workItem from="1692412931467" duration="34000" />
       <workItem from="1692537163250" duration="1379000" />
-      <workItem from="1692607520672" duration="6510000" />
+      <workItem from="1692607520672" duration="7151000" />
     </task>
     <servers />
   </component>
