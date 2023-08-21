@@ -80,12 +80,29 @@ from (select c.CUSTKEY, c.NAME as cn, n.NATIONKEY, n.NAME as nn, r.REGIONKEY, r.
 #       nationmedianconsumption	double	该国家内客单价	该国家已购买产品的金额的中位数
 #       allnationmedianconsumption	double	所有国家订单的中位数	所有国家已购买的产品的金额的中位数
 -- 某年每个国家的消费额中中位数
-select n.NATIONKEY, n.NAME, sum(o.TOTALPRICE) as s1,
+select n.NATIONKEY, n.NAME
 from nation as n
 inner join customer as c on n.NATIONKEY=c.CUSTKEY
 inner join orders as o on c.CUSTKEY=o.CUSTKEY
 where year(o.ORDERDATE)=1992
 group by n.NATIONKEY, n.NAME
+
+select t1.nk, t1.nn
+from (select n.NATIONKEY as nk, n.NAME as nn, SUM(o.TOTALPRICE), year(o.ORDERDATE) as y1, count(*)
+      from nation as n
+      inner join customer as c on n.NATIONKEY=c.CUSTKEY
+      inner join orders as o on c.CUSTKEY=o.CUSTKEY
+      group by n.NATIONKEY, n.NAME, y1) as t1
+inner join (select year(o.ORDERDATE) as y2, count(*)
+            from nation as n
+            inner join customer as c on n.NATIONKEY=c.CUSTKEY
+            inner join orders as o on c.CUSTKEY=o.CUSTKEY
+            group by y2) as t2
+on t1.y1=t2.y2
+
+
+
+
 
 
 
