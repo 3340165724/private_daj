@@ -4,7 +4,7 @@ import org.apache.spark.sql.SparkSession
 
 import java.util.Properties
 
-object FullExtraction {
+object FullExtractionStatic {
   def main(args: Array[String]): Unit = {
     // 用 spark-shell 输入多行命令
     // scla-shell里直接输入  :paste 命令，黏贴后结束按ctrl+D
@@ -39,7 +39,7 @@ object FullExtraction {
     df.createOrReplaceTempView("myclass")
 
     // 使用数据库,并插入数据到静态分区
-    spark.sql("insert into ods1_student.tb_class partition(etldate='20230221') select * from myclass where cid>15")
+    spark.sql("insert into ods_student.tb_class partition(etldate='20230221') select * from myclass where cid>15")
 
     /* todo 打包的方式
      *  方式一 ：右击项目--》Open Module Settings--》Artifacts--》+ JAR--》From modules with dependencies...-->ok-->只保留output(最后一个)--》ok
@@ -53,7 +53,7 @@ object FullExtraction {
     for(tableName <- tables){
       val df_ = spark.read.jdbc(url,tableName,prop)
       df_.createOrReplaceTempView("tableName")
-      spark.sql(s"insert into ods1_student.${tableName} partition(etldate='20230821') select * from tableName")
+      spark.sql(s"insert into ods_student.${tableName} partition(etldate='20230821') select * from tableName")
     }
     spark.stop()
   }

@@ -15,10 +15,10 @@ object create_tables {
     val sc = spark.sparkContext
     import spark.sql
     // 创建数据库
-    sql("create database ods1_student")
+    sql("create database ods_student")
 
     // 进入数据库
-    sql("use ods1_student")
+    sql("use ods_student")
 
     // 创建分区表
 
