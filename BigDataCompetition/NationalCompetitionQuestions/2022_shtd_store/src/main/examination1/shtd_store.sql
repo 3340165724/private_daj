@@ -52,14 +52,14 @@ limit 5;
 -- 某年每个国家的平均消费额
 select n.NATIONKEY, n.NAME, avg(o.TOTALPRICE)
 from customer as c
-         inner join nation as n on c.NATIONKEY=n.NATIONKEY
-         inner join orders as o on o.CUSTKEY=c.CUSTKEY
+inner join nation as n on c.NATIONKEY=n.NATIONKEY
+inner join orders as o on o.CUSTKEY=c.CUSTKEY
 group by year(o.ORDERDATE), n.NATIONKEY, n.NAME;
 -- 某年所有国家平均消费额
 select year(o.ORDERDATE), avg(o.TOTALPRICE)
 from customer as c
-    inner join nation as n on c.NATIONKEY=n.NATIONKEY
-    inner join orders as o on o.CUSTKEY=c.CUSTKEY
+inner join nation as n on c.NATIONKEY=n.NATIONKEY
+inner join orders as o on o.CUSTKEY=c.CUSTKEY
 group by year(o.ORDERDATE);
 -- 某年每个国家的平均消费额和所有国家平均消费额相比较结果（“高/低/相同”）
 select t1.NATIONKEY, t1.NAME, avg1, avg2,

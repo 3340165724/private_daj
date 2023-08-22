@@ -54,7 +54,7 @@ group by  n.NATIONKEY, n.NAME, year(o.ORDERDATE), month(o.ORDERDATE)
 -- 统计各个客户在每月下单的总个数、总金额
 select c.CUSTKEY, c.NAME, YEAR(o.ORDERDATE), MONTH(o.ORDERDATE), COUNT(*), SUM(o.TOTALPRICE)
 from customer as c
-         inner join  orders as o  on o.CUSTKEY = c.CUSTKEY
+inner join  orders as o  on o.CUSTKEY = c.CUSTKEY
 group by  c.CUSTKEY, c.NAME, YEAR(o.ORDERDATE) , MONTH(o.ORDERDATE)
 order by c.CUSTKEY, c.NAME
 -- 续两个月下订单的客户和连续两个月下订单的总个数、总金额
