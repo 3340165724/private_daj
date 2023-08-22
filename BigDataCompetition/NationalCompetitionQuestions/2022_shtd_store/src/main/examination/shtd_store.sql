@@ -51,22 +51,24 @@ group by  n.NATIONKEY, n.NAME, year(o.ORDERDATE), month(o.ORDERDATE)
 
 
 # 7、统计连续两个月下订单的客户和连续两个月下订单的总个数、总金额，按个数降序显示（客户id、客户名、年、月、总个数、总金额）
--- 查询每个月下单的客户的情况
-select c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE), count(*), sum(o.TOTALPRICE)
+-- 统计各个客户在每月下单的总个数、总金额
+select c.CUSTKEY, c.NAME, YEAR(o.ORDERDATE), MONTH(o.ORDERDATE), COUNT(*), SUM(o.TOTALPRICE)
 from customer as c
-inner join orders as o on c.CUSTKEY=o.CUSTKEY
-group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE);
-
+         inner join  orders as o  on o.CUSTKEY = c.CUSTKEY
+group by  c.CUSTKEY, c.NAME, YEAR(o.ORDERDATE) , MONTH(o.ORDERDATE)
+order by c.CUSTKEY, c.NAME
 -- 续两个月下订单的客户和连续两个月下订单的总个数、总金额
-select t1. CUSTKEY, t1.NAME, y1, m1, c1, s1
-from (select c.CUSTKEY, c.NAME, year(o.ORDERDATE) as y1, month(o.ORDERDATE) as m1, count(*) as c1 , sum(o.TOTALPRICE) as s1
-      from customer as c
-      inner join orders as o on c.CUSTKEY=o.CUSTKEY
-      group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE)) as t1
-inner join (select c.CUSTKEY, c.NAME, year(o.ORDERDATE) as y2, month(o.ORDERDATE) as m2, count(*) as c2, sum(o.TOTALPRICE) as s2
+select  t1.CUSTKEY, t1.NAME,
+        concat(concat(t1.y1,if(t1.m1<10,concat('0',t1.m1),t1.m1)),"_",concat(t2.y2,if(t2.m2<10,concat('0',t2.m2),t2.m2))),
+       t1.c1+t2.c2, round(t1.s1+t2.s2,2)
+from(select c.CUSTKEY, c.NAME, YEAR(o.ORDERDATE) as y1, MONTH(o.ORDERDATE) as m1, COUNT(*) as c1, SUM(o.TOTALPRICE) as s1
+     from customer as c
+     inner join  orders as o  on o.CUSTKEY = c.CUSTKEY
+     group by  c.CUSTKEY, c.NAME, YEAR(o.ORDERDATE) , MONTH(o.ORDERDATE)) as t1
+inner join (select c.CUSTKEY, c.NAME, YEAR(o.ORDERDATE) as y2, MONTH(o.ORDERDATE) as m2, COUNT(*) as c2, SUM(o.TOTALPRICE) as s2
             from customer as c
-            inner join orders as o on c.CUSTKEY=o.CUSTKEY
-            group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE)) as t2
-on t1.CUSTKEY=t2.CUSTKEY and ((y1=y2 and m1=m2-1)or (y1=y2-1 and m1=12 and m2=01))
+            inner join  orders as o  on o.CUSTKEY = c.CUSTKEY
+            group by  c.CUSTKEY, c.NAME, YEAR(o.ORDERDATE) , MONTH(o.ORDERDATE)) as t2
+on t1.CUSTKEY=t2.CUSTKEY and ((y1=y2 and m1 = m2-1) or (y1=y2-1 and t1.m1=12 and t2.m2=01))
 
 

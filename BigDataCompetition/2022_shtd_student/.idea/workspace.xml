@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/IncrementalExtraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/IncrementalExtraction.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_shtd_store" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -101,7 +102,8 @@
       <workItem from="1692369992363" duration="797000" />
       <workItem from="1692412931467" duration="34000" />
       <workItem from="1692537163250" duration="1379000" />
-      <workItem from="1692607520672" duration="7151000" />
+      <workItem from="1692607520672" duration="7325000" />
+      <workItem from="1692666751188" duration="38000" />
     </task>
     <servers />
   </component>
