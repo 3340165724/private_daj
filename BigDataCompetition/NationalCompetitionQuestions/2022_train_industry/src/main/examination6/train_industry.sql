@@ -1,3 +1,5 @@
+use train_industry;
+
 # 1、编写Scala工程代码，根据dwd层表统计每个月、每个设备、每种状态的时长，
 #    存入MySQL数据库shtd_store的表（表结构如下）中，
 #    然后在Linux的MySQL命令行中根据设备id、状态持续时长均为逆序排序，查询出前5条，
@@ -9,7 +11,10 @@
 #       Year	int	年	状态产生的年
 #       Month	int	月	状态产生的月
 select *
-from
+from basemachine as bm
+inner join machinedata as md on bm.BaseMachineID=md.MachineID
+
+
 
 
 

@@ -10,11 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/FullExtractionDynamic.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/FullExtraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/FullExtractionStatic.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/create_tables.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/create_tables.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_shtd_store" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_train_industry" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -108,7 +104,7 @@
       <workItem from="1692607520672" duration="7325000" />
       <workItem from="1692666751188" duration="38000" />
       <workItem from="1692691213894" duration="2841000" />
-      <workItem from="1692699433260" duration="10099000" />
+      <workItem from="1692699433260" duration="10796000" />
     </task>
     <servers />
   </component>
