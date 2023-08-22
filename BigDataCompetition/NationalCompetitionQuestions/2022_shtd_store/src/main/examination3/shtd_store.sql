@@ -67,7 +67,7 @@ inner join (select year(o.ORDERDATE) as y2,  avg(o.TOTALPRICE) as avg2
             inner join orders as o on c.CUSTKEY=o.CUSTKEY
             inner join nation as n on c.NATIONKEY=n.NATIONKEY
             group by year(o.ORDERDATE)) as t2
-on t1.y1=t2.y2
+on t1.y1=t2.y2;
 
 
 

@@ -13,7 +13,7 @@
 select c.CUSTKEY, c.NAME, sum(o.TOTALPRICE), count(*), year(o.ORDERDATE), month(o.ORDERDATE), day(o.ORDERDATE)
 from customer as c
 inner join orders as o on c.CUSTKEY=o.CUSTKEY
-group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE), day(o.ORDERDATE)
+group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE), day(o.ORDERDATE);
 
 
 
@@ -31,7 +31,7 @@ group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE), day(o.ORDERDA
 select c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE), sum(o.TOTALPRICE), count(*)
 from customer as c
 inner join orders as o on c.CUSTKEY=o.CUSTKEY
-group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE)
+group by c.CUSTKEY, c.NAME, year(o.ORDERDATE), month(o.ORDERDATE);
 -- 连续两个月下单并且下单金额保持增长的用户
 select t1.ck, t1.cn,
        concat(concat(t1.y1,if(t1.m1<10,concat("0",t1.m1),t1.m1)),"_",concat(t2.y2,if(t2.m2<10,concat("0",t2.m2),t2.m2))) as month,
@@ -64,7 +64,7 @@ select n.NATIONKEY, n.NAME, count(*), year(o.ORDERDATE), month(o.ORDERDATE)
 from customer as c
 inner join nation as n on c.NATIONKEY=n.NATIONKEY
 inner join orders as o on c.CUSTKEY=o.CUSTKEY
-group by n.NATIONKEY, n.NAME, year(o.ORDERDATE), month(o.ORDERDATE)
+group by n.NATIONKEY, n.NAME, year(o.ORDERDATE), month(o.ORDERDATE);
 -- 每个国家连续两个月下单并且下单金额保持增长
 select t1.nk, t1.nn, c1, c2, round(c1/c2,3)
 from (select n.NATIONKEY as nk, n.NAME as nn, count(o.CUSTKEY) as c1, sum(o.TOTALPRICE) as s1,
@@ -80,5 +80,5 @@ inner join (select n.NATIONKEY, n.NAME, count(o.CUSTKEY) as c2, sum(o.TOTALPRICE
             inner join orders as o on c.CUSTKEY=o.CUSTKEY
             group by n.NATIONKEY, n.NAME, year(o.ORDERDATE), month(o.ORDERDATE)) as t2
 on t1.nk=t2.NATIONKEY and ((t1.y1=t2.y2 and t1.m1=t2.m2-1) or (t1.y1=t2.y2-1 and t1.m1=12 and t2.m2=01))
-where s1<s2
+where s1<s2;
 

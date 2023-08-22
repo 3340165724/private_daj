@@ -64,7 +64,7 @@ from (select c.CUSTKEY, c.NAME as cn, n.NATIONKEY, n.NAME as nn, r.REGIONKEY, r.
       inner join orders as o on c.CUSTKEY=o.CUSTKEY
       inner join nation as n on n.NATIONKEY=c.NATIONKEY
       inner join  region as r on r.REGIONKEY=n.REGIONKEY
-      group by c.CUSTKEY, c.NAME, n.NATIONKEY, n.NAME, r.REGIONKEY, r.NAME, year(o.ORDERDATE),month(o.ORDERDATE)) as t1
+      group by c.CUSTKEY, c.NAME, n.NATIONKEY, n.NAME, r.REGIONKEY, r.NAME, year(o.ORDERDATE),month(o.ORDERDATE)) as t1;
 
 
 
@@ -85,7 +85,7 @@ from nation as n
 inner join customer as c on n.NATIONKEY=c.CUSTKEY
 inner join orders as o on c.CUSTKEY=o.CUSTKEY
 where year(o.ORDERDATE)=1992
-group by n.NATIONKEY, n.NAME
+group by n.NATIONKEY, n.NAME;
 
 select t1.nk, t1.nn
 from (select n.NATIONKEY as nk, n.NAME as nn, SUM(o.TOTALPRICE), year(o.ORDERDATE) as y1, count(*)
@@ -98,7 +98,7 @@ inner join (select year(o.ORDERDATE) as y2, count(*)
             inner join customer as c on n.NATIONKEY=c.CUSTKEY
             inner join orders as o on c.CUSTKEY=o.CUSTKEY
             group by y2) as t2
-on t1.y1=t2.y2
+on t1.y1=t2.y2;
 
 
 
