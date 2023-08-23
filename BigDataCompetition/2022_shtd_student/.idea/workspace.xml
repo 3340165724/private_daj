@@ -10,7 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_train_industry/src/main/examination7/train_industy.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/IncrementalExtraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/IncrementalExtraction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_train_industry/src/main/examination6/train_industry.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_train_industry/src/main/examination6/train_industry.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +108,7 @@
       <workItem from="1692666751188" duration="38000" />
       <workItem from="1692691213894" duration="2841000" />
       <workItem from="1692699433260" duration="10796000" />
+      <workItem from="1692792980029" duration="3378000" />
     </task>
     <servers />
   </component>

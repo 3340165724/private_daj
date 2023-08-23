@@ -13,6 +13,7 @@ use train_industry;
 select *
 from basemachine as bm
 inner join machinedata as md on bm.BaseMachineID=md.MachineID
+group by year(), bm.BaseMachineID
 
 
 
