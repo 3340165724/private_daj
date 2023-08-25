@@ -10,18 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_5_CleanData.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_train_industry/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_train_industry/src/main/examination6/com/dsj/test/CreateTable.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_pub/ds_pub.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_pub/src/main/examination1/com/dsj/test/CreateTable.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/FullExtractionDynamic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_3_FullExtractionDynamic.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/FullExtractionStatic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_2_FullExtractionStatic.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/IncrementalExtraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_4_IncrementalExtraction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/create_tables.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_1_create_tables.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_train_industry/src/main/examination6/train_industry.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_train_industry/src/main/examination6/com/dsj/test/train_industry.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_train_industry/src/main/examination7/train_industy.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_train_industry/src/main/examination7/train_industy.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +109,8 @@
       <workItem from="1692861326485" duration="6000" />
       <workItem from="1692864268161" duration="2990000" />
       <workItem from="1692876558923" duration="1871000" />
-      <workItem from="1692951484885" duration="2597000" />
+      <workItem from="1692951484885" duration="3207000" />
+      <workItem from="1692973183421" duration="40000" />
     </task>
     <servers />
   </component>
