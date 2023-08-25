@@ -5,7 +5,7 @@ import java.util.Properties
 import org.apache.spark.sql.functions._
 
 
-object IncrementalExtraction {
+object _4_IncrementalExtraction {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder()
       .appName("DynamicPartitioning")

@@ -4,7 +4,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 import java.util.Properties
 
-object FullExtractionDynamic {
+object _3_FullExtractionDynamic {
   def main(args: Array[String]): Unit = {
     // 用 spark-shell 输入多行命令
     // scla-shell里直接输入  :paste 命令，黏贴后结束按ctrl+D

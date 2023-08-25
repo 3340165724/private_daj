@@ -2,7 +2,7 @@ package com.dsj._1_student
 
 import org.apache.spark.sql.SparkSession
 
-object create_tables {
+object _1_create_tables {
   def main(args: Array[String]): Unit = {
     // 用 spark-shell 输入多行命令
     // scla-shell里直接输入  :paste 命令，黏贴后结束按ctrl+D
