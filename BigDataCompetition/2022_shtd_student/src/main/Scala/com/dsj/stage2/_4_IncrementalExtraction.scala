@@ -1,4 +1,4 @@
-package com.dsj._1_student
+package com.dsj.stage2
 
 import org.apache.spark.sql.SparkSession
 import java.util.Properties

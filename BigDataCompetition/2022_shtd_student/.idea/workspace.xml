@@ -10,7 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/student.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_5_Deduplication.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_6_OutlierFiltering.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_7_MissingValueHandling.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_8_FormatSpecification.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_9_AddAdditionalColumns.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/2022_shtd_student_jar/2022_shtd_student.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_1_create_tables.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage2/_1_create_tables.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_2_FullExtractionStatic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage2/_2_FullExtractionStatic.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_3_FullExtractionDynamic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage2/_3_FullExtractionDynamic.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_4_IncrementalExtraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage2/_4_IncrementalExtraction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_5_CleanData.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/IncrementalExtraction$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/IncrementalExtraction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/create_tables$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/create_tables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +37,23 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,7 +70,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2U6lvdncnmqImOko8aFbwpUBqiK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,26 +82,79 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NationalCompetitionQuestions/2022_train_industry" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="ssh.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pro_redskirt\private_daj\BigDataCompetition\2022_shtd_student\data" />
       <recent name="D:\pro_redskirt\private_daj\BigDataCompetition\2022_shtd_student\src\main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application._8_FormatSpecification">
     <configuration name="IncrementalExtraction" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.dsj._1_student.IncrementalExtraction" />
       <module name="2022_shtd_student" />
       <shortenClasspath name="MANIFEST" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dsj._1_student.*" />
+          <option name="PATTERN" value="com.dsj.stage3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_5_Deduplication" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.dsj.stage2._5_Deduplication" />
+      <module name="2022_shtd_student" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsj.stage3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_6_OutlierFiltering" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.dsj.stage2._6_OutlierFiltering" />
+      <module name="2022_shtd_student" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsj.stage3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_7_MissingValueHandling" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.dsj.stage3._7_MissingValueHandling" />
+      <module name="2022_shtd_student" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsj.stage3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_8_FormatSpecification" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.dsj.stage3._8_FormatSpecification" />
+      <module name="2022_shtd_student" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsj.stage3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,6 +164,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._8_FormatSpecification" />
+        <item itemvalue="Application._7_MissingValueHandling" />
+        <item itemvalue="Application._6_OutlierFiltering" />
+        <item itemvalue="Application._5_Deduplication" />
         <item itemvalue="Application.IncrementalExtraction" />
       </list>
     </recent_temporary>
@@ -111,6 +202,8 @@
       <workItem from="1692876558923" duration="1871000" />
       <workItem from="1692951484885" duration="3207000" />
       <workItem from="1692973183421" duration="40000" />
+      <workItem from="1693009707797" duration="65000" />
+      <workItem from="1693010227819" duration="21200000" />
     </task>
     <servers />
   </component>
