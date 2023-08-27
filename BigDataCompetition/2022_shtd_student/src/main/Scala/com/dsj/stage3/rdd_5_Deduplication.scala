@@ -2,7 +2,7 @@ package com.dsj.stage3
 
 import org.apache.spark.sql.SparkSession
 
-object _5_Deduplication {
+object rdd_5_Deduplication {
   def main(args: Array[String]): Unit = {
     // 创建spark对象
     val spark = SparkSession.builder().master("local[*]").getOrCreate()

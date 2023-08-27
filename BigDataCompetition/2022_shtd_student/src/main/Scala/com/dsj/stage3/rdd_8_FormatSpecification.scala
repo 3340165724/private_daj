@@ -5,7 +5,7 @@ import org.apache.spark.sql.SparkSession
 import java.text.SimpleDateFormat
 
 
-object _8_FormatSpecification {
+object rdd_8_FormatSpecification {
   def main(args: Array[String]): Unit = {
     // 创建sparksession对象
     val spark = SparkSession.builder().master("local[*]").getOrCreate()
@@ -22,7 +22,7 @@ object _8_FormatSpecification {
       val dateStr = arr(1)
       val date = sdf.parse(dateStr)
       val newDate = sdf_.format(date)
-      if(arr.length !=3 ){
+      if (arr.length != 3) {
         arr(0) + "," + newDate + "," + arr(2) + "," + arr(3)
       }
     }).foreach(println)

@@ -10,17 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/df_5_Deduplication.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/df_6_OutlierFiltering.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/df_7_MissingValueHandling.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/df_8_FormatSpecification.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/df_9_AddAdditionalColumns.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_7_MissingValueHandling.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_7_MissingValueHandling.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_9_AddAdditionalColumns.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_9_AddAdditionalColumns.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/2022_shtd_student-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_7_MissingValueHandling$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_7_MissingValueHandling$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_8_FormatSpecification$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_8_FormatSpecification$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_9_AddAdditionalColumns$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_9_AddAdditionalColumns$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_9_AddAdditionalColumns.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_9_AddAdditionalColumns.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_5_Deduplication.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/rdd_5_Deduplication.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_6_OutlierFiltering.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/rdd_6_OutlierFiltering.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_7_MissingValueHandling.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/rdd_7_MissingValueHandling.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_8_FormatSpecification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/rdd_8_FormatSpecification.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_9_AddAdditionalColumns.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/rdd_9_AddAdditionalColumns.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +195,8 @@
       <workItem from="1692951484885" duration="3207000" />
       <workItem from="1692973183421" duration="40000" />
       <workItem from="1693009707797" duration="65000" />
-      <workItem from="1693010227819" duration="30641000" />
+      <workItem from="1693010227819" duration="30875000" />
+      <workItem from="1693149221878" duration="352000" />
     </task>
     <servers />
   </component>

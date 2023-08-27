@@ -5,7 +5,7 @@ import org.apache.spark.sql.SparkSession
 import java.text.SimpleDateFormat
 import java.util.{Calendar, Date}
 
-object _9_AddAdditionalColumns {
+object rdd_9_AddAdditionalColumns {
   def main(args: Array[String]): Unit = {
     // 创建sparksession对象
     val spark = SparkSession.builder().master("local[*]").getOrCreate()

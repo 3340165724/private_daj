@@ -2,7 +2,7 @@ package com.dsj.stage3
 
 import org.apache.spark.sql.SparkSession
 
-object _6_OutlierFiltering {
+object rdd_6_OutlierFiltering {
   def main(args: Array[String]): Unit = {
     // 创建spark对象
     val spark = SparkSession.builder().master("local[*]").getOrCreate()

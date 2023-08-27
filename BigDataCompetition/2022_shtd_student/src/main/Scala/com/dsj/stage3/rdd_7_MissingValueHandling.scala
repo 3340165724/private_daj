@@ -2,7 +2,7 @@ package com.dsj.stage3
 
 import org.apache.spark.sql.SparkSession
 
-object _7_MissingValueHandling {
+object rdd_7_MissingValueHandling {
   def main(args: Array[String]): Unit = {
     // 创建spark对象
     val spark = SparkSession.builder().master("local[*]").getOrCreate()
@@ -29,8 +29,8 @@ object _7_MissingValueHandling {
     }).groupByKey().map(x => {
       val sum = x._2.sum.toDouble
       val age = sum / x._2.size
-      (x._1,age) // 返回性别和年龄
-//    }).collect()(0) //collect()(0)，收集整个DataFrame的内容，并从中取出第一个元素
+      (x._1, age) // 返回性别和年龄
+      //    }).collect()(0) //collect()(0)，收集整个DataFrame的内容，并从中取出第一个元素
     }).collectAsMap()
     println("男的平均年龄是：" + ave_age.get("男").get)
     println("女的平均年龄是：" + ave_age.get("女").get)
