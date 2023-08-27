@@ -51,8 +51,9 @@ object _7_MissingValueHandling {
         val age = arr(3)
         newAge = age.toInt
       }
-      newName + "," + arr(1) + "," + arr(2) + "," + newAge
+      newName + "," + arr(1) + "," + arr(2) + "," + newAge.formatted("%.2f")
     }).foreach(println)
+
     spark.stop()
   }
 }

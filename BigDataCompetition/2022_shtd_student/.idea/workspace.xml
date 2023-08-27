@@ -10,24 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/student.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_5_Deduplication.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_6_OutlierFiltering.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_7_MissingValueHandling.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_8_FormatSpecification.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_9_AddAdditionalColumns.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/2022_shtd_student_jar/2022_shtd_student.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_1_create_tables.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage2/_1_create_tables.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_2_FullExtractionStatic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage2/_2_FullExtractionStatic.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_3_FullExtractionDynamic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage2/_3_FullExtractionDynamic.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_4_IncrementalExtraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage2/_4_IncrementalExtraction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/_1_student/_5_CleanData.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/IncrementalExtraction$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/IncrementalExtraction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/create_tables$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/_1_student/create_tables.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BigDataComponents/Spark/SparkProject/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_7_MissingValueHandling.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_7_MissingValueHandling.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_9_AddAdditionalColumns.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Scala/com/dsj/stage3/_9_AddAdditionalColumns.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2022_shtd_student-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_7_MissingValueHandling$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_7_MissingValueHandling$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_8_FormatSpecification$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_8_FormatSpecification$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_9_AddAdditionalColumns$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_9_AddAdditionalColumns$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_9_AddAdditionalColumns.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dsj/stage3/_9_AddAdditionalColumns.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,21 +88,7 @@
       <recent name="D:\pro_redskirt\private_daj\BigDataCompetition\2022_shtd_student\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._8_FormatSpecification">
-    <configuration name="IncrementalExtraction" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.dsj._1_student.IncrementalExtraction" />
-      <module name="2022_shtd_student" />
-      <shortenClasspath name="MANIFEST" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dsj.stage3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application._7_MissingValueHandling">
     <configuration name="_5_Deduplication" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.dsj.stage2._5_Deduplication" />
       <module name="2022_shtd_student" />
@@ -162,13 +141,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_9_AddAdditionalColumns" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.dsj.stage3._9_AddAdditionalColumns" />
+      <module name="2022_shtd_student" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dsj.stage3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._8_FormatSpecification" />
         <item itemvalue="Application._7_MissingValueHandling" />
+        <item itemvalue="Application._9_AddAdditionalColumns" />
+        <item itemvalue="Application._8_FormatSpecification" />
         <item itemvalue="Application._6_OutlierFiltering" />
         <item itemvalue="Application._5_Deduplication" />
-        <item itemvalue="Application.IncrementalExtraction" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +195,7 @@
       <workItem from="1692951484885" duration="3207000" />
       <workItem from="1692973183421" duration="40000" />
       <workItem from="1693009707797" duration="65000" />
-      <workItem from="1693010227819" duration="21200000" />
+      <workItem from="1693010227819" duration="30641000" />
     </task>
     <servers />
   </component>
