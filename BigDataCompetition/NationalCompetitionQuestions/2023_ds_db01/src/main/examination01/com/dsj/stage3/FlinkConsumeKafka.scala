@@ -14,7 +14,13 @@ import org.apache.hbase.thirdparty.com.google.gson.JsonParser
 
 import java.util.Properties
 
+/**
+ * flink消费Kafka中的ods_mall_data的数据（数据是从Maxwell监控MySQL数据库的binlog日志来的）
+ * */
 object FlinkConsumeKafka {
+  /*（分流）使用Flink消费Kafka中topic为ods_mall_data的数据，
+  根据数据中不同的表将数据分别分发至kafka的DWD层的fact_order_master、fact_order_detail的Topic中（只获取data的内容，
+  具体的内容格式考生请自查），其他的表则无需处理*/
   def main(args: Array[String]): Unit = {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
     env.setParallelism(1)
@@ -68,8 +74,8 @@ object FlinkConsumeKafka {
     val detail_stream = stream.getSideOutput(out2)
 
     // 将order_stream和detail_stream分别存储到Kafka的dwd层对应的主题中
-    order_stream.addSink(new FlinkKafkaProducer[String]("fact_order_master",new SimpleStringSchema(), prop))
-    detail_stream.addSink(new FlinkKafkaProducer[String]("fact_order_detail",new SimpleStringSchema(), prop))
+    order_stream.addSink(new FlinkKafkaProducer[String]("fact_order_master", new SimpleStringSchema(), prop))
+    detail_stream.addSink(new FlinkKafkaProducer[String]("fact_order_detail", new SimpleStringSchema(), prop))
     // 将数据备份到HBase中
     order_stream.addSink(new KafkaToHBase("dsj:order_master"))
     detail_stream.addSink(new KafkaToHBase("dsj:order_detail"))

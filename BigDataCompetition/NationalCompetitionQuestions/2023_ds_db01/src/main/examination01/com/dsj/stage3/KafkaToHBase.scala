@@ -45,8 +45,10 @@ class KafkaToHBase(val tbName: String) extends RichSinkFunction[String] {
     // 创建put对象放入rowKey的字节
     val put = new Put(Bytes.toBytes(rowKey))
 
-    // 思路：动态解析json中的key作为列名，value作为hbase中存储的数据值
-
+    /*
+    * "data":{"cart_id":56464,"customer_id":3626,"product_id":4060,"product_amount":13,"price":536.45,"add_time":"20230823052358","modified_time":"2023-08-24 00:57:58"}
+    *   思路：动态解析json中的key作为列名，value作为hbase中存储的数据值
+    *  */
     // 将value字符串转为json对象
     val jsonObj = new JsonParser().parse(value).getAsJsonObject()
     // 对json对象进行迭代
