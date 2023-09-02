@@ -15,7 +15,6 @@ object IncrementalExtraction {
 ods.表名命令，将结果截图复制粘贴至对应报告中*/
 
   //spark on yarn方试运行  spark-submit --master yarn --class com.wczy.ods.DsDB01MySqlToOds /opt/spark.jar
-
   def main(args: Array[String]): Unit = {
     // 创建sparksession对象
     val spark = SparkSession.builder().appName("IncrementalExtraction")
@@ -26,7 +25,7 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
       .getOrCreate()
 
     /*
-    * todo CASE1
+    * todo CASE1  以modified_time做为增量字段
     *   将MySQL的 ds_db01 库中所有表的数据全量抽取到 Hive 的 ods 库中对应表中
     *   思路：从MySQL中拿出数据，在hive找到最大的modified_time值
     * */
@@ -39,7 +38,8 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
 
     val etl_date = 20230828
 
-    val tables = Array("brand_info", "coupon_info", "customer_addr", "customer_inf", "customer_level_inf", "customer_login", "favor_info", "order_cart", "order_detail", "order_master", "product_browse", "product_category", "product_comment", "product_info", "product_pic_info", "shipping_info", "supplier_info", "warehouse_info", "warehouse_product")
+    val tables = Array("brand_info", "coupon_info", "customer_addr", "customer_inf", "customer_level_inf", "customer_login", "favor_info", "order_cart", "order_detail", "order_master",
+      "product_browse", "product_category", "product_comment", "product_info", "product_pic_info", "shipping_info", "supplier_info", "warehouse_info", "warehouse_product")
     tables.foreach(table => {
       //  到hive中去找最大的modified_time值
       val max_modified_time = spark.sql(s"select string(if(max(modified_time) is null,'',max(modified_time))) from 2023_ods1_ds_db01.${table}").first().getString(0)
@@ -56,10 +56,9 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
 
 
     /*
-    * todo CASE2
+    * todo CASE2  以create_time为增量的操作
     *   customer_balance_log、customer_point_log表使用create_time作增量字段
     * */
-    // 以create_time为增量的操作
     val tables2 = Array("customer_balance_log", "customer_point_log")
     tables2.foreach(table => {
       val max_create_time = spark.sql(
@@ -79,11 +78,9 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
     })
 
     /*
-    * todo CASE3
+    * todo CASE3  以login_time增量
     *   customer_login_log使用login_time作增量字段
     * */
-
-    // 以login_time增量
     val tables3 = Array("customer_login_log")
     tables3.foreach(table => {
       val max_login_time = spark.sql(
@@ -110,7 +107,8 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
     // 消费券使用记录表以三列取最大的查询
     val max_time = spark.sql(
       """
-        |select if(c is null,'',c)
+        |select if(c is null
+        |.,'',c)
         |from (select greatest(max(get_time),max(if(used_time='NULL','',used_time)),max(if(pay_time='NULL','',pay_time))) as c
         |      from 2023_ods1_ds_db01.coupon_use) as t1
         |""".stripMargin).first().getString(0)
@@ -124,5 +122,12 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
 
     // 关闭
     spark.stop()
+
+    /* todo 打包的方式
+    *   方式一 ：右击项目--》Open Module Settings--》Artifacts--》+ JAR--》From modules with dependencies...-->ok-->只保留output(最后一个)--》ok
+    *         Build--》Build Artifacts...--》Build
+    *   方式二：maven--》Lifecycle--》package--》右击--》Run Maven Build
+    *         项目下面target目录下面--》展开--》2022_shtd_student-1.0-SNAPSHOT.jar
+    */
   }
 }

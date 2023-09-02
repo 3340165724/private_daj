@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="2023_ds_db01:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/2023_ds_db01_jar</output-path>
+    <root id="archive" name="2023_ds_db01.jar">
+      <element id="module-output" name="2023_ds_db01" />
+    </root>
+  </artifact>
+</component>

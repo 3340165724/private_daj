@@ -10,13 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/src/main/examination01/com/dsj/stage2/CreateTable.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/src/main/examination01/com/dsj/stage2/IncrementalExtraction.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/src/main/examination01/com/dsj/stage4/OdsToDwd.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/src/main/examination01/com/dsj/stage2/IncrementalExtraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/src/main/examination01/com/dsj/stage2/IncrementalExtraction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/src/main/examination01/com/dsj/stage3/FlinkConsumeKafka2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/src/main/examination01/com/dsj/stage3/FlinkConsumeKafka2.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/target/classes/com/dsj/stage2/IncrementalExtraction$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/target/classes/com/dsj/stage2/IncrementalExtraction$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/target/classes/com/dsj/stage3/FlinkConsumeKafka$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/target/classes/com/dsj/stage3/FlinkConsumeKafka$.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,6 +195,7 @@
       <workItem from="1693205102248" duration="594000" />
       <workItem from="1693273072971" duration="39000" />
       <workItem from="1693274454837" duration="3009000" />
+      <workItem from="1693639631503" duration="676000" />
     </task>
     <servers />
   </component>

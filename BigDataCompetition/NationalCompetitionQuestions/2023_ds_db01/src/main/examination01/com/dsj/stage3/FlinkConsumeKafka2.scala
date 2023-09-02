@@ -53,6 +53,8 @@ object FlinkConsumeKafka2 {
     dataStream.addSink(new FlinkKafkaProducer[String]("dim_customer_login_log", new SimpleStringSchema(), prop))
     // 备份到hbuse（利用工具类将数据写入hbase中）
     dataStream.addSink(new KafkaToHBase("dsj:customer_login_log"))
+    // 注意：在hive中创建外表后，可以直接使用sql查询hbase的数据
+
     // 关闭资源
   }
 }
