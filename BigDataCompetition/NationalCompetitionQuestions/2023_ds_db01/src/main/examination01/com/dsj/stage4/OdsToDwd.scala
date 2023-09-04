@@ -20,7 +20,7 @@ object OdsToDwd {
       .config("hive.exec.dynamic.partition", "true") // 开启动态分区
       .config("hive.exec.dynamic.partition.mode", "nonstrict") // 设置分区的模式是非严格模式
       .config("hive.exec.max.dynamic.partitions", 2000) // 设置分区的数量
-      .config("spark.sql.parser.quotedRegexColumnNames", "true")
+      .config("spark.sql.parser.quotedRegexColumnNames", "true") // 允许在用引号引起来的列名称中使用正则表达式
       .getOrCreate()
 
 
@@ -74,17 +74,7 @@ object OdsToDwd {
       //      all_df.createOrReplaceTempView("mytable")
       // 使用insert语句覆盖写入表的时候不存在读写的问题
       //      spark.sql(s"insert overwrite 2023_dwd1_ds_db01.dim_${table} select `(etl_date)?+.+`,etl_date from mytable")
-
-
     }
-
-
-    /*
-    * todo 第三种操作
-    *  ods中表数据取出和hbase对应表数据取出union连接，写入dwd中
-    *  注意:从hbase中取出数据的时候，按给予的hbase表的列类型取出数据，否则取出来是乱码(order_master、order_detail、product_browse)
-    * */
-
 
     // 关闭
     spark.stop()
