@@ -108,6 +108,7 @@ object OdsHBaseToDwd {
       .withColumn("dwd_insert_time", lit(currDate).cast("timestamp"))
       .withColumn("dwd_modify_user", lit("user1"))
       .withColumn("dwd_modify_time", lit(currDate).cast("timestamp"))
+    // 追加模式写入hive，以etl_date为静态分区字段
     detail_all_df.write.mode(SaveMode.Append).format("hive").saveAsTable("2023_dwd1_ds_db01.fact_order_detail")
     spark.stop()
   }
