@@ -18,10 +18,11 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
   def main(args: Array[String]): Unit = {
     // 创建sparksession对象
     val spark = SparkSession.builder().appName("IncrementalExtraction")
-      .enableHiveSupport()
-      .config("hive.exec.dynamic.partition", "true")
-      .config("hive.exec.dynamic.partition.mode", "nonstrict")
-      .config("hive.exec.max.dynamic.partitions", 2000)
+      .enableHiveSupport() // 开启hive支持
+      .config("hive.exec.dynamic.partition", "true") // 开启动态分区
+      .config("hive.exec.dynamic.partition.mode", "nonstrict") // 设置分区的模式是非严格模式
+      .config("hive.exec.max.dynamic.partitions", 2000) // 设置分区的数量
+      .config("spark.sql.parser.quotedRegexColumnNames", "true") // 允许在用引号引起来的列名称中使用正则表达式
       .getOrCreate()
 
     /*

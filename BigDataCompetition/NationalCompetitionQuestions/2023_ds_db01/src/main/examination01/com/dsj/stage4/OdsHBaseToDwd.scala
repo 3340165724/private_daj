@@ -15,19 +15,16 @@ import org.apache.spark.sql.functions._
 //4、将合并之后的dataframe追加到dwd对应的表中
 object OdsHBaseToDwd {
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession.builder().appName("Task1").enableHiveSupport()
-      .config("hive.exec.dynamic.partition", "true")
-      .config("hive.exec.dynamic.partition.mode", "nonstrict")
-      .config("hive.exec.max.dynamic.partitions", 2000)
-      .config("spark.sql.parser.quotedRegexColumnNames", "true")
+    // 创建sparksession对象
+    val spark = SparkSession.builder().appName("IncrementalExtraction")
+      .enableHiveSupport() // 开启hive支持
+      .config("hive.exec.dynamic.partition", "true") // 开启动态分区
+      .config("hive.exec.dynamic.partition.mode", "nonstrict") // 设置分区的模式是非严格模式
+      .config("hive.exec.max.dynamic.partitions", 2000) // 设置分区的数量
+      .config("spark.sql.parser.quotedRegexColumnNames", "true") // 允许在用引号引起来的列名称中使用正则表达式
       .getOrCreate()
 
-    /*
-   * todo 第三种操作
-   *  ods中表数据取出和hbase对应表数据取出union连接，写入dwd中
-   *  注意:从hbase中取出数据的时候，按给予的hbase表的列类型取出数据，否则取出来是乱码(order_master、order_detail、product_browse)
-   * */
-
+    // 隐式转换
     import spark.implicits._
 
     //获取hbase的连接对象
@@ -37,6 +34,13 @@ object OdsHBaseToDwd {
     hbaseConf.set("hbase.zookeeper.property.clientPort", "2181")
     //获取和hbase的链接
     val connection = ConnectionFactory.createConnection(hbaseConf)
+
+
+    /*
+   * todo 第三种操作
+   *  ods中表数据取出和hbase对应表数据取出union连接，写入dwd中
+   *  注意:从hbase中取出数据的时候，按给予的hbase表的列类型取出数据，否则取出来是乱码(order_master、order_detail、product_browse)
+   * */
     //拿出ods中前一个最新分区(增量)的数据
     val ods_df = spark.sql(s"select * from 2023_ods1_ds_db01.product_browse where etl_date = '20230828'")
     //从hbase中拿出数据
@@ -64,10 +68,8 @@ object OdsHBaseToDwd {
     }).toList.toDF("log_id", "product_id", "customer_id", "gen_order", "order_sn", "modified_time") //将列名对应上
       .withColumn("etl_date", lit("20230828")) //新增一个etl_date，目的是为了和ods结构保持一致
       .withColumn("modified_time", col("modified_time").cast("timestamp")) //将日期处理为timestamp格式
-
     // 获取当前时间
     val currDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date)
-
     // 将ods_df和hbase_df进行union合并（合并的前提：两个dataframe的结构完全一致）
     val ods_hbase_df = ods_df.union(hbase_df) //合并两个数据
       .withColumn("dwd_insert_user", lit("user1")) //因为dwd表中是有这4列的，所以这里新增了4列
