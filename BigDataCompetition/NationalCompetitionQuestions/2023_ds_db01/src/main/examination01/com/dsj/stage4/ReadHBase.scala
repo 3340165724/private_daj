@@ -27,17 +27,17 @@ object ReadHBase {
       .config("spark.sql.parser.quotedRegexColumnNames", "true") // 允许在用引号引起来的列名称中使用正则表达式
       .getOrCreate()
 
-    sparkSession.sparkContext.setLogLevel("error")
+    spark.sparkContext.setLogLevel("error")
 
     val ods_tables = Array("order_master", "order_detail", "product_info")
     val dwd_tables = Array("fact_order_master", "fact_order_detail", "dim_product_info")
     val date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())
     for (i <- 0 until (ods_tables.length)) {
 
-      val ods_df = sparkSession.sql(s"select * from 2023_ods1_ds_db01.${ods_tables(i)} where etl_date='20230427' ")
+      val ods_df = spark.sql(s"select * from 2023_ods1_ds_db01.${ods_tables(i)} where etl_date='20230427' ")
         .drop("etl_date")
 
-      val dwd_df = readHbaseDf(sparkSession, ods_df, ods_tables(i))
+      val dwd_df = readHbaseDf(spark, ods_df, ods_tables(i))
 
       var final_df = ods_df.unionByName(dwd_df)
         .withColumn("dwd_insert_user", lit("user1"))
@@ -61,12 +61,12 @@ object ReadHBase {
       println("ods数据" + ods_df.count())
       println("dwd数据" + dwd_df.count())
       println("合并后数据" + final_df.count())
-      sparkSession.sql(s"insert overwrite 2023_dwd1_ds_db01.${dwd_tables(i)} partition(etl_date='20230427') select * from newtable ")
+      spark.sql(s"insert overwrite 2023_dwd1_ds_db01.${dwd_tables(i)} partition(etl_date='20230427') select * from newtable ")
 
       println(dwd_tables(i) + "插入成功")
     }
 
-    sparkSession.stop()
+    spark.stop()
   }
 
   def readHbaseDf(sparkSession: SparkSession, df: DataFrame, name: String): DataFrame = {
