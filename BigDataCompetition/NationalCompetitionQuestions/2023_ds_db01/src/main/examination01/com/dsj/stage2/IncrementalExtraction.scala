@@ -108,8 +108,7 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
     // 消费券使用记录表以三列取最大的查询
     val max_time = spark.sql(
       """
-        |select if(c is null
-        |.,'',c)
+        |select if(c is null,'',c)
         |from (select greatest(max(get_time),max(if(used_time='NULL','',used_time)),max(if(pay_time='NULL','',pay_time))) as c
         |      from 2023_ods1_ds_db01.coupon_use) as t1
         |""".stripMargin).first().getString(0)
