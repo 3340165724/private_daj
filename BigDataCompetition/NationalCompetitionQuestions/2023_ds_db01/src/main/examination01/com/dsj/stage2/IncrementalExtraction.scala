@@ -11,7 +11,7 @@ object IncrementalExtraction {
 其中coupon_use表取三个日期列最大值作为增量字段，customer_balance_log、customer_point_log表
 使用create_time作增量字段，customer_login_log使用login_time作增量字段。字段排序，类型不变，
 同时添加静态分区etl_date，分区字段类型为 String，且值为比赛前一天日期（分区字段格式为 yyyyMMdd）。
-并在 hive cli 执行 show partitions
+并在 hive cli 执行 show partitionssupport
 ods.表名命令，将结果截图复制粘贴至对应报告中*/
 
   //spark on yarn方试运行  spark-submit --master yarn --class com.wczy.ods.DsDB01MySqlToOds /opt/spark.jar
@@ -37,7 +37,7 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
       .option("user", "root")
       .option("password", "123456")
 
-    val etl_date = 20230828
+    val etl_date = "20230828"
 
     val tables = Array("brand_info", "coupon_info", "customer_addr", "customer_inf", "customer_level_inf", "customer_login", "favor_info", "order_cart", "order_detail", "order_master",
       "product_browse", "product_category", "product_comment", "product_info", "product_pic_info", "shipping_info", "supplier_info", "warehouse_info", "warehouse_product")
