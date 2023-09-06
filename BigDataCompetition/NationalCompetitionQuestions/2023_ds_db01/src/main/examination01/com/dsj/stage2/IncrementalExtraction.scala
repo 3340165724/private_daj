@@ -44,8 +44,8 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
     tables.foreach(table => {
       //  到hive中去找最大的modified_time值
       val max_modified_time = spark.sql(s"select string(if(max(modified_time) is null,'',max(modified_time))) from 2023_ods1_ds_db01.${table}").first().getString(0)
-      var sql = s"select * from ${table} "
       // 如果hive对应的表取出了最大日期，则MySQL查询时根据日期增量条件
+      var sql = s"select * from ${table} "
       if (!max_modified_time.equals("")) {
         sql += s" where modified_time > '${max_modified_time}'"
       }
@@ -62,13 +62,9 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
     * */
     val tables2 = Array("customer_balance_log", "customer_point_log")
     tables2.foreach(table => {
-      val max_create_time = spark.sql(
-        s"""
-           |select string(if(max(create_time) is null,'',max(create_time)))
-           |from 2023_ods1_ds_db01.${table}
-           |""".stripMargin).first().getString(0)
-      var sql = s"select * from ${table} "
+      val max_create_time = spark.sql(s"select string(if(max(create_time) is null,'',max(create_time))) from 2023_ods1_ds_db01.${table}").first().getString(0)
       // 如果hive对应的表取出了最大日期，则mysql查询时根据日期增量条件
+      var sql = s"select * from ${table} "
       if (!max_create_time.equals("")) {
         sql += s" where create_time > '${max_create_time}'"
       }
@@ -84,13 +80,9 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
     * */
     val tables3 = Array("customer_login_log")
     tables3.foreach(table => {
-      val max_login_time = spark.sql(
-        s"""
-           |select string(if(max(login_time) is null,'',max(login_time)))
-           |from 2023_ods1_ds_db01.${table}
-           |""".stripMargin).first().getString(0)
-      var sql = s"select * from ${table} "
+      val max_login_time = spark.sql(s"select string(if(max(login_time) is null,'',max(login_time))) from 2023_ods1_ds_db01.${table}").first().getString(0)
       // 如果hive对应的表取出了最大日期，则mysql查询时根据日期增量条件
+      var sql = s"select * from ${table} "
       if (!max_login_time.equals("")) {
         sql += s" where login_time > ${max_login_time}"
       }
@@ -106,12 +98,7 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
      * coupon_use表取三个日期列最大值作为增量字段
      * */
     // 消费券使用记录表以三列取最大的查询
-    val max_time = spark.sql(
-      """
-        |select if(c is null,'',c)
-        |from (select greatest(max(get_time),max(if(used_time='NULL','',used_time)),max(if(pay_time='NULL','',pay_time))) as c
-        |      from 2023_ods1_ds_db01.coupon_use) as t1
-        |""".stripMargin).first().getString(0)
+    val max_time = spark.sql("select if(c is null,'',c) from (select greatest(max(get_time),max(if(used_time='NULL','',used_time)),max(if(pay_time='NULL','',pay_time))) as c from ods.coupon_use) as t1").first().getString(0)
     println(max_time)
     // 方法二：
     val coupon_df = mysql_reader.option("dbtable", "coupon_use").load()
