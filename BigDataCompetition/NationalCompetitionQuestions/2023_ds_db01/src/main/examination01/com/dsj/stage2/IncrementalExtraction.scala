@@ -98,14 +98,18 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
      * coupon_use表取三个日期列最大值作为增量字段
      * */
     // 消费券使用记录表以三列取最大的查询
-    val max_time = spark.sql("select if(c is null,'',c) from (select greatest(max(get_time),max(if(used_time='NULL','',used_time)),max(if(pay_time='NULL','',pay_time))) as c from ods.coupon_use) as t1").first().getString(0)
+    val max_time = spark.sql(
+      """
+        |select if(c is null,'',c)
+        |from (select greatest(max(get_time),max(if(used_time='NULL','',used_time)),max(if(pay_time='NULL','',pay_time))) as c
+        |      from 2023_ods1_ds_db01.coupon_use) as t1
+        |""".stripMargin).first().getString(0)
     println(max_time)
-    // 方法二：
     val coupon_df = mysql_reader.option("dbtable", "coupon_use").load()
       .where(array_max(array_remove(array("get_time", "used_time", "pay_time"), "NULL")).cast("string") > max_time)
       .withColumn("etl_date", lit(etl_date))
     println(coupon_df.count())
-    coupon_df.write.mode(SaveMode.Append).format("hive").partitionBy("etl_date").saveAsTable(s"2023_ods1_ds_db01.coupon_use")
+    coupon_df.write.mode(SaveMode.Append).format("hive").partitionBy("etl_date").saveAsTable("2023_ods1_ds_db01.coupon_use")
 
     // 关闭
     spark.stop()
