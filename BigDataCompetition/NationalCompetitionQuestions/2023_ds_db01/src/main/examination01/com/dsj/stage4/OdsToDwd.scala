@@ -67,7 +67,8 @@ object OdsToDwd {
         //dwd_modify_time取最新的时间
         .withColumn("dwd_modify_time", lit(currDate).cast("timestamp"))
         .withColumn("seq", row_number().over(Window.partitionBy(tables_2_id(i)).orderBy(desc("modified_time"))))
-        .filter(_.getAs("seq").equals(1)).drop("seq")
+        .filter(_.getAs("seq").equals(1))
+        .drop("seq")
       // 思路：先将ods和dwd合并，根据相同id将dwd_insert_time都改为最小的那个时间，按同id的modified_time降序排名seq列，保留排名seq为1的行，删除seq列
       all_df.write.mode(SaveMode.Overwrite).format("hive").partitionBy("etl_date").saveAsTable(s"2023_dwd1_ds_db01.dim_${table}") //存在一个读写的问题
       // 第二种方式写入数据
