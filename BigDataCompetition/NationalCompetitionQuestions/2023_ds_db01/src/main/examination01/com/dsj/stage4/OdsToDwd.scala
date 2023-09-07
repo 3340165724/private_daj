@@ -41,13 +41,13 @@ object OdsToDwd {
     * todo 第二种操作
     *  ods中表数据取出和dwd对应表数据取出进行“合并”操作
     *  合并:按时间取最新的一条数据，dwd_insert_time取最早的时间，dwd_modified_time取当前时间，
-    *  其他列取(customer_inf、product_info、coupon_info、coupon_use)
+    *  其他列取(customer_inf、product_info、coupon_info)
     * */
     // 获取当前时间
     val currDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date)
-    val tables_2_ods = Array("customer_inf", "product_info", "coupon_info", "coupon_use")
+    val tables_2_ods = Array("customer_inf", "product_info", "coupon_info")
     // 分别对应需要合并的id字段
-    val tables_2_id = Array("customer_id", "product_id", "coupon_id", "coupon_use_id")
+    val tables_2_id = Array("customer_id", "product_id", "coupon_id")
     for (i <- 0 until tables_2_ods.length) {
       // 取出当前需要操作的表名
       val table = tables_2_ods(i)
