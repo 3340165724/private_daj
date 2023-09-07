@@ -42,6 +42,8 @@ object OdsToDwd {
     *  ods中表数据取出和dwd对应表数据取出进行“合并”操作
     *  合并:按时间取最新的一条数据，dwd_insert_time取最早的时间，dwd_modified_time取当前时间，
     *  其他列取(customer_inf、product_info、coupon_info)
+    *
+    *   思路：先将ods和dwd合并，根据相同id将dwd_insert_time都改为最小的那个时间，按同id的modified_time降序排名seq列，保留排名seq为1的行，删除seq列
     * */
     // 获取当前时间
     val currDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date)
@@ -61,6 +63,7 @@ object OdsToDwd {
       val dwd_df = spark.sql(s"select * from 2023_dwd1_ds_db01.dim_${table}")
       ods_df.printSchema()
       dwd_df.printSchema()
+      // 合并数据,合并后可能会有重复数据，需要进行清洗去重
       val all_df = ods_df.unionByName(dwd_df)
         // 按id取相同id中dwd_insert_time最小的时间
         .withColumn("dwd_insert_time", min("dwd_insert_time").over(Window.partitionBy(tables_2_id(i))))
@@ -69,12 +72,12 @@ object OdsToDwd {
         .withColumn("seq", row_number().over(Window.partitionBy(tables_2_id(i)).orderBy(desc("modified_time"))))
         .filter(_.getAs("seq").equals(1))
         .drop("seq")
-      // 思路：先将ods和dwd合并，根据相同id将dwd_insert_time都改为最小的那个时间，按同id的modified_time降序排名seq列，保留排名seq为1的行，删除seq列
-      all_df.write.mode(SaveMode.Overwrite).format("hive").partitionBy("etl_date").saveAsTable(s"2023_dwd1_ds_db01.dim_${table}") //存在一个读写的问题
+      // 覆盖到hive的dwd层
+      //  all_df.write.mode(SaveMode.Overwrite).format("hive").partitionBy("etl_date").saveAsTable(s"2023_dwd1_ds_db01.dim_${table}") //存在一个读写的问题
       // 第二种方式写入数据
-      //      all_df.createOrReplaceTempView("mytable")
+      all_df.createOrReplaceTempView("mytable")
       // 使用insert语句覆盖写入表的时候不存在读写的问题
-      //      spark.sql(s"insert overwrite 2023_dwd1_ds_db01.dim_${table} select `(etl_date)?+.+`,etl_date from mytable")
+      spark.sql(s"insert overwrite 2023_dwd1_ds_db01.dim_${table} select `(etl_date)?+.+`,etl_date from mytable")
     }
 
     // 关闭

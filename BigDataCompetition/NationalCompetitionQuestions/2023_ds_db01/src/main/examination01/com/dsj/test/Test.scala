@@ -1,38 +1,57 @@
 package com.dsj.test
 
-import org.apache.spark.sql.{SaveMode,SparkSession}
-import org.apache.spark.sql.functions._
 
+import org.apache.spark.sql.{SaveMode, SparkSession}
+
+import java.text.SimpleDateFormat
+import java.util.Date
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.expressions.Window
 
 object Test {
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession.builder().appName("Test")
+
+
+    // 创建sparksession对象
+    val spark = SparkSession.builder().appName("IncrementalExtraction")
       .enableHiveSupport()
-      .config("hive.exec.dynamic.partition","true")
-      .config("hive.exec.dynamic.partition.mode","nonstrict")
-      .config("hive.exec.max.dynamic.partitions",2000)
-      .config("spark.sql.parser.quotedRegexColumnNames","true")
+      .config("hive.exec.dynamic.partition", "true") // 开启动态分区
+      .config("hive.exec.dynamic.partition.mode", "nonstrict") // 设置分区的模式是非严格模式
+      .config("hive.exec.max.dynamic.partitions", 2000) // 设置分区的数量
+      .config("spark.sql.parser.quotedRegexColumnNames", "true") // 允许在用引号引起来的列名称中使用正则表达式
       .getOrCreate()
 
-    // 连接MySQL
-    val mysql_reader = spark.read.format("jdbc")
-      .option("url","jdbc:mysql://192.168.66.130:3306/ds_db01")
-      .option("user","root")
-      .option("password","123456")
 
-    val etl_date = "20230828"
+    // 获取当前时间
+    val currDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date)
+    val tables_2_ods = Array("customer_inf", "product_info", "coupon_info")
+    // 分别对应需要合并的id字段
+    val tables_2_id =  Array("customer_id", "product_id", "coupon_id")
+    for(i <- 0 until tables_2_ods.length){
+      // 取出当前需要操作的表名
+      val table = tables_2_ods(i)
+      // 从hive的ods层拿出数据，增加4列的目的是为了ods_df的结构和dwd_df的结构一致，然后才能union
+      val ods_df = spark.sql(s"select * from 2023_ods1_ds_db01.${table} where etl_date='20230828'")
+        .withColumn("dwd_insert_user",lit("user1"))
+        .withColumn("dwd_insert_time",lit(currDate).cast("timestamp"))
+        .withColumn("dwd_modify_user",lit("user1"))
+        .withColumn("dwd_modify_time",lit(currDate).cast("timestamp"))
+      // 从hive的dwd层拿出数据
+      val dwd_df = spark.sql(s"select * from 2023_dwd1_ds_db01.dim_${table}")
 
-    /**
-     * todo CASE4
-     * coupon_use表取三个日期列最大值作为增量字段
-     * */
-    // 消费券使用记录表以三列取最大的查询
-    val max_time = spark.sql("select if(c is null,'',c) from (select greatest(max(get_time),max(if(used_time='NULL','',used_time)),max(if(pay_time='NULL','',pay_time))) as c from 2023_ods1_ds_db01.coupon_use) as t1").first().getString(0)
+      // 合并数据,合并后可能会有重复数据，需要进行清洗去重
+      val all_df = ods_df.unionByName(dwd_df)
+        // 按id取相同id中dwd_insert_time最小的时间
+        .withColumn("dwd_insert_time",min("dwd_insert_time").over(Window.partitionBy(tables_2_id(i))))
+        //dwd_modify_time取最新的时间
+        .withColumn("dwd_modify_time",lit(currDate).cast("timestamp"))
+        .withColumn("seq",row_number().over(Window.partitionBy(tables_2_id(i)).orderBy("modified_time")))
+        .filter(_.getAs("seq").equals(1))
+        .drop("seq")
+      // 写入dwd
+      all_df.write.mode(SaveMode.Overwrite).format("hive").partitionBy("etl_date").saveAsTable(s"2023_dwd1_ds_db01.dim_${table}")
 
-    // 从MySQL中拿出数据
-    val coupon_df = mysql_reader.option("dbtable","coupon_use").load()
-      .where(array_max(array_remove(array("get_time","used_time","pay_time"), "NULL")).cast("string")> max_time)
-      .withColumn("etl_date", lit(etl_date))
-    coupon_df.write.mode(SaveMode.Append).format("hive").partitionBy("etl_date").saveAsTable("2023_ods1_ds_db01.coupon_use")
+    }
+
   }
 }
