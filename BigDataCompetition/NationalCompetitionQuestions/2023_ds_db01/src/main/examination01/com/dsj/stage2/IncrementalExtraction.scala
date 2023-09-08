@@ -33,7 +33,7 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
 
     // 从MySQL中拿出数据
     val mysql_reader = spark.read.format("jdbc")
-      .option("url", "jdbc:mysql://192.168.66.130:3306/ds_db01")
+      .option("url", "jdbc:mysql://172.20.37.230:3306/ds_db01")
       .option("user", "root")
       .option("password", "123456")
 
