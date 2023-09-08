@@ -95,7 +95,7 @@ ods.表名命令，将结果截图复制粘贴至对应报告中*/
 
     /**
      * todo CASE4
-     * coupon_use表取三个日期列最大值作为增量字段
+     *  coupon_use表取三个日期列最大值作为增量字段
      * */
     // 消费券使用记录表以三列取最大的查询
     val max_time = spark.sql(
