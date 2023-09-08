@@ -2,6 +2,7 @@ package com.dsj.test
 
 import org.apache.hadoop.hbase.{HBaseConfiguration, TableName}
 import org.apache.hadoop.hbase.client.{ConnectionFactory, Scan}
+import org.apache.hadoop.hbase.util.Bytes
 import org.apache.spark.sql.SparkSession
 
 import scala.collection.convert.ImplicitConversions.`iterator asScala`
@@ -43,6 +44,17 @@ object Test {
     // 执行查询
     val resultScanner = table.getScanner(scan)
     val hbsae_df = resultScanner.iterator().map(result =>{
+      // 这里的rowKey暂时没用上，比赛看情况
+     val rowKey = Bytes.toString(result.getRow)
+
+     /*
+     * 下面就是根据列族，列名取出对应的Cell单元格的数据（特别注意：比赛的时候会给一个hbase的表结构，列是什么类型就转为什么类型）
+     *  如果hbase中列是int类型，则使用Bytes.toInt()
+     *  如果hbase中列是double类型，则使用Bytes.toDouble()
+     *  如果hbase中列是字符串或timestamp类型，则使用Bytes.toString,但是最后datafrmae需要单独处理这个为timestamp类型，下面代码有这个处理
+     *  。withColumn("modified_time",col("modified_time").cast("timestamp"))
+     * */
+    val log_id = Bytes.toInt()
 
     })
 

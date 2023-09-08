@@ -50,7 +50,8 @@ object OdsHBaseToDwd {
     //执行查询
     val resultScanner = table.getScanner(scan)
     val hbase_df = resultScanner.iterator().map(result => {
-      val rowkey = Bytes.toString(result.getRow) //这里的rowkey暂时没用上，比赛看情况
+      // 这里的rowkey暂时没用上，比赛看情况
+      val rowkey = Bytes.toString(result.getRow)
       /*
       * 下面就是根据列族、列名取出对应的Cell单元格的数据(特别注意：比赛的时候会给一个hbase的表结构，列是什么类型就转为什么类型)
       *  如果hbase中列是int类型，则使用Bytes.toInt()
