@@ -19,8 +19,8 @@ use ds_pub;
 # 统计每个省份、每个地区、每个月下单的数量和下单的总金额
 select bp.id, bp.name, br.id, br.region_name, year(oi.create_time), month(oi.create_time), count(*), sum(oi.final_total_amount)
 from base_province as bp
-         inner join base_region as br on bp.region_id = br.id
-         inner join order_info as oi on bp.id = oi.province_id
+inner join base_region as br on bp.region_id = br.id
+inner join order_info as oi on bp.id = oi.province_id
 group by bp.id, bp.name, br.id, br.region_name, year(oi.create_time), month(oi.create_time)
 
 
