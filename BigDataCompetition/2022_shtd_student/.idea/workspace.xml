@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="27c3a01b-1dae-4be2-a2b6-28d6cf2d3425" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/src/main/examination01/com/dsj/test/Test.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../NationalCompetitionQuestions/2023_ds_db01/src/main/examination01/com/dsj/test/Test.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Markdown/Big data environment construction/2023大数据环境搭建.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Markdown/Big data environment construction/2023大数据环境搭建.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Markdown/Big data environment construction/2023阶段四离线数据处理遇到的问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Markdown/Big data environment construction/2023阶段四离线数据处理遇到的问题.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +193,7 @@
       <workItem from="1693274454837" duration="3009000" />
       <workItem from="1693639631503" duration="676000" />
       <workItem from="1694190321069" duration="98000" />
+      <workItem from="1694413319865" duration="27000" />
     </task>
     <servers />
   </component>
