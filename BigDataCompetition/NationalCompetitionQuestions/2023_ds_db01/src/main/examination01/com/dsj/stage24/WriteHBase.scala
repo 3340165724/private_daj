@@ -1,7 +1,5 @@
-package com.dsj.test
+package com.dsj.stage24
 
-import java.text.SimpleDateFormat
-import java.util.{Properties, Random}
 import org.apache.hadoop.hbase.client.Put
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable
 import org.apache.hadoop.hbase.mapred.TableOutputFormat
@@ -12,14 +10,16 @@ import org.apache.log4j.{Level, Logger}
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
-import org.apache.spark.sql.types.Decimal
+
+import java.text.SimpleDateFormat
+import java.util.{Properties, Random}
 
 /**
  * create "hbase_order_master","info"
  * create "hbase_order_detail","info"
  * create "hbase_product_info","info"
  */
-object Test3 {
+object WriteHBase {
   def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.ERROR)
     val conf = new SparkConf().setMaster("local").setAppName("read mysql write hbase")
@@ -38,17 +38,17 @@ object Test3 {
       sparkSession.read.jdbc(MYSQLDBURL, x,
         properties).createTempView(x)
       var frame = sparkSession.sql(s"select * from $x where modified_time>='2023-09-12 00:00:00'")
-        .withColumn("modified_time",from_unixtime(unix_timestamp(col("modified_time"),"yyyy-MM-dd HH:mm:ss")+600,"yyyy-MM-dd HH:mm:ss"))
-      if(x.equals("order_master")){
-        frame = frame.withColumn("shipping_user",concat(col("shipping_user"),lit("test2")))
-          .withColumn("order_money",col("order_money")+2.5)
+        .withColumn("modified_time", from_unixtime(unix_timestamp(col("modified_time"), "yyyy-MM-dd HH:mm:ss") + 600, "yyyy-MM-dd HH:mm:ss"))
+      if (x.equals("order_master")) {
+        frame = frame.withColumn("shipping_user", concat(col("shipping_user"), lit("test2")))
+          .withColumn("order_money", col("order_money") + 2.5)
       }
-      else if(x.equals("order_detail")){
-        frame = frame.withColumn("product_name",concat(col("product_name"),lit("test2")))
-          .withColumn("product_price",col("product_price")+2.5)
+      else if (x.equals("order_detail")) {
+        frame = frame.withColumn("product_name", concat(col("product_name"), lit("test2")))
+          .withColumn("product_price", col("product_price") + 2.5)
       }
-      else{
-        frame = frame.withColumn("gen_order",lit(1))
+      else {
+        frame = frame.withColumn("gen_order", lit(1))
       }
       frame.show(5)
       //将数据写入hbase中
@@ -59,29 +59,29 @@ object Test3 {
       val fields = frame.schema.fields
       val sdf1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
       val sdf2 = new SimpleDateFormat("yyyyMMddHHmmss")
-      val putrdd = frame.rdd.map(x=>{
+      val putrdd = frame.rdd.map(x => {
         val date = x.getAs("modified_time").toString
-        val rowkey = new Random().nextInt(10)+sdf2.format(sdf1.parse(date))
+        val rowkey = new Random().nextInt(10) + sdf2.format(sdf1.parse(date))
         val put = new Put(rowkey.getBytes())
-        var i=0
-        fields.foreach(field=>{
+        var i = 0
+        fields.foreach(field => {
           val col = field.name
           field.dataType.typeName match {
-            case "long" => put.addColumn("info".getBytes(),col.getBytes(),Bytes.toBytes(x.getAs[Long](col)))
-            case "integer" => put.addColumn("info".getBytes(),col.getBytes(),Bytes.toBytes(x.getAs[Int](col)))
-            case "double" => put.addColumn("info".getBytes(),col.getBytes(),Bytes.toBytes(new java.math.BigDecimal(x.getAs[Double](col))))
-            case "float" => put.addColumn("info".getBytes(),col.getBytes(),Bytes.toBytes(x.getAs[Float](col)))
-            case typestr if typestr.contains("decimal") => put.addColumn("info".getBytes(),col.getBytes(),Bytes.toBytes(x.getDecimal(i)))
-            case "timestamp" => put.addColumn("info".getBytes(),col.getBytes(),Bytes.toBytes(x.getTimestamp(i).toString))
-            case _ => put.addColumn("info".getBytes(),col.getBytes(),Bytes.toBytes(x.getAs[String](col)))
+            case "long" => put.addColumn("info".getBytes(), col.getBytes(), Bytes.toBytes(x.getAs[Long](col)))
+            case "integer" => put.addColumn("info".getBytes(), col.getBytes(), Bytes.toBytes(x.getAs[Int](col)))
+            case "double" => put.addColumn("info".getBytes(), col.getBytes(), Bytes.toBytes(new java.math.BigDecimal(x.getAs[Double](col))))
+            case "float" => put.addColumn("info".getBytes(), col.getBytes(), Bytes.toBytes(x.getAs[Float](col)))
+            case typestr if typestr.contains("decimal") => put.addColumn("info".getBytes(), col.getBytes(), Bytes.toBytes(x.getDecimal(i)))
+            case "timestamp" => put.addColumn("info".getBytes(), col.getBytes(), Bytes.toBytes(x.getTimestamp(i).toString))
+            case _ => put.addColumn("info".getBytes(), col.getBytes(), Bytes.toBytes(x.getAs[String](col)))
           }
-          i+=1
+          i += 1
         })
-        (new ImmutableBytesWritable(),put)
+        (new ImmutableBytesWritable(), put)
       })
-      val job=new JobConf(config)
+      val job = new JobConf(config)
       job.setOutputFormat(classOf[TableOutputFormat])
-      job.set(TableOutputFormat.OUTPUT_TABLE,"hbase_"+x)
+      job.set(TableOutputFormat.OUTPUT_TABLE, "hbase_" + x)
       putrdd.saveAsHadoopDataset(job)
       println(s"$x 插入成功")
     })
