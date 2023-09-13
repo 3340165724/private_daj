@@ -1,17 +1,4 @@
-package com.dsj.stage4
-
-import org.apache.hadoop.hbase.{HBaseConfiguration, TableName}
-import org.apache.hadoop.hbase.client.{ConnectionFactory, Scan}
-import org.apache.hadoop.hbase.util.Bytes
-import org.apache.spark.sql.{DataFrame, Row, SparkSession}
-
-import java.sql.Timestamp
-import scala.jdk.CollectionConverters.asScalaIteratorConverter
-import org.apache.spark.sql.functions._
-
-import java.text.SimpleDateFormat
-import java.util.Date
-
+package com.dsj.stage24
 
 /**
  * 读取hbase数据工具类（通用）

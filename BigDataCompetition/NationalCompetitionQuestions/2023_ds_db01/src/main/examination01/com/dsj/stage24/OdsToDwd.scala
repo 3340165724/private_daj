@@ -1,14 +1,11 @@
-package com.dsj.stage4
+package com.dsj.stage24
 
+import org.apache.spark.sql.expressions.Window
+import org.apache.spark.sql.functions.{desc, lit, min, row_number}
+import org.apache.spark.sql.{SaveMode, SparkSession}
 
 import java.text.SimpleDateFormat
 import java.util.Date
-import org.apache.spark.sql.expressions.Window
-import org.apache.spark.sql.{SaveMode, SparkSession}
-import org.apache.spark.sql.functions._
-
-// dim_开头的表叫维度表（数据会发生更新）
-// Fact_开头的表叫事实表（数据不会被修改，只会新增）
 
 /**
  * ods的数据经过处理到dwd中 */

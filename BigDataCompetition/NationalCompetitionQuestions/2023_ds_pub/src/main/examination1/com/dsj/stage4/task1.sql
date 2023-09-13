@@ -36,7 +36,8 @@ group by bp.id, bp.name, br.id, br.region_name, year(oi.create_time), month(oi.c
 #        provinceavgconsumption	double	该省平均订单金额
 #        allprovinceavgconsumption	double	所有省平均订单金额
 #        comparison	text	比较结果	该省平均订单金额和所有省平均订单金额比较结果，值为：高/低/相同
-
+# 2020年4月每个省份的平均订单金额
+select
 
 # 4、根据dwd层表统计在两天内连续下单并且下单金额保持增长的用户，
 #   存入MySQL数据库shtd_result的usercontinueorder表(表结构如下)中，

@@ -1,13 +1,13 @@
-package com.dsj.stage4
+package com.dsj.stage24
 
-import java.text.SimpleDateFormat
-import java.util.Date
 import org.apache.hadoop.hbase.client.{ConnectionFactory, Scan}
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.hadoop.hbase.{HBaseConfiguration, TableName}
+import org.apache.spark.sql.functions.{col, lit}
 import org.apache.spark.sql.{SaveMode, SparkSession}
-import scala.collection.convert.ImplicitConversions.`iterator asScala`
-import org.apache.spark.sql.functions._
+
+import java.text.SimpleDateFormat
+import java.util.Date
 
 //1、取出ods中最新分区的数据dataframe
 //2、取出hbase中的数据组装成dataframe（类型的问题要注意）(增加了5列，分别是etl_date、dwd_insert_user等几列)
@@ -25,7 +25,6 @@ object OdsHBaseToDwd {
       .getOrCreate()
 
     // 隐式转换
-    import spark.implicits._
 
     //获取hbase的连接对象
     val hbaseConf = HBaseConfiguration.create()
