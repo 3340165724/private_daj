@@ -47,7 +47,7 @@ object OdsToDwd02 {
         .drop("seq")
         .withColumn("etl_date", lit("20230912"))
 
-      // todo 将合并之后的完整数据追加模式写入到dwd中最新分区  ????????
+      // todo 将合并之后的完整数据追加模式写入到dwd中最新分区
       all_df.write.mode(SaveMode.Append).format("hive").saveAsTable(s"dwd.${dwd_table}")
     }
 
