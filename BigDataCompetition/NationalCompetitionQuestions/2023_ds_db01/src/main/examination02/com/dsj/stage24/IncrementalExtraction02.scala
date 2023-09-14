@@ -49,7 +49,7 @@ object IncrementalExtraction02 {
       // 如果最大时间不为空，则作为增量抽取的条件
       var sql = s"select * from ${table}"
       if (!ods_df.equals("")) {
-        sql += " where modified_time > 'ods_df' "
+        sql += s" where modified_time > '${ods_df}' "
       }
       // 从MySQL中拿出modified_time 大于hive的ods中的值,同时添加动态分区
       val df = mysql_reader.option("dbtable", s"(${sql}) as t1").load()
