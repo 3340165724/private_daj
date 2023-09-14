@@ -26,25 +26,26 @@ object WriteHBase02 {
       .set("spark.testing.memory", "471859200")
     val sparkSession = SparkSession.builder().config(conf).getOrCreate()
     //    连接数据的参数
-    val MYSQLDBURL: String = "jdbc:mysql://localhost:3306/ds_db01?useUnicode=true&characterEncoding=utf-8" // mysql url地址
+    val MYSQLDBURL: String = "jdbc:mysql://172.20.37.78:3306/ds_db01?useUnicode=true&characterEncoding=utf-8" // mysql url地址
     val properties: Properties = new Properties()
     properties.put("user", "root") //用户名
     properties.put("password", "123456") // 密码
     properties.put("driver", "com.mysql.jdbc.Driver") // 驱动名称
 
     sparkSession.sql("show databases").show()
-    //    val mySqlTable = Array("order_master", "order_detail", "product_browse")
-    val mySqlTable = Array("order_detail")
+//        val mySqlTable = Array("order_master", "order_detail", "product_browse")
+    val mySqlTable = Array("product_browse")
     val config = HBaseConfiguration.create()
-    config.set(HConstants.ZOOKEEPER_QUORUM, "192.168.44.61,192.168.44.62,192.168.44.63")
+    config.set(HConstants.ZOOKEEPER_QUORUM, "172.20.37.85,172.20.37.78,172.20.37.230")
     config.set(HConstants.ZOOKEEPER_CLIENT_PORT, "2181")
     val connection = ConnectionFactory.createConnection(config) //获取和hbase的链接
     //    val mySqlTable = Array("order_master")
     mySqlTable.foreach(x => {
       sparkSession.read.jdbc(MYSQLDBURL, x,
-        properties).createTempView(x)
+        properties).createOrReplaceTempView(x)
       var frame = sparkSession.sql(s"select * from $x where modified_time>='2023-09-12 00:00:00'")
         .withColumn("modified_time", from_unixtime(unix_timestamp(col("modified_time"), "yyyy-MM-dd HH:mm:ss"), "yyyy-MM-dd HH:mm:ss"))
+      println(frame.count())
       if (x.equals("order_master")) {
         frame = frame.withColumn("shipping_user", concat(col("shipping_user"), lit("test2")))
           .withColumn("order_money", col("order_money") + 2.5)
@@ -91,7 +92,7 @@ object WriteHBase02 {
             case _ => put.addColumn(Bytes.toBytes("info"), Bytes.toBytes(col), Bytes.toBytes(x.getString(i)))
           }
         }
-        //table.put(put)    //写入hbase的表行数据
+        table.put(put)    //写入hbase的表行数据
       })
       println(s"$x 插入成功")
     })

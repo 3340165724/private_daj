@@ -26,7 +26,7 @@ object OdsToDwd02 {
     val dwd_tables = Array("dim_customer_inf", "dim_product_info")
     for (i <- 0 until ods_tables.length) {
       // 获取到ods层的表
-      val ods_table: String = ods_tables(i)
+      val ods_table = ods_tables(i)
       // 获取到dwd层的表
       val dwd_table = dwd_tables(i)
       // 从hive的ods层拿出昨天的分区（任务一生成的分区）数据
@@ -41,14 +41,16 @@ object OdsToDwd02 {
 
       // 合并 则dwd_insert_time时间不变，dwd_modify_time存当前操作时间，其余列存最新的值
       val all_df = ods_df.unionByName(dwd_df)
-        .withColumn("dwd_insert_user", min("dwd_insert_user").over(Window.partitionBy(s"${ids(i)}")))
-        .withColumn("seq", row_number().over(Window.partitionBy(s"${ids(i)}").orderBy(desc("modified_time"))))
+        .withColumn("dwd_insert_time", min("dwd_insert_time").over(Window.partitionBy(ids(i))))
+        .withColumn("seq", row_number().over(Window.partitionBy(ids(i)).orderBy(desc("modified_time"))))
         .filter(_.getAs("seq").equals(1))
         .drop("seq")
         .withColumn("etl_date", lit("20230912"))
 
       // todo 将合并之后的完整数据追加模式写入到dwd中最新分区
-      all_df.write.mode(SaveMode.Append).format("hive").saveAsTable(s"dwd.${dwd_table}")
+      all_df.write.mode(SaveMode.Append).format("hive").partitionBy("etl_date").saveAsTable(s"dwd.${dwd_table}")
+      //      final_df.createOrReplaceTempView("mytable")
+      //      spark.sql(s"insert into dwd.${dwd_table} select * from mytable")    //必须列顺序完全对上
     }
 
     // 关闭资源
