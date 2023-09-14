@@ -1,15 +1,14 @@
 package com.dsj.stage24
 
-import org.apache.hadoop.hbase.{CompareOperator, HBaseConfiguration, TableName}
-import org.apache.hadoop.hbase.client.{ConnectionFactory, Scan}
-import org.apache.hadoop.hbase.filter.{RowFilter, SubstringComparator}
-import org.apache.hadoop.hbase.util.Bytes
-import org.apache.spark.sql.functions.lit
-import org.apache.spark.sql.{DataFrame, Row, SaveMode, SparkSession}
-
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
 import java.util.Date
+import org.apache.hadoop.hbase.client.{ConnectionFactory, Scan}
+import org.apache.hadoop.hbase.filter.{RowFilter, SubstringComparator}
+import org.apache.hadoop.hbase.util.Bytes
+import org.apache.hadoop.hbase.{CompareOperator, HBaseConfiguration, TableName}
+import org.apache.spark.sql.{DataFrame, Row, SaveMode, SparkSession}
+import org.apache.spark.sql.functions._
 import scala.jdk.CollectionConverters.asScalaIteratorConverter
 
 object OdsHBaseToDwd02 {
@@ -22,6 +21,8 @@ object OdsHBaseToDwd02 {
       .config("hive.exec.max.dynamic.partitions", 2000)
       .config("spark.sql.parser.quotedRegexColumnNames", "true")
       .getOrCreate()
+
+    import spark.implicits._
 
     // 获取系统当前时间
     val currDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date)
@@ -41,12 +42,25 @@ object OdsHBaseToDwd02 {
       // 拿出hbase中的数据
       val hbase_df = readHbaseDf(hbase_table, ods_df, spark)
       // 联合
-      val all_df = ods_df.unionByName(hbase_df).coalesce(1)
+      var all_df = ods_df.unionByName(hbase_df).coalesce(1)
         .withColumn("dwd_insert_user", lit("user1"))
         .withColumn("dwd_insert_time", lit(currDate).cast("timestamp"))
         .withColumn("dwd_modify_user", lit("user1"))
         .withColumn("dwd_modify_time", lit(currDate).cast("timestamp"))
         .withColumn("etl_date", lit("20230912"))
+      if (ods_table.equals("order_master")) {
+        all_df = all_df
+          .withColumn("create_time", to_timestamp(col("create_time"), "yyyyMMddHHmmss"))
+          .withColumn("shipping_time", to_timestamp(col("shipping_time"), "yyyyMMddHHmmss"))
+          .withColumn("pay_time", to_timestamp(col("pay_time"), "yyyyMMddHHmmss"))
+          .withColumn("receive_time", to_timestamp(col("receive_time"), "yyyyMMddHHmmss"))
+      } else if (ods_table.equals("order_detail")) {
+        all_df = all_df
+          .withColumn("create_time", to_timestamp(col("create_time"), "yyyyMMddHHmmss"))
+      }
+      ods_df.printSchema()
+      hbase_df.printSchema()
+      all_df.printSchema()
 
       // 追加模式写入hive的dwd层的分区表中
       all_df.write.mode(SaveMode.Append).format("hive").partitionBy("etl_date").saveAsTable(s"dwd.${dwd_table}")
@@ -88,11 +102,11 @@ object OdsHBaseToDwd02 {
         val value = tp match {
           case "long" => Bytes.toLong(x.getValue(info_b, name.getBytes()))
           case "integer" => Bytes.toInt(x.getValue(info_b, name.getBytes()))
-          case "double" => Bytes.toBigDecimal(x.getValue(info_b, name.getBytes()))
+          case "double" => Bytes.toBigDecimal(x.getValue(info_b, name.getBytes())).doubleValue()
           case "float" => Bytes.toFloat(x.getValue(info_b, name.getBytes()))
           case typestr if typestr.contains("decimal") => Bytes.toBigDecimal(x.getValue(info_b, name.getBytes())).doubleValue()
           case "timestamp" => Timestamp.valueOf(Bytes.toString(x.getValue(info_b, name.getBytes())))
-          case _ => Bytes.toString(x.getValue(x.getValue(info_b, name.getBytes())))
+          case _ => Bytes.toString(x.getValue(info_b, name.getBytes()))
         }
         value
       })
