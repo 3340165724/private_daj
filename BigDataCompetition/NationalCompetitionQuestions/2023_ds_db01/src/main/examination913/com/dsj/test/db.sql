@@ -13,11 +13,9 @@
 #        day	int	日	订单产生的日,为动态分区字段
 
 # 查出退款或者取消的订单的订单编号
-select order_sn
-from dwd.fact_order_master as o
-where o.order_status = '已退款';
+select order_sn from dwd.fact_order_master as o where o.order_status = '已退款';
 # 过滤掉已退款的订单
-select distinct o.customer_id,customer_name,year(create_time) as year, month(create_time) as month, day(create_time) as day
+select distinct o.customer_id, customer_name, order_money, year(create_time)  as year, month(create_time) as month, day(create_time)   as day
 from dwd.fact_order_master as o
 inner join dwd.dim_customer_inf as c on o.customer_id = c.customer_id
 where order_sn not in (select order_sn from dwd.fact_order_master where order_status = '已退款');
@@ -33,11 +31,12 @@ group by customer_id, customer_name, year, month, day;
 select * from dws.user_consumption_day_aggr
 order by customer_id desc, total_amount desc
 limit 5;
+
 # 订单总金额保留两位小数
 select customer_id,  customer_name , round(sum(order_money),2) total_amount, count(*) total_count, year, month, day
 from (select distinct o.customer_id,customer_name, order_money,year(create_time) as year, month(create_time) as month, day(create_time) as day
       from dwd.fact_order_master as o
-               inner join dwd.dim_customer_inf as c on o.customer_id = c.customer_id
+      inner join dwd.dim_customer_inf as c on o.customer_id = c.customer_id
       where order_sn not in (select order_sn from dwd.fact_order_master where order_status = '已退款')) as t1
 group by customer_id, customer_name, year, month, day;
 
@@ -57,6 +56,46 @@ group by customer_id, customer_name, year, month, day;
 #        year	int	年	订单产生的年,为动态分区字段
 #        month	int	月	订单产生的月,为动态分区字段
 
+# 查出退款或者取消的订单
+select * from dwd.fact_order_master where order_status = "已退款";
+# 过滤掉已退款的订单
+select distinct province, city, order_money, year(create_time) as year, month(create_time) as month
+from dwd.fact_order_master
+where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+#统计每个城市每月下单的数量和每月下单的总金额（以order_master中的地址为判断依据）
+select
+       city as city_name, province as province_name, sum(order_money) as total_amount, count(*) as total_count, year, month
+from (select distinct province, city, order_money, year(create_time) as year, month(create_time) as month
+      from dwd.fact_order_master
+      where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款"))
+group by province, city,year, month
+# 并按照province_name，year，month进行分组,按照total_amount逆序排序，形成sequence值
+select city_name, province_name, total_amount, total_count,
+       row_number() over(partition by province_name, year, month order by total_amount desc ) as sequencesequence,
+       year, month
+from (select city as city_name, province as province_name, sum(order_money) as total_amount, count(*) as total_count, year, month
+      from (select distinct province, city, order_money, year(create_time) as year, month(create_time) as month
+            from dwd.fact_order_master
+            where length(city)<=8 and order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款"))
+      group by province, city,year, month) as t1;
+
+# 解决科学计数法的问题
+select
+       city_name, province_name,
+       cast(total_amount as decimal(25,10)),
+       total_count,
+       row_number() over(partition by province_name, year, month order by total_amount desc ) as sequencesequence,
+       year, month
+from (select city as city_name, province as province_name, sum(order_money) as total_amount, count(*) as total_count, year, month
+      from (select distinct province, city, order_money, year(create_time) as year, month(create_time) as month
+            from dwd.fact_order_master
+            where length(city)<=8 and order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款"))
+      group by province, city,year, month) as t1;
+# 结果存入Hive的dws数据库city_consumption_day_aggr表中 ===> db.scala
+# 使用hive cli根据订单总数、订单总金额均为降序排序，查询出前5条
+select * from dws.city_consumption_day_aggr order by total_count desc, total_amount desc limit 5;
+
+
 
 # 3、请根据dwd或者dws层表计算出每个城市月平均订单金额和该城市所在省份月平均订单金额相比较结果（“高/低/相同”）,
 #   存入ClickHouse数据库shtd_result的cityavgcmpprovince表中（表结构如下），
@@ -67,6 +106,33 @@ group by customer_id, customer_name, year, month, day;
 #        provincename	text	省份名称
 #        provinceavgconsumption	double	该省平均订单金额
 #        comparison	text	比较结果	城市平均订单金额和该省平均订单金额比较结果，值为：高/低/相同
+# 查出退款或者取消的订单
+select order_sn from dwd.fact_order_master where order_status="已退款"
+# 过滤掉已退款的数据并去除重复的数据
+select distinct city, province, order_money, year(create_time) as year, month(create_time) as month
+from dwd.fact_order_master as o
+where length(city) <= 8 and order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+# 计算出每个城市月平均订单金额和该城市所在省份月平均订单金额相比较结果（“高/低/相同”）
+select city, province,
+       avg(order_money) over (partition by province, city,month) as cityavgconsumption,
+       avg(order_money) over (partition by province, month)       as provinceavgconsumption
+from (select distinct city, province, order_money, year(create_time) as year, month(create_time) as month
+      from dwd.fact_order_master as o
+      where length(city) <= 8 and order_sn not in (select order_sn from dwd.fact_order_master where order_status = "已退款"))
+# 比较结果
+select city as cityname, cityavgconsumption, province as provincename, provinceavgconsumption,
+       case
+           when cityavgconsumption > provinceavgconsumption then '高'
+           when cityavgconsumption < provinceavgconsumption then '低'
+           when cityavgconsumption = provinceavgconsumption then '相同' end as comparison
+from (select distinct  city, province,
+             avg(order_money) over (partition by province, city, month) as cityavgconsumption,
+             avg(order_money) over (partition by province, month)       as provinceavgconsumption
+      from (select distinct city, province, order_money, year(create_time) as year, month(create_time) as month
+            from dwd.fact_order_master as o
+            where length(city) <= 8 and order_sn not in (select order_sn from dwd.fact_order_master where order_status = "已退款"))) as t1
+
+
 
 
 # 4、请根据dwd或者dws层表计算出每个城市每个月订单金额的中位数和该城市所在省份当月订单金额中位数相比较结果（“高/低/相同”）,
@@ -78,6 +144,31 @@ group by customer_id, customer_name, year, month, day;
 #        provincename	text	省份名称
 #        provincemidconsumption	double	该省订单金额中位数
 #        comparison	text	比较结果	城市订单金额中位数和该省订单金额中位数比较结果，值为：高/低/相同
+# 查出退款或者取消的订单
+select order_sn from dwd.fact_odser_master where order_status="已退款"
+# 过滤掉已退款的订单，并去重
+select distinct city, province, order_money, year(create_time) as year, month(create_time) as month
+from dwd.fact_order_master as o
+where length(city) <= 8 and order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+# 计算出每个城市每个月订单金额的中位数和该城市所在省份当月订单金额中位数相比较结果（“高/低/相同”）
+select city, province,
+       percentile_approx(order_money) over (partition by province, city,month) as cityavgconsumption,
+       percentile_approx(order_money) over (partition by province, month)       as provinceavgconsumption
+from (select distinct city, province, order_money, year(create_time) as year, month(create_time) as month
+      from dwd.fact_order_master as o
+      where length(city) <= 8 and order_sn not in (select order_sn from dwd.fact_order_master where order_status = "已退款"))
+# 比较结果
+select city as cityname, cityavgconsumption, province as provincename, provinceavgconsumption,
+       case
+           when cityavgconsumption > provinceavgconsumption then '高'
+           when cityavgconsumption < provinceavgconsumption then '低'
+           when cityavgconsumption = provinceavgconsumption then '相同' end as comparison
+from (select distinct  city, province,
+                       percentile_approx(order_money) over (partition by province, city, month) as cityavgconsumption,
+                       percentile_approx(order_money) over (partition by province, month)       as provinceavgconsumption
+      from (select distinct city, province, order_money, year(create_time) as year, month(create_time) as month
+            from dwd.fact_order_master as o
+            where length(city) <= 8 and order_sn not in (select order_sn from dwd.fact_order_master where order_status = "已退款"))) as t1
 
 
 # 5、请根据dwd或者dws层表来计算每个省份2022年订单金额前3城市，
