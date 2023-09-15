@@ -16,7 +16,7 @@ object IncrementalExtractionTest {
 
     // 连接MySQL
     val mysql_reader = spark.read.format("jdbc")
-      .option("url", "jdbc:mysql://172.20.37.78:3306/ds_db01")
+      .option("url", "jdbc:mysql://192.168.66.130:3306/ds_db01")
       .option("user", "root")
       .option("password", "123456")
 
@@ -76,14 +76,14 @@ object IncrementalExtractionTest {
 
     // todo 三列取最大值
     // 从hive的ods层coupon_use表中get_time、user_time、pay_time散列中拿出最大值，作为增量条件
-    val ods_df = spark.sql("select if(c is null, '',c) from (select greatest(max(get_time),max(if(user_time='NULL','',user_time)),max(if(pay_time='NULL','',pay_time))) as c from ods.coupon_use) as t1")
-      .first().getString(0)
-    // 从MySQL中拿出数据
-    val df = mysql_reader.option("dbtable", "ods.coupon_use").load()
-      .where(array_max(array_remove(array("get_time", "user_time", "pay_time"), "NULL")).cast("string") > ods_df)
-      .withColumn("etl_date", lit(etl_date))
-    // 追加模式写入hive的ods层的静态分区表中
-    df.write.mode(SaveMode.Append).format("hive").partitionBy("etl_date").saveAsTable("ods.coupon_use")
+    val max_time = spark.sql("select if(c is null,'',c) from (select greatest(max(get_time),max(if(used_time='NULL','',used_time)),max(if(pay_time='NULL','',pay_time))) as c from ods.coupon_use) as t1").first().getString(0)
+    println(max_time)
+    //select * from coupon_use where get_time > 'max_time' or used_time > 'max_time' or pay_time > 'max_time'
+    val coupon_df = mysql_reader.option("dbtable","coupon_use").load()
+      .where(array_max(array_remove(array("get_time","used_time","pay_time"),"NULL")).cast("string") > max_time)
+      .withColumn("etl_date",lit(etl_date))
+    println(coupon_df.count())
+    coupon_df.write.mode(SaveMode.Append).format("hive").partitionBy("etl_date").saveAsTable(s"ods.coupon_use")  //存储至hive中
 
     // 关闭资源
     spark.stop()

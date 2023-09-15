@@ -37,7 +37,7 @@ object OdsHBaseToDwd02 {
       val dwd_table = dwd_tables(i)
       val hbase_table = hbase_tables(i)
       // 拿到ods的数据
-      val ods_df = spark.sql(s"select * from ods.${ods_table} where etl_date='20230912'")
+      val ods_df = spark.sql(s"select * from ods.${ods_table} where etl_date='20230914'")
         .drop("etl_date")
       // 拿出hbase中的数据
       val hbase_df = readHbaseDf(hbase_table, ods_df, spark)
@@ -47,7 +47,7 @@ object OdsHBaseToDwd02 {
         .withColumn("dwd_insert_time", lit(currDate).cast("timestamp"))
         .withColumn("dwd_modify_user", lit("user1"))
         .withColumn("dwd_modify_time", lit(currDate).cast("timestamp"))
-        .withColumn("etl_date", lit("20230912"))
+        .withColumn("etl_date", lit("20230914"))
       if (ods_table.equals("order_master")) {
         all_df = all_df
           .withColumn("create_time", to_timestamp(col("create_time"), "yyyyMMddHHmmss"))
@@ -77,7 +77,7 @@ object OdsHBaseToDwd02 {
     val fields = odsDf.schema.fields
     // 创建hbase连接
     val hbaseConf = HBaseConfiguration.create()
-    hbaseConf.set("hbase.zookeeper.quorum", "172.20.37.78,172.20.37.85,172.20.37.237")
+    hbaseConf.set("hbase.zookeeper.quorum", "192.168.66.130,192.168.66.131,192.168.66.132")
     hbaseConf.set("hbase.zookeeper.property.clientPort", "2181")
     // 获取hbase连接
     val connection = ConnectionFactory.createConnection(hbaseConf)

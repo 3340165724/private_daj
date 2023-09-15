@@ -48,16 +48,15 @@ object OdsToDwdTest {
       // 从dwd层拿出数据
       val dwd_df = spark.sql(s"select * from dwd.dim_${table}")
       // 合并
-      val all_df = ods_df.unionByName(dwd_df)
+      val all_df = ods_df.unionByName(dwd_df).coalesce(1)
         .withColumn("dwd_insert_time", min("dwd_insert_time").over(Window.partitionBy(s"${tables_2_id(i)}")))
         .withColumn("seq", row_number().over(Window.partitionBy(s"${tables_2_id(i)}").orderBy(desc("modified_time"))))
         .filter(_.getAs("seq").equals(1))
         .drop("seq")
-      // 第二种方式写入数据
-      all_df.createOrReplaceTempView("mytable")
-      // 使用insert语句覆盖写入表的时候不存在读写的问题
-      spark.sql(s"insert overwrite 2023_dwd1_ds_db01.dim_${table} select `(etl_date)?+.+`,etl_date from mytable")
+        .withColumn("etl_date", lit("20230914"))
 
+      // 追加模式写入hive的dwd层
+      all_df.write.mode(SaveMode.Append).format("hive").partitionBy("etl_date").saveAsTable(s"dwd.dim_${table}")
     }
 
     // 关闭资源
