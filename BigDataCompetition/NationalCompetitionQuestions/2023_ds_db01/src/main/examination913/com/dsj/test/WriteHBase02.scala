@@ -23,7 +23,7 @@ object WriteHBase02 {
       .set("spark.testing.memory", "471859200")
     val sparkSession = SparkSession.builder().config(conf).getOrCreate()
     //    连接数据的参数
-    val MYSQLDBURL: String = "jdbc:mysql://172.20.37.78:3306/ds_db01?useUnicode=true&characterEncoding=utf-8" // mysql url地址
+    val MYSQLDBURL: String = "jdbc:mysql://192.168.66.130:3306/ds_db01?useUnicode=true&characterEncoding=utf-8" // mysql url地址
     val properties: Properties = new Properties()
     properties.put("user", "root") //用户名
     properties.put("password", "123456") // 密码
@@ -33,7 +33,7 @@ object WriteHBase02 {
         val mySqlTable = Array("order_master", "order_detail", "product_browse")
 //    val mySqlTable = Array("product_browse")
     val config = HBaseConfiguration.create()
-    config.set(HConstants.ZOOKEEPER_QUORUM, "172.20.37.85,172.20.37.78,172.20.37.230")
+    config.set(HConstants.ZOOKEEPER_QUORUM, "192.168.66.130,192.168.66.131,192.168.66.132")
     config.set(HConstants.ZOOKEEPER_CLIENT_PORT, "2181")
     val connection = ConnectionFactory.createConnection(config) //获取和hbase的链接
     //    val mySqlTable = Array("order_master")
