@@ -178,6 +178,47 @@ from (select distinct  city, province,
 #        provincename	text	省份名称
 #        citynames	text	城市名称	用,分割显示前三城市的name
 #        cityamount	text	省份名称	用,分割显示前三城市的订单金额（需要去除小数部分，使用四舍五入）例如： 3	山东省	青岛市,潍坊市,济南市 	100000,100,10
+# 查出退款或者取消的订单
+select order_sn from dwd.fact_order_master where order_status="已退款"
+# 过滤掉已退款的订单并去重
+select distinct  city, province, order_money, year(create_time) as year, month(create_time) as month
+from dwd.fact_order_master
+where  length(city) <= 8 and not order_sn in(select order_sn from dwd.fact_order_master where order_status="已退款")
+#算每个省份2022年订单金额前3城市
+select distinct province as provincename, city, round(sum(order_money)), row_number() over (partition by province order by round(sum(order_money)) desc ) as num
+from (select distinct  city, province, order_money, year(create_time) as year, month(create_time) as month
+      from dwd.fact_order_master
+      where  length(city) <= 8 and not order_sn in(select order_sn from dwd.fact_order_master where order_status="已退款")) as t1
+where year="2022"
+group by province, city;
+
+# 订单金额前3城市
+# collect_set 函数，有两个作用，第一个是去重，去除group by后的重复元素
+# 与contact_ws 结合使用就是将这些元素以逗号分隔形成字符串
+select province, concat_ws(',' , collect_set(substr(city,-3,3))) as citynames,
+       concat_ws(',' , collect_set(totl)) as cityamount
+from (select distinct province , city, round(sum(order_money)) as totl, row_number() over (partition by province order by round(sum(order_money)) desc ) as num
+      from (select distinct  city, province, order_money, year(create_time) as year, month(create_time) as month
+            from dwd.fact_order_master
+            where  length(city) <= 8 and not order_sn in(select order_sn from dwd.fact_order_master where order_status="已退款")) as t1
+      where year="2022"
+      group by province, city) as t2
+where num<=3
+group by province
+# 解决科学计数法的问题
+select province,
+       concat_ws(',', collect_set(substr(city, -3, 3))) as citynames,
+       concat_ws(',', collect_set(totl)) as cityamount
+from (select distinct province, city,
+                      cast(bround(sum(order_money)) as decimal(25, 0)) as totl,
+                      row_number() over (partition by province order by round(sum(order_money)) desc ) as num
+      from (select distinct city, province, order_money, year(create_time) as year, month(create_time) as month
+            from dwd.fact_order_master
+            where length(city) <= 8 and not order_sn in (select order_sn from dwd.fact_order_master where order_status = "已退款")) as t1
+      where year = "2022"
+      group by province, city) as t2
+where num <= 3
+group by province
 
 
 # 6、请根据dwd或者dws层的相关表，计算销售量前10的商品，销售额前10的商品，
@@ -191,6 +232,13 @@ from (select distinct  city, province,
 #        toppricename	text	商品名称	销售额前10的商品
 #        topprice	decimal	该商品销售额	销售额前10的商品
 #        sequence	int	排名	所属排名，从1到10
+# 计算销售量前10的商品，销售额前10的商品
+select product_id, product_name, sum(product_cnt), sum((product_price * product_cnt))
+from dwd.fact_order_detail
+group by product_id, product_name
+
+
+
 
 
 # 7、请根据dwd或者dws层的数据，请计算连续两天下单的用户与已下单用户的占比，

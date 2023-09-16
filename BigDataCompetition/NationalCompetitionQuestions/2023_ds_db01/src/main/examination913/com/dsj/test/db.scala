@@ -102,10 +102,12 @@ object db {
     // 存入ClickHouse
     df3.write.mode(SaveMode.Overwrite).format("jdbc")
       .option("driver", "ru.yandex.clickhouse.ClickHouseDriver")
-      .option("url","jdbc:clickhouse://192.168.66.130/shtd_result")
+      .option("url","jdbc:clickhouse://192.168.66.130:8123/shtd_result")
       .option("user","default")
       .option("password","123456")
-      .option("dbtable","cityavgcmpprovince")
+      .option("dbtable","cityavgcmpprovince").save()
+
+
 
     // 关闭资源
     spark.stop()
