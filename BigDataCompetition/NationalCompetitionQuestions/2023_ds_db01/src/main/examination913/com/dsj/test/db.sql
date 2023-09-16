@@ -289,22 +289,50 @@ group by product_id, product_name)) t1 where t1.num2 <= 10) t3 on t2.num1 = t3.n
 #        repurchaseduser	int	连续下单人数	连续两天下单的人数
 #        repurchaserate	text	百占比	连续两天下单人数/已下单人数百分比（保留1位小数，四舍五入，不足的补0）例如21.1%，或者32.0%
 # 查出退款或者取消的订单的订单编号
-select order_sn from dwd.fact_order_master as o where o.order_status = '已退款';
-# 过滤掉已退款的订单，并查出一天下单的用户
-select count(customer_id), year(create_time) year, month(create_time) as month, day(create_time) as day
-from dwd.fact_order_master
-where order_sn not in(select order_sn from dwd.fact_order_master where order_status = '已退款')
-  and  order_sn in(select order_sn from dwd.fact_order_master where order_status = '已下单')
-group by customer_id, year, month, day
-# 计算连续两天下单的用户
-
-# 查出退款或者取消的订单的订单编号
 select order_sn from dwd.fact_order_master where order_status="已退款";
 # 过滤掉已退款的订单，并过滤出已下单
-select *
+# 查出已下单人数
+select count(distinct customer_id)
 from dwd.fact_order_master
-where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
-  and order_sn in(select order_sn from dwd.fact_order_master where order_status="已下单")
+where order_status = "已下单"
+  and order_sn not in(select order_sn from dwd.fact_order_master where  order_status="已退款");
+# 连续连天下单的用户
+select count(*)
+from (select customer_id, datediff(date, lag(date,1) over (partition by customer_id order by date)) as up
+      from (select  customer_id, date_format(create_time, "yyyy-MM-dd") as date
+            from dwd.fact_order_master
+            where order_status="已下单" and order_sn not in(select order_sn from dwd.fact_order_master where  order_status="已退款")
+           )) as t1
+where t1.up=1;
+
+# 方法1：占比
+select (
+select count(*)
+from (select customer_id, datediff(date,lag(date,1) over (partition by customer_id order by date)) as up
+      from (select customer_id, date_format(create_time, "yyyy-MM-dd") as date
+            from dwd.fact_order_master
+            where order_sn not in(select order_sn from dwd.fact_order_master where  order_status="已退款" )
+              and order_sn in(select order_sn from dwd.fact_order_master where order_status="已下单" ))) as t1
+where t1.up = 1) /
+(select count(distinct customer_id)
+from dwd.fact_order_master
+where order_status = "已下单"
+  and order_sn not in(select order_sn from dwd.fact_order_master where  order_status="已退款"))
+
+# 方法二：占比
+select
+(select count(*)
+from (select customer_id, datediff(date, lag(date,1) over (partition by customer_id order by date)) as up
+      from (select  customer_id, date_format(create_time, "yyyy-MM-dd") as date
+            from dwd.fact_order_master
+            where order_status="已下单" and order_sn not in(select order_sn from dwd.fact_order_master where  order_status="已退款")
+           )) as t1
+where t1.up=1) /
+(select count(distinct customer_id)
+ from dwd.fact_order_master
+ where order_status = "已下单"
+   and order_sn not in(select order_sn from dwd.fact_order_master where  order_status="已退款"))
+
 
 
 # 8、根据dwd或者dws层的数据，请计算每个省份累计订单量，然后根据每个省份订单量从高到低排列，
