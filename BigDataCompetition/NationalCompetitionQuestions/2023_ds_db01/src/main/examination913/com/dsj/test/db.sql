@@ -319,6 +319,7 @@ from dwd.fact_order_master
 where order_status = "已下单"
   and order_sn not in(select order_sn from dwd.fact_order_master where  order_status="已退款"))
 
+
 # 方法二：占比
 select
 (select count(*)
