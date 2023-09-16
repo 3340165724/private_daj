@@ -215,7 +215,7 @@ from (select distinct province, city,
       from (select distinct city, province, order_money, year(create_time) as year, month(create_time) as month
             from dwd.fact_order_master
             where length(city) <= 8 and not order_sn in (select order_sn from dwd.fact_order_master where order_status = "已退款")) as t1
-      where year = "2022"
+      where year=2022
       group by province, city) as t2
 where num <= 3
 group by province
@@ -269,6 +269,15 @@ inner join (select  product_id as toppriceid, product_name as toppricename,  top
             where num2 <= 10) as t3
 on t2.num1=t3.num2;
 
+select * from (
+select product_id,product_name,topquantity,num1 from (
+select *,row_number() over(order by topquantity desc) as num1 from(
+select product_id, product_name,sum(product_cnt) as topquantity from dwd.fact_order_detail
+group by product_id, product_name)) t1 where t1.num1 <= 10) t2 inner join
+(select product_id,product_name,topamount,num2 from (
+select *,row_number() over(order by topamount desc) as num2 from(
+select product_id, product_name,sum(product_price * product_cnt) as topamount from dwd.fact_order_detail
+group by product_id, product_name)) t1 where t1.num2 <= 10) t3 on t2.num1 = t3.num2
 
 
 
@@ -282,23 +291,20 @@ on t2.num1=t3.num2;
 # 查出退款或者取消的订单的订单编号
 select order_sn from dwd.fact_order_master as o where o.order_status = '已退款';
 # 过滤掉已退款的订单，并查出一天下单的用户
-select  order_id , order_sn, customer_id, year(create_time) year, month(create_time) as month, day(create_time) as day
+select count(customer_id), year(create_time) year, month(create_time) as month, day(create_time) as day
 from dwd.fact_order_master
 where order_sn not in(select order_sn from dwd.fact_order_master where order_status = '已退款')
   and  order_sn in(select order_sn from dwd.fact_order_master where order_status = '已下单')
 group by customer_id, year, month, day
 # 计算连续两天下单的用户
+
+# 查出退款或者取消的订单的订单编号
+select order_sn from dwd.fact_order_master where order_status="已退款";
+# 过滤掉已退款的订单，并过滤出已下单
 select *
-from (select  order_sn, customer_id, year(create_time) year, month(create_time) as month, day(create_time) as day
-      from dwd.fact_order_master
-      where order_sn not in(select order_sn from dwd.fact_order_master where order_status = '已退款')
-        and  order_sn in(select order_sn from dwd.fact_order_master where order_status = '已下单')
-      group by customer_id, year, month, day) as t1
-inner join 
-
-
-
-
+from dwd.fact_order_master
+where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+  and order_sn in(select order_sn from dwd.fact_order_master where order_status="已下单")
 
 
 # 8、根据dwd或者dws层的数据，请计算每个省份累计订单量，然后根据每个省份订单量从高到低排列，

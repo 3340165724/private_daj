@@ -97,7 +97,7 @@ select t1.ck, t1.cn,
        concat(concat(t1.y1,if(t1.m1<10,concat("0",t1.m1),t1.m1)),"_", concat(t2.y2,if(t2.m2<10,concat("0",t2.m2),t2.m2))),
        s1+s2, c1+c2
 from (select year(o.ORDERDATE) as y1,  month(o.ORDERDATE) as m1,c.CUSTKEY as ck, c.NAME as cn,
-    sum(o.TOTALPRICE) as s1, count(*) as c1
+        sum(o.TOTALPRICE) as s1, count(*) as c1
     from customer as c
     inner join orders as o on c.CUSTKEY=o.CUSTKEY
     group by year(o.ORDERDATE), month(o.ORDERDATE), c.CUSTKEY, c.NAME) as t1
