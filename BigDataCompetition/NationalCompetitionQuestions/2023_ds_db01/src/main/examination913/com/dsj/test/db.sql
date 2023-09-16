@@ -241,6 +241,7 @@ group by product_id, product_name
 
 
 
+
 # 7、请根据dwd或者dws层的数据，请计算连续两天下单的用户与已下单用户的占比，
 #   将结果存入ClickHouse数据库shtd_result的userrepurchasedrate表中(表结构如下)，
 #   然后在Linux的ClickHouse命令行中查询结果数据；
