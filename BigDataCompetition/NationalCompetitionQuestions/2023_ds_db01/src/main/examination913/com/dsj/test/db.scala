@@ -1,5 +1,6 @@
 package com.dsj.test
 
+import org.apache.spark.sql.functions.lit
 import org.apache.spark.sql.{SaveMode, SparkSession}
 
 object db {
@@ -108,6 +109,31 @@ object db {
       .option("dbtable","cityavgcmpprovince").save()
 
 
+
+
+    /*
+    * 8、根据dwd或者dws层的数据，请计算每个省份累计订单量，然后根据每个省份订单量从高到低排列，
+    *   将结果打印到控制台（使用spark中的show算子，同时需要显示列名）；
+    *   例如：可以考虑首先生成类似的临时表A：province_name	Amount（订单量）
+    *        A省	10122
+    *        B省	301
+    *        C省	2333333
+    *   然后生成结果类似如下：其中C省销量最高，排在第一列，A省次之，以此类推。
+    *        C省	A省	B省
+    *        23333331	10122	301
+    * */
+    val df8 = spark.sql(
+      """
+        |select province, count(*) as num
+        |from (select distinct province ,order_sn
+        |      from dwd.fact_order_master
+        |      where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款"))
+        |group by province
+        |order by num desc
+        |""".stripMargin)
+      .withColumn("test",lit("aaa"))
+    // 将省份转为列
+    df8.groupBy("test").pivot("province").sum("num").drop("test").show()
 
     // 关闭资源
     spark.stop()

@@ -191,7 +191,6 @@ from (select distinct  city, province, order_money, year(create_time) as year, m
       where  length(city) <= 8 and not order_sn in(select order_sn from dwd.fact_order_master where order_status="已退款")) as t1
 where year="2022"
 group by province, city;
-
 # 订单金额前3城市
 # collect_set 函数，有两个作用，第一个是去重，去除group by后的重复元素
 # 与contact_ws 结合使用就是将这些元素以逗号分隔形成字符串
@@ -219,6 +218,11 @@ from (select distinct province, city,
       group by province, city) as t2
 where num <= 3
 group by province
+
+
+
+
+
 
 
 # 6、请根据dwd或者dws层的相关表，计算销售量前10的商品，销售额前10的商品，
@@ -269,15 +273,21 @@ inner join (select  product_id as toppriceid, product_name as toppricename,  top
             where num2 <= 10) as t3
 on t2.num1=t3.num2;
 
-select * from (
-select product_id,product_name,topquantity,num1 from (
-select *,row_number() over(order by topquantity desc) as num1 from(
-select product_id, product_name,sum(product_cnt) as topquantity from dwd.fact_order_detail
-group by product_id, product_name)) t1 where t1.num1 <= 10) t2 inner join
-(select product_id,product_name,topamount,num2 from (
-select *,row_number() over(order by topamount desc) as num2 from(
-select product_id, product_name,sum(product_price * product_cnt) as topamount from dwd.fact_order_detail
-group by product_id, product_name)) t1 where t1.num2 <= 10) t3 on t2.num1 = t3.num2
+select t2.topquantityid,  t2.topquantityname, topquantity, t3.toppriceid,  t3.toppricename, topprice, sequence
+from (select product_id as topquantityid, product_name as topquantityname, topquantity, num1 as sequence
+      from (select *, row_number() over (order by topquantity desc) as num1
+            from (select product_id, product_name, sum(product_cnt) as topquantity
+                  from dwd.fact_order_detail
+                  group by product_id, product_name)) t1
+where t1.num1 <= 10) t2
+inner join
+(select product_id as toppriceid, product_name as toppricename, topprice, num2
+from (select *, row_number() over (order by topprice desc) as num2
+      from (select product_id, product_name, sum(product_price * product_cnt) as topprice
+            from dwd.fact_order_detail
+            group by product_id, product_name)) t1
+where t1.num2 <= 10) t3
+on t2.num1 = t3.num2
 
 
 
@@ -342,33 +352,70 @@ where t1.up=1) /
 #        A省	10122
 #        B省	301
 #        C省	2333333
-# 然后生成结果类似如下：其中C省销量最高，排在第一列，A省次之，以此类推。
-# C省	A省	B省
-# 23333331	10122	301
+#   然后生成结果类似如下：其中C省销量最高，排在第一列，A省次之，以此类推。
+#        C省	A省	B省
+#        23333331	10122	301
+# 查出退款或者取消的订单的订单编号
+select * from dwd.fact_order_master where order_status="已退款"
+# 过滤掉已退款的订单，并去重查出已下单的订单
+select distinct province ,order_sn
+from dwd.fact_order_master
+where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+# 请计算每个省份累计订单量，然后根据每个省份订单量从高到低排列
+select province, count(*) as num
+from (select distinct province ,order_sn
+      from dwd.fact_order_master
+      where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款"))
+group by province
+order by num desc
 
 
-# 9、根据dwd或者dws层的相关表，请计算2022年4月26日凌晨0点0分0秒到早上9点59分59秒为止，
-#   该时间段每小时的新增订单金额与当天订单总金额累加值，
+
+# 9、根据dwd或者dws层的相关表，请计算2022年4月26日凌晨0点0分0秒到早上9点59分59秒为止，该时间段每小时的新增订单金额与当天订单总金额累加值，
 #   存入ClickHouse数据库shtd_result的accumulateconsumption表中，
 #   然后在Linux的ClickHouse命令行中根据订单时间段升序排序，查询出前5条;
-# 假如数据为：
-# 用户	订单时间	订单金额
-# 张三1号	2020-04-26 00:00:10	10
-# 李四1号	2020-04-26 00:20:10	5
-# 李四2号	2020-04-26 01:21:10	10
-# 王五1号	2020-04-26 03:20:10	50
-# 计算结果则为：
-# 订单时间段	订单新增金额	累加总金额
-# 2020-04-26 00	15	15
-# 2020-04-26 01	10	25
-# 2020-04-26 02	0	25
-# 2020-04-26 03	50	75
-#
-# accumulateconsumption表结构如下：
-# 字段	类型	中文含义	备注
-# consumptiontime	varchar	消费时间段
-# consumptionadd	double	订单新增金额
-# consumptionacc	double	累加总金额
+#        假如数据为：
+#        用户	订单时间	订单金额
+#        张三1号	2020-04-26 00:00:10	10
+#        李四1号	2020-04-26 00:20:10	5
+#        李四2号	2020-04-26 01:21:10	10
+#        王五1号	2020-04-26 03:20:10	50
+#        计算结果则为：
+#        订单时间段	订单新增金额	累加总金额
+#        2020-04-26 00	15	15
+#        2020-04-26 01	10	25
+#        2020-04-26 02	0	25
+#        2020-04-26 03	50	75
+#        accumulateconsumption表结构如下：
+#        字段	类型	中文含义	备注
+#        consumptiontime	varchar	消费时间段
+#        consumptionadd	double	订单新增金额
+#        consumptionacc	double	累加总金额
+# 查出退款或者取消的订单的订单编号
+select * from dwd.fact_order_master where order_status="已退款"
+# 过滤掉已退款的订单，并去重查出在时间段中已下单的订单
+select distinct order_money ,order_sn, date_format(create_time,"yyyy-MM-dd HH") as hour
+from dwd.fact_order_master
+where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+  and create_time >= '2022-04-26 00:00:00' and create_time <= '2022-04-26 23:59:59'
+# 该时间段每小时的新增订单金额
+select ctime ,round(sum(order_money),2) as consumptionadd
+from (select distinct order_money ,order_sn, date_format(create_time,"yyyy-MM-dd HH") as ctime
+      from dwd.fact_order_master
+      where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+        and create_time >= '2022-04-26 00:00:00' and create_time <= '2022-04-26 23:59:59')
+group by ctime
+order by ctime
+# 该时间段每小时的新增订单金额与当天订单总金额累加值
+select ctime, consumptionadd, sum(consumptionadd) over(order by ctime) as consumptionacc
+from (select ctime ,round(sum(order_money),2) as consumptionadd
+      from (select distinct order_money ,order_sn, date_format(create_time,"yyyy-MM-dd HH") as ctime
+            from dwd.fact_order_master
+            where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+              and create_time >= '2022-04-26 00:00:00' and create_time <= '2022-04-26 23:59:59')
+      group by ctime
+      order by ctime)
+
 
 
 # 10、根据dwd层或dws层的相关表，请计算2022年4月26日凌晨0点0分0秒到早上9点59分59秒为止的数据，
@@ -376,38 +423,64 @@ where t1.up=1) /
 #   时间不满5小时不触发计算（即从凌晨5点0分0秒开始触发计算），
 #   存入ClickHouse数据库shtd_result的slidewindowconsumption表中，
 #   然后在Linux的ClickHouse命令行中根据订单时间段升序排序，查询出前5条，将核心业务代码中的开窗相关代码与MySQL查询结果展示出来。
-# 假如数据为：
-# 用户	订单时间	订单金额
-# 张三1号	2020-04-26 00:00:10	10
-# 李四1号	2020-04-26 00:20:10	25
-# 李四2号	2020-04-26 01:21:10	10
-# 李四2号	2020-04-26 02:21:10	5
-# 王五1号	2020-04-26 03:20:10	20
-# 李四2号	2020-04-26 04:20:10	10
-# 王五2号	2020-04-26 05:10:10	10
-# 李四2号	2020-04-26 06:20:10	10
-# 赵六2号	2020-04-26 07:10:10	10
-# 赵六2号	2020-04-26 08:10:10	10
-# 王五2号	2020-04-26 09:11:10	10
-# 王五4号	2020-04-26 09:32:10	30
-# 计算结果则为：
-# 订单时间段	该窗口内订单金额	订单总量	平均每单价格
-# 2020-04-26 04	80	6	13.33
-# 2020-04-26 05	55	5	11
-# 2020-04-26 06	55	5	11
-# 2020-04-26 07	60	5	12
-# 2020-04-26 08	50	5	10
-# 2020-04-26 09	80	6	13.33
-#
-#
-# slidewindowconsumption表结构如下：
-# 字段	类型	中文含义	备注
-# consumptiontime	varchar	订单时间段
-# consumptionsum	double	该窗口内的订单总金额
-# consumptioncount	double	订单总数量
-# consumptionavg	double	平均每单价格	上面两个字段相除，四舍五入保留两位小数
+#        假如数据为：
+#        用户	订单时间	订单金额
+#        张三1号	2020-04-26 00:00:10	10
+#        李四1号	2020-04-26 00:20:10	25
+#        李四2号	2020-04-26 01:21:10	10
+#        李四2号	2020-04-26 02:21:10	5
+#        王五1号	2020-04-26 03:20:10	20
+#        李四2号	2020-04-26 04:20:10	10
+#        王五2号	2020-04-26 05:10:10	10
+#        李四2号	2020-04-26 06:20:10	10
+#        赵六2号	2020-04-26 07:10:10	10
+#        赵六2号	2020-04-26 08:10:10	10
+#        王五2号	2020-04-26 09:11:10	10
+#        王五4号	2020-04-26 09:32:10	30
+#        计算结果则为：
+#        订单时间段	该窗口内订单金额	订单总量	平均每单价格
+#        2020-04-26 04	80	6	13.33
+#        2020-04-26 05	55	5	11
+#        2020-04-26 06	55	5	11
+#        2020-04-26 07	60	5	12
+#        2020-04-26 08	50	5	10
+#        2020-04-26 09	80	6	13.33
+#        slidewindowconsumption表结构如下：
+#        字段	类型	中文含义	备注
+#        consumptiontime	varchar	订单时间段
+#        consumptionsum	double	该窗口内的订单总金额
+#        consumptioncount	double	订单总数量
+#        consumptionavg	double	平均每单价格	上面两个字段相除，四舍五入保留两位小数
+# 查出退款或者取消的订单的订单编号
+select * from dwd.fact_order_master where order_status="已退款"
+# 过滤掉已退款的订单，并去重查出在时间段中已下单的订单
+select distinct order_money ,order_sn, date_format(create_time,"yyyy-MM-dd HH") as hour
+from dwd.fact_order_master
+where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+  and create_time >= '2022-04-26 00:00:00' and create_time <= '2022-04-26 23:59:59'
+# 该时间段每小时的新增订单总金额和订单总量
+select ctime ,round(sum(order_money),2) as consumptionsum, count(order_sn) as consumptioncount
+from (select distinct order_money ,order_sn, date_format(create_time,"yyyy-MM-dd HH") as ctime
+      from dwd.fact_order_master
+      where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+        and create_time >= '2022-04-26 00:00:00' and create_time <= '2022-04-26 23:59:59')
+group by ctime
+order by ctime
+# 该时间段每小时的新增订单金额与当天订单总金额累加值
+select ctime as consumptiontime,
+       sum(zje) over(order by ctime rows between 4 preceding and 0 following) as consumptionsum,
+       sum(zs) over(order by ctime rows between 4 preceding and 0 following) as consumptioncount
+from (select ctime ,round(sum(order_money),2) as zje, count(order_sn) as zs
+      from (select distinct order_money ,order_sn, date_format(create_time,"yyyy-MM-dd HH") as ctime
+            from dwd.fact_order_master
+            where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+              and create_time >= '2022-04-26 00:00:00' and create_time <= '2022-04-26 23:59:59')
+      group by ctime
+      order by ctime)
 
 
+
+# 11、2022-03-21之后，连续三周下订单的客户和订单个数，总金额
 
 
 
