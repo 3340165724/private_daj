@@ -481,6 +481,32 @@ from (select ctime ,round(sum(order_money),2) as zje, count(order_sn) as zs
 
 
 # 11、2022-03-21之后，连续三周下订单的客户和订单个数，总金额
+# 查出已取消或者已退款的订单
+select * from dwd.fact_order_master where order_status="已退款"
+# 过滤掉已退款，并查出某年某月某日在一年中是第几周
+select distinct customer_id, weekofyear(create_time) week
+from dwd.fact_order_master
+where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款") and  date_format(create_time, 'yyyy-MM-dd') > '2022-03-21'
+# 根据customer_id分组排序
+select customer_id, week, row_number() over (partition by customer_id order by week) as seq
+from (select distinct customer_id, weekofyear(create_time) week
+      from dwd.fact_order_master
+      where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款") and  date_format(create_time, 'yyyy-MM-dd') > '2022-03-21'
+     )
+# 连续三周下订单的客户和订单个数，总金额
+select customer_id, count(*) as zs, sum(order_money)
+from (select customer_id, order_money, week, (week - seq) as cha
+      from (select customer_id, order_money, week, row_number() over (partition by customer_id order by week) as seq
+            from (select distinct customer_id, weekofyear(create_time) week, order_money
+                  from dwd.fact_order_master
+                  where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款") and  date_format(create_time, 'yyyy-MM-dd') > '2022-03-21'
+                 )
+           ))
+group by customer_id,cha
+having zs >=3
+
+
+
 
 
 
