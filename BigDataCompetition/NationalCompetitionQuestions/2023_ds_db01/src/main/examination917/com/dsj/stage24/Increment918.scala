@@ -39,7 +39,7 @@ object Increment918 {
       val df = mysql_reader.option("dbtable", s"(${sql}) as t1").load()
         .withColumn("etl_date", lit(etl_date))
       // 追加模式写入hive的静态分区表中
-      df.write.mode(SaveMode.Append).format("hive").partitionBy("etl_date").saveAsTable(s"ods.${table}")
+//      df.write.mode(SaveMode.Append).format("hive").partitionBy("etl_date").saveAsTable(s"ods.${table}")
     })
 
     // todo 第二种根据 create_time作为增量字段
