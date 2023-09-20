@@ -130,7 +130,7 @@ from (select distinct  city, province,
              avg(order_money) over (partition by province, month)       as provinceavgconsumption
       from (select distinct city, province, order_money, year(create_time) as year, month(create_time) as month
             from dwd.fact_order_master as o
-            where length(city) <= 8 and order_sn not in (select order_sn from dwd.fact_order_master where order_status = "已退款"))) as t1
+            where length(city) <= 8 and order_sn not in (select order_sn from dwd.fact_order_master where order_status = "已退款") and length(city) <= 8)) as t1
 
 
 
@@ -164,8 +164,8 @@ select city as cityname, cityavgconsumption, province as provincename, provincea
            when cityavgconsumption < provinceavgconsumption then '低'
            when cityavgconsumption = provinceavgconsumption then '相同' end as comparison
 from (select distinct  city, province,
-                       percentile_approx(order_money) over (partition by province, city, month) as cityavgconsumption,
-                       percentile_approx(order_money) over (partition by province, month)       as provinceavgconsumption
+                       percentile_approx(order_money,0.5) over (partition by province, city, month) as cityavgconsumption,
+                       percentile_approx(order_money,0.5) over (partition by province, month)       as provinceavgconsumption
       from (select distinct city, province, order_money, year(create_time) as year, month(create_time) as month
             from dwd.fact_order_master as o
             where length(city) <= 8 and order_sn not in (select order_sn from dwd.fact_order_master where order_status = "已退款"))) as t1
