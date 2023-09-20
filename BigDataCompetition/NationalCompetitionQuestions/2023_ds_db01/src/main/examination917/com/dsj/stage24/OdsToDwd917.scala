@@ -7,7 +7,7 @@ import org.apache.spark.sql.{SaveMode, SparkSession}
 import java.text.SimpleDateFormat
 import java.util.Date
 
-object OdsToDwd {
+object OdsToDwd917 {
   def main(args: Array[String]): Unit = {
     // 创建sparksession对象
     val spark = SparkSession.builder()

@@ -15,7 +15,7 @@ import org.apache.spark.sql.functions._
  * create "hbase_order_detail","info"
  * create "hbase_product_browse","info"
  */
-object WriteHBase {
+object WriteHBase917 {
   def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.ERROR)
     val conf = new SparkConf().setMaster("local").setAppName("read mysql write hbase")

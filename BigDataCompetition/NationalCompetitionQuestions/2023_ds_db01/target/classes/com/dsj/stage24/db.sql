@@ -199,4 +199,4 @@ from (select customer_id, week, seq, (week-seq) as cha
 group by customer_id, cha
 having zs >= 3
 
-
+select date_sub(2022-08-10',-21)

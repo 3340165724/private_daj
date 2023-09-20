@@ -2,7 +2,7 @@ package com.dsj.stage24
 
 import org.apache.spark.sql.SparkSession
 
-object OdsHBaseToDwd {
+object OdsHBaseToDwd917 {
   def main(args: Array[String]): Unit = {
     // 创建sparksession对象
     val spark = SparkSession.builder()
