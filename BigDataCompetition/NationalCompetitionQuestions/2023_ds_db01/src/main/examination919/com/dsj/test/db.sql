@@ -53,7 +53,7 @@ select  cityname,cityavgconsumption,provincename,provinceavgconsumption,
            when cityavgconsumption > provinceavgconsumption then "高"
            when cityavgconsumption < provinceavgconsumption then "低"
            when cityavgconsumption = provinceavgconsumption then "相同"
-           end
+           end as comparison
 from (select distinct city as cityname, province as provincename,
              avg(order_money) over(partition by province, city, year, month ) as cityavgconsumption,
              avg(order_money) over(partition by province, year, month) as provinceavgconsumption

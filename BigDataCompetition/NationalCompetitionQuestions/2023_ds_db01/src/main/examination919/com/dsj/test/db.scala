@@ -64,7 +64,6 @@ object db {
 
 
 
-
     val df4 = spark.sql(
       """
         |select city as cityname, citymidconsumption, province as provincename, provincemidconsumption,
