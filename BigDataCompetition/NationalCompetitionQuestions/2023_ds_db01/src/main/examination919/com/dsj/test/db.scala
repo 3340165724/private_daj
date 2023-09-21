@@ -54,14 +54,12 @@ object db {
         |            from dwd.fact_order_master
         |            where order_sn not in(select order_sn from dwd.fact_order_master where order_status= "已退款") and length(city) <=8 ))
         |""".stripMargin)
-
     df3.write.mode(SaveMode.Append).format("jdbc")
       .option("driver", "ru.yandex.clickhouse.ClickHouseDriver")
       .option("url", "jdbc:clickhouse://172.20.37.85:8123/shtd_result")
       .option("user", "default")
       .option("password", "123456")
       .option("dbtable", "cityavgcmpprovince").save()
-
 
 
     val df4 = spark.sql(
@@ -76,11 +74,41 @@ object db {
         |                      percentile_approx(order_money,0.5) over(partition by province, year, month) as provincemidconsumption
         |      from (select distinct order_sn, city, province, order_money, year(create_time) as year, month(create_time) as month
         |            from dwd.fact_order_master
-        |            where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")))
+        |            where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款") and length(city) <= 8))
         |""".stripMargin)
-    df4.write.mode(SaveMode.Overwrite).format("jdbc")
-      .option("driver","ru.yandex.clickhouse")
+    df4.printSchema()
+    df4.write.mode(SaveMode.Append).format("jdbc")
+      .option("driver", "ru.yandex.clickhouse.ClickHouseDriver")
+      .option("url", "jdbc:clickhouse://172.20.37.85:8123/shtd_result")
+      .option("user", "default")
+      .option("password", "123456")
+      .option("dbtable", "citymidcmpprovince")
+      .save()
 
+
+    val df5 = spark.sql(
+      """
+        |select province as provincename,
+        |       concat_ws(',',collect_list(substr(city,-3,3))) as citynames,
+        |       concat_ws(',',collect_list(total)) as cityamount
+        |from (select province, city, total, seq
+        |      from (select province, city, total, row_number() over (partition by province order by total desc) as seq
+        |            from (select province, city, cast(sum(order_money) as decimal(10,0) ) as total
+        |                  from (select distinct order_sn, province, city, order_money
+        |                        from dwd.fact_order_master
+        |                        where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+        |                          and length(city) <= 8 and year(create_time) = 2022)
+        |                  group by province, city) ) as t1
+        |      where seq < 4)
+        |group by province
+        |""".stripMargin)
+    df5.write.mode(SaveMode.Append).format("jdbc")
+      .option("driver", "ru.yandex.clickhouse.ClickHouseDriver")
+      .option("url", "jdbc:clickhouse://172.20.37.85:8123/shtd_result")
+      .option("user", "default")
+      .option("password", "123456")
+      .option("dbtable", "regiontopthree")
+      .save()
 
   }
 }

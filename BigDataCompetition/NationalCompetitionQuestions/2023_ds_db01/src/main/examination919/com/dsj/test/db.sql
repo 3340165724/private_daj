@@ -81,4 +81,72 @@ from (select distinct city, province,
                       percentile_approx(order_money,0.5) over(partition by province, year, month) as provincemidconsumption
       from (select distinct order_sn, city, province, order_money, year(create_time) as year, month(create_time) as month
             from dwd.fact_order_master
-            where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")))
+            where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款") and length(city) <= 8))
+
+
+# 5、请根据dwd或者dws层表来计算每22年订单金额前3城市，
+#   依次存入ClickHouse数据库sht个省份20d_result的regiontopthree表中（表结构如下），
+#   然后在Linux的ClickHouse命令行中根据省份升序排序，查询出前5条；
+#        字段	类型	中文含义	备注
+#        provincename	text	省份名称
+#        citynames	text	城市名称	用,分割显示前三城市的name
+#        cityamount	text	省份名称	用,分割显示前三城市的订单金额（需要去除小数部分，使用四舍五入）例如： 3	山东省	青岛市,潍坊市,济南市 	100000,100,10
+select province as provincename,
+       concat_ws(',',collect_list(substr(city,-3,3))) as citynames,
+       concat_ws(',',collect_list(total)) as cityamount
+from (select province, city, total, seq
+      from (select province, city, total, row_number() over (partition by province order by total desc) as seq
+            from (select province, city, cast(sum(order_money) as decimal(10,0) ) as total
+                  from (select distinct order_sn, province, city, order_money
+                        from dwd.fact_order_master
+                        where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+                          and length(city) <= 8 and year(create_time) = 2022)
+                  group by province, city) ) as t1
+      where seq < 4)
+group by province
+
+# 方法二
+select province,
+       concat_ws(',',collect_set(substr(city,-3,3))) as citynames,
+       concat_ws(',',collect_set(total)) as cityamount
+from (select province, city, total, seq
+      from (select province, city, total, row_number() over (partition by province order by total desc) as seq
+            from (select province, city, cast(sum(order_money) as decimal(10,0) ) as total
+                  from (select distinct order_sn, province, city, order_money
+                        from dwd.fact_order_master
+                        where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+                          and length(city) <= 8 and year(create_time) = 2022)
+                  group by province, city) ) as t1
+      where seq < 4)
+group by province
+
+
+
+# 6、请根据dwd或者dws层的相关表，计算销售量前10的商品，销售额前10的商品，
+#   存入ClickHouse数据库shtd_result的topten表中（表结构如下），
+#   然后在Linux的ClickHouse命令行中根据排名升序排序，查询出前5条;
+#        字段	类型	中文含义	备注
+#        topquantityid	int	商品id	销售量前10的商品
+#        topquantityname	text	商品名称	销售量前10的商品
+#        topquantity	int	该商品销售量	销售量前10的商品
+#        toppriceid	text	商品id	销售额前10的商品
+#        toppricename	text	商品名称	销售额前10的商品
+#        topprice	decimal	该商品销售额	销售额前10的商品
+#        sequence	int	排名	所属排名，从1到10
+select topquantityid, topquantityname, topquantity, toppriceid, toppricename, topprice, seq1
+from (select product_id as topquantityid, product_name as topquantityname, topquantity, seq1
+      from (select *, row_number() over (order by topquantity desc ) as seq1
+            from (select  product_id, product_name, sum(product_cnt) as topquantity
+                  from dwd.fact_order_detail
+                  group by product_id, product_name))
+      where seq1 <= 10) as t1
+inner join (select product_id as toppriceid, product_name as toppricename, topprice, seq2
+            from (select *, row_number() over (order by topprice desc ) as seq2
+                  from (select  product_id, product_name, sum(product_cnt * product_price) as topprice
+                        from dwd.fact_order_detail
+                        group by product_id, product_name))
+            where seq2 <= 10) as t2
+on t1.seq1 = t2.seq2
+
+
+
