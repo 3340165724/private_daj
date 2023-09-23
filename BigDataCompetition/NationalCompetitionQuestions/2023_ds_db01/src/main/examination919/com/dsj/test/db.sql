@@ -150,3 +150,19 @@ on t1.seq1 = t2.seq2
 
 
 
+select customer_id, customer_name, identity_card_no,
+       case
+           when gender="M" then "男"
+           when gender="W" then "女"
+           else "未知"
+           end as gender, customer_point,
+       register_time, level_name, customer_money, province, city, address, modified_time
+from (select *, row_number() over (partition by customer_id order by modified_time) as seq
+      from (select ci.customer_id, customer_name, identity_card_no, gender, customer_point,
+                   register_time, level_name, customer_money, province, city, address, ca.modified_time
+            from dwd.dim_customer_inf as ci
+                     inner join dwd.dim_customer_addr as ca on ci.customer_id=ca.customer_id
+                     inner join dwd.dim_customer_level_inf as cl on  ci.customer_level=cl.customer_level))
+where seq=1
+
+
