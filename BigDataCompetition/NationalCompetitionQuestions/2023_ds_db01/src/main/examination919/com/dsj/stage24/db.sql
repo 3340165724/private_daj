@@ -26,7 +26,9 @@ limit 10;
 
 # 注意：指标计算需要考虑订单为已退款和订单表中重复数据问题；
 # 需注意dwd所有的维表取最新的分区。
-#
+
+
+
 # 1、根据dwd中表计算各个城市下的平均订单总额，并且计算各个城市在该省份下的排名，
 #    将结果存入ClickHouse数据库shtd_result的tb_province_city_avg表中（表结构如下），
 #    然后在Linux的ClickHouse命令行中根据省份、排名均为降序排序，查询出前10条;结构如下：（3分）
@@ -153,17 +155,20 @@ inner join (select customer_id, customer_name, count(*) as c2, sum(order_money) 
 on t1.customer_id = t2.customer_id where ((y1=y2 and m1=m2-1) or (y1=y2-1 and m1=12 and m2=01))
 and s1<s2
 
-select customer_id,customer_name,y2,m2,shang_m,total,shang_total from (
-select *,lag(m2,1,0) over(partition by customer_id,y2 order by m2) as shang_m,
-       lag(total,1) over(partition by customer_id,y2 order by m2) as shang_total
-       from (
-select customer_id,customer_name,y2,m2,sum(order_money) as total from (
-select distinct order_sn,o.customer_id, c.customer_name, order_money, year(create_time) y2, month(create_time) m2
-from dwd.fact_order_master as o
-         inner join dwd.dim_customer_inf  as c on o.customer_id=c.customer_id
-where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")) t1
-group by t1.customer_id, t1.customer_name,y2,m2)) t2
-where t2.m2-1 = t2.shang_m and t2.total > t2.shang_total
+
+
+
+select customer_id, customer_name, y2, m2, shang_m, total, shang_total
+from (select *,
+           lag(m2, 1, 0) over (partition by customer_id,y2 order by m2) as shang_m,
+           lag(total, 1) over (partition by customer_id,y2 order by m2) as shang_total
+    from (select customer_id, customer_name, y2, m2, sum(order_money) as total
+          from (select distinct order_sn,o.customer_id,c.customer_name,order_money,year(create_time)  y2,month(create_time) m2
+                from dwd.fact_order_master as o
+                inner join dwd.dim_customer_inf as c on o.customer_id = c.customer_id
+                where order_sn not in(select order_sn from dwd.fact_order_master where order_status = "已退款")) t1
+         group by t1.customer_id, t1.customer_name, y2, m2)) t2
+where t2.m2 - 1 = t2.shang_m and t2.total > t2.shang_total
 
 
 

@@ -345,6 +345,19 @@ where t1.up=1) /
    and order_sn not in(select order_sn from dwd.fact_order_master where  order_status="已退款"))
 
 
+select(
+select count(*)
+from (select customer_id, datediff(date,lag(date,1) over (partition by customer_id order by date)) as up
+      from (select distinct order_sn, customer_id, date_format(create_time,"yyyy-MM-dd") as date
+            from dwd.fact_order_master
+            where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款"))) as t1
+where t1.up=1)
+/
+(select count(*)
+from (select distinct order_sn, customer_id
+      from dwd.fact_order_master
+      where order_sn not in(select order_sn from dwd.fact_order_master where order_status = "已退款")))
+
 
 # 8、根据dwd或者dws层的数据，请计算每个省份累计订单量，然后根据每个省份订单量从高到低排列，
 #   将结果打印到控制台（使用spark中的show算子，同时需要显示列名）；
@@ -368,6 +381,17 @@ from (select distinct province ,order_sn
       where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款"))
 group by province
 order by num desc
+
+
+select province, count(*) as  Amount
+from (select distinct order_sn, province
+      from dwd.fact_order_master
+      where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款") and length(city) <= 8)
+group by province
+order by Amount desc
+
+
+
 
 
 
@@ -411,10 +435,19 @@ select ctime, consumptionadd, sum(consumptionadd) over(order by ctime) as consum
 from (select ctime ,round(sum(order_money),2) as consumptionadd
       from (select distinct order_money ,order_sn, date_format(create_time,"yyyy-MM-dd HH") as ctime
             from dwd.fact_order_master
-            where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+            where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款") and length(city) <= 8
               and create_time >= '2022-04-26 00:00:00' and create_time <= '2022-04-26 23:59:59')
       group by ctime
       order by ctime)
+
+
+
+select distinct order_sn, order_money, date_format(create_time, "yyyy-MM-dd HH") as date
+from dwd.fact_order_master
+where order_sn not in(select order_sn from dwd.fact_order_master where order_status ="已退款") and length(city) <= 8
+  and create_time >='2022-04-26 00:00:00' and create_time <= '2022-04-26 09:59:59'
+
+
 
 
 
@@ -473,7 +506,7 @@ select ctime as consumptiontime,
 from (select ctime ,round(sum(order_money),2) as zje, count(order_sn) as zs
       from (select distinct order_money ,order_sn, date_format(create_time,"yyyy-MM-dd HH") as ctime
             from dwd.fact_order_master
-            where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款")
+            where  order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款") and length(city) <= 8
               and create_time >= '2022-04-26 00:00:00' and create_time <= '2022-04-26 23:59:59')
       group by ctime
       order by ctime)
