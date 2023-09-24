@@ -69,14 +69,37 @@ where sell_seqence <=3
 #        continuous_months	text	连续月份组合	连续月份组合，如202203_202204如果连续三个月则计算两次，如5、6、7三月都购买了，则5、6组合一次，6、7组合一次
 #        continuous_count	int	购买总次数	两个月的购买次数
 #        continuous_sum	Double	购买总额	两个月的购买总额
-select *, lag(month,1, 0) over (partition by customer_id,year order by month),
-       lag(total,1) over (partition by customer_id,year order by month)
-from (select customer_id, customer_name, sum(order_money) as total, count(*) as continuous_count, year, month
-      from (select distinct order_sn, customer_id, customer_name, order_money, year(create_time) as year, month(create_time) as month
+select t1.customer_id, t1.customer_name,
+       concat(concat(y1,if(m1<10,concat("0",m1),m1)), "_",concat(y2,if(m2<10,concat("0",m2),m2))) as continuous_months,
+       c1 + c2 as continuous_count, s1 + s2 as continuous_sum
+from (select customer_id, customer_name, count(*) as c1, sum(order_money) as s1, y1,m1
+      from (select distinct o.customer_id, c.customer_name, order_money, year(create_time) y1, month(create_time) m1
             from dwd.fact_order_master as o
-                     inner join dwd.dim_customer_inf as c on o.customer_id = c.customer_id
-            where order_sn not in(select order_sn from dwd.fact_order_master where odser_status="已退款") and length(city) <= 8)
-      group by customer_id, customer_name, year, month)
+                     inner join dwd.dim_customer_inf  as c on o.customer_id=c.customer_id
+            where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款"))
+      group by customer_id, customer_name, y1,m1) as t1
+         inner join (select customer_id, customer_name, count(*) as c2, sum(order_money) as s2, y2,m2
+                     from (select distinct o.customer_id, c.customer_name, order_money, year(create_time) y2, month(create_time) m2
+                           from dwd.fact_order_master as o
+                                    inner join dwd.dim_customer_inf  as c on o.customer_id=c.customer_id
+                           where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款"))
+                     group by customer_id, customer_name, y2,m2) as t2
+                    on t1.customer_id = t2.customer_id where ((y1=y2 and m1=m2-1) or (y1=y2-1 and m1=12 and m2=01))
+                                                         and s1<s2
+
+
+
+select customer_id, customer_name, y2, m2, shang_m, total, shang_total
+from (select *,
+             lag(m2, 1, 0) over (partition by customer_id,y2 order by m2) as shang_m,
+             lag(total, 1) over (partition by customer_id,y2 order by m2) as shang_total
+      from (select customer_id, customer_name, y2, m2, sum(order_money) as total
+            from (select distinct order_sn,o.customer_id,c.customer_name,order_money,year(create_time)  y2,month(create_time) m2
+                  from dwd.fact_order_master as o
+                           inner join dwd.dim_customer_inf as c on o.customer_id = c.customer_id
+                  where order_sn not in(select order_sn from dwd.fact_order_master where order_status = "已退款")) t1
+            group by t1.customer_id, t1.customer_name, y2, m2)) t2
+where t2.m2 - 1 = t2.shang_m and t2.total > t2.shang_total
 
 # 4、请根据dwd层dim_customer_login_log表统计2022-08-10开始往前三周连续登录的活跃用户个数（同一个用户只计算一次），
 #    将结果存入clickhouse的active_users表中，并且将结果截图到报告中，结构如下：
@@ -87,7 +110,14 @@ from (select customer_id, customer_name, sum(order_money) as total, count(*) as 
 # （因为不知道具体的意图，这题后续考虑做两个版本）：
 # 1）只计算三周
 # 2）计算往前每三周计算一次(后期扩展练习考虑，本次不做)
-
+select concat(date_sub('2022-08-10',21),'2022-08-10') as datestr,customer_id, count(*) as zs
+from (select customer_id, week, seq, (week-seq) as cha
+      from (select customer_id, week, row_number() over (partition by customer_id order by week) as seq
+            from (select distinct customer_id, weekofyear(login_time) week
+                  from dwd.dim_customer_login_log
+                  where date_format(login_time,'yyyy-MM-dd') >= date_sub('2022-08-10',21) and date_format(login_time,'yyyy-MM-dd') < '2022-08-10')))
+group by customer_id, cha
+having zs >= 3
 
 
 
