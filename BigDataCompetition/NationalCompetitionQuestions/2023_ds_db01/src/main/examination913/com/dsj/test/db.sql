@@ -347,7 +347,7 @@ where t1.up=1) /
 
 select(
 select count(*)
-from (select customer_id, datediff(date,lag(date,1) over (partition by customer_id order by date)) as up
+from (select customer_id, datediff(date,lag(date,1) over(partition by customer_id order by date)) as up
       from (select distinct order_sn, customer_id, date_format(create_time,"yyyy-MM-dd") as date
             from dwd.fact_order_master
             where order_sn not in(select order_sn from dwd.fact_order_master where order_status="已退款"))) as t1
@@ -356,7 +356,7 @@ where t1.up=1)
 (select count(*)
 from (select distinct order_sn, customer_id
       from dwd.fact_order_master
-      where order_sn not in(select order_sn from dwd.fact_order_master where order_status = "已退款")))
+      where order_sn not in(select order_sn from dwd.fact_order_master where order_status = "已退款") and length(city)<=8))
 
 
 # 8、根据dwd或者dws层的数据，请计算每个省份累计订单量，然后根据每个省份订单量从高到低排列，
