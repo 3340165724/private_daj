@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: commons-httpclient:commons-httpclient:3.1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="commons-httpclient" artifactId="commons-httpclient" version="3.1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-httpclient/commons-httpclient/3.1/964cd74171f427720480efdec40a7c7f6e58426a/commons-httpclient-3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

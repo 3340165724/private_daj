@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.codehaus.jackson:jackson-xc:1.9.13" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.codehaus.jackson" artifactId="jackson-xc" version="1.9.13" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-xc/1.9.13/e3480072bc95c202476ffa1de99ff7ee9149f29c/jackson-xc-1.9.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

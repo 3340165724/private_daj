@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.directory.server:apacheds-i18n:2.0.0-M15" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.directory.server" artifactId="apacheds-i18n" version="2.0.0-M15" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.directory.server/apacheds-i18n/2.0.0-M15/71c61c84683152ec2a6a65f3f96fe534e304fa22/apacheds-i18n-2.0.0-M15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Spark Core/3-Step to Spark/Create RDD" />
+            <option value="$PROJECT_DIR$/Spark Core/3-Step to Spark/First Job" />
+            <option value="$PROJECT_DIR$/Spark Core/3-Step to Spark/Intro" />
+            <option value="$PROJECT_DIR$/Spark Core/3-Step to Spark/Word Count Case 1" />
+            <option value="$PROJECT_DIR$/Spark Core/Actions Basic/Intro" />
+            <option value="$PROJECT_DIR$/Spark Core/Actions Basic/collect" />
+            <option value="$PROJECT_DIR$/Spark Core/Actions Basic/count" />
+            <option value="$PROJECT_DIR$/Spark Core/Actions Basic/first" />
+            <option value="$PROJECT_DIR$/Spark Core/Actions Basic/foreach" />
+            <option value="$PROJECT_DIR$/Spark Core/Actions Basic/isEmpty" />
+            <option value="$PROJECT_DIR$/Spark Core/Actions Basic/max min" />
+            <option value="$PROJECT_DIR$/Spark Core/Actions Basic/reduce" />
+            <option value="$PROJECT_DIR$/Spark Core/Actions Basic/sum" />
+            <option value="$PROJECT_DIR$/Spark Core/Actions Basic/take" />
+            <option value="$PROJECT_DIR$/Spark Core/Exercise/Student Case" />
+            <option value="$PROJECT_DIR$/Spark Core/Transformations Basic/Intro" />
+            <option value="$PROJECT_DIR$/Spark Core/Transformations Basic/Word Count Case 2" />
+            <option value="$PROJECT_DIR$/Spark Core/Transformations Basic/distinct" />
+            <option value="$PROJECT_DIR$/Spark Core/Transformations Basic/faltMap" />
+            <option value="$PROJECT_DIR$/Spark Core/Transformations Basic/filter" />
+            <option value="$PROJECT_DIR$/Spark Core/Transformations Basic/map" />
+            <option value="$PROJECT_DIR$/Spark Core/Transformations Basic/map vs flatMap" />
+            <option value="$PROJECT_DIR$/Spark Core/Transformations Basic/reduceByKey" />
+            <option value="$PROJECT_DIR$/Spark Entry/At First/Who am I" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

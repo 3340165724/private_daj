@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.codehaus.janino:commons-compiler:3.0.16" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.codehaus.janino" artifactId="commons-compiler" version="3.0.16" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.janino/commons-compiler/3.0.16/13006f927c8383e85bea59c401de7ef3d7fa741/commons-compiler-3.0.16.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

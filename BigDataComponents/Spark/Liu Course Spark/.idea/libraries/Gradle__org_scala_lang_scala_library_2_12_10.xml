@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: org.scala-lang:scala-library:2.12.10" type="Scala" external-system-id="GRADLE">
+    <properties>
+      <language-level>Scala_2_12</language-level>
+      <compiler-classpath>
+        <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.12.10/33e91b29dff873755751bfc45e916a16100ec818/scala-compiler-2.12.10.jar" />
+        <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-sbt/compiler-bridge_2.12/1.9.3/4ac91c1a0392c6ebe1525ee266c3a31366276e97/compiler-bridge_2.12-1.9.3-sources.jar" />
+        <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-sbt/compiler-interface/1.9.3/b882061aec6f9de3093e777c28022eec82a1e802/compiler-interface-1.9.3.jar" />
+        <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.10/14cb7beb516cd8e07716133668c427792122c926/scala-reflect-2.12.10.jar" />
+        <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.12/1.0.6/e22de3366a698a9f744106fb6dda4335838cf6a7/scala-xml_2.12-1.0.6.jar" />
+        <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.10/3509860bc2e5b3da001ed45aca94ffbe5694dbda/scala-library-2.12.10.jar" />
+        <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-sbt/util-interface/1.9.2/b696783ce958ebdf061c53fa173a67f9f1b88754/util-interface-1.9.2.jar" />
+      </compiler-classpath>
+    </properties>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.10/3509860bc2e5b3da001ed45aca94ffbe5694dbda/scala-library-2.12.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

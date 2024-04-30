@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.esotericsoftware:kryo-shaded:4.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.esotericsoftware" artifactId="kryo-shaded" version="4.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.esotericsoftware/kryo-shaded/4.0.2/e8c89779f93091aa9cb895093402b5d15065bf88/kryo-shaded-4.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

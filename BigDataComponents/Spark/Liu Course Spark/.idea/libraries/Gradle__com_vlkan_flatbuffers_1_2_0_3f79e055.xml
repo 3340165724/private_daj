@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.vlkan:flatbuffers:1.2.0-3f79e055" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.vlkan" artifactId="flatbuffers" version="1.2.0-3f79e055" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vlkan/flatbuffers/1.2.0-3f79e055/b4a3fa3b6f768a99c2540e8b96b83bbb051f926c/flatbuffers-1.2.0-3f79e055.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

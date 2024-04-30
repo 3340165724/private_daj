@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.codehaus.jettison:jettison:1.1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.codehaus.jettison" artifactId="jettison" version="1.1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jettison/jettison/1.1/1a01a2a1218fcf9faa2cc2a6ced025bdea687262/jettison-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

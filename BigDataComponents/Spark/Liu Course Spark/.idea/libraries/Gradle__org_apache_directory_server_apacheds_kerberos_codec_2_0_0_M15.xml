@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.directory.server:apacheds-kerberos-codec:2.0.0-M15" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.directory.server" artifactId="apacheds-kerberos-codec" version="2.0.0-M15" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.directory.server/apacheds-kerberos-codec/2.0.0-M15/1c16e4e477183641c5f0dd5cdecd27ec331bacb5/apacheds-kerberos-codec-2.0.0-M15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

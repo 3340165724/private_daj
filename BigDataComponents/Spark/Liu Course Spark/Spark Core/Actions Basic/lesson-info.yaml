@@ -1,0 +1,11 @@
+content:
+  - Intro
+  - foreach
+  - reduce
+  - sum
+  - count
+  - collect
+  - take
+  - first
+  - max min
+  - isEmpty

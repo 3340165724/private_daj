@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.inject:guice:3.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.google.inject" artifactId="guice" version="3.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/3.0/9d84f15fe35e2c716a02979fb62f50a29f38aefa/guice-3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

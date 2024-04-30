@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.fusesource.leveldbjni:leveldbjni-all:1.8" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.fusesource.leveldbjni" artifactId="leveldbjni-all" version="1.8" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.fusesource.leveldbjni/leveldbjni-all/1.8/707350a2eeb1fa2ed77a32ddb3893ed308e941db/leveldbjni-all-1.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

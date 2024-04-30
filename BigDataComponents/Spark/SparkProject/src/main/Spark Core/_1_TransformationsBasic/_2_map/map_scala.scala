@@ -7,7 +7,7 @@ import org.apache.spark.sql.SparkSession
 object map_scala {
   def main(args: Array[String]): Unit = {
     // 创建一个sparksession
-    val spark: SparkSession = SparkSession.builder()
+    val spark: SparkSession =      SparkSession.builder()
       .master("local[1]")
       .appName("spark-map_scala")
       .getOrCreate()

@@ -1,0 +1,19 @@
+type: marketplace
+title: Liu Course Spark
+language: Chinese
+summary: |-
+  - This is the first series of courses on JetBrains Marketplace for Chinese learners.
+  - This course provides a new way for you to learn Spark easily.
+  - Have fun and good luck!
+  - 这是JetBrains上首个面向中文学习者的系列课程，这个系列包括Spark的入门核心技能，让你清清爽爽地学习大数据编程技能。
+  - 众所周知Spark是优秀的分布式内存计算框架，你能从本课程学到Spark经典案例、RDD、算子等趣味内容。还等什么？学起来吧！
+  - 教程全网ID：@老刘大数据
+  - 源码下载公众号：@架构师老刘
+  - 课程源码辅导陪练微信: architect-liu-cn
+programming_language: Scala
+environment: Gradle
+content:
+  - Spark Entry
+  - Spark Core
+mode: Study
+feedback_link: https://plugins.jetbrains.com/plugin/21323-liu-course-spark/reviews

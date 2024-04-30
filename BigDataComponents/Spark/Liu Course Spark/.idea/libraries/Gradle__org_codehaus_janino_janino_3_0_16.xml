@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.codehaus.janino:janino:3.0.16" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.codehaus.janino" artifactId="janino" version="3.0.16" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.janino/janino/3.0.16/763e11f67b343ceb7cfc65315e0d05a778224f42/janino-3.0.16.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

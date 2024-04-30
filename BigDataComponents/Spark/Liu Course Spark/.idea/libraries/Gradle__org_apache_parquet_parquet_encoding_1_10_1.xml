@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.parquet:parquet-encoding:1.10.1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.parquet" artifactId="parquet-encoding" version="1.10.1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.parquet/parquet-encoding/1.10.1/b495a7817b434be694965059c0cd4c255a94c57d/parquet-encoding-1.10.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -9,5 +9,8 @@
         <module name="SparkProject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Works" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

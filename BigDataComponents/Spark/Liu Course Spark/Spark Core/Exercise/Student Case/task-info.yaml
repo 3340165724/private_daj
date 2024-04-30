@@ -1,0 +1,19 @@
+type: theory
+files:
+  - name: src/Main.scala
+    visible: true
+    placeholders:
+      - offset: 1653
+        length: 21
+        placeholder_text: /* TODO 补充代码统计女生人数 */
+        initial_state:
+          length: 21
+          offset: 1653
+        initialized_from_dependency: false
+        encrypted_possible_answer: zZHY4TrZucCqax87GkVpM440qpqJ/PH6HkWGeo+w0Y2yoJKAy0C4iD1GyF2kytyVQGX7AJqxPjiet1RA/s07JA==
+        selected: false
+        status: Unchecked
+    learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

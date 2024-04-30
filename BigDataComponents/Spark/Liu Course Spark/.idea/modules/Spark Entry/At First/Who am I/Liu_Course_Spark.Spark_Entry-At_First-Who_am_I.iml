@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Spark_Entry-At_First-Who_am_I" external.linked.project.path="$MODULE_DIR$/../../../../../Spark Entry/At First/Who am I" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Liu_Course_Spark" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../Spark Entry/At First/Who am I">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Spark Entry/At First/Who am I/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Spark Entry/At First/Who am I/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Spark Entry/At First/Who am I/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

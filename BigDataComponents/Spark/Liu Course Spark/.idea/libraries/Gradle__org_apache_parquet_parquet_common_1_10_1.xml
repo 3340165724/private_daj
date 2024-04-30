@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.parquet:parquet-common:1.10.1" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.parquet" artifactId="parquet-common" version="1.10.1" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.parquet/parquet-common/1.10.1/2a6b665654098c2321f7ab95c48096734026638d/parquet-common-1.10.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
