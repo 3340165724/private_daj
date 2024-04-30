@@ -9,5 +9,5 @@
 <br>
 
 ### 设置缩放字体
-![increase](../../../../../../../../../../../Image/increase.png  "increase")
+![increase](../../../../../../../Image/increase.png "increase ")
 
