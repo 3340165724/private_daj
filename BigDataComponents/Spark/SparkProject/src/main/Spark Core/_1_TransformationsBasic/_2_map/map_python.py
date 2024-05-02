@@ -7,7 +7,7 @@ spark = SparkSession.builder.master("local[*]").getOrCreate()
 
 sc = spark.sparkContext
 
-rdd1 = sc.parallelize([1, 2, 5, 8, 9])
+rdd1 = sc.parallelize(list(range(0,10,2))
 rdd1.map(lambda x: x * 10).foreach(print)
 
 sc.stop()
